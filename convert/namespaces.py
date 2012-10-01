@@ -8,10 +8,17 @@ Namespace declarations for use in RDF generation
 
 from rdflib import Namespace
 
-# TODO: work out namespaces
-NS = Namespace('http://ns.austalk.edu.au/')
-PROTOCOL_NS = Namespace("http://id.austalk.edu.au/protocol/")
-DATA_NS = Namespace("http://data.austalk.edu.au/")
+# for properties and classes specific to Austalk
+NS = Namespace(u"http://ns.austalk.edu.au/")
+
+# for elements of the protocol
+PROTOCOL_NS = Namespace(u"http://id.austalk.edu.au/protocol/")
+
+# for media files
+DATA_NS = Namespace(u"http://data.austalk.edu.au/")
+
+# for all entities (items, participants etc)
+ID_NS = Namespace(u"http://id.austalk.edu.au/")
 
 # Define namespaces
 RDF = Namespace(u"http://www.w3.org/1999/02/22-rdf-syntax-ns#")

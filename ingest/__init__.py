@@ -9,9 +9,11 @@ def ingest_session(server, baseurl):
     import convert
     items = convert.read_manifest(baseurl)
     
+    mapper = convert.ItemMapper(server)
+    
     for item in items:
-        graph = convert.item_rdf(item)
-        print "Uploading", len(graph), "triples for item", item
+        graph = mapper.item_rdf(item)
+        print "Uploading", len(graph), "triples for item", item[-19:]
         server.upload_graph(graph)
         
         

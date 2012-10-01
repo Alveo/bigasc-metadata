@@ -11,7 +11,8 @@ import os, urllib2, re
 
 import map
 from namespaces import *
-
+from session import component_map
+from participant import participant_uri
 
 
 def parse_item_filename(filename):
@@ -40,6 +41,8 @@ class ItemMapper:
         
         self.server = server
         self.init_map()
+        self.component_map = component_map()
+
     
     def init_map(self):
         """Initialise the RDF map"""
@@ -68,33 +71,32 @@ select ?name where {
     <%s>  austalk:recording_site ?site .
     ?site rdfs:label ?name .
 }""" % spkruri
-    
-        print "QUERY", q
-        
+     
         result = self.server.query(q)
         bindings = result['results']['bindings']
-        
-        print "BINDINGS", bindings
-        
+         
         if len(bindings) > 0:
-            name = bindings[0]['item']['value']
+            name = bindings[0]['name']['value']
         else:
             name = "UNKNOWN"
             
+        # set an instance variable so that map_files can use this
+        self.site_name = name
+        
         return name
             
     
     def media_uri(self, itemuri, filename):
         """Given a filename, return a URI for
         this file on the data server"""
-
-        component_map = {
-                         '1': 1
-        }
+        
     
         info = parse_item_filename(filename)
         info['filename'] = filename
-        info['site'] = self.item_site_name(spkruri)
+        info['component'] = self.component_map[int(info['component'])]
+        # here we reference the 'current' site name which
+        # was generated in item_rdf
+        info['site'] = self.site_name
         #info['component'] = component_map[info['component']]
         path = DATA_URI_TEMPLATE % info
         
@@ -153,6 +155,7 @@ select ?name where {
     >>> server = SesameServer(serverurl)
     >>> im = ItemMapper(server)
     >>> graph = im.item_rdf(mdurl)
+    
     >>> print graph.serialize(format='turtle')
     # need to test some properties of the graph
         
@@ -161,18 +164,23 @@ select ?name where {
         md = read_metadata(url)
         
         item_uri = NS[md['basename']]
-
+        # generate participant uri and from that query the
+        # remote db for the site name which we'll use
+        # later in mapping file names to uris
+        
+        self.participant_uri = participant_uri(md['colour'], md['animal'])
+        self.item_site_name(self.participant_uri)
+        
         graph = self.itemmap.mapdict(item_uri, md)
         
         # add link to participant
-        p_id = "%s_%s" % (md['colour'], md['animal'])
-        p_uri = NS[p_id]    
-        graph.add((item_uri, OLAC.speaker, p_uri))
+
+        graph.add((item_uri, OLAC.speaker, self.participant_uri))
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
         
         # add link to item prototype
         iid = PROTOCOL_NS[ITEM_URI_TEMPLATE % (md['component'], md['item'])]
-        graph.add((item_uri, NS.protocol_item, iid))
+        graph.add((item_uri, NS.item, iid))
         
         # add some namespaces to make output prettier
         graph.bind('austalk', NS)
@@ -191,6 +199,12 @@ def read_metadata(url):
 >>> read_metadata(mdfile)
 {'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker', 'filename': '1_1121_1_12_001-ch6-speaker.wav'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask', 'filename': '1_1121_1_12_001-ch1-maptask.wav'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left', 'filename': '1_1121_1_12_001-ch4-c2Left.wav'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right', 'filename': '1_1121_1_12_001-ch5-c2Right.wav'}, '1_1121_1_12_001-camera-0.raw16': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'version': 1, 'type': 'unknown', 'channel': 'camera-0', 'filename': '1_1121_1_12_001-camera-0.raw16'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
 
+# an example of regenerated metadata, has no basename so we need to reconstruct it
+>>> mdfile = "../test/1_178_4_12_001.xml"
+>>> md = read_metadata(mdfile)
+>>> md['basename']
+'1_178_4_12_001'
+
 # grab an example from the server that has -n files
 >>> mdurl = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session2/Session2_16/1_178_2_16_001.xml"
 >>> md = read_metadata(mdurl)
@@ -200,6 +214,8 @@ def read_metadata(url):
 ['1_178_2_16_001-ch5-c2Right.wav', '1_178_2_16_001-n-ch6-speaker.wav', '1_178_2_16_001-ch3-strobe.wav', '1_178_2_16_001-n-ch1-maptask.wav', '1_178_2_16_001-ch4-c2Left.wav', '1_178_2_16_001-ch1-maptask.wav', '1_178_2_16_001-camera-0-left.mp4', '1_178_2_16_001-camera-0-right.mp4', '1_178_2_16_001-ch6-speaker.wav', '1_178_2_16_001-n-ch4-c2Left.wav', '1_178_2_16_001-ch2-boundary.wav', '1_178_2_16_001-n-ch5-c2Right.wav', '1_178_2_16_001-n-camera-0-right.mp4', '1_178_2_16_001-n-ch2-boundary.wav', '1_178_2_16_001-n-camera-0-left.mp4', '1_178_2_16_001-n-ch3-strobe.wav']
 >>> md['files']['1_178_2_16_001-n-ch5-c2Right.wav']
 {'checksum': '2d5b13b05063a4b3b845672d1ca4eb91', 'version': 2, 'type': 'audio', 'channel': 'ch5-c2Right', 'filename': '1_178_2_16_001-n-ch5-c2Right.wav'}
+
+
     """
 
     result = dict()
@@ -263,7 +279,12 @@ def read_metadata(url):
             pass
         else:
             result[name] = node.text
-            
+    
+    # regenerated metadata has no basename
+    if not result.has_key('basename'):
+        result['item'] = int(result['item'])
+        result['basename'] = "%(colour)s_%(animal)s_%(session)s_%(component)s_%(item)03d" % result
+    
     return result
 
 def parse_media_filename(filename):

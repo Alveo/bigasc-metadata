@@ -153,7 +153,7 @@ def map_location(subj, prop, value):
 
 >>> loc = {u'city': u'Bathurst', u'state': u'NSW', u'name': u'Charles Sturt University', u'id': 4} 
 >>> map_location('foo', 'location', loc)
-[('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/recording_site'), rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/RecordingSite'))]
+[('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/recording_site'), rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/RecordingSite')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://www.w3.org/2000/01/rdf-schema#label'), rdflib.term.Literal(u'CSUB')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/city'), rdflib.term.Literal(u'Bathurst')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/institution'), rdflib.term.Literal(u'Charles Sturt University'))]
    """
 
     # get initials of name
@@ -191,6 +191,13 @@ partmap.add('RA', mapper=map_ra)
 partmap.add('location', mapper=map_location)
 
 
+def participant_uri(colour, animal):
+    """Generate the URI for a participant given their colour and animal ids"""
+    
+    p_id = "participant/%s_%s" % (colour, animal)
+    return ID_NS[p_id]
+
+
 def participant_rdf(participant):
     """participant is a dictionary of participant metadata from 
     the web server, generate corresponding RDF, returning a 
@@ -201,12 +208,11 @@ def participant_rdf(participant):
 >>> p = get_participant_from_file(part_file) 
 >>> graph = participant_rdf(p)
 >>> len(graph)
-146
+149
+>>> print graph.serialize(format='turtle')
     """
-    #print "Participant", participant
-    #print "Participant", participant['colour'], participant['animal']
-    p_id = "%s_%s" % (participant['colour']['id'], participant['animal']['id'])
-    p_uri = NS[p_id]
+    
+    p_uri = participant_uri(participant['colour']['id'], participant['animal']['id'])
     graph = partmap.mapdict(p_uri, participant)
     
     graph.add((p_uri, RDF.type, FOAF.Person))
