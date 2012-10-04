@@ -59,10 +59,16 @@ austalk:Session - a session
 austalk:Component - a component
 austalk:Item - an item
 
+The actual recordings are represented by instances of these classes, they
+are linked to the classes above by the austalk:prototype relation.
+
+austalk:RecordedSession - a group of recorded components corresponding to a Session
+austalk:RecordedComponent - a group of AusNCObjects corresponding to a Component
+ausnc:AusNCObject - an item (single prompted recording)
+
 foaf:Person - a participant
 austalk:RecordingSite - a recording site
 austalk:MediaFile - a wav or mp4 file
-ausnc:AusNCObject - an item (single prompted recording)
 
 Entities
 --------
@@ -121,27 +127,44 @@ The shortname property of components will be used in URIs for data files:
     austalk:shortname "yes-no-opening-1";
     dc:isPartOf <http://id.austalk.edu.au/protocol/session/1> .
 
+Actual sessions and components are instances of RecordedSession and RecordedComponent, 
+they point to the session or component definition via the austalk:prototype
+relation:
+
+<http://id.austalk.edu.au/session/1_530_3> a austalk:RecordedSession;
+    austalk:prototype <http://id.austalk.edu.au/protocol/session/3> .
+
+<http://id.austalk.edu.au/component/1_530_3_8> a austalk:RecordedComponent;
+    austalk:prototype <http://id.austalk.edu.au/protocol/component/8>;
+    dc:isPartOf <http://id.austalk.edu.au/session/1_530_3> .
+
+
 Items 
+-----
+
+Each item in a component is represented by an instance of austalk:Item:
 
 <http://id.austalk.edu.au/protocol/item/11_10> a austalk:Item;
     austalk:id 10;
     austalk:prompt "Turn left 15  (face +45)  11";
     dc:isPartOf <http://id.austalk.edu.au/protocol/component/11> .
 
-
-
 The actual data is represented as instances of AusNCObject and includes all of 
-the metadata from the XML file associated with the item.  It includes links to the 
-component and item in the protocol and to the participant.  The media property
+the metadata from the XML file associated with the item.  
+
+
+  The media property
 links to the individual media files.
 
-    <http://ns.austalk.edu.au/1_178_2_16_001> a ausnc:AusNCObject;
+    <http://id.austalk.edu.au/item/1_178_2_16_001> a ausnc:AusNCObject;
         austalk:basename "1_178_2_16_001";
         austalk:cameraSN0 "11051192";
         austalk:cameraSN1 "11072159";
-        austalk:component <http://id.austalk.edu.au/protocol/component/16>;
-        austalk:componentName "Sentences Session 2";
-        austalk:item <http://id.austalk.edu.au/protocol/item/16_1>;
+        
+        dc:isPartOf <http://id.austalk.edu.au/component/1_178_2_16>;
+        
+        austalk:prototype <http://id.austalk.edu.au/protocol/item/16_1>;
+        
         austalk:media <http://data.austalk.edu.au/ANUC/2/sentences/1_178_2_16_001-camera-0-left.mp4>,
             <http://data.austalk.edu.au/ANUC/2/sentences/1_178_2_16_001-camera-0-right.mp4>,
             <http://data.austalk.edu.au/ANUC/2/sentences/1_178_2_16_001-ch1-maptask.wav>,
@@ -159,10 +182,22 @@ links to the individual media files.
             <http://data.austalk.edu.au/ANUC/2/sentences/1_178_2_16_001-n-ch5-c2Right.wav>,
             <http://data.austalk.edu.au/ANUC/2/sentences/1_178_2_16_001-n-ch6-speaker.wav>;
         austalk:prompt "He flew round in an instant to look his attacker square in the eye.";
-        austalk:session <http://id.austalk.edu.au/protocol/session/2>;
         austalk:timestamp "Tue Feb 21 10:37:05 2012";
         austalk:version "1.4";
         olac:speaker <http://id.austalk.edu.au/participant/1_178> .
+        
+For a map-task item, there are two participants, we represent this by having both as
+olac:speaker and then entering two role based relations austalk:information_giver and
+austalk:information_follower. 
+
+    <http://id.austalk.edu.au/item/1_530_3_8_001> a ausnc:AusNCObject;
+    	...
+        austalk:information_follower <http://id.austalk.edu.au/participant/4_172>;
+        austalk:information_giver <http://id.austalk.edu.au/participant/1_530>;
+        austalk:map <http://id.austalk.edu.au/protocol/map/B-architecture>;
+        olac:speaker <http://id.austalk.edu.au/participant/1_530>,
+            <http://id.austalk.edu.au/participant/4_172> .    
+        
     
 Media files are identified by a URI that links to the actual file, the properties
 describe the file including the type (audio or video) and channel name.  The version

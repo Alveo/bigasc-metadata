@@ -39,4 +39,4 @@ COMPONENT_URI_TEMPLATE = "component/%s"
 ITEM_URI_TEMPLATE = "item/%s_%s"
 
 
-DATA_URI_TEMPLATE = "%(site)s/%(session)s/%(component)s/%(filename)s"
+DATA_URI_TEMPLATE = "%(site)s/%(colour)s_%(animal)s/%(session)s/%(component)s/%(filename)s"

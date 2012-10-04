@@ -25,6 +25,8 @@ def parse_item_filename(filename):
     match = parse_it.search(filename)
     if match:
         groups = match.groups() 
+        result['colour'] = groups[0]
+        result['animal'] = groups[1]
         result['session']   = groups[2]
         result['component'] = groups[3]
         result['item']      = str(int(groups[4]))  # do this to trim leading zeros
@@ -57,7 +59,20 @@ class ItemMapper:
         self.itemmap.add('files', mapper=self.map_files)
         self.itemmap.add('session', mapper=self.map_session)
     
-    
+        # TODO: deal with maptask properties
+        self.itemmap.add('otherAnimal', ignore=True)
+        self.itemmap.add('otherColour', ignore=True)
+        self.itemmap.add('otherParticipant', ignore=True)
+        self.itemmap.add('role', ignore=True)
+        self.itemmap.add('map', ignore=True)
+        
+        # these we don't need as they are redundant
+        self.itemmap.add('session', ignore=True)
+        self.itemmap.add('component', ignore=True)
+        self.itemmap.add('componentName', ignore=True)
+        
+        
+        
     
     def item_site_name(self, spkruri):
         """Given a speaker URI, return the short name of the
@@ -156,14 +171,27 @@ select ?name where {
     >>> im = ItemMapper(server)
     >>> graph = im.item_rdf(mdurl)
     
-    >>> print graph.serialize(format='turtle')
+    # print graph.serialize(format='turtle')
     # need to test some properties of the graph
-        
+     
+    >>> mfile = "../test/1_530_3_8_001.xml"
+    >>> graph = im.item_rdf(mfile)
+    >>> print graph.serialize(format='turtle')   
         """
         
         md = read_metadata(url)
+        # generate a URI for this component 
+        component_uri = ID_NS['component/%(colour)s_%(animal)s_%(session)s_%(component)s' % md]
+        # the prototype is the component we're an example of
+        component_prototype = PROTOCOL_NS[COMPONENT_URI_TEMPLATE % md['component']]
+
+        # generate a URI for this session 
+        session_uri = ID_NS['session/%(colour)s_%(animal)s_%(session)s' % md]
+        # the prototype is the session we're an example of
+        session_prototype = PROTOCOL_NS[SESSION_URI_TEMPLATE % md['session']]
         
-        item_uri = NS[md['basename']]
+        item_uri = ID_NS["item/"+md['basename']]
+        
         # generate participant uri and from that query the
         # remote db for the site name which we'll use
         # later in mapping file names to uris
@@ -173,20 +201,66 @@ select ?name where {
         
         graph = self.itemmap.mapdict(item_uri, md)
         
-        # add link to participant
-
+        # add link to the main participant
         graph.add((item_uri, OLAC.speaker, self.participant_uri))
+        
+        # details of other participant and speaker roles for maptask
+        if 'Map' in md['componentName']:
+            # check if metadata is present
+            if md.has_key('otherColour') and md.has_key('otherAnimal'):
+                other_participant_uri = participant_uri(md['otherColour'], md['otherAnimal'])
+                
+                graph.add((item_uri, OLAC.speaker, other_participant_uri))
+                
+                if md.has_key('role'):
+                    if md['role'] == 'Information Giver':
+                        graph.add((item_uri, NS.information_giver, self.participant_uri))
+                        graph.add((item_uri, NS.information_follower, other_participant_uri))
+                    elif md['role'] ==  'Information Follower':
+                        graph.add((item_uri, NS.information_follower, self.participant_uri))
+                        graph.add((item_uri, NS.information_giver, other_participant_uri))
+                    else:
+                        print "Unknown role", md['role'], "for ", md['basename']
+                else:
+                    print "\tNo role for item", md['basename']
+                
+                maps = {'Map A - architecture': 'map/A-architecture',
+                        'Map A - colour': 'map/A-colour', 
+                        'Map B - architecture': 'map/B-architecture',
+                        'Map B - colour': 'map/B-colour'
+                }
+    
+                if md.has_key('map'):
+                    if maps.has_key(md['map']):
+                        map = PROTOCOL_NS[maps[md['map']]]
+                        graph.add((item_uri, NS.map, map))
+                    else:
+                        print "\tUnknown map name: ", md['map'], "in ", md['basename']
+            else:
+                print "\tMaptask metadata not present for ", md['basename']
+
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
+        
+        # part of the component, which has a prototype
+        graph.add((component_uri, NS.prototype, component_prototype))
+        graph.add((component_uri, RDF.type, NS.RecordedComponent))
+        graph.add((item_uri, DC.isPartOf, component_uri))
+        
+        # and part of the session
+        graph.add((session_uri, NS.prototype, session_prototype))
+        graph.add((session_uri, RDF.type, NS.RecordedSession))
+        graph.add((component_uri, DC.isPartOf, session_uri))
         
         # add link to item prototype
         iid = PROTOCOL_NS[ITEM_URI_TEMPLATE % (md['component'], md['item'])]
-        graph.add((item_uri, NS.item, iid))
+        graph.add((item_uri, NS.prototype, iid))
         
         # add some namespaces to make output prettier
         graph.bind('austalk', NS)
         graph.bind('olac', OLAC)
         graph.bind('ausnc', AUSNC)
         graph.bind('rdf', RDF)
+        graph.bind('dc', DC)
         
         return graph
 

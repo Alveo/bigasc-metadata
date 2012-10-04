@@ -13,6 +13,23 @@ from namespaces import *
 
 PARTICIPANT_URI = "https://echidna.science.mq.edu.au/forms/export/participants/"
 
+# list exceptions to our site short name generator
+SITE_SHORTNAMES = {
+"UOCC": "UC",    # "University of Canberra"        "Canberra"
+"UOTH": "UTAS", # "University of Tasmania"        "Hobart"
+"ANUC":  "ANU",  # "Australian National University"        "Canberra"
+"USYDS": "USYD", # "University of Sydney"  "Sydney"
+"UWAP": "UWA",   # "University of Western Australia"       "Perth"
+"UOSCM": "USCM", # "University of the Sunshine Coast"      "Maroochydore"
+"UNEA": "UNE",   # "University of New England"     "Armidale"
+"UNSWS": "UNSW", # "University of New South Wales" "Sydney"
+"UOMM": "UMELBM", # "University of Melbourne"       "Melbourne"
+"UOMC": "UMELBC", # "University of Melbourne"       "Castlemaine"
+"UOQT": "UQT",  # "University of Queensland"      "Townsville"
+"UOQB": "UQB",  # "University of Queensland"      "Townsville"
+}
+
+
 def get_participant_list():
     """Return a list of participant ids"""
     
@@ -161,6 +178,11 @@ def map_location(subj, prop, value):
     # and first letter of city
     inits += value['city'][0]
     inits = "".join(inits).upper()
+    
+    # pull in the exception if present
+    if SITE_SHORTNAMES.has_key(inits):
+        inits = SITE_SHORTNAMES[inits]
+    
     site_uri = PROTOCOL_NS["site/"+inits]
     
     
