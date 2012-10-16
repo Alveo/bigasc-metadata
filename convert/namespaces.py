@@ -39,4 +39,15 @@ COMPONENT_URI_TEMPLATE = "component/%s"
 ITEM_URI_TEMPLATE = "item/%s_%s"
 
 
-DATA_URI_TEMPLATE = "%(site)s/%(colour)s_%(animal)s/%(session)s/%(component)s/%(filename)s"
+DATA_URI_TEMPLATE = "%(site)s/%(colour)s_%(animal)s/%(session)s/%(componentName)s/%(filename)s"
+# for current data location
+DATA_URI_TEMPLATE = "%(site)s/Spkr%(colour)s_%(animal)s/Spkr%(colour)s_%(animal)s_Session%(session)s/Session%(session)s_%(component)s/%(filename)s"
+
+
+def generate_component_uri(colour_id, animal_id, session, component):
+    """Return the URI for the component identified by these ids"""
+    return ID_NS['component/%s_%s_%s_%s' % (colour_id, animal_id, session, component)]
+
+def generate_session_uri(colour_id, animal_id, session):
+    """Return the URI for the session identified by these ids"""
+    return ID_NS['session/%s_%s_%s' % (colour_id, animal_id, session)]

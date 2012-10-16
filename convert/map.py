@@ -34,11 +34,14 @@ def dictionary_blank_mapper(bnprop, bnmap):
     bnprop - the property name to link to the blank node
     bnmap - a FieldMapper to use on the dictionary keys"""
     
+    import hashlib
     
     def mapper(subj, prop, value):
 
         result = []
-        bnode = BNode()
+        # make a repeatable node id
+        hash = hashlib.sha1(bnprop+prop+str(value)).hexdigest()
+        bnode = URIRef(subj+"#"+hash)
         
         #  link in the bnode
         result.append((subj, bnprop, bnode))

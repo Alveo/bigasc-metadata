@@ -108,7 +108,8 @@ select ?name where {
     
         info = parse_item_filename(filename)
         info['filename'] = filename
-        info['component'] = self.component_map[int(info['component'])]
+        
+        info['componentName'] = self.component_map[int(info['component'])]
         # here we reference the 'current' site name which
         # was generated in item_rdf
         info['site'] = self.site_name
@@ -131,7 +132,10 @@ select ?name where {
             # add file properties
             result.append((m_uri, RDF.type, NS.MediaFile))
             for prop in ['version', 'checksum', 'type', 'channel']:
-                result.append((m_uri, NS[prop], Literal(value[filename][prop]))) 
+                if value[filename].has_key(prop):
+                    result.append((m_uri, NS[prop], Literal(value[filename][prop])))
+                else:
+                    print "problem with file property for", filename, value[filename]
         
         return result    
     
@@ -157,6 +161,13 @@ select ?name where {
         
         return [(subj, NS.session, sid)]
     
+    def item_participant(self, url):
+        """Return the participant Id (1_123) for this item"""
+    
+        md = read_metadata(url)
+
+        return "%(colour)s_%(animal)s" % md
+        
     
     def item_rdf(self, url):
         """Given the url of an item xml file, read the metadata and map
@@ -166,7 +177,7 @@ select ?name where {
     >>> sys.path.append("..")
     >>> from ingest import SesameServer
     >>> mdurl = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session2/Session2_16/1_178_2_16_001.xml"
-    >>> serverurl = "http://115.146.94.199/openrdf-sesame/repositories/bigasc"
+    >>> serverurl = "http://sesame.stevecassidy.net/openrdf-sesame/repositories/bigasc"
     >>> server = SesameServer(serverurl)
     >>> im = ItemMapper(server)
     >>> graph = im.item_rdf(mdurl)
@@ -176,17 +187,18 @@ select ?name where {
      
     >>> mfile = "../test/1_530_3_8_001.xml"
     >>> graph = im.item_rdf(mfile)
+    
     >>> print graph.serialize(format='turtle')   
         """
         
         md = read_metadata(url)
         # generate a URI for this component 
-        component_uri = ID_NS['component/%(colour)s_%(animal)s_%(session)s_%(component)s' % md]
+        component_uri = generate_component_uri(md['colour'], md['animal'], md['session'], md['component'])
         # the prototype is the component we're an example of
         component_prototype = PROTOCOL_NS[COMPONENT_URI_TEMPLATE % md['component']]
 
         # generate a URI for this session 
-        session_uri = ID_NS['session/%(colour)s_%(animal)s_%(session)s' % md]
+        session_uri = generate_session_uri(md['colour'], md['animal'], md['session'])
         # the prototype is the session we're an example of
         session_prototype = PROTOCOL_NS[SESSION_URI_TEMPLATE % md['session']]
         
@@ -245,11 +257,14 @@ select ?name where {
         graph.add((component_uri, NS.prototype, component_prototype))
         graph.add((component_uri, RDF.type, NS.RecordedComponent))
         graph.add((item_uri, DC.isPartOf, component_uri))
+        graph.add((component_uri, OLAC.speaker, self.participant_uri))
         
         # and part of the session
         graph.add((session_uri, NS.prototype, session_prototype))
         graph.add((session_uri, RDF.type, NS.RecordedSession))
         graph.add((component_uri, DC.isPartOf, session_uri))
+        graph.add((session_uri, OLAC.speaker, self.participant_uri))
+        
         
         # add link to item prototype
         iid = PROTOCOL_NS[ITEM_URI_TEMPLATE % (md['component'], md['item'])]
@@ -271,7 +286,7 @@ def read_metadata(url):
     
 >>> mdfile = "../test/1_1121_1_12_001.xml"
 >>> read_metadata(mdfile)
-{'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker', 'filename': '1_1121_1_12_001-ch6-speaker.wav'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask', 'filename': '1_1121_1_12_001-ch1-maptask.wav'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left', 'filename': '1_1121_1_12_001-ch4-c2Left.wav'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right', 'filename': '1_1121_1_12_001-ch5-c2Right.wav'}, '1_1121_1_12_001-camera-0.raw16': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'version': 1, 'type': 'unknown', 'channel': 'camera-0', 'filename': '1_1121_1_12_001-camera-0.raw16'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
+{'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker', 'filename': '1_1121_1_12_001-ch6-speaker.wav'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask', 'filename': '1_1121_1_12_001-ch1-maptask.wav'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left', 'filename': '1_1121_1_12_001-ch4-c2Left.wav'}, '1_1121_1_12_001-camera-0-left.mp4': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'version': 1, 'type': 'video', 'channel': 'camera-0-left', 'filename': '1_1121_1_12_001-camera-0-left.mp4'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right', 'filename': '1_1121_1_12_001-ch5-c2Right.wav'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
 
 # an example of regenerated metadata, has no basename so we need to reconstruct it
 >>> mdfile = "../test/1_178_4_12_001.xml"
@@ -380,33 +395,55 @@ def parse_media_filename(filename):
 >>> parse_media_filename('1_178_1_2_150-camera-0-left.mp4')
 {'version': 1, 'type': 'video', 'channel': 'camera-0-left'}
 
+>>> parse_media_filename('1_178_2_16_001-camera-0-right.mp4')
+{'version': 1, 'type': 'video', 'channel': 'camera-0-right'}
+
 >>> parse_media_filename('1_1121_1_12_001-ch4-c2Left.wav')
 {'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}
+
+>>> parse_media_filename('1_1121_1_12_001-ch6-speaker-yes.wav')
+{'version': 1, 'type': 'audio', 'response': 'yes', 'channel': 'ch6-speaker'}
+
+>>> parse_media_filename('1_178_1_2_150-camera-0-no-left.mp4')
+{'version': 1, 'type': 'video', 'response': 'no', 'channel': 'camera-0-left'}
+
+>>> parse_media_filename('1_178_1_2_150-n-n-camera-0-yes-left.mp4')
+{'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
+
     """
     
     
-    pattern = "([0-9_]+)-((n-)*)([a-zA-Z0-9-]+)\.(...)"
+    pattern_wav = "([0-9_]+)-((n-)*)(ch[0-9]-[a-zA-Z0-9]+)(-(yes|no))?\.wav"
     
-    m = re.match(pattern, filename)
+    pattern_mp4 = "([0-9_]+)-((n-)*)((camera-[0-9])(-(yes|no))?(-left|-right))\.mp4"
     
-    if m:
-        (base, alln, n, channel, ext) =  m.groups() #@UnusedVariable
-        if ext == "wav":
-            type = 'audio'
-        elif ext == "mp4":
-            type = 'video'
-        else:
-            type = 'unknown'
-            
-        if n == None:
-            version = 1
-        else:
-            version = len(alln)/2 + 1
-        
-        return {'channel': channel, 'type': type, 'version': version}
+    m_wav = re.match(pattern_wav, filename)
+    m_mp4 = re.match(pattern_mp4, filename)
+    
+    if m_wav:
+        (base, alln, n, channel, ignore, yesno) =  m_wav.groups() #@UnusedVariable
+        type = 'audio'
+    elif m_mp4:
+        (base, alln, n, ignore, camera, ignore, yesno, leftright ) = m_mp4.groups()
+        #print "MATCH: ", (base, alln, n, ignore, camera, ignore, yesno, leftright )
+        channel = camera + leftright
+        type = 'video'
     else:
-        #print "pattern not matched", filename
+        # unknown file pattern
         return dict()
+            
+    if n == None:
+        version = 1
+    else:
+        version = len(alln)/2 + 1
+    
+    result = {'channel': channel, 'type': type, 'version': version}
+    if yesno != None:
+        result['response'] = yesno
+        
+    #print filename, result
+    return result
+
 
 def read_manifest(baseurl):
     """Read the manifest of a session given the URL of 
@@ -427,10 +464,14 @@ def read_manifest(baseurl):
     
     manifest_url = os.path.join(baseurl, 'manifest.txt')
 
-    # grab the manifest
-    h = urllib2.urlopen(manifest_url)
-    manifest_lines = h.readlines()
-    h.close()
+    try:
+        # grab the manifest
+        h = urllib2.urlopen(manifest_url)
+        manifest_lines = h.readlines()
+        h.close()
+    except:
+        print "Manifest not available for session", baseurl
+        return []
     
     items = []
     for line in manifest_lines:

@@ -13,7 +13,9 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX graf: <http://www.xces.org/ns/GrAF/1.0/>
 PREFIX austalk: <http://ns.austalk.edu.au/>
 PREFIX protocol: <http://id.austalk.edu.au/protocol/>
-PREFIX austalkd: <http://data.austalk.edu.au/>"""
+PREFIX austalkd: <http://data.austalk.edu.au/>
+
+"""
 
 
 def media_query(server, qterms, channel='ch6-speaker'):

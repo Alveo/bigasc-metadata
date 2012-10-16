@@ -38,9 +38,14 @@ def component_map():
     return component_map
 
 
-def session_metadata(graph):
+def session_metadata():
     """Return a dictionary containing all of the metadata
     from the session and component descriptions"""
+    
+    graph = Graph()
+    graph.bind('austalk', NS)
+    graph.bind('dc', DC)
+    graph.bind('protocol', PROTOCOL_NS)
     
     # generate a list of session numbers and descriptors
     for session in Persistence.Session.GetInstances():
@@ -53,11 +58,17 @@ def session_metadata(graph):
         for comp in session.getComponents():
             cid = PROTOCOL_NS[COMPONENT_URI_TEMPLATE % comp.GetId()]
             graph.add((cid, DC.isPartOf, id))
-            
+    return graph
 
 
-def component_metadata(graph):
+def component_metadata():
     """Return a dictionary of metadata for each component"""
+    
+    graph = Graph()
+    graph.bind('austalk', NS)
+    graph.bind('dc', DC)
+    graph.bind('protocol', PROTOCOL_NS)
+    
     
     for comp in Persistence.Component.GetInstances():
         cid = PROTOCOL_NS[COMPONENT_URI_TEMPLATE % comp.GetId()]
@@ -74,16 +85,23 @@ def component_metadata(graph):
         # add type info
         graph.add((cid, RDF.type, CLASS_COMPONENT))
         
+    return graph
 
-
-def item_metadata(graph):
+def item_metadata():
     """Return a dictionary of metadata for each item"""
     
+    graph = Graph()
+    graph.bind('austalk', NS)
+    graph.bind('dc', DC)
+    graph.bind('protocol', PROTOCOL_NS)
+
     for comp in Persistence.Component.GetInstances():
         for item in comp.getItems():
             iid = PROTOCOL_NS[ITEM_URI_TEMPLATE % (comp.GetId(), item.GetId())]
             graph.add((iid, NS.id, Literal(item.GetId())))
             graph.add((iid, NS.prompt, Literal(item.GetPrompt())))
+            
+    return graph
             
 def protocol_metadata():
     
@@ -92,7 +110,6 @@ def protocol_metadata():
     graph.bind('dc', DC)
     graph.bind('protocol', PROTOCOL_NS)
 
-    
     sm = session_metadata(graph)
     cm = component_metadata(graph)
     im = item_metadata(graph)

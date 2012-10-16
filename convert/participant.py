@@ -11,7 +11,9 @@ import json
 import map
 from namespaces import *
 
-PARTICIPANT_URI = "https://echidna.science.mq.edu.au/forms/export/participants/"
+#PARTICIPANT_URI = "https://echidna.science.mq.edu.au/forms/export/participants/"
+PARTICIPANT_URI = "https://austalk.edu.au/forms/export/participants/"
+
 
 # list exceptions to our site short name generator
 SITE_SHORTNAMES = {
@@ -193,6 +195,19 @@ def map_location(subj, prop, value):
             (site_uri, NS.institution, Literal(value['name']))]
 
 
+
+def map_ratings(graph, p_md):
+    """generate triples to record the ratings for 
+    sessions and add them to the graph"""
+    
+    
+    for rating in p_md['rating']:
+        
+        c_uri = generate_component_uri(p_md['colour']['id'], p_md['animal']['id'], rating['session'], rating['component'])
+        graph.add((c_uri, NS.videorating, Literal(rating['video'])))
+        graph.add((c_uri, NS.audiorating, Literal(rating['audio'])))
+        graph.add((c_uri, NS.comment, Literal(rating['comment'])))
+
 # a map for nested properties (education and professional history)
 submap = map.FieldMapper()
 submap.add('_state', ignore=True)
@@ -211,6 +226,7 @@ partmap.add('education_history', mapper=map.dictionary_blank_mapper(NS.education
 partmap.add('language_usage', mapper=map.dictionary_blank_mapper(NS.language_usage, submap))
 partmap.add('RA', mapper=map_ra)
 partmap.add('location', mapper=map_location)
+partmap.add('rating', ignore=True)
 
 
 def participant_uri(colour, animal):
@@ -220,8 +236,8 @@ def participant_uri(colour, animal):
     return ID_NS[p_id]
 
 
-def participant_rdf(participant):
-    """participant is a dictionary of participant metadata from 
+def participant_rdf(part_md):
+    """part_md is a dictionary of participant metadata from 
     the web server, generate corresponding RDF, returning a 
     graph object
     
@@ -234,13 +250,23 @@ def participant_rdf(participant):
 >>> print graph.serialize(format='turtle')
     """
     
-    p_uri = participant_uri(participant['colour']['id'], participant['animal']['id'])
-    graph = partmap.mapdict(p_uri, participant)
+    p_id = "%s_%s" % (part_md['colour']['id'], part_md['animal']['id'])
+    p_name = "%s - %s" % (part_md['colour']['name'], part_md['animal']['name'])
+    
+    
+    p_uri = participant_uri(part_md['colour']['id'], part_md['animal']['id'])
+    graph = partmap.mapdict(p_uri, part_md)
     
     graph.add((p_uri, RDF.type, FOAF.Person))
-    pob_uri = birth_geolocation(participant)
+    graph.add((p_uri, NS.id, Literal(p_id)))
+    graph.add((p_uri, NS.name, Literal(p_name)))
+    
+    pob_uri = birth_geolocation(part_md)
     if pob_uri:
         graph.add((p_uri, NS.birthPlace, pob_uri))
+        
+    if part_md.has_key('rating'):
+        map_ratings(graph, part_md)
 
     # add some namespaces to make output prettier
     graph.bind('austalk', NS)

@@ -19,7 +19,7 @@ if __name__ == '__main__':
         
     sessionsfile = sys.argv[1]
     
-    server_url = "http://115.146.94.199/openrdf-sesame/repositories/bigasc"
+    server_url = "http://115.146.93.47/openrdf-sesame/repositories/bigasc"
     session_url_prefix = "https://austalk.edu.au/dav/bigasc/data/real/"
     
     server = ingest.SesameServer(server_url)
@@ -29,8 +29,9 @@ if __name__ == '__main__':
     for session in sessions:
         session_url = session_url_prefix + session
         print "Session", session
+
         try:
             ingest.ingest_session(server, session_url)
-        except:
-            print "\tProblem with session..."
+        except Exception as ex:
+            print "\tProblem with session...", ex
     

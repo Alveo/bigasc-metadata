@@ -144,7 +144,7 @@ if __name__=='__main__':
     
     import sys
     
-    url = "http://115.146.94.199/openrdf-sesame/repositories/bigasc"
+    url = "http://sesame.stevecassidy.net/openrdf-sesame/repositories/bigasc"
     filename = sys.argv[1]
     
     server = SesameServer(url)

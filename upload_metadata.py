@@ -11,13 +11,13 @@ import ingest
 
 if __name__ == '__main__':
     
-    server_url = "http://115.146.94.199/openrdf-sesame/repositories/bigasc" 
+    server_url = "http://sesame.stevecassidy.net//openrdf-sesame/repositories/bigasc" 
     
     server = ingest.SesameServer(server_url)
     
     server.clear()
     
     ingest.ingest_protocol(server)
-    ingest.ingest_participants(server)
+#    ingest.ingest_participants(server)
     
     

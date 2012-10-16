@@ -13,8 +13,9 @@ if __name__ == '__main__':
     
     qterms = """
  ?obj olac:speaker ?spkr .
- ?obj austalk:component ?comp .
  ?spkr foaf:gender "male" .
+ ?obj dc:isPartOf ?rc .
+ ?rc austalk:prototype ?comp .
  ?comp austalk:shortname "digits" .
     """
     
