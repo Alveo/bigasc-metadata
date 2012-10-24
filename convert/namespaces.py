@@ -30,6 +30,7 @@ OLAC = Namespace(u"http://www.language-archives.org/OLAC/1.1/")
 GRAF = Namespace("http://www.xces.org/ns/GrAF/1.0/")
 RDFS = Namespace(u"http://www.w3.org/2000/01/rdf-schema#")
 DBP = Namespace("http://dbpedia.org/ontology/")
+GEO = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#") # for lat and long
 
 AUSNC = Namespace(u"http://ns.ausnc.org.au/schemas/ausnc_md_model/")
 

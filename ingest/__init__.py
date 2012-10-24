@@ -1,5 +1,6 @@
 
 from sesameupload import SesameServer
+from convert.ra_maptask import RAMapTask
 
 def ingest_session(server, baseurl):
     """Given the URL of a session and an instance of SesameServer, slurp the metadata and 
@@ -54,13 +55,24 @@ def ingest_participants(server):
     import convert
     participants = convert.get_participant_list()
     
+    maptask = RAMapTask()
+    (spkr, map) = maptask.read_all()
+    
     for p in participants:
+        
+        if spkr.has_key(p):
+            csvdata = spkr[p]
+        else:
+            csvdata = None
+            continue
+        
         p_info = convert.get_participant(p)
-        graph = convert.participant_rdf(p_info)
+        graph = convert.participant_rdf(p_info, csvdata)
     
         print "Uploading", len(graph), "triples for participant", p
         server.upload_graph(graph)
         
+    
 def ingest_participant(server, participant):
     """Generate RDF for one participant and upload it 
     to the server (an instance of SesameServer)"""

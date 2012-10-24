@@ -20,15 +20,16 @@ SITE_SHORTNAMES = {
 "UOCC": "UC",    # "University of Canberra"        "Canberra"
 "UOTH": "UTAS", # "University of Tasmania"        "Hobart"
 "ANUC":  "ANU",  # "Australian National University"        "Canberra"
-"USYDS": "USYD", # "University of Sydney"  "Sydney"
-"UWAP": "UWA",   # "University of Western Australia"       "Perth"
-"UOSCM": "USCM", # "University of the Sunshine Coast"      "Maroochydore"
-"UNEA": "UNE",   # "University of New England"     "Armidale"
+"UOSS": "USYD", # "University of Sydney"  "Sydney"
+"UOWAP": "UWA",   # "University of Western Australia"       "Perth"
+"UOTSCM": "USCM", # "University of the Sunshine Coast"      "Maroochydore"
+"UONEA": "UNE",   # "University of New England"     "Armidale"
 "UNSWS": "UNSW", # "University of New South Wales" "Sydney"
 "UOMM": "UMELBM", # "University of Melbourne"       "Melbourne"
 "UOMC": "UMELBC", # "University of Melbourne"       "Castlemaine"
 "UOQT": "UQT",  # "University of Queensland"      "Townsville"
 "UOQB": "UQB",  # "University of Queensland"      "Townsville"
+"FUA": "FLIN", 
 }
 
 
@@ -101,17 +102,26 @@ def get_participant_from_file(filename):
     
     return result
 
-def birth_geolocation(m):
+def birth_geolocation(p_uri, m, graph):
     """Using the POB fields in the metadata dictionary m, 
-    return a geonames URI for the place of birth"""
+    find a geonames URI for the place of birth and add
+    some triples to the graph"""
     
     from geonames import GeoNames
     
     g = GeoNames()
     
-    uri = g.placename_uri(m['pob_town'], m['pob_state'], m['pob_country'])
+    info = g.placename_info(m['pob_town'], m['pob_state'], m['pob_country'])
+
+    if info == None:
+        return
     
-    return uri
+    pob_uri = g.placename_uri(info)
+    
+    graph.add((p_uri, NS.birthPlace, pob_uri))
+    graph.add((pob_uri, GEO.lat, Literal(info['lat'])))
+    graph.add((pob_uri, GEO.long, Literal(info['long'])))
+
     
 
 def map_gender(subj, prop, value):
@@ -173,6 +183,14 @@ def map_location(subj, prop, value):
 >>> loc = {u'city': u'Bathurst', u'state': u'NSW', u'name': u'Charles Sturt University', u'id': 4} 
 >>> map_location('foo', 'location', loc)
 [('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/recording_site'), rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/RecordingSite')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://www.w3.org/2000/01/rdf-schema#label'), rdflib.term.Literal(u'CSUB')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/city'), rdflib.term.Literal(u'Bathurst')), (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/CSUB'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/institution'), rdflib.term.Literal(u'Charles Sturt University'))]
+>>> loc = {u'city': u"Maroochydore", u'state': u'QLD', u'name': u'University of the Sunshine Coast', u'id': 6} 
+>>> for t in map_location('bar', 'location', loc):
+...   print t
+('bar', rdflib.term.URIRef(u'http://ns.austalk.edu.au/recording_site'), rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/USCM'))
+(rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/USCM'), rdflib.term.URIRef(u'http://www.w3.org/1999/02/22-rdf-syntax-ns#type'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/RecordingSite'))
+(rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/USCM'), rdflib.term.URIRef(u'http://www.w3.org/2000/01/rdf-schema#label'), rdflib.term.Literal(u'USCM'))
+(rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/USCM'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/city'), rdflib.term.Literal(u'Maroochydore'))
+(rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/USCM'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/institution'), rdflib.term.Literal(u'University of the Sunshine Coast'))
    """
 
     # get initials of name
@@ -180,7 +198,7 @@ def map_location(subj, prop, value):
     # and first letter of city
     inits += value['city'][0]
     inits = "".join(inits).upper()
-    
+
     # pull in the exception if present
     if SITE_SHORTNAMES.has_key(inits):
         inits = SITE_SHORTNAMES[inits]
@@ -236,17 +254,21 @@ def participant_uri(colour, animal):
     return ID_NS[p_id]
 
 
-def participant_rdf(part_md):
+def participant_rdf(part_md, csvdata=None):
     """part_md is a dictionary of participant metadata from 
     the web server, generate corresponding RDF, returning a 
     graph object
+    
+    If csvdata is present it should be a dictionary of speaker 
+    properties read from the RA spreadsheets, it will be used
+    to override and validate the metadata
     
     
 >>> part_file = "../test/participant.json"
 >>> p = get_participant_from_file(part_file) 
 >>> graph = participant_rdf(p)
 >>> len(graph)
-149
+176
 >>> print graph.serialize(format='turtle')
     """
     
@@ -261,12 +283,51 @@ def participant_rdf(part_md):
     graph.add((p_uri, NS.id, Literal(p_id)))
     graph.add((p_uri, NS.name, Literal(p_name)))
     
-    pob_uri = birth_geolocation(part_md)
-    if pob_uri:
-        graph.add((p_uri, NS.birthPlace, pob_uri))
-        
+    birth_geolocation(p_uri, part_md, graph)
+         
     if part_md.has_key('rating'):
         map_ratings(graph, part_md)
+        
+        
+    # check and update some values from csvdata
+    if csvdata != None:
+        (d, m, y) = csvdata['DOB'].split('/')
+        if len(y) == 2:
+            if int(y) < 12:
+                refyr = "20"+y 
+            else:
+                refyr = "19"+y
+        elif len(y) == 4:
+            refyr = y
+        else:
+            print "Odd year:", y
+        
+        yobs = graph.objects(subject=p_uri, predicate=DBP.birthYear)
+        for yob in yobs:
+            if  yob != refyr:
+                print "\tDOBs differ for %s, %s changed to %s" % (p_id, yob, refyr)
+                
+                # modify the graph
+                graph.remove((p_uri, DBP.birthYear, yob))
+                graph.add((p_uri, DBP.birthYear, Literal(refyr)))
+           
+        # SES status
+        if csvdata.has_key('SES'):
+            ses = csvdata['SES']
+            if ses.lower().startswith('prof'):
+                ses = Literal('Professional')
+            elif ses.lower().startswith('nprof'):
+                ses = Literal('Non Professional')
+            else:
+                print "Unknown SES category: ", ses
+                
+            graph.add((p_uri, NS.ses, ses))
+
+        if csvdata.has_key('Comment'):
+            graph.add((p_uri, NS.racomment, Literal(csvdata['Comment'])))
+            
+        if csvdata.has_key('NOTES'):
+            graph.add((p_uri, NS.maptaskcomment, Literal(csvdata['NOTES'])))
 
     # add some namespaces to make output prettier
     graph.bind('austalk', NS)

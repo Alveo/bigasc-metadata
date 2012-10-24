@@ -20,7 +20,14 @@ class GeoNames:
     def placename_info(self, city, state, country):
         """Return a dictionary of information about this placename
         from the geonames service or None if nothing can be found.
-        Dictionary will have keys: geoname, placename, countryname, countrycode"""
+        Dictionary will have keys: geoname, placename, countryname, countrycode
+
+>>> g = GeoNames()
+>>> g.placename_info("Sydney", "NSW", "Australia")
+{'countryname': u'Australia', 'placename': u'Sydney', 'geoname': 2147714, 'countrycode': u'AU'}
+>>> g.placename_info("dksjhdfkjskdjf", "Vic", "Australia")
+
+        """
         
         place = city+" "+state+" "+country
         
@@ -45,7 +52,6 @@ class GeoNames:
             # find a good match, name should match our place name
             # and it should be a populated place
             for gn in info['geonames']:
-                #print "\t", gn['name'], gn['fcode']
                 
                 if gn['name'].lower() == city.lower() and gn['fcode'].startswith('PPL'):
                     location = gn 
@@ -55,20 +61,27 @@ class GeoNames:
                     result['placename'] = location['name']
                     result['countryname'] = location['countryName']
                     result['countrycode'] = location['countryCode']
+                    result['lat'] = location['lat']
+                    result['long'] = location['lng']
                     return result
     
         return None
         
-    def placename_uri(self, city, state, country):
-        """Return a URIRef for the given place by looking it 
-        up on the geonames service, Return None if nothing found"""
+    def placename_uri(self, info):
+        """Return a URIRef for the given place given the 
+        info dictionary returned by placename_info, 
+        Return None if nothing found"""
         
-        info = self.placename_info(city, state, country)
         if info:
             return self.GEONS[unicode(info['geoname'])]
         else:
             return None
         
+        
+if __name__=='__main__':
+        
+        import doctest
+        doctest.testmod()
         
             
         
