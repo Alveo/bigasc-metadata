@@ -54,6 +54,7 @@ def ingest_participants(server):
     assert(isinstance(server, SesameServer))
     import convert
     participants = convert.get_participant_list()
+    print "Uploading", len(participants), "participants"
     
     maptask = RAMapTask()
     (spkr, map) = maptask.read_all()
@@ -64,7 +65,6 @@ def ingest_participants(server):
             csvdata = spkr[p]
         else:
             csvdata = None
-            continue
         
         p_info = convert.get_participant(p)
         graph = convert.participant_rdf(p_info, csvdata)

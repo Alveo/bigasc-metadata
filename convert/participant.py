@@ -24,7 +24,7 @@ SITE_SHORTNAMES = {
 "UOWAP": "UWA",   # "University of Western Australia"       "Perth"
 "UOTSCM": "USCM", # "University of the Sunshine Coast"      "Maroochydore"
 "UONEA": "UNE",   # "University of New England"     "Armidale"
-"UNSWS": "UNSW", # "University of New South Wales" "Sydney"
+"UONSWS": "UNSW", # "University of New South Wales" "Sydney"
 "UOMM": "UMELBM", # "University of Melbourne"       "Melbourne"
 "UOMC": "UMELBC", # "University of Melbourne"       "Castlemaine"
 "UOQT": "UQT",  # "University of Queensland"      "Townsville"
