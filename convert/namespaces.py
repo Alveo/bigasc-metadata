@@ -47,8 +47,11 @@ DATA_URI_TEMPLATE = "%(site)s/Spkr%(colour)s_%(animal)s/Spkr%(colour)s_%(animal)
 
 def generate_component_uri(colour_id, animal_id, session, component):
     """Return the URI for the component identified by these ids"""
+    
     return ID_NS['component/%s_%s_%s_%s' % (colour_id, animal_id, session, component)]
 
 def generate_session_uri(colour_id, animal_id, session):
     """Return the URI for the session identified by these ids"""
+
+    
     return ID_NS['session/%s_%s_%s' % (colour_id, animal_id, session)]

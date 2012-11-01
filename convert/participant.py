@@ -247,10 +247,15 @@ partmap.add('location', mapper=map_location)
 partmap.add('rating', ignore=True)
 
 
-def participant_uri(colour, animal):
-    """Generate the URI for a participant given their colour and animal ids"""
+def participant_uri(colour, animal, id=None):
+    """Generate the URI for a participant given their colour and animal ids
+    or their id (1_123), id overrides other args if provided"""
     
-    p_id = "participant/%s_%s" % (colour, animal)
+    if id == None:
+        p_id = "participant/%s_%s" % (colour, animal)
+    else:
+        p_id = "participant/"+id
+        
     return ID_NS[p_id]
 
 

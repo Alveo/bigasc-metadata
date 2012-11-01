@@ -169,9 +169,12 @@ select ?name where {
         return "%(colour)s_%(animal)s" % md
         
     
-    def item_rdf(self, url):
+    def item_rdf(self, url, csvdata=None):
         """Given the url of an item xml file, read the metadata and map
         to RDF, returning a graph
+        
+        If csvdata is present it should be the metadata extracted from the
+        RA spreadsheet, we'll use it to fill in gaps in maptask data if present
     
     >>> import sys
     >>> sys.path.append("..")
@@ -181,14 +184,36 @@ select ?name where {
     >>> server = SesameServer(serverurl)
     >>> im = ItemMapper(server)
     >>> graph = im.item_rdf(mdurl)
+    >>> [t for t in graph.subject_objects(NS.cameraSN0)]
+    [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_178_2_16_001'), rdflib.term.Literal(u'11051192'))]
     
-    # print graph.serialize(format='turtle')
-    # need to test some properties of the graph
+    >>> [t for t in graph.subject_objects(NS.timestamp)]
+    [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_178_2_16_001'), rdflib.term.Literal(u'Tue Feb 21 10:37:05 2012'))]
+    
+    # print graph.serialize(format='turtle') 
      
+     # a maptask item with full metadata
     >>> mfile = "../test/1_530_3_8_001.xml"
     >>> graph = im.item_rdf(mfile)
+    >>> [t for t in graph.subject_objects(NS.information_follower)]
+    [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_530_3_8_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/4_172'))]
+                
+    # this one is a maptask item with no second speaker metadata
+    >>> mfile = "../test/1_619_4_10_001.xml"
+    >>> from ra_maptask import RAMapTask
+    >>> mt = RAMapTask()
+    >>> (s, m) = mt.read_all()
+    >>> graph2 = im.item_rdf(mfile, m)
+    >>> [t for t in graph2.subject_objects(NS.information_giver)]
+    [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_619_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/1_69'))]
     
-    >>> print graph.serialize(format='turtle')   
+    # this one is too, via a URL
+    >>> mdurl = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_719/Spkr1_719_Session4/Session4_10/1_719_4_10_001.xml"
+    >>> graph3 = im.item_rdf(mdurl, m)
+    >>> [t for t in graph3.subject_objects(NS.information_giver)]
+    [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_719_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/2_114'))]
+    
+    #print graph3.serialize(format='turtle')   
         """
         
         md = read_metadata(url)
@@ -210,6 +235,7 @@ select ?name where {
         
         self.participant_uri = participant_uri(md['colour'], md['animal'])
         self.item_site_name(self.participant_uri)
+        participant_id = "%(colour)s_%(animal)s" % md
         
         graph = self.itemmap.mapdict(item_uri, md)
         
@@ -221,35 +247,56 @@ select ?name where {
             # check if metadata is present
             if md.has_key('otherColour') and md.has_key('otherAnimal'):
                 other_participant_uri = participant_uri(md['otherColour'], md['otherAnimal'])
+                if md.has_key('map'):
+                    map = md['map']
+                else:
+                    map = None
+                    
+                if md.has_key('role'):
+                    role=md['role']
+                else:
+                    role=None
+                    
+            elif csvdata != None and csvdata.has_key(participant_id): 
+                other_participant_id = csvdata[participant_id]['partner']
+                other_participant_uri = participant_uri('', '', other_participant_id)
+                map = csvdata[participant_id]['map']
+                role = csvdata[participant_id]['role']
+            else:
+                other_participant_uri = None
+                map = None
+                role = None
                 
+            if other_participant_uri != None:
                 graph.add((item_uri, OLAC.speaker, other_participant_uri))
                 
-                if md.has_key('role'):
-                    if md['role'] == 'Information Giver':
-                        graph.add((item_uri, NS.information_giver, self.participant_uri))
-                        graph.add((item_uri, NS.information_follower, other_participant_uri))
-                    elif md['role'] ==  'Information Follower':
-                        graph.add((item_uri, NS.information_follower, self.participant_uri))
-                        graph.add((item_uri, NS.information_giver, other_participant_uri))
-                    else:
-                        print "Unknown role", md['role'], "for ", md['basename']
-                else:
-                    print "\tNo role for item", md['basename']
-                
-                maps = {'Map A - architecture': 'map/A-architecture',
-                        'Map A - colour': 'map/A-colour', 
-                        'Map B - architecture': 'map/B-architecture',
-                        'Map B - colour': 'map/B-colour'
-                }
-    
-                if md.has_key('map'):
-                    if maps.has_key(md['map']):
-                        map = PROTOCOL_NS[maps[md['map']]]
-                        graph.add((item_uri, NS.map, map))
-                    else:
-                        print "\tUnknown map name: ", md['map'], "in ", md['basename']
+            if role != None:
+                if role == 'Information Giver':
+                    graph.add((item_uri, NS.information_giver, self.participant_uri))
+                    graph.add((item_uri, NS.information_follower, other_participant_uri))
+                elif role ==  'Information Follower':
+                    graph.add((item_uri, NS.information_follower, self.participant_uri))
+                    graph.add((item_uri, NS.information_giver, other_participant_uri))
             else:
-                print "\tMaptask metadata not present for ", md['basename']
+                print "\tNo role for item", md['basename']
+                
+            # generate a triple for the map, standardising the name
+            maps = {'Map A - architecture': 'map/A-architecture',
+                    'Map A - colour': 'map/A-colour', 
+                    'Map B - architecture': 'map/B-architecture',
+                    'Map B - colour': 'map/B-colour',
+                    # these for cvsdata
+                    'MapA-Architecture': 'map/A-architecture',
+                    'MapA-Colour': 'map/A-colour', 
+                    'MapB-Architecture': 'map/B-architecture',
+                    'MapB-Colour': 'map/B-colour'
+            }
+
+            if maps.has_key(map):
+                map = PROTOCOL_NS[maps[map]]
+                graph.add((item_uri, NS.map, map))
+            else:
+                print "\tUnknown map name: ", map, "in ", md['basename']
 
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
         

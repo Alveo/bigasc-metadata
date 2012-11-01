@@ -8,6 +8,7 @@ upload metadata to the server
 '''
 
 import ingest
+from convert.ra_maptask import RAMapTask
 
 if __name__ == '__main__':
     
@@ -24,6 +25,10 @@ if __name__ == '__main__':
     
     server = ingest.SesameServer(server_url)
     
+    # get RA spreadsheet data on maptasks
+    maptask = RAMapTask()
+    (spkr, map) = maptask.read_all()
+    
     h = open(sessionsfile)
     sessions = h.read().split() 
     for session in sessions:
@@ -31,7 +36,7 @@ if __name__ == '__main__':
         print "Session", session
 
         try:
-            ingest.ingest_session(server, session_url)
+            ingest.ingest_session(server, session_url, map)
         except Exception as ex:
             print "\tProblem with session...", ex
     

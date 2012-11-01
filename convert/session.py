@@ -52,7 +52,12 @@ def session_metadata():
         id = PROTOCOL_NS[SESSION_URI_TEMPLATE % session.GetId()]
         
         graph.add((id, NS.id, Literal(session.GetId())))
-        graph.add((id, NS.name, Literal(session.GetName())))
+        
+        name = session.GetName()
+        if name == "Session 3.1" or name == "Session 3.2":
+            name = "Session 3"
+        
+        graph.add((id, NS.name, Literal(name)))
         graph.add((id, RDF.type, CLASS_SESSION))
         
         for comp in session.getComponents():
@@ -103,23 +108,11 @@ def item_metadata():
             
     return graph
             
-def protocol_metadata():
-    
-    graph = Graph()
-    graph.bind('austalk', NS)
-    graph.bind('dc', DC)
-    graph.bind('protocol', PROTOCOL_NS)
-
-    sm = session_metadata(graph)
-    cm = component_metadata(graph)
-    im = item_metadata(graph)
-
-    return graph
     
             
 if __name__=='__main__':
     
-    graph = protocol_metadata()
+    graph = session_metadata()
 
     print "Graph has ", len(graph), "statements"
     s = graph.serialize(format='turtle')

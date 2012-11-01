@@ -108,9 +108,9 @@ u'Red'
 >>> len (results)
 48
 >>> sorted(results['4_864'].items())
-[('date', '18/01/12'), ('map', 'MapA-Colour'), ('partner', '2_1178')]
+[('date', '18/01/12'), ('map', 'MapA-Colour'), ('partner', '2_1178'), ('role', 'Information Giver')]
 >>> sorted(results['2_1178'].items())
-[('date', '18/01/12'), ('map', 'MapB-Architecture'), ('partner', '4_864')]
+[('date', '18/01/12'), ('map', 'MapB-Architecture'), ('partner', '4_864'), ('role', 'Information Follower')]
         """
         results = {}
         
@@ -143,8 +143,8 @@ u'Red'
                             if speaker2["id"] is None:
                                 print "Problem in %s with speaker 2 '%s'" % (source, values[2].strip ())
                     else:
-                        results[speaker1["id"]] = {'partner': speaker2["id"], 'map': task1map, 'date': date}
-                        results[speaker2["id"]] = {'partner': speaker1["id"], 'map': task2map, 'date': date}
+                        results[speaker1["id"]] = {'partner': speaker2["id"], 'map': task1map, 'date': date, 'role': 'Information Giver'}
+                        results[speaker2["id"]] = {'partner': speaker1["id"], 'map': task2map, 'date': date, 'role': 'Information Follower'}
                         
         return results
 
