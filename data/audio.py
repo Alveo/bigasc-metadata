@@ -26,7 +26,7 @@ def resample(sourcefile):
 '../test/1_1121_1_12_001-ch6-speaker-16.wav'
 >>> os.path.exists(fn16)
 True
->>>os.unlink(fn16)
+>>> os.unlink(fn16)
     """
 
     (basename, ext) = os.path.splitext(sourcefile)
@@ -50,8 +50,8 @@ True
     else:
         return None
     
-    
-    
+
+
 
 if __name__=='__main__':
         

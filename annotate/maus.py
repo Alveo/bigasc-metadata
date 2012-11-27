@@ -11,7 +11,8 @@ import MultipartPostHandler
 import os
 from StringIO import StringIO
 
-MAUS_URL = "http://webapp.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS"
+#MAUS_URL = "http://webapp.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS"
+MAUS_URL = "http://webapp.phonetik.uni-muenchen.de/BASWebServicesTest/services/runMAUS"
 LEXICON = os.path.join(os.path.dirname(__file__), "AUSTALK.lex")
 
 class MausException(Exception):
@@ -26,7 +27,7 @@ def maus_boolean(value):
     else:
         return 'false'
 
-def maus(wavfile, text, language='en', canonly=False, minpauselen=5, startword=0, endword=999999, mausshift=10, insprob=0.0):
+def maus(wavfile, text, language='ae', canonly=False, minpauselen=5, startword=0, endword=999999, mausshift=10, insprob=0.0):
     """Send the given wavfile to MAUS for forced alignment
     text is the orthographic transcription
     

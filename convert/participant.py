@@ -69,11 +69,12 @@ def get_participant(id):
     #print "get_participant", id
     
     uri = PARTICIPANT_URI + id
+     
     
     h = urllib2.urlopen(uri)
     data = h.read()
     h.close()
-        
+     
     result = json.loads(data)
     #print "result", result['animal']
     
@@ -239,12 +240,18 @@ partmap.add("participant_id", ignore=True)
 partmap.add("colour", ignore=True)
 partmap.add("animal", ignore=True)
 partmap.add("gender", mapper=map_gender)
-partmap.add('profession_history', mapper=map.dictionary_blank_mapper(NS.profession_history, submap))
-partmap.add('education_history', mapper=map.dictionary_blank_mapper(NS.education_history, submap))
 partmap.add('language_usage', mapper=map.dictionary_blank_mapper(NS.language_usage, submap))
+partmap.add('residence_history', mapper=map.dictionary_blank_mapper(NS.residential_history, submap))
 partmap.add('RA', mapper=map_ra)
 partmap.add('location', mapper=map_location)
 partmap.add('rating', ignore=True)
+
+## the following are ignored because they potentially expose too much
+## personal detail on the site
+partmap.add('profession_history', ignore=True) 
+partmap.add('education_history', ignore=True)  
+partmap.add('religion', ignore=True)
+
 
 
 def participant_uri(colour, animal, id=None):
@@ -271,6 +278,7 @@ def participant_rdf(part_md, csvdata=None):
     
 >>> part_file = "../test/participant.json"
 >>> p = get_participant_from_file(part_file) 
+>>> p = get_participant('1_987') 
 >>> graph = participant_rdf(p)
 >>> len(graph)
 176

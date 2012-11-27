@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# source http://pypi.python.org/pypi/MultipartPostHandler2
 ####
 # 02/2006 Will Holcomb <wholcomb@gmail.com>
 # 
