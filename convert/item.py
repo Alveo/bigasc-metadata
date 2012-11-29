@@ -99,8 +99,7 @@ select ?name where {
         self.site_name = name
         
         return name
-            
-    
+
     def media_uri(self, itemuri, filename):
         """Given a filename, return a URI for
         this file on the data server"""
@@ -457,6 +456,8 @@ def parse_media_filename(filename):
 >>> parse_media_filename('1_178_1_2_150-n-n-camera-0-yes-left.mp4')
 {'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
 
+>>> parse_media_filename('1_178_1_2_150-ch6-speaker16.wav')
+{'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
     """
     
     

@@ -81,12 +81,13 @@ def item_files(path):
 
     
 
-def map_session(sessiondir, fn):
+def map_session(basedir, site, fn):
     """Call fn for every item in the given session
     fn is a callable that takes arguments:
     
-    fn(spkr, session, component, item_path)
+    fn(site, spkr, session, component, item_path)
     
+     - site is the site id (UTAS, UNSW, etc)
      - spkr is speaker id 1_123
      - session is session id [1, 2, 3, 4]
      - component is numerical component id
@@ -95,7 +96,7 @@ def map_session(sessiondir, fn):
     return value is an iterator over the results of the individual
     function calls (calls are lazy via yield)
     
->>> paths = list(map_session('../test/Spkr2_2/Spkr2_2_Session1', lambda a, b, c, d: d ))
+>>> paths = list(map_session('../test/Spkr2_2/Spkr2_2_Session1', lambda a, b, c, d, e: d ))
 >>> len(paths)
 54
 >>> paths[2]
@@ -115,7 +116,7 @@ def map_session(sessiondir, fn):
                     (basename, ext) = os.path.splitext(os.path.basename(ifile))
                     path = os.path.join(sessiondir, cdir, basename)
                     
-                    yield( fn(spkrid, sessionid, componentid, path) )
+                    yield( fn(siteid, spkrid, sessionid, componentid, path) )
 
 
 if __name__=='__main__':
