@@ -55,4 +55,8 @@ if __name__=='__main__':
         
         print "Processed ", len(files), "items"
 
-    print graph.serialize(format='turtle')
+    # write out metadata graph somewhere
+    h = open(os.path.join(outdir, 'metadata.ttl'), 'w')
+    h.write(graph.serialize(format='turtle'))
+    h.close()
+    
