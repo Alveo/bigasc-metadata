@@ -226,7 +226,7 @@ select ?name where {
         # the prototype is the session we're an example of
         session_prototype = PROTOCOL_NS[SESSION_URI_TEMPLATE % md['session']]
         
-        item_uri = ID_NS["item/"+md['basename']]
+        item_uri = generate_item_uri(md['basename'])
         
         # generate participant uri and from that query the
         # remote db for the site name which we'll use
@@ -485,11 +485,11 @@ def parse_media_filename(filename):
     else:
         version = len(alln)/2 + 1
     
-    result = {'channel': channel, 'type': type, 'version': version}
+    result = {'basename': base, 'channel': channel, 'type': type, 'version': version}
     if yesno != None:
         result['response'] = yesno
         
-    #print filename, result
+    #print "PMF: ", filename, result
     return result
 
 

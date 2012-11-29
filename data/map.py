@@ -9,15 +9,14 @@ Created on Nov 6, 2012
 
 import re, os
 
-
 def site_sessions(dirname):
     """
     Returns a sequence of sessions for the given
     site directory.  We look for speaker directories
     first then sessions within those.
 
->>> list(site_sessions('../test/'))
-['../test/Spkr2_2/Spkr2_2_Session1']
+>>> list(site_sessions('../test/University_of_Tasmania,_Hobart/'))
+['../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1']
 
     """
     for spkrdir in os.listdir(dirname):
@@ -26,6 +25,23 @@ def site_sessions(dirname):
                 if parse_session_dir(sessiondir):
                     yield(os.path.join(dirname, spkrdir, sessiondir))
     
+
+def parse_site_dir(dirname):
+    """Given a site directory name (University_of_Tasmania,_Hobart)
+    return the new short site identifier that the new 
+    website will use (UTAS)
+
+>>> parse_site_dir("University_of_Tasmania,_Hobart")
+'UTAS'
+>>> parse_site_dir("University_of_Queensland,_Brisbane")
+'UQB'
+    """
+    import sys
+    sys.path.append('..')
+    from convert import map_site_name
+    
+    (name, city) = dirname.replace('_', ' ').split(',') 
+    return map_site_name(name.strip(), city.strip())
 
 
 def parse_session_dir(dirname):
@@ -70,8 +86,8 @@ def item_files(path):
     files starting with this prefix except the .xml
     metadata file.
 
->>> item_files('../test/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003')
-['../test/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003camera-1.raw16', '../test/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003left.wav', '../test/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003right.wav']
+>>> sorted(item_files('../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003'))
+['../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003camera-1.raw16', '../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003left.wav', '../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003right.wav']
     """
     
     from glob import glob
@@ -81,7 +97,7 @@ def item_files(path):
 
     
 
-def map_session(basedir, site, fn):
+def map_session(sessiondir, fn):
     """Call fn for every item in the given session
     fn is a callable that takes arguments:
     
@@ -96,15 +112,23 @@ def map_session(basedir, site, fn):
     return value is an iterator over the results of the individual
     function calls (calls are lazy via yield)
     
->>> paths = list(map_session('../test/Spkr2_2/Spkr2_2_Session1', lambda a, b, c, d, e: d ))
+>>> paths = list(map_session('../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1', lambda a, b, c, d, e: e ))
 >>> len(paths)
 54
 >>> paths[2]
-'../test/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003'
+'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_012'
     """
     
-    (spath, sdirname) = os.path.split(sessiondir)
-    (spkrid, sessionid) = parse_session_dir(sdirname)
+    # progressively split off directories
+    (spath, sessdirname) = os.path.split(sessiondir)
+    (spath, spkrdirname) = os.path.split(spath)
+    (basepath, sitedirname) = os.path.split(spath)
+    
+    # get info from session directory name
+    (spkrid, sessionid) = parse_session_dir(sessdirname)
+    siteid = parse_site_dir(sitedirname)
+    
+    
     
     for cdir in os.listdir(sessiondir):
         if parse_component_dir(cdir) != None:

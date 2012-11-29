@@ -194,25 +194,40 @@ def map_location(subj, prop, value):
 (rdflib.term.URIRef(u'http://id.austalk.edu.au/protocol/site/USCM'), rdflib.term.URIRef(u'http://ns.austalk.edu.au/institution'), rdflib.term.Literal(u'University of the Sunshine Coast'))
    """
 
+    site_id = map_site_name(value['name'], value['city'])
+    
+    site_uri = PROTOCOL_NS["site/"+site_id]
+    
+    
+    return [(subj, NS.recording_site, site_uri),
+            (site_uri, RDF.type, NS.RecordingSite),
+            (site_uri, RDFS.label, Literal(site_id)),
+            (site_uri, NS.city, Literal(value['city'])),
+            (site_uri, NS.institution, Literal(value['name']))]
+
+def map_site_name(name, city):
+    """Given a site name and city, generate the short name that we're going to 
+    use in future
+    
+>>> map_site_name("University of Queensland", "Brisbane")
+'UQB'
+>>> map_site_name("Univeristy of Tasmania", "Hobart")
+'UTAS'
+>>> map_site_name("University of Sydney", "Sydney")
+'USYD'
+    """
+    
     # get initials of name
-    inits = [w[0] for w in value['name'].split()]
+    inits = [w[0] for w in name.split()]
     # and first letter of city
-    inits += value['city'][0]
+    inits += city[0]
     inits = "".join(inits).upper()
 
     # pull in the exception if present
     if SITE_SHORTNAMES.has_key(inits):
         inits = SITE_SHORTNAMES[inits]
-    
-    site_uri = PROTOCOL_NS["site/"+inits]
-    
-    
-    return [(subj, NS.recording_site, site_uri),
-            (site_uri, RDF.type, NS.RecordingSite),
-            (site_uri, RDFS.label, Literal(inits)),
-            (site_uri, NS.city, Literal(value['city'])),
-            (site_uri, NS.institution, Literal(value['name']))]
-
+        
+    return inits
 
 
 def map_ratings(graph, p_md):
