@@ -8,7 +8,7 @@ Convert metadata from the Blackbox Recorder software to RDF
 
 '''
 blackbox_path = '/Users/steve/projects/eclipse-workspace/blackbox-gui/src'
-blackbox_path = '/home/steve/workspace/SSCP-GUI/src'
+#blackbox_path = '/home/steve/workspace/SSCP-GUI/src'
 
 import sys
 sys.path.append(blackbox_path)

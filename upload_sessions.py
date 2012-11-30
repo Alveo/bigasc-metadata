@@ -34,7 +34,6 @@ if __name__ == '__main__':
     for session in sessions:
         session_url = session_url_prefix + session
         print "Session", session
-
         try:
             ingest.ingest_session(server, session_url, map)
         except Exception as ex:

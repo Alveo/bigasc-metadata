@@ -27,6 +27,7 @@ def parse_item_filename(filename):
         groups = match.groups() 
         result['colour'] = groups[0]
         result['animal'] = groups[1]
+        result['speaker'] = groups[0]+"_"+groups[1]
         result['session']   = groups[2]
         result['component'] = groups[3]
         result['item']      = str(int(groups[4]))  # do this to trim leading zeros
