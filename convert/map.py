@@ -157,4 +157,3 @@ class FieldMapper:
         
         return graph
     
-    

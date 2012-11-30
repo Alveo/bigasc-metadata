@@ -15,7 +15,7 @@ if __name__ == '__main__':
     
     server = ingest.SesameServer(server_url)
     
-    server.clear()
+    #server.clear()
     
     ingest.ingest_protocol(server)
     

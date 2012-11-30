@@ -149,7 +149,7 @@ if __name__=='__main__':
     
     server = SesameServer(url)
 
-    server.clear()
+   # server.clear()
     server.upload(filename)
 
     size = server.size()

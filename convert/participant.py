@@ -120,6 +120,7 @@ def birth_geolocation(p_uri, m, graph):
     pob_uri = g.placename_uri(info)
     
     graph.add((p_uri, NS.birthPlace, pob_uri))
+    graph.add((pob_uri, RDF.type, GEO.Feature))
     graph.add((pob_uri, GEO.lat, Literal(info['lat'])))
     graph.add((pob_uri, GEO.long, Literal(info['long'])))
 
@@ -164,18 +165,24 @@ def map_ra(subj, prop, value):
 
 >>> ra_info = {u'username': u'steve', u'first_name': '', u'last_name': '', u'is_active': True, u'email': u'steve.cassidy@mq.edu.au', u'is_superuser': True, u'is_staff': True, u'last_login': u'2012-02-01 18:00:05', u'id': 1, u'date_joined': u'2011-06-24 15:20:35'}
 >>> map_ra('foo', 'RA', ra_info)
-[('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/RA'), rdflib.term.Literal(u'b6816945deae3ab28748cd509a5f21e1'))]
+[('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/research_assistant'), rdflib.term.Literal(u'b6816945deae3ab28748cd509a5f21e1'))]
     """
     import hashlib
+    import time
+    
+    # add some salt so that we can't discover the identity if we know the email address or name
+    salt = str(time.time())
     
     if value.has_key('email'):
         email = value['email'].lower()
-        hash = hashlib.md5(email).hexdigest()
+        hash = hashlib.md5(salt+email).hexdigest()
     else:
         user = value['username'].lower()
-        hash = hashlib.md5(user).hexdigest()
-    
-    return [(subj, NS.RA, Literal(hash))]
+        hash = hashlib.md5(salt+user).hexdigest()
+
+    # make a person ID and record them as a foaf:Person
+    return [(subj, NS.research_assistant, ID_NS[hash]),
+            (ID_NS[hash], RDF.type, FOAF.Person)]
     
     
 def map_location(subj, prop, value):
