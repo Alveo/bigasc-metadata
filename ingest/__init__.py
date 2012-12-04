@@ -2,6 +2,8 @@
 from sesameupload import SesameServer
 from convert.ra_maptask import RAMapTask
 
+import sys, os
+
 def ingest_session(server, baseurl, csvdata):
     """Given the URL of a session and an instance of SesameServer, slurp the metadata and 
     upload it to the server"""
@@ -13,16 +15,20 @@ def ingest_session(server, baseurl, csvdata):
     mapper = convert.ItemMapper(server)
     
     participants = []
-    
+    sys.stdout.write(os.path.basename(baseurl))
+    sys.stdout.flush()
     for item in items:
         graph = mapper.item_rdf(item, csvdata)
-        print "Uploading", len(graph), "triples for item", item[-19:]
+        #print "Uploading", len(graph), "triples for item", item[-19:]
+        sys.stdout.write('.')
+        sys.stdout.flush()
         server.upload_graph(graph)
         
         #p = mapper.item_participant(item)
         #if not p in participants:
         #    participants.append(p)
         #    ingest_participant(server, p)
+    print ""
         
         
 def ingest_protocol(server):

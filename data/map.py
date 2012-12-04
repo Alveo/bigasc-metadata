@@ -22,7 +22,7 @@ def site_sessions(dirname):
     for spkrdir in os.listdir(dirname):
         if os.path.isdir(os.path.join(dirname, spkrdir)):
             for sessiondir in os.listdir(os.path.join(dirname, spkrdir)):
-                if parse_session_dir(sessiondir):
+                if parse_session_dir(sessiondir): 
                     yield(os.path.join(dirname, spkrdir, sessiondir))
     
 
