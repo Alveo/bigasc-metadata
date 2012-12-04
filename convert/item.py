@@ -135,7 +135,7 @@ select ?name where {
                 if value[filename].has_key(prop):
                     result.append((m_uri, NS[prop], Literal(value[filename][prop])))
                 else:
-                    print "problem with file property for", filename, value[filename]
+                    print "file %s has no '%s' property: %s" % (filename, prop, str(value[filename]))
         
         return result    
     
@@ -333,7 +333,7 @@ def read_metadata(url):
     
 >>> mdfile = "../test/1_1121_1_12_001.xml"
 >>> read_metadata(mdfile)
-{'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker', 'filename': '1_1121_1_12_001-ch6-speaker.wav'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask', 'filename': '1_1121_1_12_001-ch1-maptask.wav'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left', 'filename': '1_1121_1_12_001-ch4-c2Left.wav'}, '1_1121_1_12_001-camera-0-left.mp4': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'version': 1, 'type': 'video', 'channel': 'camera-0-left', 'filename': '1_1121_1_12_001-camera-0-left.mp4'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right', 'filename': '1_1121_1_12_001-ch5-c2Right.wav'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
+{'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch6-speaker.wav', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch1-maptask.wav', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch4-c2Left.wav', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}, '1_1121_1_12_001-camera-0-left.mp4': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-camera-0-left.mp4', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch5-c2Right.wav', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
 
 # an example of regenerated metadata, has no basename so we need to reconstruct it
 >>> mdfile = "../test/1_178_4_12_001.xml"
@@ -428,37 +428,37 @@ def parse_media_filename(filename):
     return a dictionary.
     
 >>> parse_media_filename('1_178_1_2_150-ch1-maptask.wav')
-{'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}
     
 >>> parse_media_filename('1_178_1_2_150-n-ch1-maptask.wav')
-{'version': 2, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'basename': '1_178_1_2_150', 'version': 2, 'type': 'audio', 'channel': 'ch1-maptask'}
     
 >>> parse_media_filename('1_178_1_2_150-n-n-ch1-maptask.wav')
-{'version': 3, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'basename': '1_178_1_2_150', 'version': 3, 'type': 'audio', 'channel': 'ch1-maptask'}
 
 >>> parse_media_filename('1_178_1_2_150-n-n-n-n-n-ch1-maptask.wav')
-{'version': 6, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'basename': '1_178_1_2_150', 'version': 6, 'type': 'audio', 'channel': 'ch1-maptask'}
 
 >>> parse_media_filename('1_178_1_2_150-camera-0-left.mp4')
-{'version': 1, 'type': 'video', 'channel': 'camera-0-left'}
+{'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}
 
 >>> parse_media_filename('1_178_2_16_001-camera-0-right.mp4')
-{'version': 1, 'type': 'video', 'channel': 'camera-0-right'}
+{'basename': '1_178_2_16_001', 'version': 1, 'type': 'video', 'channel': 'camera-0-right'}
 
 >>> parse_media_filename('1_1121_1_12_001-ch4-c2Left.wav')
-{'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}
+{'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}
 
 >>> parse_media_filename('1_1121_1_12_001-ch6-speaker-yes.wav')
-{'version': 1, 'type': 'audio', 'response': 'yes', 'channel': 'ch6-speaker'}
+{'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'response': 'yes', 'channel': 'ch6-speaker'}
 
 >>> parse_media_filename('1_178_1_2_150-camera-0-no-left.mp4')
-{'version': 1, 'type': 'video', 'response': 'no', 'channel': 'camera-0-left'}
+{'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'response': 'no', 'channel': 'camera-0-left'}
 
 >>> parse_media_filename('1_178_1_2_150-n-n-camera-0-yes-left.mp4')
-{'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
+{'basename': '1_178_1_2_150', 'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
 
 >>> parse_media_filename('1_178_1_2_150-ch6-speaker16.wav')
-{'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
+{'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
     """
     
     
@@ -506,6 +506,12 @@ def read_manifest(baseurl):
 371
 >>> items[0]
 'https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1/Session1_2/1_178_1_2_021.xml'
+>>> session_dir = "../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1"
+>>> items = read_manifest(session_dir)
+>>> len(items)
+54
+>>> items[0]
+'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_001.xml'
     """
     
     # https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1
@@ -513,14 +519,22 @@ def read_manifest(baseurl):
     
     manifest_url = os.path.join(baseurl, 'manifest.txt')
 
-    try:
-        # grab the manifest
-        h = urllib2.urlopen(manifest_url)
+    if manifest_url.startswith('http'):
+        try:
+            # grab the manifest
+            h = urllib2.urlopen(manifest_url)
+            manifest_lines = h.readlines()
+            h.close()
+        except:
+            print "Manifest not available for session", baseurl
+            return []
+    elif os.path.exists(manifest_url):
+        
+        h = open(manifest_url)
         manifest_lines = h.readlines()
         h.close()
-    except:
+    else:
         print "Manifest not available for session", baseurl
-        return []
     
     items = []
     for line in manifest_lines:

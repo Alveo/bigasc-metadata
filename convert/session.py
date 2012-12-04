@@ -7,8 +7,16 @@ Convert metadata from the Blackbox Recorder software to RDF
  This metadata describes the sessions and components recorded
 
 '''
-blackbox_path = '/Users/steve/projects/eclipse-workspace/blackbox-gui/src'
-#blackbox_path = '/home/steve/workspace/SSCP-GUI/src'
+# find the path to the blackbox project
+# hacketty hack hack hoo
+import os
+bbpaths = ['/Users/steve/projects/eclipse-workspace/blackbox-gui/src',
+           '/home/steve/workspace/SSCP-GUI/src']
+
+for p in bbpaths:
+    if os.path.exists(p):
+        blackbox_path = p
+        break
 
 import sys
 sys.path.append(blackbox_path)

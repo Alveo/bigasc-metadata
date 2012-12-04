@@ -17,7 +17,7 @@ def ingest_session(server, baseurl, csvdata):
     for item in items:
         graph = mapper.item_rdf(item, csvdata)
         print "Uploading", len(graph), "triples for item", item[-19:]
-        server.upload_graph(graph)
+        #server.upload_graph(graph)
         
         #p = mapper.item_participant(item)
         #if not p in participants:

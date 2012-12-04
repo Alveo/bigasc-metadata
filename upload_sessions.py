@@ -9,33 +9,53 @@ upload metadata to the server
 
 import ingest
 from convert.ra_maptask import RAMapTask
+from data import site_sessions
 
+server_url = "http://115.146.93.47/openrdf-sesame/repositories/bigasc"
+
+    
 if __name__ == '__main__':
     
-    import sys
+    import sys, os
     
     if len(sys.argv) != 2:
-        print "Usage upload_sessions.py <sessions file>"
+        print "Usage upload_sessions.py <sessions file> | <site directory>"
         exit()
-        
-    sessionsfile = sys.argv[1]
-    
-    server_url = "http://115.146.93.47/openrdf-sesame/repositories/bigasc"
-    session_url_prefix = "https://austalk.edu.au/dav/bigasc/data/real/"
-    
+
+
     server = ingest.SesameServer(server_url)
-    
     # get RA spreadsheet data on maptasks
     maptask = RAMapTask()
-    (spkr, map) = maptask.read_all()
+    (spkr, map) = maptask.read_all()  
     
-    h = open(sessionsfile)
-    sessions = h.read().split() 
-    for session in sessions:
-        session_url = session_url_prefix + session
-        print "Session", session
-        try:
-            ingest.ingest_session(server, session_url, map)
-        except Exception as ex:
-            print "\tProblem with session...", ex
+    
+    if os.path.isdir(sys.argv[1]):
+        
+        sitedir = sys.argv[1]
+       
+        for session in site_sessions(sitedir):
+            print "Session: ", session 
+            ingest.ingest_session(server, session, map)
+            try:
+                ingest.ingest_session(server, session, map)
+            except Exception as ex:
+                print "\tProblem with session...", ex         
+        
+    else:
+        sessionfile = sys.argv[1]
+
+        session_url_prefix = "https://austalk.edu.au/dav/bigasc/data/real/"
+    
+        h = open(sessionsfile)
+        sessions = h.read().split() 
+        
+
+        for session in sessions:
+            session_url = session_url_prefix + session
+            print "Session", session
+    
+            try:
+                ingest.ingest_session(server, session_url, map)
+            except Exception as ex:
+                print "\tProblem with session...", ex
     
