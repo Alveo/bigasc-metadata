@@ -7,6 +7,7 @@ upload protocol metadata to the server
 
 '''
 
+import sys
 import ingest
 
 import configmanager
