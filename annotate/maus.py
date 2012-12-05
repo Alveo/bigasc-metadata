@@ -10,9 +10,9 @@ import urllib2
 import MultipartPostHandler
 import os
 from StringIO import StringIO
+import configmanager
+configmanager.configinit()
 
-#MAUS_URL = "http://webapp.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS"
-MAUS_URL = "http://webapp.phonetik.uni-muenchen.de/BASWebServicesTest/services/runMAUS"
 LEXICON = os.path.join(os.path.dirname(__file__), "AUSTALK.lex")
 
 class MausException(Exception):
@@ -75,6 +75,7 @@ MausException: Internal Server Error
     
     opener = urllib2.build_opener(MultipartPostHandler.MultipartPostHandler)
     
+    MAUS_URL = configmanager.get_config("MAUS_URL")
     try:
         response = opener.open(MAUS_URL, params)
     except urllib2.HTTPError as e:
