@@ -15,26 +15,6 @@ from session import component_map
 from participant import participant_uri
 
 
-def parse_item_filename(filename):
-    """Get the session, component and item ids
-    from the file name, return a dictionary with keys 'session', 'component', 'item'"""
-
-    import re
-    result = dict()
-    parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
-    match = parse_it.search(filename)
-    if match:
-        groups = match.groups() 
-        result['colour'] = groups[0]
-        result['animal'] = groups[1]
-        result['speaker'] = groups[0]+"_"+groups[1]
-        result['session']   = groups[2]
-        result['component'] = groups[3]
-        result['item']      = str(int(groups[4]))  # do this to trim leading zeros
-    else:
-        print filename, "doesn't match the filename pattern"
-    return result
-
 
 
 class ItemMapper:
@@ -115,6 +95,11 @@ select ?name where {
         info['site'] = self.site_name
         #info['component'] = component_map[info['component']]
         path = DATA_URI_TEMPLATE % info
+        
+        # we modify the path based on the file type since we're splitting
+        # audio and video data
+        minfo = parse_media_filename(filename)
+        path = os.path.join(minfo['type'], path)
         
         return DATA_NS[path]
         
@@ -422,6 +407,29 @@ def read_metadata(url):
         result['basename'] = "%(colour)s_%(animal)s_%(session)s_%(component)s_%(item)03d" % result
     
     return result
+
+
+def parse_item_filename(filename):
+    """Get the session, component and item ids
+    from the file name, return a dictionary with keys 'session', 'component', 'item'"""
+
+    import re
+    result = dict()
+    parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
+    match = parse_it.search(filename)
+    if match:
+        groups = match.groups() 
+        result['colour'] = groups[0]
+        result['animal'] = groups[1]
+        result['speaker'] = groups[0]+"_"+groups[1]
+        result['session']   = groups[2]
+        result['component'] = groups[3]
+        result['item']      = str(int(groups[4]))  # do this to trim leading zeros
+    else:
+        print filename, "doesn't match the filename pattern"
+    return result
+
+
 
 def parse_media_filename(filename):
     """Extract the channel name, media type and -n status from a filename

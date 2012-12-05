@@ -9,9 +9,12 @@ upload metadata to the server
 
 import ingest
 
+import configmanager
+configmanager.configinit()
+
 if __name__ == '__main__':
     
-    server_url = "http://sesame.stevecassidy.net//openrdf-sesame/repositories/bigasc" 
+    server_url = configmanager.get_config("SESAME_SERVER")
     
     server = ingest.SesameServer(server_url)
     

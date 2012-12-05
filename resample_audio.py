@@ -4,12 +4,18 @@ save a copy in a new location
 """
 import os, glob
 
+import ingest 
 from data import site_sessions, map_session, resample, resampled_metadata
 from rdflib import Graph
+import convert 
+
+import configmanager
+configmanager.configinit()
 
 
-def make_processor(sessiondir, outdir, graph):
+def make_processor(sessiondir, outdir, server):
     """Return a function to generate output to the given dir"""
+     
     
     def process_item(site, spkr, session, component, item_path):
         """Process a single item - convert the audio 
@@ -29,9 +35,19 @@ def make_processor(sessiondir, outdir, graph):
             (newpath, newmeta) = resampled_metadata(site, spkr, session, component, os.path.basename(audio))
             newaudio = resample(audio, os.path.join(outdir, newpath))
             n += 1
+            
+            graph = Graph()
+            # add in metadata for newly created audio tracks
             for tr in newmeta:
                 graph.add(tr)
+            # upload the lot to the server
+            server.upload_graph(graph)
             
+        # progress...
+        sys.stdout.write('.')
+        sys.stdout.flush()
+        
+             
         return n
     
     return process_item
@@ -41,27 +57,29 @@ if __name__=='__main__':
     
     import sys 
     
-    if len(sys.argv) != 3:
-        print "Usage: resample_audio.py <site_dir> <output_dir>"
+    if len(sys.argv) not in [3,4]:
+        print "Usage: resample_audio.py <site_dir> <output_dir> <limit>?"
         exit()  
         
     sitedir = sys.argv[1]
     outdir = sys.argv[2] 
+    if len(sys.argv) == 4:
+        limit = int(sys.argv[3])
+    else:
+        limit = 10000
     
-    
+    server_url = configmanager.get_config("SESAME_SERVER")
+    server = ingest.SesameServer(server_url) 
+
     for session in site_sessions(sitedir):
         print "Session: ", session
         
-        graph = Graph() 
+        files = [m for m in map_session(session, make_processor(sitedir, outdir, server))]
         
-        files = [m for m in map_session(session, make_processor(sitedir, outdir, graph))]
+        print sum(files)
         
-        print "Processed ", sum(files), "items"
-
-        # write out metadata graph somewhere
-        metafile = os.path.basename(session) + ".ttl"
-        
-        h = open(os.path.join(outdir, metafile), 'w')
-        h.write(graph.serialize(format='turtle'))
-        h.close()
+        limit -= 1
+        if limit <= 0:
+            print "Stopping after hitting limit"
+            exit()  
         
