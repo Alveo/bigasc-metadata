@@ -34,6 +34,16 @@ CLASS_COMPONENT = NS.Component
 CLASS_ITEM = NS.Item
 
 
+def make_graph():
+    """Return a suitably prepared graph"""
+    
+    graph = Graph(identifier=NS['graph/protocol'])
+    graph.bind('austalk', NS)
+    graph.bind('dc', DC)
+    graph.bind('protocol', PROTOCOL_NS)
+    
+    return graph
+
 # define this here because we want to access Persistance
 def component_map():
     """Return a dictionary to map between component numbers
@@ -51,10 +61,7 @@ def session_metadata():
     """Return a dictionary containing all of the metadata
     from the session and component descriptions"""
     
-    graph = Graph()
-    graph.bind('austalk', NS)
-    graph.bind('dc', DC)
-    graph.bind('protocol', PROTOCOL_NS)
+    graph = make_graph()
     
     # generate a list of session numbers and descriptors
     for session in Persistence.Session.GetInstances():
@@ -78,10 +85,7 @@ def session_metadata():
 def component_metadata():
     """Return a dictionary of metadata for each component"""
     
-    graph = Graph()
-    graph.bind('austalk', NS)
-    graph.bind('dc', DC)
-    graph.bind('protocol', PROTOCOL_NS)
+    graph = make_graph()
     
     
     for comp in Persistence.Component.GetInstances():
@@ -104,10 +108,7 @@ def component_metadata():
 def item_metadata():
     """Return a dictionary of metadata for each item"""
     
-    graph = Graph()
-    graph.bind('austalk', NS)
-    graph.bind('dc', DC)
-    graph.bind('protocol', PROTOCOL_NS)
+    graph = make_graph()
 
     for comp in Persistence.Component.GetInstances():
         for item in comp.getItems():

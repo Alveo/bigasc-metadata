@@ -29,4 +29,4 @@ if __name__ == '__main__':
     
     ingest.ingest_protocol(server)
     
-    
+    print "Size: ", server.size()

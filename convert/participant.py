@@ -312,7 +312,7 @@ def participant_rdf(part_md, csvdata=None):
     
     
     p_uri = participant_uri(part_md['colour']['id'], part_md['animal']['id'])
-    graph = partmap.mapdict(p_uri, part_md)
+    graph = partmap.mapdict(p_uri, part_md, NS['graphs/participants'])
     
     graph.add((p_uri, RDF.type, FOAF.Person))
     graph.add((p_uri, NS.id, Literal(p_id)))

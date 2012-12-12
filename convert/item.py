@@ -222,7 +222,7 @@ select ?name where {
         self.item_site_name(self.participant_uri)
         participant_id = "%(colour)s_%(animal)s" % md
         
-        graph = self.itemmap.mapdict(item_uri, md)
+        graph = self.itemmap.mapdict(item_uri, md, NS['graph/data'])
         
         # add link to the main participant
         graph.add((item_uri, OLAC.speaker, self.participant_uri))

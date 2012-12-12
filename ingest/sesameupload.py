@@ -3,6 +3,7 @@
 import urllib, urllib2
 import os
 import json
+from rdflib import URIRef
 
 class RequestWithMethod(urllib2.Request):
   def __init__(self, *args, **kwargs):
@@ -97,7 +98,12 @@ class SesameServer():
         
         data = graph.serialize(format='xml')
         
-        path = "/statements"
+        if isinstance(graph.identifier, URIRef):
+            args = {'context': "<%s>" % graph.identifier}
+            path = "/statements?%s" % urllib.urlencode(args)
+        else:
+            path = "/statements"
+        
         headers = {'Content-Type': 'application/rdf+xml'}
         req = urllib2.Request(self.url+path, data=data, headers=headers)
         

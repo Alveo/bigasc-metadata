@@ -142,13 +142,16 @@ class FieldMapper:
             return mapper(subj, key, value)
         
     
-    def mapdict(self, uri, metadata):
+    def mapdict(self, uri, metadata, context=None):
         '''
         This function takes one metadata dictionary as extracted by the ingest
         module in this package, and returns a rdflib Graph instance.
         '''
         
-        graph = Graph() 
+        if context != None:
+            graph = Graph(identifier=context)
+        else:
+            graph = Graph()
         
         for key in metadata.keys():
             # convert and add the property/value  
