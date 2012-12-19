@@ -42,7 +42,7 @@ if __name__ == '__main__':
         for session in site_sessions(sitedir):
             print "Session: ", session   
             try:
-                ingest.ingest_session(server, session, map)
+                ingest.ingest_session_map(server, session, map)
             except Exception as ex:
                 print "\tProblem with session...", ex
                 
