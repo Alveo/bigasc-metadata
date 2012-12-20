@@ -44,7 +44,7 @@ def ingest_session_map(server, sessiondir, csvdata):
     
     sys.stdout.write(os.path.basename(sessiondir))
     sys.stdout.flush()
-    map_session(sessiondir, process_item)
+    result = [x for x in map_session(sessiondir, process_item)]
     sys.stdout.write('\n')
 
 def ingest_protocol(server):
