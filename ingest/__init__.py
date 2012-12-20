@@ -37,7 +37,7 @@ def ingest_session_map(server, sessiondir, csvdata):
     def process_item(site, spkr, session, component, item_path):
         """upload metadata for a single item"""
         
-        graph = mapper.item_rdf(item_path, csvdata)
+        graph = mapper.item_rdf(item_path+".xml", csvdata)
         sys.stdout.write('.')
         sys.stdout.flush()
         server.upload_graph(graph)
