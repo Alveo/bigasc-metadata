@@ -487,6 +487,7 @@ def parse_media_filename(filename):
         type = 'video'
     else:
         # unknown file pattern
+        print "filename doesn't match media pattern: ", filename
         return dict()
             
     if n == None:
@@ -543,6 +544,7 @@ def read_manifest(baseurl):
         h.close()
     else:
         print "Manifest not available for session", baseurl
+        return []
     
     items = []
     for line in manifest_lines:

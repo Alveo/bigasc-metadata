@@ -5,28 +5,6 @@ import convert
 from data import map_session
 import os, sys
 
-
-def ingest_session(server, baseurl, csvdata):
-    """Given the URL of a session and an instance of SesameServer, slurp the metadata and 
-    upload it to the server"""
-     
-    assert(isinstance(server, SesameServer))
-    import convert
-    items = convert.read_manifest(baseurl)
-    
-    mapper = convert.ItemMapper(server)
-    
-    participants = []
-    sys.stdout.write(os.path.basename(baseurl))
-    sys.stdout.flush()
-    for item in items:
-        graph = mapper.item_rdf(item, csvdata)
-        #print "Uploading", len(graph), "triples for item", item[-19:]
-        sys.stdout.write('.')
-        sys.stdout.flush()
-        server.upload_graph(graph)
-    
-    print ""
       
 def ingest_session_map(server, sessiondir, csvdata):
     """Given a base directory for a session, upload the metadata
@@ -37,10 +15,14 @@ def ingest_session_map(server, sessiondir, csvdata):
     def process_item(site, spkr, session, component, item_path):
         """upload metadata for a single item"""
         
-        graph = mapper.item_rdf(item_path+".xml", csvdata)
-        sys.stdout.write('.')
-        sys.stdout.flush()
-        server.upload_graph(graph)
+        try:
+            graph = mapper.item_rdf(item_path+".xml", csvdata)
+            sys.stdout.write('.')
+            sys.stdout.flush()
+            server.upload_graph(graph)
+        except:
+            print "Problem with item: ", item_path
+            
     
     sys.stdout.write(os.path.basename(sessiondir))
     sys.stdout.flush()
