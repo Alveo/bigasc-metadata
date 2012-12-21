@@ -286,6 +286,8 @@ pouch	p{OtS
 practical	pr\{ktIk@l
 price	pr\Aes
 proof-read	pr\}:fr\i:d
+proof  pr\}:f
+read  r\i:d
 proposals	pr\@p@}z@lz
 pushed	pUSt
 quickly	kwIkli:
@@ -319,6 +321,8 @@ seconds	sek@ndz
 seems	si:mz
 seen	si:n
 self-absorbed	self@bzo:bd
+self   self
+absorbed   @bzo:bd
 several	sevr\@l
 shall	S{l
 Sharon	S{r\@n
@@ -772,7 +776,9 @@ war	 wo:
 who	 h}: 
 who'd	 h}:d 
 who'll	 h}:l 
+whod    h}:d 
+wholl   h}:l 
 whore	 ho: 
 Wran	 r\{n 
 wren	 r\en 
-you	 j}: 
+you	 j}:  

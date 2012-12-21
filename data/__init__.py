@@ -2,4 +2,4 @@
 and resampling audio data"""
 
 from map import site_sessions, map_session
-from audio import resample, resampled_metadata
+from audio import resample, resampled_metadata, COMPONENT_MAP

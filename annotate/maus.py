@@ -13,6 +13,8 @@ from StringIO import StringIO
 import configmanager
 configmanager.configinit()
 
+from data import COMPONENT_MAP
+
 LEXICON = os.path.join(os.path.dirname(__file__), "AUSTALK.lex")
 
 class MausException(Exception):
@@ -142,6 +144,13 @@ ORT: 0 before
 ORT: 1 zombie
 KAN: 0 b@fo:
 KAN: 1 zOmbi:
+>>> print text_phb("Who'll pour Rosa's?.", lex)
+ORT: 0 who'll
+ORT: 1 pour
+ORT: 2 rosa's
+KAN: 0 h}:l
+KAN: 1 po:
+KAN: 2 r\@}z@z
 >>> print text_phb('hello world', lex)
 Not in lexicon: 'hello'
 Not in lexicon: 'world'
@@ -188,7 +197,7 @@ def make_maus_processor(server, outputdir):
             return
         
         item = os.path.basename(item_path)
-        outfile = os.path.join(outputdir, "MAUS", site, spkr, session, component, item + ".TextGrid")
+        outfile = os.path.join(outputdir, "MAUS", site, spkr, session, COMPONENT_MAP[int(component)], item + ".TextGrid")
         if not os.path.exists(os.path.dirname(outfile)):
             os.makedirs(os.path.dirname(outfile))
         
@@ -218,7 +227,8 @@ def make_maus_processor(server, outputdir):
             
             media_file = url_to_path(media)
             try:
-                annotation = maus(media_file, prompt)
+                #annotation = maus(media_file, prompt)
+                annotation = item 
                 sys.stdout.write('.')
                 sys.stdout.flush()
                 
