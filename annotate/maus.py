@@ -12,7 +12,8 @@ import os, sys
 from StringIO import StringIO
 import configmanager
 configmanager.configinit()
-
+from rdflib import Graph, Literal, URIRef
+from convert.namespaces import *
 from data import COMPONENT_MAP
 
 LEXICON = os.path.join(os.path.dirname(__file__), "AUSTALK.lex")
@@ -197,7 +198,9 @@ def make_maus_processor(server, outputdir):
             return
         
         item = os.path.basename(item_path)
-        outfile = os.path.join(outputdir, "MAUS", site, spkr, session, COMPONENT_MAP[int(component)], item + ".TextGrid")
+        outpath = os.path.join("MAUS", site, spkr, session, COMPONENT_MAP[int(component)], item + ".TextGrid")
+        outfile = os.path.join(outputdir, outpath)
+        
         if not os.path.exists(os.path.dirname(outfile)):
             os.makedirs(os.path.dirname(outfile))
         
@@ -206,12 +209,12 @@ def make_maus_processor(server, outputdir):
             PREFIX austalk:<http://ns.austalk.edu.au/>
             PREFIX ausnc:<http://ns.ausnc.org.au/schemas/ausnc_md_model/>
             
-            select distinct ?media ?prompt where {
-              ?i a ausnc:AusNCObject .
-              ?i austalk:basename "%s" .
-              ?i austalk:media ?media .
+            select distinct ?item ?media ?prompt where {
+              ?item a ausnc:AusNCObject .
+              ?item austalk:basename "%s" .
+              ?item austalk:media ?media .
               ?media austalk:channel "ch6-speaker16" .
-              ?i austalk:prototype ?ip .
+              ?item austalk:prototype ?ip .
               ?ip austalk:prompt ?prompt .
             }
             """ % item
@@ -221,25 +224,46 @@ def make_maus_processor(server, outputdir):
             row = qresult['results']['bindings'][0]
             media = row['media']['value']
             prompt = row['prompt']['value']
+            item_uri = row['item']['value']
+            
             # if the prompt contains 'sounds like' then we want just the first word
             if prompt.find("sounds like") >= 0:
                 prompt = prompt.split()[0]
             
             media_file = url_to_path(media)
             try:
-                annotation = maus(media_file, prompt)
+                #annotation = maus(media_file, prompt)
+                annotation = 'yay'
                 sys.stdout.write('.')
                 sys.stdout.flush()
                 
                 h = open(outfile, 'w')
                 h.write(annotation)
                 h.close()
+                
+                graph = maus_metadata(item_uri, outpath)
+                server.upload_graph(graph)
+                
             except MausException as e:
                 print "ERROR", item, e
         else:
             print "Item has no media/prompt: ", item
     
     return maus_item
+    
+    
+def maus_metadata(item_uri, mausfile):
+
+    maus_uri = DATA_NS[mausfile]
+    
+    graph = Graph()
+    graph.add((URIRef(item_uri), NS['has_annotation'], maus_uri))
+    graph.add((maus_uri, RDF.type, NS.AnnotationFile))
+    graph.add((maus_uri, NS['origin'], Literal("MAUS")))
+    graph.add((maus_uri, NS['format'], Literal("TextGrid")))
+    
+    return graph
+    
     
 
 def url_to_path(media):

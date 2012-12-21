@@ -9,7 +9,7 @@ Namespace declarations for use in RDF generation
 from rdflib import Namespace
 
 # for properties and classes specific to Austalk
-NS = Namespace(u"http://ns.austalk.edu.au/")
+AUSTALK = Namespace(u"http://ns.austalk.edu.au/")
 
 # for elements of the protocol
 PROTOCOL_NS = Namespace(u"http://id.austalk.edu.au/protocol/")
@@ -34,6 +34,23 @@ GEO = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#") # for lat and long
 
 AUSNC = Namespace(u"http://ns.ausnc.org.au/schemas/ausnc_md_model/")
 
+# this hack finds all of the namespaces defined above and 
+# puts them into a dictionary that we can use in bind_graph
+import sys
+NAMESPACES = dict()
+namespaces = [n for n in sys.modules[__name__].__dict__.keys() if n.isupper()]
+for ns in namespaces:
+    NAMESPACES[ns.lower()] = eval(ns)
+
+def bind_graph(graph):
+    
+    for ns in NAMESPACES.keys():
+        graph.bind(ns, NAMESPACES[ns]) 
+
+    return graph
+
+# for backwards compatibility but we don't want it above
+NS = AUSTALK
 
 SESSION_URI_TEMPLATE = "session/%s"
 COMPONENT_URI_TEMPLATE = "component/%s"

@@ -4,6 +4,8 @@ import urllib, urllib2
 import os
 import json
 from rdflib import URIRef
+from convert.namespaces import bind_graph
+
 
 class RequestWithMethod(urllib2.Request):
   def __init__(self, *args, **kwargs):
@@ -95,7 +97,10 @@ class SesameServer():
             
     def upload_graph(self, graph):
         """Upload the contents of an RDFlib graph to the store"""
-        
+
+        # add namespaces to the graph before uploading        
+        graph = bind_graph(graph)
+
         data = graph.serialize(format='xml')
         
         if isinstance(graph.identifier, URIRef):
