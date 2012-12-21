@@ -149,7 +149,7 @@ None
     """
     import re
     
-    words = [x.lower() for x in re.split("[\s.,!?-]", text) if x != '']
+    words = [x.lower() for x in re.split(r'[\s.,!?-"]', text) if x != '']
     error = False
     ort = []
     kan = []
