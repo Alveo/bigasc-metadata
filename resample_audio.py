@@ -33,15 +33,17 @@ def make_processor(sessiondir, outdir, server):
             path = os.path.dirname(path) 
             
             (newpath, newmeta) = resampled_metadata(site, spkr, session, component, os.path.basename(audio))
-            newaudio = resample(audio, os.path.join(outdir, newpath))
-            n += 1
-            
-            graph = Graph()
-            # add in metadata for newly created audio tracks
-            for tr in newmeta:
-                graph.add(tr)
-            # upload the lot to the server
-            server.upload_graph(graph)
+            # skip generating the downsampled file if it's already there
+            if not os.path.exists(os.path.join(outdir, newpath)):
+                newaudio = resample(audio, os.path.join(outdir, newpath))
+                n += 1
+                
+                graph = Graph()
+                # add in metadata for newly created audio tracks
+                for tr in newmeta:
+                    graph.add(tr)
+                # upload the lot to the server
+                server.upload_graph(graph)
             
         # progress...
         sys.stdout.write('.')
