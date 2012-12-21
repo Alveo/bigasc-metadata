@@ -137,13 +137,19 @@ ORT: 0 before
 ORT: 1 zombie
 KAN: 0 b@fo:
 KAN: 1 zOmbi:
+>>> print text_phb('Before, zombie.', lex)
+ORT: 0 before
+ORT: 1 zombie
+KAN: 0 b@fo:
+KAN: 1 zOmbi:
 >>> print text_phb('hello world', lex)
-Not in lexicon:  hello
-Not in lexicon:  world
+Not in lexicon: 'hello'
+Not in lexicon: 'world'
 None
     """
+    import re
     
-    words = text.split()
+    words = [x.lower() for x in re.split("[\s.,!?]", text) if x != '']
     error = False
     ort = []
     kan = []
@@ -154,7 +160,7 @@ None
             ort.append("ORT: %d %s" % (n, word))
             kan.append("KAN: %d %s" % (n, phon))
         else:
-            print "Not in lexicon: ", word
+            print "Not in lexicon: '%s'"  % word
             error = True
                         
         n += 1
