@@ -111,7 +111,7 @@ def load_lexicon():
         words = line.split()
         if len(words) > 2:
             print "Too many fields:", line
-        ort = words[0]
+        ort = words[0].lower()
         phn = words[1]
         result[ort] = phn
         
