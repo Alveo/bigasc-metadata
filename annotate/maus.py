@@ -6,9 +6,9 @@ Created on Oct 31, 2012
 @author: steve
 '''
 
-import urllib2
+import urllib, urllib2
 import MultipartPostHandler
-import os
+import os, sys
 from StringIO import StringIO
 import configmanager
 configmanager.configinit()
@@ -165,6 +165,81 @@ None
         return None
     
     return result
+
+# list of component ids that we can run MAUS over because they are read
+MAUSABLE_COMPONENTS = [5, 2, 22, 32, 43, 23, 33, 13, 14, 6, 16, 17] # 3 is story
+
+def make_maus_processor(server, outputdir):
+        
+    def maus_item(site, spkr, session, component, item_path):
+        """Procudure for use with map_session to send the audio data
+        for one item to MAUS and store the resulting annotation 
+        files"""
+        
+        
+        if not int(component) in MAUSABLE_COMPONENTS:
+            print "Can't MAUS", component
+            return
+        
+        item = os.path.basename(item_path)
+        outfile = os.path.join(outputdir, "MAUS", site, spkr, session, component, item + ".TextGrid")
+        if not os.path.exists(os.path.dirname(outfile)):
+            os.makedirs(os.path.dirname(outfile))
+        
+        # query to find the media file URL and prompt text
+        qq = """
+            PREFIX austalk:<http://ns.austalk.edu.au/>
+            PREFIX ausnc:<http://ns.ausnc.org.au/schemas/ausnc_md_model/>
+            
+            select distinct ?media ?prompt where {
+              ?i a ausnc:AusNCObject .
+              ?i austalk:basename "%s" .
+              ?i austalk:media ?media .
+              ?media austalk:channel "ch6-speaker16" .
+              ?i austalk:prototype ?ip .
+              ?ip austalk:prompt ?prompt .
+            }
+            """ % item
+         
+        qresult = server.query(qq)
+        if qresult != None and qresult['results']['bindings'] != []:
+            row = qresult['results']['bindings'][0]
+            media = row['media']['value']
+            prompt = row['prompt']['value']
+            # if the prompt contains 'sounds like' then we want just the first word
+            if prompt.find("sounds like") >= 0:
+                prompt = prompt.split()[0]
+            
+            media_file = url_to_path(media)
+            
+            annotation = maus(media_file, prompt)
+            sys.stdout.write('.')
+            sys.stdout.flush()
+            
+            h = open(outfile, 'w')
+            h.write(annotation)
+            h.close()
+        else:
+            print "Item has no media/prompt: ", item
+    
+    return maus_item
+    
+
+def url_to_path(media):
+    """Convert a media URL to a path on the local
+    file system"""
+    
+    root = "/var/syndisk/published"
+
+    (ignore, tmp) = urllib.splittype(media)
+    (ignore, path) = urllib.splithost(tmp)
+    
+    return root + path
+    
+    
+    
+    
+
 
 
 if __name__=='__main__':
