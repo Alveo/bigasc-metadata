@@ -227,8 +227,7 @@ def make_maus_processor(server, outputdir):
             
             media_file = url_to_path(media)
             try:
-                #annotation = maus(media_file, prompt)
-                annotation = item 
+                annotation = maus(media_file, prompt)
                 sys.stdout.write('.')
                 sys.stdout.flush()
                 
