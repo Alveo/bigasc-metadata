@@ -35,23 +35,23 @@ def maus(wavfile, text, language='ae', canonly=False, minpauselen=5, startword=0
     raises MausException if there was an error, the exception
     contains any error text returned by the MAUS web service
     
->>> txt = maus("../test/bassinette-sample-16.wav", "bassinette")
+>>> txt = maus("test/bassinette-sample-16.wav", "bassinette")
 >>> txt.find('xmax')
 62
 >>> txt.find('b{s@net')
 896
->>> txt = maus("../test/bassinette-sample-16.wav", "not in the lexicon")
+>>> txt = maus("test/bassinette-sample-16.wav", "not in the lexicon")
 Traceback (most recent call last):
 MausException: Can't generate phonetic transcription for text 'not in the lexicon'
 
 # a bad request, send a text file
->>> maus("maus.py", "bassinette")
+>>> maus("annotate/maus.py", "bassinette")
 Traceback (most recent call last):
 MausException: MAUS execution did not exit properly and exited with message ERROR: unknown signal type extension py        Please use either 'wav' or 'nis' or 'sph' or 'al' or 'dea' 
 <BLANKLINE>
 
 # another bad request, an unknown language
->>> maus("../test/bassinette-sample-16.wav", "bassinette", language='unknown')
+>>> maus("test/bassinette-sample-16.wav", "bassinette", language='unknown')
 Traceback (most recent call last):
 MausException: Internal Server Error
     """
@@ -217,14 +217,16 @@ def make_maus_processor(server, outputdir):
                 prompt = prompt.split()[0]
             
             media_file = url_to_path(media)
-            
-            annotation = maus(media_file, prompt)
-            sys.stdout.write('.')
-            sys.stdout.flush()
-            
-            h = open(outfile, 'w')
-            h.write(annotation)
-            h.close()
+            try:
+                annotation = maus(media_file, prompt)
+                sys.stdout.write('.')
+                sys.stdout.flush()
+                
+                h = open(outfile, 'w')
+                h.write(annotation)
+                h.close()
+            except MausException as e:
+                print "ERROR", item, e
         else:
             print "Item has no media/prompt: ", item
     
