@@ -24,7 +24,7 @@ class GeoNames:
 
 >>> g = GeoNames()
 >>> g.placename_info("Sydney", "NSW", "Australia")
-{'countryname': u'Australia', 'placename': u'Sydney', 'geoname': 2147714, 'countrycode': u'AU'}
+{'placename': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'long': 151.207323074341, 'countryname': u'Australia', 'lat': -33.8678499639382}
 >>> g.placename_info("dksjhdfkjskdjf", "Vic", "Australia")
 
         """
@@ -63,8 +63,9 @@ class GeoNames:
                     result['countrycode'] = location['countryCode']
                     result['lat'] = location['lat']
                     result['long'] = location['lng']
+                    #print result
                     return result
-    
+        #print "nothing found"
         return None
         
     def placename_uri(self, info):

@@ -32,6 +32,44 @@ SITE_SHORTNAMES = {
 "FUA": "FLIN", 
 }
 
+from pycountry import languages
+def map_language_name(subj, prop, value):
+    """Value is a language name from the database, we map it 
+    to a standard language name and return some triples"""
+    
+    name = value.capitalize()
+    
+    # some common cases
+    
+    if name == "Australian":
+        name = "English"
+    
+    # try to get the language directly
+    lang = None
+    try:
+        lang = languages.get(name=name)
+    except KeyError:
+        # try splitting the words
+        name = name.replace('/', ' ')
+        if name.find(' '):
+            for name in name.split():
+                try: 
+                    lang = languages.get(name=name.capitalize())
+                    break
+                except KeyError:
+                    pass
+    if lang == None:
+        print "No language found for ", name
+        return [(subj, NS[prop], Literal(name))]
+    else:
+        code = lang.alpha2
+        languri = ISO639[code]
+        return [(subj, NS[prop], languri),
+                (languri, RDF.type, ISO639SCHEMA.Language),
+                (languri, ISO639SCHEMA.alpha2, Literal(code)),
+                (languri, ISO639SCHEMA.name, Literal(lang.name))]
+    
+
 
 def get_participant_list():
     """Return a list of participant ids"""
@@ -103,16 +141,19 @@ def get_participant_from_file(filename):
     
     return result
 
-def birth_geolocation(p_uri, m, graph):
-    """Using the POB fields in the metadata dictionary m, 
-    find a geonames URI for the place of birth and add
-    some triples to the graph"""
+
+def add_geolocation(p_uri, predicate, location, graph):
+    """Location is a triple (town, state, country) or (suburb, postcode, country)
+    which will be used to  
+    find a geonames URI for the location and then add a location to the graph
+    (p_uri, predicate, <location>)
+    """
     
     from geonames import GeoNames
     
     g = GeoNames()
     
-    info = g.placename_info(m['pob_town'], m['pob_state'], m['pob_country'])
+    info = g.placename_info(location[0], location[1], location[2])
 
     if info == None:
         return
@@ -124,7 +165,8 @@ def birth_geolocation(p_uri, m, graph):
     graph.add((pob_uri, GEO.lat, Literal(info['lat'])))
     graph.add((pob_uri, GEO.long, Literal(info['long'])))
 
-    
+
+ 
 
 def map_gender(subj, prop, value):
     """Map gender (M or F) to FOAF.gender (male or female)
@@ -152,11 +194,22 @@ Unknown value for SEX: U
 def map_dob(subj, prop, value):
     """Map date of birth, only retain the year
 >>> map_dob('foo', 'dob', '1992-01-21')
-[('foo', rdflib.term.URIRef(u'http://dbpedia.org/ontology/birthYear'), rdflib.term.Literal(u'1992', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer')))]
-    """
+[('foo', rdflib.term.URIRef(u'http://dbpedia.org/ontology/birthYear'), rdflib.term.Literal(u'1992', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer'))), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/ageGroup'), rdflib.term.Literal(u'<30'))] 
+
+"""
     
     (y, m, d) = value.split('-')
-    return [(subj, DBP.birthYear, Literal(int(y)))]
+    # calculate age group relative to 2012
+    age = int(y)-2012
+    if age < 30:
+        ageGroup = "<30"
+    elif age < 50:
+        ageGroup = "30-49"
+    else:
+        ageGroup = ">50"
+    
+    return [(subj, DBP.birthYear, Literal(int(y))),
+            (subj, NS.ageGroup, Literal(ageGroup))]
 
 
 def map_ra(subj, prop, value):
@@ -253,6 +306,7 @@ def map_ratings(graph, p_md):
 submap = map.FieldMapper()
 submap.add('_state', ignore=True)
 submap.add("id", ignore=True)
+submap.add("name", mapper=map_language_name)
 
 partmap = map.FieldMapper()
 partmap.add("dob", mapper=map_dob)
@@ -267,6 +321,10 @@ partmap.add('residence_history', mapper=map.dictionary_blank_mapper(NS.residenti
 partmap.add('RA', mapper=map_ra)
 partmap.add('location', mapper=map_location)
 partmap.add('rating', ignore=True)
+partmap.add('first_language', mapper=map_language_name)
+partmap.add('mother_first_language', mapper=map_language_name)
+partmap.add('father_first_language', mapper=map_language_name)
+
 
 ## the following are ignored because they potentially expose too much
 ## personal detail on the site
@@ -297,11 +355,12 @@ def participant_rdf(part_md, csvdata=None):
     properties read from the RA spreadsheets, it will be used
     to override and validate the metadata
     
-    
+>>> from ra_maptask import RAMapTask
 >>> part_file = "../test/participant.json"
->>> p = get_participant_from_file(part_file) 
->>> p = get_participant('1_987') 
->>> graph = participant_rdf(p)
+>>> maptask = RAMapTask ()
+>>> csvdata = maptask.parse_speaker ("../ra-spreadsheets/ANU-Speaker.csv", True)
+>>> p = get_participant('3_726')
+>>> graph = participant_rdf(p, csvdata['3_726'])
 >>> len(graph)
 176
 >>> print graph.serialize(format='turtle')
@@ -318,33 +377,37 @@ def participant_rdf(part_md, csvdata=None):
     graph.add((p_uri, NS.id, Literal(p_id)))
     graph.add((p_uri, NS.name, Literal(p_name)))
     
-    birth_geolocation(p_uri, part_md, graph)
+    birthLoc = (part_md['pob_town'], part_md['pob_state'], part_md['pob_country'])
+    add_geolocation(p_uri, NS.birthPlace, birthLoc, graph)
          
     if part_md.has_key('rating'):
         map_ratings(graph, part_md)
         
         
     # check and update some values from csvdata
-    if csvdata != None:
-        (d, m, y) = csvdata['DOB'].split('/')
-        if len(y) == 2:
-            if int(y) < 12:
-                refyr = "20"+y 
+    if csvdata != None: 
+        if csvdata.has_key('DOB'):
+            (d, m, y) = csvdata['DOB'].split('/')
+            if len(y) == 2:
+                if int(y) < 12:
+                    refyr = "20"+y 
+                else:
+                    refyr = "19"+y
+            elif len(y) == 4:
+                refyr = y
             else:
-                refyr = "19"+y
-        elif len(y) == 4:
-            refyr = y
+                print "Odd year:", y
+            
+            yobs = graph.objects(subject=p_uri, predicate=DBP.birthYear)
+            for yob in yobs:
+                if  yob != refyr:
+                    print "\tDOBs differ for %s, %s changed to %s" % (p_id, yob, refyr)
+                    
+                    # modify the graph
+                    graph.remove((p_uri, DBP.birthYear, yob))
+                    graph.add((p_uri, DBP.birthYear, Literal(refyr)))
         else:
-            print "Odd year:", y
-        
-        yobs = graph.objects(subject=p_uri, predicate=DBP.birthYear)
-        for yob in yobs:
-            if  yob != refyr:
-                print "\tDOBs differ for %s, %s changed to %s" % (p_id, yob, refyr)
-                
-                # modify the graph
-                graph.remove((p_uri, DBP.birthYear, yob))
-                graph.add((p_uri, DBP.birthYear, Literal(refyr)))
+            print "No DOB"
            
         # SES status
         if csvdata.has_key('SES'):
@@ -363,6 +426,15 @@ def participant_rdf(part_md, csvdata=None):
             
         if csvdata.has_key('NOTES'):
             graph.add((p_uri, NS.maptaskcomment, Literal(csvdata['NOTES'])))
+        
+        if csvdata.has_key('Suburb') and csvdata.has_key('Postcode'):
+            graph.add((p_uri, NS.suburb, Literal(csvdata['Suburb'])))
+            graph.add((p_uri, NS.postcode, Literal(csvdata['Postcode'])))
+            
+        else:
+            print "no suburb/postcode data"
+    else:
+        print "no csv data"
 
     # add some namespaces to make output prettier
     graph.bind('austalk', NS)

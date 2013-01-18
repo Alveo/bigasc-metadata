@@ -31,6 +31,9 @@ GRAF = Namespace("http://www.xces.org/ns/GrAF/1.0/")
 RDFS = Namespace(u"http://www.w3.org/2000/01/rdf-schema#")
 DBP = Namespace("http://dbpedia.org/ontology/")
 GEO = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#") # for lat and long
+ISO639 = Namespace("http://downlode.org/rdf/iso-639/languages#")
+ISO639SCHEMA = Namespace("http://downlode.org/rdf/iso-639/schema#")
+
 
 AUSNC = Namespace(u"http://ns.ausnc.org.au/schemas/ausnc_md_model/")
 
