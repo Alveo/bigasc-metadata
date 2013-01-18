@@ -54,20 +54,20 @@ def map_language_name(subj, prop, value):
         if name.find(' '):
             for name in name.split():
                 try: 
-                    lang = languages.get(name=name.capitalize())
+                    lang = languages.get(name=name.strip().capitalize())
                     break
                 except KeyError:
                     pass
-    if lang == None:
+    if lang == None or getattr(lang, 'alpha2', None) == None:
         print "No language found for ", name
         return [(subj, NS[prop], Literal(name))]
     else:
-        code = lang.alpha2
+        code = getattr(lang, 'alpha2', None)
         languri = ISO639[code]
         return [(subj, NS[prop], languri),
                 (languri, RDF.type, ISO639SCHEMA.Language),
                 (languri, ISO639SCHEMA.alpha2, Literal(code)),
-                (languri, ISO639SCHEMA.name, Literal(lang.name))]
+                (languri, ISO639SCHEMA.name, Literal(getattr(lang, 'name', name)))]
     
 
 
