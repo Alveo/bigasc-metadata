@@ -74,7 +74,7 @@ def ingest_participants(server):
         graph = convert.participant_rdf(p_info, csvdata)
     
         print "Uploading", len(graph), "triples for participant", p
-        server.upload_graph(graph)
+        #server.upload_graph(graph)
         
     
 def ingest_participant(server, participant):

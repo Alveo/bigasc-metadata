@@ -37,12 +37,20 @@ def map_language_name(subj, prop, value):
     """Value is a language name from the database, we map it 
     to a standard language name and return some triples"""
     
-    name = value.capitalize()
+    name = value.strip().capitalize()
     
     # some common cases
     
     if name == "Australian":
         name = "English"
+    elif name == "Dutch":
+        name = "Dutch; Flemish"
+    elif name in ['Mandarin', 'Cantonese']:
+        name = "Chinese"
+    elif name == 'Spanish':
+        name = "Spanish; Castilian"
+    elif name == "Greek":
+        name = "Greek, Modern (1453-)"
     
     # try to get the language directly
     lang = None
@@ -59,7 +67,7 @@ def map_language_name(subj, prop, value):
                 except KeyError:
                     pass
     if lang == None or getattr(lang, 'alpha2', None) == None:
-        print "No language found for ", name
+        print "No language found for '%s'" % name
         return [(subj, NS[prop], Literal(name))]
     else:
         code = getattr(lang, 'alpha2', None)
@@ -430,11 +438,7 @@ def participant_rdf(part_md, csvdata=None):
         if csvdata.has_key('Suburb') and csvdata.has_key('Postcode'):
             graph.add((p_uri, NS.suburb, Literal(csvdata['Suburb'])))
             graph.add((p_uri, NS.postcode, Literal(csvdata['Postcode'])))
-            
-        else:
-            print "no suburb/postcode data"
-    else:
-        print "no csv data"
+              
 
     # add some namespaces to make output prettier
     graph.bind('austalk', NS)

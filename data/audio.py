@@ -20,7 +20,7 @@ for d in ['/usr/bin/', '/usr/local/']:
         break
 if SOX_PROGRAM == '':
     print "Can't find sox executable"
-    exit()
+
     
 ## generate a component map, do this only once and we'll use it below
 from convert.session import component_map
