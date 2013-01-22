@@ -4,13 +4,96 @@ Notes on metadata format for Austalk
 Metadata is ingested from the following sources into a single triple store:
 
 - blackbox protocol (sessions, components, prompts, etc)
-- website database (participants)
+- website database (participants, QA ratings)
 - item xml metadata (items, files)
-
-pending ingestion:
-
-- QA spreadsheets (component ratings)
 - RA spreadsheets (map task speakers, DOBs)
+
+
+Ingest Process
+--------------
+
+A number of scripts harvest different bits of data and upload it to the RDF store.
+
+The RDF store endpoint is stored in config.ini.
+
+upload_protocol.py ?clear
+
+ this script harvests meta-data about the prompts and sessions from the blackbox
+ software, converts to RDF and uploads to the RDF store.  The optional clear
+ argument forces the store to be cleared before upload.  
+ 
+ This script is generally run first.
+ 
+upload_participants.py ?clear 
+ 
+ this script harvests participant meta-data from the austalk.edu.au webserver
+ (i.e. the questionnaire data and QA data stored there), converts to RDF
+ and uploads to the RDF store.   
+ 
+ Some pruning of meta-data is done for privacy protection, so that not all of
+ the meta-data is uploaded.
+ 
+ The script reads the RA spreadsheets (converted to CSV and stored with the 
+ source code of this project) and harvests additional data from there if 
+ possible.   DOB is checked and if different, the DOB from the spreadsheet 
+ is used.   
+ 
+ The optional clear argument forces deletion of only the participant data
+ (ie. only the named graph that we upload to). 
+ 
+ 
+upload_site.py <site-dir> <limit>?
+
+ this script uploads meta-data for all of the sessions in the given site
+ directory.   It needs direct access to the stored data so must be run
+ on the austalk.edu.au server.   
+ 
+ the script reads the XML metadata for each item and converts it to RDF
+ which is uploaded.  It also looks at the data on disk and generates 
+ URLs for audio and video files ALTHOUGH THE AUDIO AND VIDEO FILES ARE 
+ NOT MOVED OR ALTERED.  
+ 
+ The script also reads the RA spreadsheets to get information on Map Task
+ partners that might not be present in the XML metadata.
+ 
+ The script must be run after the upload_participants script because it
+ relies on querying the data store to find the site name for a given
+ participant.  
+ 
+ if the optional limit argument is given it should be an integer and
+ the uploads will stop after processing this many sessions
+ 
+
+resample_audio.py <site directory> <target directory> <limit>?
+
+ this script generates a downsampled version of the audio files for 
+ the sessions in a given site directory.   It stores the resulting
+ audio in the target directory in a 'downsampled' directory using 
+ the new directory structures.  
+ 
+ RDF is generated to describe the resulting audio files and link
+ them to the items and this is uploaded to the store.
+ 
+ If the downsampled audio file already exists, it isn't generated
+ again, but the meta-data will be uploaded again.
+ 
+ if the optional limit argument is given it should be an integer and
+ the uploads will stop after processing this many sessions
+  
+
+maus_session.py <site directory> <output directory> <limit>?
+
+ send audio data to the MAUS forced alignment service and store
+ the results.  
+ 
+ Reads session data from the triple store and relies on 
+ resample_audio.py having been run before it can work.
+ 
+ Writes data to the triple store to record the annotation
+ files that are generated.
+
+ if the optional limit argument is given it should be an integer and
+ the uploads will stop after processing this many sessions
 
 Namespaces
 ----------
