@@ -120,10 +120,16 @@ class SesameServer():
             raise Exception("Problem with upload of data, result code %s" % result[0])
         
         
-    def clear(self):
+    def clear(self, context=None):
         """Remove all triples in the store"""
         
-        path = "/statements"
+        
+        if context != None:
+            args = {'context': "<%s>" % context}
+            path = "/statements?%s" % urllib.urlencode(args)
+        else:
+            path = "/statements"
+            
         req = RequestWithMethod(self.url+path, method="DELETE")
         
         result = self._get(req)

@@ -38,12 +38,12 @@ def make_processor(sessiondir, outdir, server):
                 newaudio = resample(audio, os.path.join(outdir, newpath))
                 n += 1
                 
-                graph = Graph()
-                # add in metadata for newly created audio tracks
-                for tr in newmeta:
-                    graph.add(tr)
-                # upload the lot to the server
-                server.upload_graph(graph)
+            graph = Graph()
+            # add in metadata for newly created audio tracks
+            for tr in newmeta:
+                graph.add(tr)
+            # upload the lot to the server
+            server.upload_graph(graph)
             
         # progress...
         sys.stdout.write('.')
