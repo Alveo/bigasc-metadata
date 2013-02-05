@@ -6,6 +6,10 @@ import json
 from rdflib import URIRef
 from convert.namespaces import bind_graph
 
+import configmanager
+configmanager.configinit()
+
+import tempfile
 
 class RequestWithMethod(urllib2.Request):
   def __init__(self, *args, **kwargs):
@@ -102,22 +106,35 @@ class SesameServer():
         graph = bind_graph(graph)
 
         data = graph.serialize(format='xml')
-        
-        if isinstance(graph.identifier, URIRef):
-            args = {'context': "<%s>" % graph.identifier}
-            path = "/statements?%s" % urllib.urlencode(args)
+
+        # check to see if we should store the graphs somewhere
+        graphdir = configmanager.get_config('STORE_GRAPHS', False)
+        if graphdir:            
+            if not os.path.exists(graphdir):
+                os.makedirs(graphdir)
+            (fd, filename) = tempfile.mkstemp(prefix='graph', dir=graphdir)
+
+                 
+            os.write(fd, data)
+            os.close(fd)
+            return filename
         else:
-            path = "/statements"
         
-        headers = {'Content-Type': 'application/rdf+xml'}
-        req = urllib2.Request(self.url+path, data=data, headers=headers)
-        
-        result = self._get(req)
-        # check that return code is 204
-        if result[0] == 204:
-            return result[1]
-        else:
-            raise Exception("Problem with upload of data, result code %s" % result[0])
+            if isinstance(graph.identifier, URIRef):
+                args = {'context': "<%s>" % graph.identifier}
+                path = "/statements?%s" % urllib.urlencode(args)
+            else:
+                path = "/statements"
+            
+            headers = {'Content-Type': 'application/rdf+xml'}
+            req = urllib2.Request(self.url+path, data=data, headers=headers)
+            
+            result = self._get(req)
+            # check that return code is 204
+            if result[0] == 204:
+                return result[1]
+            else:
+                raise Exception("Problem with upload of data, result code %s" % result[0])
         
         
     def clear(self, context=None):
