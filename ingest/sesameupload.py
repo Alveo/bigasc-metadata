@@ -99,7 +99,7 @@ class SesameServer():
                 print "problem with retry of ", fn
                 retry.append(fn)
             
-    def upload_graph(self, graph):
+    def upload_graph(self, graph, name=None):
         """Upload the contents of an RDFlib graph to the store"""
 
         # add namespaces to the graph before uploading        
@@ -112,11 +112,20 @@ class SesameServer():
         if graphdir:            
             if not os.path.exists(graphdir):
                 os.makedirs(graphdir)
-            (fd, filename) = tempfile.mkstemp(prefix='graph', dir=graphdir)
+            if name!=None:
+                # write out to the filename given with a suffix
+                filename = os.path.join(graphdir, name + ".ttl") 
+                if not os.path.exists(os.path.dirname(filename)):
+                    os.makedirs(os.path.dirname(filename))
+                h = open(filename, 'w')
+            else:
+                # make a temp file name
+                (fd, filename) = tempfile.mkstemp(prefix='graph-', suffix='.ttl', dir=graphdir)
+                h = os.fdopen(fd)
 
-                 
-            os.write(fd, data)
-            os.close(fd)
+            data = graph.serialize(format='turtle')
+            h.write(data)
+            h.close()
             return filename
         else:
         
