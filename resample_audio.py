@@ -43,7 +43,7 @@ def make_processor(sessiondir, outdir, server):
             for tr in newmeta:
                 graph.add(tr)
             # upload the lot to the server
-            server.upload_graph(graph)
+            server.upload_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
             
         # progress...
         sys.stdout.write('.')
