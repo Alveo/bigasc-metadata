@@ -63,6 +63,13 @@ class SesameServer():
         h = open(filename)
         data = h.read()
         h.close()
+
+        # need to replace true|false with quoted version
+        # because the turtle that Sesame understands is not quite
+        # the same as the turtle that rdflib generates
+        data = data.replace(" true;", ' "true";')
+        data = data.replace(" false;", ' "false";')
+
         headers = {'Content-Type': 'application/x-turtle'}
         req = urllib2.Request(self.url+path, data=data, headers=headers)
 
@@ -96,7 +103,7 @@ class SesameServer():
             try:
                 self.upload(fn)
             except:
-                print "problem with retry of ", fn, "giving up"
+                print "problem with retry of ", fn
                 #retry.append(fn)
 
     def upload_graph(self, graph, name=None):
