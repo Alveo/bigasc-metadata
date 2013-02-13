@@ -439,12 +439,7 @@ def participant_rdf(part_md, csvdata=None):
             graph.add((p_uri, NS.suburb, Literal(csvdata['Suburb'])))
             graph.add((p_uri, NS.postcode, Literal(csvdata['Postcode'])))
               
-
-    # add some namespaces to make output prettier
-    graph.bind('austalk', NS)
-    graph.bind('dc', DC)
-    graph.bind('foaf', FOAF)
-    graph.bind('dbpedia', DBP)
+    bind_graph(graph)
 
     return graph
 
