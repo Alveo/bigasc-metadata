@@ -87,9 +87,9 @@ class SesameServer():
         retry = []
 
         for dirpath, dirnames, filenames in os.walk(dirname):
+            print "Directory: ", dirpath
             for fn in filenames:
                 if fn.endswith(".ttl"):
-                    print "Upload", fn
                     try:
                         self.upload(os.path.join(dirpath, fn))
                     except:
