@@ -85,7 +85,6 @@ MausException: Internal Server Error
 
     MAUS_URL = configmanager.get_config("MAUS_URL")
     try:
-        print "Opening: ", MAUS_URL, params
         response = opener.open(MAUS_URL, params)
     except urllib2.HTTPError as e:
         raise MausException(e.msg)
@@ -94,7 +93,6 @@ MausException: Internal Server Error
 
     if result.startswith('File type = "ooTextFile"'):
         # everything was ok
-        return result
     else:
         print "RESULT: ", result
         # some kind of error
@@ -292,9 +290,7 @@ def url_to_path(media):
 
 if __name__=='__main__':
 
-#        import doctest
-#        doctest.testmod()
+        import doctest
+        doctest.testmod()
 
-    txt = maus("test/bassinette-sample-16.wav", "bassinette")
-    print txt
 
