@@ -93,8 +93,8 @@ MausException: Internal Server Error
 
     if result.startswith('File type = "ooTextFile"'):
         # everything was ok
+        return result
     else:
-        print "RESULT: ", result
         # some kind of error
         raise MausException(result)
 
