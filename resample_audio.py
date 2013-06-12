@@ -28,6 +28,8 @@ def make_processor(sessiondir, outdir, server):
         """
         
         n = 0
+        
+        graph = Graph()
         for audio in glob.glob(item_path + "*-ch6-speaker*.wav"):
             path = os.path.join(outdir, item_path[(len(os.path.dirname(sessiondir))+1):])
             path = os.path.dirname(path) 
@@ -38,12 +40,11 @@ def make_processor(sessiondir, outdir, server):
                 newaudio = resample(audio, os.path.join(outdir, newpath))
                 n += 1
                 
-            graph = Graph()
             # add in metadata for newly created audio tracks
             for tr in newmeta:
                 graph.add(tr)
-            # upload the lot to the server
-            server.upload_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
+        # upload the lot to the server
+        server.upload_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
             
         # progress...
         sys.stdout.write('.')
