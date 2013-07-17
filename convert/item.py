@@ -39,6 +39,8 @@ class ItemMapper:
         self.itemmap.add('component', mapper=self.map_component)
         self.itemmap.add('files', mapper=self.map_files)
         self.itemmap.add('session', mapper=self.map_session)
+        
+        self.itemmap.add('basename', mapto=DC.identifier)
     
         # TODO: deal with maptask properties
         self.itemmap.add('otherAnimal', ignore=True)
@@ -48,9 +50,7 @@ class ItemMapper:
         self.itemmap.add('map', ignore=True)
         
         # these we don't need as they are redundant
-        self.itemmap.add('session', ignore=True)
-        self.itemmap.add('component', ignore=True)
-        self.itemmap.add('componentName', ignore=True)
+        #self.itemmap.add('componentName', ignore=True)
         
         
         
@@ -113,9 +113,9 @@ select ?name where {
         for filename in value.keys():
             
             m_uri = self.media_uri(subj, filename)
-            result.append((subj, NS.media, m_uri))
+            result.append((subj, AUSNC.document, m_uri))
             # add file properties
-            result.append((m_uri, RDF.type, NS.MediaFile))
+            result.append((m_uri, RDF.type, FOAF.Document))
             for prop in ['version', 'checksum', 'type', 'channel']:
                 if value[filename].has_key(prop):
                     result.append((m_uri, NS[prop], Literal(value[filename][prop])))
@@ -135,16 +135,15 @@ select ?name where {
         return [(subj, NS.component, cid)]
     
     def map_session(self, subj, prop, value):
-        """Map the session field to point to the 
-        appropriate session URI"""
+        """Map the session field a value 1-3"""
         
         # fold 3/4
         if value == "4":
             value = "3"
     
-        sid = PROTOCOL_NS[SESSION_URI_TEMPLATE % value]
+        #sid = PROTOCOL_NS[SESSION_URI_TEMPLATE % value]
         
-        return [(subj, NS.session, sid)]
+        return [(subj, NS.session, Literal(value))]
     
     def item_participant(self, url):
         """Return the participant Id (1_123) for this item"""
@@ -164,7 +163,7 @@ select ?name where {
     >>> import sys
     >>> sys.path.append("..")
     >>> from ingest import SesameServer
-    >>> mdurl = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session2/Session2_16/1_178_2_16_001.xml"
+    >>> mdurl = "../test/1_178_2_16_001.xml"
     >>> serverurl = "http://sesame.stevecassidy.net/openrdf-sesame/repositories/bigasc"
     >>> server = SesameServer(serverurl)
     >>> im = ItemMapper(server)
@@ -175,7 +174,7 @@ select ?name where {
     >>> [t for t in graph.subject_objects(NS.timestamp)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_178_2_16_001'), rdflib.term.Literal(u'Tue Feb 21 10:37:05 2012'))]
     
-    # print graph.serialize(format='turtle') 
+    >>> print graph.serialize(format='turtle') 
      
      # a maptask item with full metadata
     >>> mfile = "../test/1_530_3_8_001.xml"
@@ -193,7 +192,7 @@ select ?name where {
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_619_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/1_69'))]
     
     # this one is too, via a URL
-    >>> mdurl = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_719/Spkr1_719_Session4/Session4_10/1_719_4_10_001.xml"
+    >>> mdurl = "../test/1_719_4_10_001.xml"
     >>> graph3 = im.item_rdf(mdurl, m)
     >>> [t for t in graph3.subject_objects(NS.information_giver)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_719_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/2_114'))]
@@ -285,6 +284,12 @@ select ?name where {
 
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
         
+        # add some standard metadata
+        graph.add((item_uri, DC.title, md['basename']))
+        
+        
+        
+        
         # part of the component, which has a prototype
         graph.add((component_uri, NS.prototype, component_prototype))
         graph.add((component_uri, RDF.type, NS.RecordedComponent))
@@ -326,16 +331,15 @@ def read_metadata(url):
 >>> md['basename']
 '1_178_4_12_001'
 
-# grab an example from the server that has -n files
->>> mdurl = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session2/Session2_16/1_178_2_16_001.xml"
+# grab an example that has -n files
+>>> mdurl = "../test/1_178_2_16_001.xml"
 >>> md = read_metadata(mdurl)
 >>> md['cameraSN1']
 '11072159'
 >>> md['files'].keys()
 ['1_178_2_16_001-ch5-c2Right.wav', '1_178_2_16_001-n-ch6-speaker.wav', '1_178_2_16_001-ch3-strobe.wav', '1_178_2_16_001-n-ch1-maptask.wav', '1_178_2_16_001-ch4-c2Left.wav', '1_178_2_16_001-ch1-maptask.wav', '1_178_2_16_001-camera-0-left.mp4', '1_178_2_16_001-camera-0-right.mp4', '1_178_2_16_001-ch6-speaker.wav', '1_178_2_16_001-n-ch4-c2Left.wav', '1_178_2_16_001-ch2-boundary.wav', '1_178_2_16_001-n-ch5-c2Right.wav', '1_178_2_16_001-n-camera-0-right.mp4', '1_178_2_16_001-n-ch2-boundary.wav', '1_178_2_16_001-n-camera-0-left.mp4', '1_178_2_16_001-n-ch3-strobe.wav']
 >>> md['files']['1_178_2_16_001-n-ch5-c2Right.wav']
-{'checksum': '2d5b13b05063a4b3b845672d1ca4eb91', 'version': 2, 'type': 'audio', 'channel': 'ch5-c2Right', 'filename': '1_178_2_16_001-n-ch5-c2Right.wav'}
-
+{'checksum': '2d5b13b05063a4b3b845672d1ca4eb91', 'basename': '1_178_2_16_001', 'filename': '1_178_2_16_001-n-ch5-c2Right.wav', 'version': 2, 'type': 'audio', 'channel': 'ch5-c2Right'}
 
     """
 
@@ -508,19 +512,19 @@ def read_manifest(baseurl):
     the session directory, return a list
     of URLs for the XML metadata files for each item in the session
 
->>> session_url = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1"
+#>>> session_url = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1"
 
->>> items = read_manifest(session_url)
->>> len(items)
-371
->>> items[0]
-'https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1/Session1_2/1_178_1_2_021.xml'
+#>>> items = read_manifest(session_url)
+#>>> len(items)
+#371
+#>>> items[0]
+#'https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1/Session1_2/1_178_1_2_021.xml'
 >>> session_dir = "../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1"
 >>> items = read_manifest(session_dir)
 >>> len(items)
 54
 >>> items[0]
-'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_001.xml'
+'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_001.xml'
     """
     
     # https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1

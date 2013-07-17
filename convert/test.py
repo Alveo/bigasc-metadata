@@ -16,8 +16,8 @@ class Test(unittest.TestCase):
         
         md = item.read_metadata(mdfile)
         
-        for key in md.keys():
-            print key, ":", md[key]
+        #for key in md.keys():
+           # print key, ":", md[key]
         
         self.assertEqual(md['componentName'], "Words Session 1")
         self.assertEqual(md['timestamp'], "Mon Jul 18 16:48:43 2011")
