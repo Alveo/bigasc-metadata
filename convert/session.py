@@ -11,7 +11,8 @@ Convert metadata from the Blackbox Recorder software to RDF
 # hacketty hack hack hoo
 import os
 bbpaths = ['/Users/steve/projects/eclipse-workspace/blackbox-gui/src',
-           '/home/steve/workspace/SSCP-GUI/src']
+           '/home/steve/workspace/SSCP-GUI/src',
+           '/Users/steve/Workspace/SSCP-GUI/src']
 
 for p in bbpaths:
     if os.path.exists(p):

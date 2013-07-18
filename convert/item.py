@@ -174,7 +174,7 @@ select ?name where {
     >>> [t for t in graph.subject_objects(NS.timestamp)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_178_2_16_001'), rdflib.term.Literal(u'Tue Feb 21 10:37:05 2012'))]
     
-    >>> print graph.serialize(format='turtle') 
+    # print graph.serialize(format='turtle') 
      
      # a maptask item with full metadata
     >>> mfile = "../test/1_530_3_8_001.xml"
@@ -285,7 +285,7 @@ select ?name where {
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
         
         # add some standard metadata
-        graph.add((item_uri, DC.title, md['basename']))
+        graph.add((item_uri, DC.title, Literal(md['basename'])))
         
         
         
@@ -524,7 +524,7 @@ def read_manifest(baseurl):
 >>> len(items)
 54
 >>> items[0]
-'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_001.xml'
+'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_001.xml'
     """
     
     # https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1
