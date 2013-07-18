@@ -60,6 +60,8 @@ def ingest_participants(server):
     participants = convert.get_participant_list()
     print "Uploading", len(participants), "participants"
     
+    convert.reset_site_mapping()
+    
     maptask = RAMapTask()
     (spkr, map) = maptask.read_all()
     

@@ -16,7 +16,7 @@ configmanager.configinit()
 if __name__ == '__main__':
     
     server_url = configmanager.get_config("SESAME_SERVER")
-    
+
     server = ingest.SesameServer(server_url)
     
     if len(sys.argv) == 2 and sys.argv[1] == "clear":

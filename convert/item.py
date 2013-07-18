@@ -14,8 +14,7 @@ from namespaces import *
 from session import component_map
 from participant import participant_uri
 
-
-
+from participant import item_site_name
 
 class ItemMapper:
     
@@ -53,35 +52,7 @@ class ItemMapper:
         
         # these we don't need as they are redundant
         #self.itemmap.add('componentName', ignore=True)
-        
-        
-        
-    
-    def item_site_name(self, spkruri):
-        """Given a speaker URI, return the short name of the
-        the recording site for inclusion in the file path"""
-        
-        q = """
-PREFIX austalk: <http://ns.austalk.edu.au/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-select ?name where {
-    <%s>  austalk:recording_site ?site .
-    ?site rdfs:label ?name .
-}""" % spkruri
-     
-        result = self.server.query(q)
-        bindings = result['results']['bindings']
-         
-        if len(bindings) > 0:
-            name = bindings[0]['name']['value']
-        else:
-            name = "UNKNOWN"
-            
-        # set an instance variable so that map_files can use this
-        self.site_name = name
-        
-        return name
 
     def media_uri(self, itemuri, filename):
         """Given a filename, return a URI for
@@ -220,7 +191,8 @@ select ?name where {
         # later in mapping file names to uris
         
         self.participant_uri = participant_uri(md['colour'], md['animal'])
-        self.item_site_name(self.participant_uri)
+        self.site_name = item_site_name(self.participant_uri)
+        
         participant_id = "%(colour)s_%(animal)s" % md
         
         graph = self.itemmap.mapdict(item_uri, md, NS['graph/data'])

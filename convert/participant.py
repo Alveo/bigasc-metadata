@@ -8,12 +8,75 @@ Convert meta-data about participants harvested from the web server database to R
 from rdflib import Literal
 import urllib2
 import json
+import os
+
 import map
 from namespaces import *
-
 import configmanager
 configmanager.configinit()
 PARTICIPANT_DETAIL = configmanager.get_config("PARTICIPANT_DETAIL", "FULL")
+
+# file to write site mapping to in map_location
+# used to speed up lookup of sites for items
+SITE_MAPPING_FILE = "sitemap.dat"
+SITE_MAP = None
+
+def item_site_name(spkruri):
+    """Given a speaker URI, return the short name of the
+    the recording site for inclusion in the file path
+    
+>>> item_site_name("http://id.austalk.edu.au/participant/1_530")
+'ANU'
+>>> item_site_name("http://id.austalk.edu.au/participant/1_719")
+'ANU'
+ 
+    """
+
+    global SITE_MAP
+    
+    if SITE_MAP == None:
+        if not os.path.exists(SITE_MAPPING_FILE):
+            print "ERROR: No site mapping file, run upload_participants first"
+            exit()
+        
+        h = open(SITE_MAPPING_FILE, 'r')
+        lines = h.readlines()
+        h.close()
+        SITE_MAP = dict()
+        
+        for line in lines:
+            (id, site) = line.split()
+            SITE_MAP[id] = site 
+        
+  #  print "sitename for", spkruri,
+    
+    # it might be a URI object, coerce it to string
+    spkruri = str(spkruri)
+    
+    if SITE_MAP.has_key(spkruri):
+    #    print SITE_MAP[spkruri]
+        return SITE_MAP[spkruri]
+    else:
+    #    print "UNKNOWN"
+        return "UNKNOWN"
+
+def reset_site_mapping():
+    
+    if os.path.exists(SITE_MAPPING_FILE):
+        os.unlink(SITE_MAPPING_FILE)
+
+
+def record_site_mapping(subj, site_id):
+    """Record the mapping between a speaker and a site"""
+    
+    h = open(SITE_MAPPING_FILE, 'a')
+    h.write("%s %s\n" % (subj, site_id))
+    h.close()
+    
+
+
+
+
 
 #PARTICIPANT_URI = "https://echidna.science.mq.edu.au/forms/export/participants/"
 PARTICIPANT_URI = "https://austalk.edu.au/forms/export/participants/"
@@ -206,7 +269,7 @@ Unknown value for SEX: U
 def map_dob(subj, prop, value):
     """Map date of birth, only retain the year
 >>> map_dob('foo', 'dob', '1992-01-21')
-[('foo', rdflib.term.URIRef(u'http://dbpedia.org/ontology/birthYear'), rdflib.term.Literal(u'1992', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer'))), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/ageGroup'), rdflib.term.Literal(u'<30')), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/age'), rdflib.term.Literal(u'20', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer')))]
+[('foo', rdflib.term.URIRef(u'http://dbpedia.org/ontology/birthYear'), rdflib.term.Literal(u'1992', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer'))), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/ageGroup'), rdflib.term.Literal(u'<30')), ('foo', rdflib.term.URIRef(u'http://xmlns.com/foaf/0.1/age'), rdflib.term.Literal(u'20', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer')))]
 """
     
     (y, m, d) = value.split('-')
@@ -253,7 +316,7 @@ rdflib.term.URIRef(u'http://id.austalk.edu.au/453dd33bc7976708d8b64f94fb2e50e8')
     return [(subj, OLAC.recorder, ID_NS[hash]),
             (ID_NS[hash], RDF.type, FOAF.Person)]
     
-    
+
 def map_location(subj, prop, value):
     """Map the location value to one of the defined site names
 
@@ -274,6 +337,8 @@ def map_location(subj, prop, value):
     
     site_uri = PROTOCOL_NS["site/"+site_id]
     
+    # for person-site mapping
+    record_site_mapping(subj, site_id)
     
     return [(subj, NS.recording_site, site_uri),
             (site_uri, RDF.type, NS.RecordingSite),
@@ -410,7 +475,7 @@ def participant_rdf(part_md, csvdata=None):
 >>> len(graph_min)
 149
 
->>> print graph_min.serialize(format='turtle')
+#print graph_min.serialize(format='turtle')
     """
     
     p_id = "%s_%s" % (part_md['colour']['id'], part_md['animal']['id'])
