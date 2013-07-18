@@ -40,15 +40,15 @@ AUSNC = Namespace(u"http://ns.ausnc.org.au/schemas/ausnc_md_model/")
 # this hack finds all of the namespaces defined above and 
 # puts them into a dictionary that we can use in bind_graph
 import sys
-NAMESPACES = dict()
+NameSpaces = dict()
 namespaces = [n for n in sys.modules[__name__].__dict__.keys() if n.isupper()]
 for ns in namespaces:
-    NAMESPACES[ns.lower()] = eval(ns)
+    NameSpaces[ns.lower()] = eval(ns)
 
 def bind_graph(graph):
     
-    for ns in NAMESPACES.keys():
-        graph.bind(ns, NAMESPACES[ns]) 
+    for ns in NameSpaces.keys():
+        graph.bind(ns, NameSpaces[ns]) 
 
     return graph
 

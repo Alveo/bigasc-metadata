@@ -58,12 +58,15 @@ def dictionary_blank_mapper(bnprop, bnmap):
 class FieldMapper:
     """Class representing a mapping of field names and values"""
     
-    def __init__(self):
+    def __init__(self, copy_if_unknown=True):
         """Create a Field Mapper 
+        if copy_if_unknown is True, unknown properties will be copied
+        to the output with a suitable namespace, if false, they will
+        be ignored
         """
-        
+        self.copy_if_unknown = copy_if_unknown
         self.simpleMap = dict() # a dict of simple key to key mappings
-        
+         
         
     def __call__(self, key, value):
         """Callable interface to map a single property/value pair"""
@@ -111,10 +114,14 @@ class FieldMapper:
             elif callable(type(self.simpleMap[key])):
                 
                 return self.simpleMap[key]
-        else:
+        elif self.copy_if_unknown:
             # just use this property and the unchanged value
             prop = NS[key]
             return lambda a, b, c: [(a, prop, Literal(c))]
+        
+        else: 
+            # always map to empty
+            return lambda a, b, c: []
     
     def map(self, subj, key, value):
         """Return a sequence of triples (subj, property, mappedvalue) which is the mapping

@@ -3,7 +3,7 @@ import csv
 from collections import namedtuple
 import os
 
-blackbox_path = '/Users/steve/projects/eclipse-workspace/blackbox-gui/src'
+from session import blackbox_path
 
 import sys
 sys.path.append(blackbox_path) 

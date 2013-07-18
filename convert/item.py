@@ -40,6 +40,8 @@ class ItemMapper:
         self.itemmap.add('files', mapper=self.map_files)
         self.itemmap.add('session', mapper=self.map_session)
         
+        self.itemmap.add('timestamp', mapto=DC.created)
+        
         self.itemmap.add('basename', mapto=DC.identifier)
     
         # TODO: deal with maptask properties
@@ -163,7 +165,7 @@ select ?name where {
     >>> import sys
     >>> sys.path.append("..")
     >>> from ingest import SesameServer
-    >>> mdurl = "../test/1_178_2_16_001.xml"
+    >>> mdurl = "test/1_178_2_16_001.xml"
     >>> serverurl = "http://sesame.stevecassidy.net/openrdf-sesame/repositories/bigasc"
     >>> server = SesameServer(serverurl)
     >>> im = ItemMapper(server)
@@ -171,19 +173,19 @@ select ?name where {
     >>> [t for t in graph.subject_objects(NS.cameraSN0)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_178_2_16_001'), rdflib.term.Literal(u'11051192'))]
     
-    >>> [t for t in graph.subject_objects(NS.timestamp)]
+    >>> [t for t in graph.subject_objects(DC.created)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_178_2_16_001'), rdflib.term.Literal(u'Tue Feb 21 10:37:05 2012'))]
     
     # print graph.serialize(format='turtle') 
      
      # a maptask item with full metadata
-    >>> mfile = "../test/1_530_3_8_001.xml"
+    >>> mfile = "test/1_530_3_8_001.xml"
     >>> graph = im.item_rdf(mfile)
     >>> [t for t in graph.subject_objects(NS.information_follower)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_530_3_8_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/4_172'))]
                 
     # this one is a maptask item with no second speaker metadata
-    >>> mfile = "../test/1_619_4_10_001.xml"
+    >>> mfile = "test/1_619_4_10_001.xml"
     >>> from ra_maptask import RAMapTask
     >>> mt = RAMapTask()
     >>> (s, m) = mt.read_all()
@@ -192,12 +194,12 @@ select ?name where {
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_619_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/1_69'))]
     
     # this one is too, via a URL
-    >>> mdurl = "../test/1_719_4_10_001.xml"
+    >>> mdurl = "test/1_719_4_10_001.xml"
     >>> graph3 = im.item_rdf(mdurl, m)
     >>> [t for t in graph3.subject_objects(NS.information_giver)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_719_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/2_114'))]
     
-    #print graph3.serialize(format='turtle')   
+    >>> print graph3.serialize(format='turtle')   
         """
         
         md = read_metadata(url)
@@ -321,18 +323,18 @@ def read_metadata(url):
     """Read item metadata from the given url
     return a dictionary of values
     
->>> mdfile = "../test/1_1121_1_12_001.xml"
+>>> mdfile = "test/1_1121_1_12_001.xml"
 >>> read_metadata(mdfile)
 {'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch6-speaker.wav', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch1-maptask.wav', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch4-c2Left.wav', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}, '1_1121_1_12_001-camera-0-left.mp4': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-camera-0-left.mp4', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch5-c2Right.wav', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
 
 # an example of regenerated metadata, has no basename so we need to reconstruct it
->>> mdfile = "../test/1_178_4_12_001.xml"
+>>> mdfile = "test/1_178_4_12_001.xml"
 >>> md = read_metadata(mdfile)
 >>> md['basename']
 '1_178_4_12_001'
 
 # grab an example that has -n files
->>> mdurl = "../test/1_178_2_16_001.xml"
+>>> mdurl = "test/1_178_2_16_001.xml"
 >>> md = read_metadata(mdurl)
 >>> md['cameraSN1']
 '11072159'
@@ -519,12 +521,12 @@ def read_manifest(baseurl):
 #371
 #>>> items[0]
 #'https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1/Session1_2/1_178_1_2_021.xml'
->>> session_dir = "../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1"
+>>> session_dir = "test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1"
 >>> items = read_manifest(session_dir)
 >>> len(items)
 54
 >>> items[0]
-'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_001.xml'
+'test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_001.xml'
     """
     
     # https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1

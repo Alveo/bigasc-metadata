@@ -11,6 +11,10 @@ import json
 import map
 from namespaces import *
 
+import configmanager
+configmanager.configinit()
+PARTICIPANT_DETAIL = configmanager.get_config("PARTICIPANT_DETAIL", "FULL")
+
 #PARTICIPANT_URI = "https://echidna.science.mq.edu.au/forms/export/participants/"
 PARTICIPANT_URI = "https://austalk.edu.au/forms/export/participants/"
 
@@ -132,7 +136,7 @@ def get_participant_from_file(filename):
     get the participant metadata from the given filename and 
     return as a dictionary (mainly for testing)
     
->>> part_file = "../test/participant.json"
+>>> part_file = "test/participant.json"
 >>> p = get_participant_from_file(part_file) 
 >>> p['animal']['id']
 450
@@ -202,13 +206,12 @@ Unknown value for SEX: U
 def map_dob(subj, prop, value):
     """Map date of birth, only retain the year
 >>> map_dob('foo', 'dob', '1992-01-21')
-[('foo', rdflib.term.URIRef(u'http://dbpedia.org/ontology/birthYear'), rdflib.term.Literal(u'1992', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer'))), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/ageGroup'), rdflib.term.Literal(u'<30'))] 
-
+[('foo', rdflib.term.URIRef(u'http://dbpedia.org/ontology/birthYear'), rdflib.term.Literal(u'1992', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer'))), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/ageGroup'), rdflib.term.Literal(u'<30')), ('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/age'), rdflib.term.Literal(u'20', datatype=rdflib.term.URIRef(u'http://www.w3.org/2001/XMLSchema#integer')))]
 """
     
     (y, m, d) = value.split('-')
     # calculate age group relative to 2012
-    age = int(y)-2012
+    age = 2012-int(y)
     if age < 30:
         ageGroup = "<30"
     elif age < 50:
@@ -217,7 +220,8 @@ def map_dob(subj, prop, value):
         ageGroup = ">50"
     
     return [(subj, DBP.birthYear, Literal(int(y))),
-            (subj, NS.ageGroup, Literal(ageGroup))]
+            (subj, NS.ageGroup, Literal(ageGroup)),
+            (subj, FOAF.age, Literal(age))]
 
 
 def map_ra(subj, prop, value):
@@ -225,14 +229,18 @@ def map_ra(subj, prop, value):
     unique but anonymous identifier for the RA - the md5hash of their email address in lowercase
 
 >>> ra_info = {u'username': u'steve', u'first_name': '', u'last_name': '', u'is_active': True, u'email': u'steve.cassidy@mq.edu.au', u'is_superuser': True, u'is_staff': True, u'last_login': u'2012-02-01 18:00:05', u'id': 1, u'date_joined': u'2011-06-24 15:20:35'}
->>> map_ra('foo', 'RA', ra_info)
-[('foo', rdflib.term.URIRef(u'http://ns.austalk.edu.au/research_assistant'), rdflib.term.Literal(u'b6816945deae3ab28748cd509a5f21e1'))]
-    """
+>>> graph = map_ra('foo', 'RA', ra_info)
+>>> len(graph)
+2
+>>> graph[0][2]
+rdflib.term.URIRef(u'http://id.austalk.edu.au/453dd33bc7976708d8b64f94fb2e50e8')
+"""
     import hashlib
     import time
     
     # add some salt so that we can't discover the identity if we know the email address or name
-    salt = str(time.time())
+    # not really secure but better than nothing
+    salt = "this is some salt"
     
     if value.has_key('email'):
         email = value['email'].lower()
@@ -242,7 +250,7 @@ def map_ra(subj, prop, value):
         hash = hashlib.md5(salt+user).hexdigest()
 
     # make a person ID and record them as a foaf:Person
-    return [(subj, NS.research_assistant, ID_NS[hash]),
+    return [(subj, OLAC.recorder, ID_NS[hash]),
             (ID_NS[hash], RDF.type, FOAF.Person)]
     
     
@@ -310,37 +318,59 @@ def map_ratings(graph, p_md):
         graph.add((c_uri, NS.audiorating, Literal(rating['audio'])))
         graph.add((c_uri, NS.comment, Literal(rating['comment'])))
 
-# a map for nested properties (education and professional history)
-submap = map.FieldMapper()
-submap.add('_state', ignore=True)
-submap.add("id", ignore=True)
-submap.add("name", mapper=map_language_name)
-
-partmap = map.FieldMapper()
-partmap.add("dob", mapper=map_dob)
-partmap.add("_state", ignore=True)
-partmap.add("id", ignore=True)
-partmap.add("participant_id", ignore=True)
-partmap.add("colour", ignore=True)
-partmap.add("animal", ignore=True)
-partmap.add("gender", mapper=map_gender)
-partmap.add('language_usage', mapper=map.dictionary_blank_mapper(NS.language_usage, submap))
-partmap.add('residence_history', mapper=map.dictionary_blank_mapper(NS.residential_history, submap))
-partmap.add('RA', mapper=map_ra)
-partmap.add('location', mapper=map_location)
-partmap.add('rating', ignore=True)
-partmap.add('first_language', mapper=map_language_name)
-partmap.add('mother_first_language', mapper=map_language_name)
-partmap.add('father_first_language', mapper=map_language_name)
 
 
-## the following are ignored because they potentially expose too much
-## personal detail on the site
-partmap.add('profession_history', ignore=True) 
-partmap.add('education_history', ignore=True)  
-partmap.add('religion', ignore=True)
+def generate_partmap():
+    # a map for nested properties (education and professional history)
+    submap = map.FieldMapper()
+    submap.add('_state', ignore=True)
+    submap.add("id", ignore=True)
+    submap.add("name", mapper=map_language_name)
+    
+    
+    if PARTICIPANT_DETAIL == "MINIMAL":
+        partmap = map.FieldMapper(copy_if_unknown=False)
+    else:    
+        partmap = map.FieldMapper()
+    
+    
+    partmap.add("dob", mapper=map_dob)
+    partmap.add("_state", ignore=True)
+    partmap.add("id", ignore=True)
+    partmap.add("participant_id", ignore=True)
+    partmap.add("colour", ignore=True)
+    partmap.add("animal", ignore=True)
+    partmap.add('rating', ignore=True)
+    
+    
+    partmap.add('location', mapper=map_location)
+    partmap.add("gender", mapper=map_gender)
+    partmap.add('first_language', mapper=map_language_name)
+    partmap.add('RA', mapper=map_ra)
+    
+    if PARTICIPANT_DETAIL in ["TRIM", "FULL"]:
+    
+        partmap.add('language_usage', mapper=map.dictionary_blank_mapper(NS.language_usage, submap))
+        partmap.add('residence_history', mapper=map.dictionary_blank_mapper(NS.residential_history, submap))
+        partmap.add('mother_first_language', mapper=map_language_name)
+        partmap.add('father_first_language', mapper=map_language_name)
+        
+    else:
+        
+        partmap.add('language_usage', ignore=True)
+        partmap.add('residence_history', ignore=True)  
+        partmap.add('mother_first_language', ignore=True)
+        partmap.add('father_first_language', ignore=True)
+    
+    if PARTICIPANT_DETAIL == "TRIM":
+        ## the following are ignored because they potentially expose too much
+        ## personal detail on the site
+        partmap.add('profession_history', ignore=True) 
+        partmap.add('education_history', ignore=True)  
+        partmap.add('religion', ignore=True)
 
 
+    return partmap
 
 def participant_uri(colour, animal, id=None):
     """Generate the URI for a participant given their colour and animal ids
@@ -364,19 +394,29 @@ def participant_rdf(part_md, csvdata=None):
     to override and validate the metadata
     
 >>> from ra_maptask import RAMapTask
->>> part_file = "../test/participant.json"
+>>> part_file = "test/participant.json"
 >>> maptask = RAMapTask ()
->>> csvdata = maptask.parse_speaker ("../ra-spreadsheets/ANU-Speaker.csv", True)
+>>> csvdata = maptask.parse_speaker ("ra-spreadsheets/ANU-Speaker.csv", True)
 >>> p = get_participant('3_726')
 >>> graph = participant_rdf(p, csvdata['3_726'])
 >>> len(graph)
-176
->>> print graph.serialize(format='turtle')
+149
+>>> PARTICIPANT_DETAIL = "TRIM"
+>>> graph_trim = participant_rdf(p, csvdata['3_726'])
+>>> len(graph_trim)
+149
+>>> PARTICIPANT_DETAIL = "MINIMAL"
+>>> graph_min = participant_rdf(p, csvdata['3_726'])
+>>> len(graph_min)
+149
+
+>>> print graph_min.serialize(format='turtle')
     """
     
     p_id = "%s_%s" % (part_md['colour']['id'], part_md['animal']['id'])
     p_name = "%s - %s" % (part_md['colour']['name'], part_md['animal']['name'])
     
+    partmap = generate_partmap()
     
     p_uri = participant_uri(part_md['colour']['id'], part_md['animal']['id'])
     graph = partmap.mapdict(p_uri, part_md, NS['graphs/participants'])
@@ -385,8 +425,10 @@ def participant_rdf(part_md, csvdata=None):
     graph.add((p_uri, NS.id, Literal(p_id)))
     graph.add((p_uri, NS.name, Literal(p_name)))
     
-    birthLoc = (part_md['pob_town'], part_md['pob_state'], part_md['pob_country'])
-    add_geolocation(p_uri, NS.birthPlace, birthLoc, graph)
+    
+    if PARTICIPANT_DETAIL != "MINIMAL":
+        birthLoc = (part_md['pob_town'], part_md['pob_state'], part_md['pob_country'])
+        add_geolocation(p_uri, NS.birthPlace, birthLoc, graph)
          
     if part_md.has_key('rating'):
         map_ratings(graph, part_md)
@@ -406,14 +448,16 @@ def participant_rdf(part_md, csvdata=None):
             else:
                 print "Odd year:", y
             
-            yobs = graph.objects(subject=p_uri, predicate=DBP.birthYear)
-            for yob in yobs:
-                if  yob != refyr:
-                    print "\tDOBs differ for %s, %s changed to %s" % (p_id, yob, refyr)
+            refage = 2012-int(refyr)
+            
+            ages = graph.objects(subject=p_uri, predicate=FOAF.age)
+            for age in ages:
+                if  str(age) != str(refage):
+                    print "\tDOBs differ for %s, '%s' changed to '%s'" % (p_id, age, refage)
                     
                     # modify the graph
-                    graph.remove((p_uri, DBP.birthYear, yob))
-                    graph.add((p_uri, DBP.birthYear, Literal(refyr)))
+                    graph.remove((p_uri, FOAF.age, age))
+                    graph.add((p_uri, FOAF.age, Literal(refage)))
         else:
             print "No DOB"
            
@@ -435,7 +479,7 @@ def participant_rdf(part_md, csvdata=None):
         if csvdata.has_key('NOTES'):
             graph.add((p_uri, NS.maptaskcomment, Literal(csvdata['NOTES'])))
         
-        if csvdata.has_key('Suburb') and csvdata.has_key('Postcode'):
+        if PARTICIPANT_DETAIL != "MINIMAL" and csvdata.has_key('Suburb') and csvdata.has_key('Postcode'):
             graph.add((p_uri, NS.suburb, Literal(csvdata['Suburb'])))
             graph.add((p_uri, NS.postcode, Literal(csvdata['Postcode'])))
               

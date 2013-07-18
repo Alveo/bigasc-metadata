@@ -1,0 +1,16 @@
+[DEFAULT]
+SESAME_SERVER = http://115.146.93.47/openrdf-sesame/repositories/bigasc_native
+MAUS_URL = http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
+
+
+# if STORE_GRAPHS is set then graphs will be written to this directory rather than
+# being uploaded
+# STORE_GRAPHS = /var/syndisk/austalk-graphs/
+STORE_GRAPHS = /tmp/austalk-graphs/
+
+
+# set PARTICIPANT_DETAIL to: 
+#  FULL - to include all properties
+#  TRIM - to exclude most 'private' details
+#  MINIMAL - to include only bare minimum properties
+PARTICIPANT_DETAIL = MINIMAL
