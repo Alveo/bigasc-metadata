@@ -14,3 +14,9 @@ STORE_GRAPHS = /tmp/austalk-graphs/
 #  TRIM - to exclude most 'private' details
 #  MINIMAL - to include only bare minimum properties
 PARTICIPANT_DETAIL = MINIMAL
+
+
+# determines the output format used for RDF graphs
+#   turtle is readable but slow
+#   nt is fast but hard to read
+RDF_GRAPH_FORMAT = nt

@@ -9,6 +9,8 @@ from convert.namespaces import bind_graph
 import configmanager
 configmanager.configinit()
 
+RDF_GRAPH_FORMAT = configmanager.get_config("RDF_GRAPH_FORMAT", "nt")
+
 import tempfile
 
 class RequestWithMethod(urllib2.Request):
@@ -70,7 +72,14 @@ class SesameServer():
         data = data.replace(" true;", ' "true";')
         data = data.replace(" false;", ' "false";')
 
-        headers = {'Content-Type': 'application/x-turtle'}
+        if RDF_GRAPH_FORMAT == 'turtle':
+            headers = {'Content-Type': 'application/x-turtle'}
+        elif RDF_GRAPH_FORMAT == 'nt':
+            headers = {'Content-Type': 'text/plain'}
+        else:
+            print "Unknown graph format in configuration: ", RDF_GRAPH_FORMAT
+            exit()
+            
         req = urllib2.Request(self.url+path, data=data, headers=headers)
 
         result = self._get(req)
@@ -89,7 +98,7 @@ class SesameServer():
         for dirpath, dirnames, filenames in os.walk(dirname):
             print "Directory: ", dirpath
             for fn in filenames:
-                if fn.endswith(".ttl"):
+                if fn.endswith(RDF_GRAPH_FORMAT):
                     try:
                         self.upload(os.path.join(dirpath, fn))
                     except:
@@ -112,7 +121,7 @@ class SesameServer():
         # add namespaces to the graph before uploading
         graph = bind_graph(graph)
 
-        data = graph.serialize(format='xml')
+        data = graph.serialize(format=RDF_GRAPH_FORMAT)
 
         # check to see if we should store the graphs somewhere
         graphdir = configmanager.get_config('STORE_GRAPHS', False)
@@ -121,17 +130,16 @@ class SesameServer():
                 os.makedirs(graphdir)
             if name!=None:
                 # write out to the filename given with a suffix
-                filename = os.path.join(graphdir, name + ".ttl")
+                filename = os.path.join(graphdir, name + "." + RDF_GRAPH_FORMAT)
                 if not os.path.exists(os.path.dirname(filename)):
                     os.makedirs(os.path.dirname(filename))
                 h = open(filename, 'w')
             else:
                 # make a temp file name
-                (fd, filename) = tempfile.mkstemp(prefix='graph-', suffix='.ttl', dir=graphdir)
+                (fd, filename) = tempfile.mkstemp(prefix='graph-', suffix='.'+RDF_GRAPH_FORMAT, dir=graphdir)
                 h = os.fdopen(fd)
 
-            #data = graph.serialize(format='turtle')
-            data = graph.serialize(format='nt')
+                data = graph.serialize(format=RDF_GRAPH_FORMAT)
 	    h.write(data)
             h.close()
             return filename
@@ -143,7 +151,15 @@ class SesameServer():
             else:
                 path = "/statements"
 
-            headers = {'Content-Type': 'application/rdf+xml'}
+            if RDF_GRAPH_FORMAT == 'turtle':
+                headers = {'Content-Type': 'application/x-turtle'}
+            elif RDF_GRAPH_FORMAT == 'nt':
+                headers = {'Content-Type': 'text/plain'}
+            else:
+                print "Unknown graph format in configuration: ", RDF_GRAPH_FORMAT
+                exit()
+            
+            
             req = urllib2.Request(self.url+path, data=data, headers=headers)
 
             result = self._get(req)
