@@ -24,20 +24,22 @@ def normalise_filename(filename, ext='.TextGrid'):
     
     try:
         p = parse_item_filename(filename)
+
+    
+        p['site'] = item_site_name(participant_uri(p['colour'], p['animal']))
+        
+        m = component_map()
+        p['componentName'] = m[int(p['component'])]
+        
+        p['item'] = int(p['item'])
+        
+        basename = "%(speaker)s_%(session)s_%(component)s_%(item)03d" % p
+        p['filename'] = basename + ext
+        
+        return DATA_URI_TEMPLATE % p
+
     except:
         return ''
-    
-    p['site'] = item_site_name(participant_uri(p['colour'], p['animal']))
-    
-    m = component_map()
-    p['componentName'] = m[int(p['component'])]
-    
-    p['item'] = int(p['item'])
-    
-    basename = "%(speaker)s_%(session)s_%(component)s_%(item)03d" % p
-    p['filename'] = basename + ext
-    
-    return DATA_URI_TEMPLATE % p
 
 
 def md5hexdigest(filename):
