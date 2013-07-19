@@ -130,8 +130,9 @@ class SesameServer():
                 (fd, filename) = tempfile.mkstemp(prefix='graph-', suffix='.ttl', dir=graphdir)
                 h = os.fdopen(fd)
 
-            data = graph.serialize(format='turtle')
-            h.write(data)
+            #data = graph.serialize(format='turtle')
+            data = graph.serialize(format='nt')
+	    h.write(data)
             h.close()
             return filename
         else:
