@@ -22,8 +22,11 @@ def normalise_filename(filename, ext='.TextGrid'):
     """Given an annotation filename, return a path that we can 
     use to store it in the right place"""
     
+    try:
+        p = parse_item_filename(filename)
+    except:
+        return ''
     
-    p = parse_item_filename(filename)
     p['site'] = item_site_name(participant_uri(p['colour'], p['animal']))
     
     m = component_map()
@@ -113,12 +116,13 @@ if __name__ == '__main__':
         for fn in filenames:
             if fn.find(ext) >= 0:
                 newfn = normalise_filename(fn, ext)
-                fullpath = os.path.join(dirpath, fn)
-                
-                if results.has_key(newfn):
-                    results[newfn].append(fullpath)
-                else:
-                    results[newfn] = [fullpath]
+                if newfn != '':
+                    fullpath = os.path.join(dirpath, fn)
+                    
+                    if results.has_key(newfn):
+                        results[newfn].append(fullpath)
+                    else:
+                        results[newfn] = [fullpath]
         process_results(results, outdir)
                     
 
