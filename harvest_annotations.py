@@ -65,19 +65,27 @@ def check_file_versions(files):
             return False
     return True
 
+
+def newest_file(files):
+    """Given a list of filenames, return the one
+    corresponding to the newest file"""
+    
+    newest = files[0]
+    newest_s = os.stat(newest).st_mtime
+    for f in files[1:]:
+        s = os.stat(f).st_mtime
+        if s > newest_s:
+            newest = f
+            newest_s = s
+            
+    return newest
+
 def process_results(results, outdir):
     
-
     for key in sorted(results.keys()):
-        if len(results[key]) > 1:
-            if check_file_versions(results[key]):
-                copy_file(results[key][0], os.path.join(outdir, key))
-            else:
-                print "Files Differ:"
-                for f in results[key]:
-                    print "\t", f
-        else:
-            copy_file(results[key][0], os.path.join(outdir, key))
+
+        source = newest_file(results[key])            
+        copy_file(source, os.path.join(outdir, key))
 
 def copy_file(src, dest):
     """Copy src to dest but make sure that the directories in dest exist"""

@@ -140,7 +140,7 @@ class SesameServer():
                 h = os.fdopen(fd)
 
                 data = graph.serialize(format=RDF_GRAPH_FORMAT)
-	    h.write(data)
+            h.write(data)
             h.close()
             return filename
         else:
