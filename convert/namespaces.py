@@ -55,6 +55,9 @@ def bind_graph(graph):
 # for backwards compatibility but we don't want it above
 NS = AUSTALK
 
+# a URI for the corpus as a whole
+CORPUS_URI = AUSTALK.corpus
+
 SESSION_URI_TEMPLATE = "session/%s"
 COMPONENT_URI_TEMPLATE = "component/%s"
 ITEM_URI_TEMPLATE = "item/%s_%s"

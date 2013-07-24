@@ -14,7 +14,7 @@ from convert import parse_media_filename
 from rdflib import Literal
 
 SOX_PROGRAM = ''
-for d in ['/usr/bin/', '/usr/local/']:
+for d in ['/usr/bin/', '/usr/local/bin']:
     if os.path.exists(os.path.join(d, 'sox')):
         SOX_PROGRAM = os.path.join(d, 'sox')
         break

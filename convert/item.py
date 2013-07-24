@@ -94,6 +94,8 @@ class ItemMapper:
                     result.append((m_uri, NS[prop], Literal(value[filename][prop])))
                 else:
                     print "file %s has no '%s' property: %s" % (filename, prop, str(value[filename]))
+            # add identifier field which is just the filename
+            result.append((m_uri, DC.identifier, Literal(filename)))
         
         return result    
     
@@ -124,6 +126,63 @@ class ItemMapper:
         md = read_metadata(url)
 
         return "%(colour)s_%(animal)s" % md
+        
+    COMPONENTS = {'spontaneous': [
+                        "interview",
+                        "calibration",
+                        "maptask-1",
+                        "maptask-2",
+                        "yes-no-opening-2",
+                        "yes-no-closing",
+                        "yes-no-opening-1",
+                        "yes-no-opening-3",
+                        "conversation",
+                        "re-told-story",
+                              ],
+                  'read': [
+                        "words-3-2",
+                        "words-2-2",
+                        "story",
+                        "digits",
+                        "words-1-2",
+                        "sentences",
+                        "words-3",
+                        "words-2",
+                        "words-1",
+                        "sentences-e",
+                       ]
+              }
+
+        
+    def item_generic_properties(self, graph, item_uri, component):
+        """Generate the triples describing the 'genre' of this item"""
+         
+        # get the component short name, easier to work with
+        component = self.component_map[int(component)]
+         
+        graph.add((item_uri, AUSNC.mode, AUSNC.spoken))
+        
+        # face_to_face, distance
+        graph.add((item_uri, AUSNC.communication_context, AUSNC.face_to_face))
+        
+        #  individual, massed, small-group, unseen, mass-market, specialised
+        graph.add((item_uri, AUSNC.audience, AUSNC.individual))
+        
+        # some components are read, others are interview or dialogue
+        if component in self.COMPONENTS['read']:
+            graph.add((item_uri, AUSNC.interactivity, AUSNC.read))
+            graph.add((item_uri, AUSNC.speech_style, AUSNC.scripted))
+        elif component == 'interview':
+            graph.add((item_uri, AUSNC.interactivity, AUSNC.interview))
+            graph.add((item_uri, AUSNC.speech_style, AUSNC.spontaneous))
+        elif component == 're-told-story':
+            graph.add((item_uri, AUSNC.interactivity, AUSNC.monologue))
+            graph.add((item_uri, AUSNC.speech_style, AUSNC.spontaneous))
+        else:
+            graph.add((item_uri, AUSNC.interactivity, AUSNC.dialogue))
+            graph.add((item_uri, AUSNC.speech_style, AUSNC.spontaneous))
+        
+        
         
     
     def item_rdf(self, url, csvdata=None):
@@ -171,6 +230,8 @@ class ItemMapper:
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_719_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/2_114'))]
     
     >>> print graph3.serialize(format='turtle')   
+
+    
         """
         
         md = read_metadata(url)
@@ -280,6 +341,13 @@ class ItemMapper:
         # add link to item prototype
         iid = PROTOCOL_NS[ITEM_URI_TEMPLATE % (md['component'], md['item'])]
         graph.add((item_uri, NS.prototype, iid))
+        
+        # add a link to the collection level record
+        graph.add((item_uri, DC.isPartOf, CORPUS_URI))
+        
+        
+        self.item_generic_properties(graph, item_uri, md['component'])
+        
         
         # add some namespaces to make output prettier
         graph.bind('austalk', NS)
