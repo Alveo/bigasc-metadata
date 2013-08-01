@@ -30,7 +30,9 @@ def maus_boolean(value):
     else:
         return 'false'
 
-def maus(wavfile, text, language='ae', canonly=False, minpauselen=5, startword=0, endword=999999, mausshift=10, insprob=0.0):
+def maus(wavfile, text, language='aus', canonly=False, minpauselen=5, 
+         startword=0, endword=999999, mausshift=10, insprob=0.0,
+         inskantextgrid=True, insorttextgrid=True, usetrn=False, outformat='TextGrid'):
     """Send the given wavfile to MAUS for forced alignment
     text is the orthographic transcription
     
@@ -50,13 +52,15 @@ MausException: Can't generate phonetic transcription for text 'not in the lexico
 # a bad request, send a text file
 >>> maus("annotate/maus.py", "bassinette")
 Traceback (most recent call last):
-MausException: MAUS execution did not exit properly and exited with message ERROR: unknown signal type extension py        Please use either 'wav' or 'nis' or 'sph' or 'al' or 'dea' 
-<BLANKLINE>
+MausException: Internal Server Error
 
 # another bad request, an unknown language
 >>> maus("test/bassinette-sample-16.wav", "bassinette", language='unknown')
 Traceback (most recent call last):
 MausException: Internal Server Error
+
+>>> maus("test/bassinette-sample-16.wav", "bassinette", outformat="EMU")
+something
     """
     
     lex = load_lexicon()
@@ -64,24 +68,39 @@ MausException: Internal Server Error
     
     if phb == None:
         raise MausException("Can't generate phonetic transcription for text '%s'" % text)
-    
+#    LANGUAGE MINPAUSLEN USETRN SIGNAL STARTWORD ENDWORD INSPROB OUTFORMAT BPF
+#    INSKANTEXTGRID MAUSSHIFT CANONLY INSORTTEXTGRID
+
+# curl -v -X POST -H 'content-type: multipart/form-data' -F LANGUAGE=aus -F MINPAUSLEN=5 -F USETRN=false 
+#     -F SIGNAL=@test/bassinette-sample-16.wav -F STARTWORD=0 -F ENDWORD=999999 -F INSPROB=0.0 -F OUTFORMAT=TextGrid 
+#     -F BPF=@test/bassinette.bpf -F INSKANTEXTGRID=false -F MAUSSHIFT=10.0 -F CANONLY=false -F INSORTTEXTGRID=false 
+#     http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
+
     params = dict((('LANGUAGE', language),
-                ('CANONLY', maus_boolean(canonly)),
-                ('MINPAUSELEN', str(minpauselen)),
-                ('STARTWORD', str(startword)),
-                ('ENDWORD', str(endword)),
-                ('MAUSSHIFT', str(mausshift)),
-                ('INSPROB', str(insprob)),
-                ('SIGNAL', open(wavfile)),
-                ('BPF', StringIO(phb)),
+                   ('CANONLY', maus_boolean(canonly)),
+                   ('MINPAUSLEN', str(minpauselen)),
+                   ('STARTWORD', str(startword)),
+                   ('ENDWORD', str(endword)),
+                   ('MAUSSHIFT', str(mausshift)),
+                   ('INSPROB', str(insprob)),
+                   ('SIGNAL', open(wavfile)),
+                   ('BPF', StringIO(phb)),
+                   ('OUTFORMAT', str(outformat)),
+                   ('USETRN', maus_boolean(usetrn)),
+                   ('INSKANTEXTGRID', maus_boolean(inskantextgrid)),
+                   ('MAUSSHIFT', str(mausshift)),
+                   ('INSORTTEXTGRID', maus_boolean(insorttextgrid)),
                 ))
     
-    opener = urllib2.build_opener(MultipartPostHandler.MultipartPostHandler)
+    
+    handler = MultipartPostHandler.MultipartPostHandler(debuglevel=0)
+    opener = urllib2.build_opener(handler)
     
     MAUS_URL = configmanager.get_config("MAUS_URL")
     try:
         response = opener.open(MAUS_URL, params)
     except urllib2.HTTPError as e:
+        errormessage = e.read()
         raise MausException(e.msg)
     
     result = response.read()
@@ -287,6 +306,5 @@ if __name__=='__main__':
         
         import doctest
         doctest.testmod()
-    
-    
+  
     

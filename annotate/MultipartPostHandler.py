@@ -53,7 +53,7 @@ class Callable:
 #  assigning a sequence.
 doseq = 1
 
-class MultipartPostHandler(urllib2.BaseHandler):
+class MultipartPostHandler(urllib2.HTTPHandler):
     handler_order = urllib2.HTTPHandler.handler_order - 10 # needs to run first
 
     def http_request(self, request):
