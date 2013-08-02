@@ -59,8 +59,8 @@ MausException: Internal Server Error
 Traceback (most recent call last):
 MausException: Internal Server Error
 
->>> maus("test/bassinette-sample-16.wav", "bassinette", outformat="EMU")
-something
+#maus("test/bassinette-sample-16.wav", "bassinette", outformat="EMU")
+#something
     """
     
     lex = load_lexicon()
@@ -68,13 +68,6 @@ something
     
     if phb == None:
         raise MausException("Can't generate phonetic transcription for text '%s'" % text)
-#    LANGUAGE MINPAUSLEN USETRN SIGNAL STARTWORD ENDWORD INSPROB OUTFORMAT BPF
-#    INSKANTEXTGRID MAUSSHIFT CANONLY INSORTTEXTGRID
-
-# curl -v -X POST -H 'content-type: multipart/form-data' -F LANGUAGE=aus -F MINPAUSLEN=5 -F USETRN=false 
-#     -F SIGNAL=@test/bassinette-sample-16.wav -F STARTWORD=0 -F ENDWORD=999999 -F INSPROB=0.0 -F OUTFORMAT=TextGrid 
-#     -F BPF=@test/bassinette.bpf -F INSKANTEXTGRID=false -F MAUSSHIFT=10.0 -F CANONLY=false -F INSORTTEXTGRID=false 
-#     http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
 
     params = dict((('LANGUAGE', language),
                    ('CANONLY', maus_boolean(canonly)),
@@ -204,6 +197,103 @@ None
 # list of component ids that we can run MAUS over because they are read
 MAUSABLE_COMPONENTS = [5, 2, 22, 32, 43, 23, 33, 13, 14, 6, 16, 17] # 3 is story
 
+
+import ingest
+
+def item_details(basename):
+    """Return the prompt text and media file URL for this item
+    Return a dictionary with keys 'media', 'item_uri' and 'prompt', 
+     if no details can be found, return None
+     
+>>> d = item_details('1_1119_2_16_049')
+>>> sorted(d.keys())
+['item_uri', 'media', 'prompt']
+>>> d['media']
+u'http://data.austalk.edu.au/downsampled/ANU/1_1119/2/sentences/1_1119_2_16_049-ch6-speaker16.wav'
+>>> d['item_uri']
+u'http://id.austalk.edu.au/item/1_1119_2_16_049'
+>>> d['prompt']
+u'My mother gets cross when they say "yeah" instead of "yes".'
+>>> print item_details('not a good basename')
+None
+     """
+    
+    
+    server_url = configmanager.get_config("SESAME_SERVER")
+    server = ingest.SesameServer(server_url)
+    
+    # query to find the media file URL and prompt text
+    qq = """
+        PREFIX austalk:<http://ns.austalk.edu.au/>
+        PREFIX ausnc:<http://ns.ausnc.org.au/schemas/ausnc_md_model/>
+        
+        select distinct ?item ?media ?prompt where {
+          ?item a ausnc:AusNCObject .
+          ?item austalk:basename "%s" .
+          ?item austalk:media ?media .
+          ?media austalk:channel "ch6-speaker16" .
+          ?item austalk:prototype ?ip .
+          ?ip austalk:prompt ?prompt .
+        }
+        """ % basename
+        
+    result = dict()
+    qresult = server.query(qq)
+    if qresult != None and qresult['results']['bindings'] != []:
+        row = qresult['results']['bindings'][0]
+        result['media'] = row['media']['value']
+        result['item_uri'] = row['item']['value']
+        
+        # prompt might need some work
+        prompt = row['prompt']['value']
+        # if the prompt contains 'sounds like' then we want just the first word
+        if prompt.find("sounds like") >= 0:
+            prompt = prompt.split()[0]
+            
+        result['prompt'] = prompt
+        return result
+    else:
+        return None
+    
+            
+
+
+def make_bpf_generator(server, outputdir):
+        
+    def bpf_item(site, spkr, session, component, item_path):
+        """Procedure for use with map_session to generate a BPF 
+        annotation file for input to MAUS"""
+        
+        
+        if not int(component) in MAUSABLE_COMPONENTS:
+            print "Can't MAUS component", component
+            return
+        
+        basename = os.path.basename(item_path)
+        outpath = os.path.join("MAUS", site, spkr, session, COMPONENT_MAP[int(component)], basename + ".phb")
+        outfile = os.path.join(outputdir, outpath)
+        
+        lex = load_lexicon()        
+        
+        if not os.path.exists(os.path.dirname(outfile)):
+            os.makedirs(os.path.dirname(outfile))
+        
+        details = item_details(basename)
+        if details != None:
+            media_file = url_to_path(details['media']) 
+
+            phb = text_phb(details['prompt'], lex)
+
+            sys.stdout.write('.')
+            sys.stdout.flush()
+            
+            h = open(outfile, 'w')
+            h.write(phb)
+            h.close()
+    
+    return bpf_item
+
+
 def make_maus_processor(server, outputdir):
         
     def maus_item(site, spkr, session, component, item_path):
@@ -213,45 +303,22 @@ def make_maus_processor(server, outputdir):
         
         
         if not int(component) in MAUSABLE_COMPONENTS:
-            print "Can't MAUS", component
+            print "Can't MAUS component", component
             return
         
-        item = os.path.basename(item_path)
-        outpath = os.path.join("MAUS", site, spkr, session, COMPONENT_MAP[int(component)], item + ".TextGrid")
+        basename = os.path.basename(item_path)
+        outpath = os.path.join("MAUS", site, spkr, session, COMPONENT_MAP[int(component)], basename + ".TextGrid")
         outfile = os.path.join(outputdir, outpath)
         
         if not os.path.exists(os.path.dirname(outfile)):
             os.makedirs(os.path.dirname(outfile))
         
-        # query to find the media file URL and prompt text
-        qq = """
-            PREFIX austalk:<http://ns.austalk.edu.au/>
-            PREFIX ausnc:<http://ns.ausnc.org.au/schemas/ausnc_md_model/>
+        details = item_details(basename)
+        if details != None:    
             
-            select distinct ?item ?media ?prompt where {
-              ?item a ausnc:AusNCObject .
-              ?item austalk:basename "%s" .
-              ?item austalk:media ?media .
-              ?media austalk:channel "ch6-speaker16" .
-              ?item austalk:prototype ?ip .
-              ?ip austalk:prompt ?prompt .
-            }
-            """ % item
-         
-        qresult = server.query(qq)
-        if qresult != None and qresult['results']['bindings'] != []:
-            row = qresult['results']['bindings'][0]
-            media = row['media']['value']
-            prompt = row['prompt']['value']
-            item_uri = row['item']['value']
-            
-            # if the prompt contains 'sounds like' then we want just the first word
-            if prompt.find("sounds like") >= 0:
-                prompt = prompt.split()[0]
-            
-            media_file = url_to_path(media)
+            media_file = url_to_path(details['media'])
             try:
-                annotation = maus(media_file, prompt)
+                annotation = maus(media_file, details['prompt'])
 
                 sys.stdout.write('.')
                 sys.stdout.flush()
@@ -260,13 +327,13 @@ def make_maus_processor(server, outputdir):
                 h.write(annotation)
                 h.close()
                 
-                graph = maus_metadata(item_uri, outpath)
-                server.upload_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-m"))
+                graph = maus_metadata(details['item_uri'], outpath)
+                server.upload_graph(graph, os.path.join(site, spkr, session, component, basename+"-m"))
                 
             except MausException as e:
-                print "ERROR", item, e
+                print "ERROR", basename, e
         else:
-            print "Item has no media/prompt: ", item
+            print "Item has no media/prompt: ", basename
     
     return maus_item
     
@@ -304,7 +371,5 @@ def url_to_path(media):
 
 if __name__=='__main__':
         
-        import doctest
-        doctest.testmod()
-  
-    
+    import doctest
+    doctest.testmod()
