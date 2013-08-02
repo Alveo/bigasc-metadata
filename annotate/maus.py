@@ -284,12 +284,14 @@ def make_bpf_generator(server, outputdir):
 
             phb = text_phb(details['prompt'], lex)
 
-            sys.stdout.write('.')
-            sys.stdout.flush()
-            
-            h = open(outfile, 'w')
-            h.write(phb)
-            h.close()
+            if phb != None:
+                sys.stdout.write('.')
+                sys.stdout.flush()
+                
+                h = open(outfile, 'w')
+                h.write(phb)
+                h.close()
+                
     
     return bpf_item
 
