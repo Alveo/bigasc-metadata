@@ -45,11 +45,12 @@ def make_processor(sessiondir, outdir, server):
                 graph.add(tr)
         # upload the lot to the server
         server.upload_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
-            
-        # progress...
-        sys.stdout.write('.')
-        sys.stdout.flush()
         
+        if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
+            # progress...
+            sys.stdout.write('.')
+            sys.stdout.flush()
+            
              
         return n
     
@@ -60,29 +61,37 @@ if __name__=='__main__':
     
     import sys 
     
-    if len(sys.argv) not in [3,4]:
-        print "Usage: resample_audio.py <site_dir> <output_dir> <limit>?"
-        exit()  
-        
-    sitedir = sys.argv[1]
-    outdir = sys.argv[2] 
-    if len(sys.argv) == 4:
-        limit = int(sys.argv[3])
+    if len(sys.argv) > 1:
+        print "Usage: resample_audio.py <limit>?"
+        exit()
+
+    datadir = configmanager.get_config('DATA_DIR')
+    outdir =  configmanager.get_config('OUTPUT_DIR')
+
+    if len(sys.argv) == 1:
+        limit = int(sys.argv[0])
     else:
-        limit = 10000
+        limit = 1000000
     
     server_url = configmanager.get_config("SESAME_SERVER")
-    server = ingest.SesameServer(server_url) 
+    server = ingest.SesameServer(server_url)
 
-    for session in site_sessions(sitedir):
-        print "Session: ", session
+    for d in os.listdir(datadir):
         
-        files = [m for m in map_session(session, make_processor(sitedir, outdir, server))]
+        sitedir = os.path.join(datadir, d)
         
-        print sum(files)
-        
-        limit -= 1
-        if limit <= 0:
-            print "Stopping after hitting limit"
-            exit()  
-        
+        if os.path.isdir(sitedir):
+            for session in site_sessions(sitedir):
+                if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
+                    print "Session: ", session  
+                
+                files = [m for m in map_session(session, make_processor(sitedir, outdir, server))]
+                
+                if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
+                    print sum(files)
+                
+                limit -= 1
+                if limit <= 0:
+                    print "Stopping after hitting limit"
+                    exit()  
+            

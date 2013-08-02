@@ -8,6 +8,11 @@ MAUS_URL = http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAU
 # STORE_GRAPHS = /var/syndisk/austalk-graphs/
 STORE_GRAPHS = /tmp/austalk-graphs/
 
+# SITE_DIR is the location of the primary data (site directories)
+DATA_DIR = /var/fileserver/bigasc/data/real/
+
+# OUTPUT_DIR is the location of the generated data 
+OUTPUT_DIR = /var/syndisk/published/
 
 # set PARTICIPANT_DETAIL to: 
 #  FULL - to include all properties
@@ -20,3 +25,9 @@ PARTICIPANT_DETAIL = MINIMAL
 #   turtle is readable but slow
 #   nt is fast but hard to read
 RDF_GRAPH_FORMAT = nt
+
+
+# if SHOW_PROGRESS is yes then progress messages will be printed
+# any other value will suppress messages
+SHOW_PROGRESS = yes
+ 

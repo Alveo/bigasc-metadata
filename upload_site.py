@@ -17,46 +17,47 @@ configmanager.configinit()
     
     
 
-def process(server_url, limit):
+def process(datadir, limit):
     
+    server_url = configmanager.get_config("SESAME_SERVER") 
     server = ingest.SesameServer(server_url)
     # get RA spreadsheet data on maptasks
     maptask = RAMapTask()
     (spkr, map) = maptask.read_all()  
     
-    if os.path.isdir(sys.argv[1]):
-        sitedir = sys.argv[1]
-        print "Finding sessions in site directory: ", sitedir
-       
-        for session in site_sessions(sitedir):
-            print "Session: ", session   
-            try:
-                ingest.ingest_session_map(server, session, map)
-            except Exception as ex:
-                print "\tProblem with session...", ex
-                
-            limit += -1
-            if limit <= 0:
-                print "Stopping after hitting limit"
-                return    
+    for d in os.listdir(datadir):
+        sitedir = os.path.join(datadir, d)
+        if os.path.isdir(sitedir):
+            for session in site_sessions(sitedir):
+                print "Session: ", session   
+                try:
+                    ingest.ingest_session_map(server, session, map)
+                except Exception as ex:
+                    print "\tProblem with session...", ex
+                    
+                limit += -1
+                if limit <= 0:
+                    print "Stopping after hitting limit"
+                    return    
         
 if __name__ == '__main__':
     
     import sys, os
     
-    if len(sys.argv) not in [2, 3]:
-        print "Usage upload_site.py <site directory>  <limit>?"
+    if len(sys.argv) > 1:
+        print "Usage upload_site.py <limit>?"
         print " where <limit> gives the maximum number of sessions to upload"
         exit()
 
-    if len(sys.argv) == 3:
-        limit = int(sys.argv[2])
+    datadir = configmanager.get_config('DATA_DIR')
+    outdir =  configmanager.get_config('OUTPUT_DIR')
+
+    if len(sys.argv) == 1:
+        limit = int(sys.argv[0])
     else:
-        limit = 1000
+        limit = 1000000
 
-    server_url = configmanager.get_config("SESAME_SERVER") 
-
-    process(server_url, limit)
+    process(datadir, limit)
     
 #    import cProfile
 #    cProfile.run("process(server_url, limit)", "profile.dat")
