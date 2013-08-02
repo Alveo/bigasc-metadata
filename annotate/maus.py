@@ -199,6 +199,7 @@ MAUSABLE_COMPONENTS = [5, 2, 22, 32, 43, 23, 33, 13, 14, 6, 16, 17] # 3 is story
 
 
 import ingest
+import re
 
 def item_details(basename):
     """Return the prompt text and media file URL for this item
@@ -216,6 +217,9 @@ u'http://id.austalk.edu.au/item/1_1119_2_16_049'
 u'My mother gets cross when they say "yeah" instead of "yes".'
 >>> print item_details('not a good basename')
 None
+>>> d = item_details('4_488_2_5_002')
+>>> d['prompt']
+u'nine four two oh'
      """
     
     
@@ -250,7 +254,12 @@ None
         if prompt.find("sounds like") >= 0:
             prompt = prompt.split()[0]
             
-        result['prompt'] = prompt
+        # digit prompts include two parts '0123:zero one two three'
+        m = re.match('[0-9o]+:(.*)', prompt)
+        if m:
+            prompt = m.group(1)
+        
+        result['prompt'] = prompt.strip()
         return result
     else:
         return None
@@ -291,7 +300,8 @@ def make_bpf_generator(server, outputdir):
                 h = open(outfile, 'w')
                 h.write(phb)
                 h.close()
-                
+            else:
+                print "Problem with", basename
     
     return bpf_item
 
