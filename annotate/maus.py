@@ -157,10 +157,10 @@ ORT: 0 before
 ORT: 1 zombie
 KAN: 0 b@fo:
 KAN: 1 zOmbi:
->>> print text_phb("Who'll pour Rosa's?.", lex)
+>>> print text_phb("Who'll pour Rosas?.", lex)
 ORT: 0 who'll
 ORT: 1 pour
-ORT: 2 rosa's
+ORT: 2 rosas
 KAN: 0 h}:l
 KAN: 1 po:
 KAN: 2 r\@}z@z
@@ -220,6 +220,14 @@ None
 >>> d = item_details('4_488_2_5_002')
 >>> d['prompt']
 u'nine four two oh'
+>>> d = item_details('4_1368_1_5_012')
+>>> d['prompt']
+u'oh four two nine'
+>>> item_details('2_1122_1_2_054')['prompt']
+u'harl'
+>>> p = item_details('2_1122_1_2_142')['prompt']
+>>> p
+u'pure'
      """
     
     
@@ -251,11 +259,16 @@ u'nine four two oh'
         # prompt might need some work
         prompt = row['prompt']['value']
         # if the prompt contains 'sounds like' then we want just the first word
-        if prompt.find("sounds like") >= 0:
-            prompt = prompt.split()[0]
+        m = re.match('([a-z ]+) sounds like.*', prompt)
+        if m:
+            prompt = m.group(1).replace(' ', '')
+            
+        # super special case
+        if prompt == u'p ure':
+            prompt = u'pure'
             
         # digit prompts include two parts '0123:zero one two three'
-        m = re.match('[0-9o]+:(.*)', prompt)
+        m = re.match('[0-9o]+\s*:(.*)', prompt)
         if m:
             prompt = m.group(1)
         

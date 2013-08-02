@@ -33,8 +33,8 @@ Ninjas	 nIndZ@z
 Paris	 p{r\@s 
 Paul's	po:lz
 Pete	pi:t
-Polish	 p@}lIS 
-Rosa's	 r\@}z@z 
+Polish	 p@}lIS  
+Rosas    r\@}z@z
 Sharon	S{r\@n
 Shaw	 So: 
 Springwood	spr\INwUd
