@@ -228,6 +228,8 @@ u'harl'
 >>> p = item_details('2_1122_1_2_142')['prompt']
 >>> p
 u'pure'
+>>> item_details('3_1202_3_14_073')['prompt']
+u'hode'
      """
     
     
@@ -259,7 +261,7 @@ u'pure'
         # prompt might need some work
         prompt = row['prompt']['value']
         # if the prompt contains 'sounds like' then we want just the first word
-        m = re.match('([a-z ]+) sounds like.*', prompt)
+        m = re.match('([a-z ]+).*sounds like.*', prompt)
         if m:
             prompt = m.group(1).replace(' ', '')
             
