@@ -31,7 +31,7 @@ def process(datadir, limit, errorlog):
             for session in site_sessions(sitedir):
                 print "Session: ", session
                 try:
-                    ingest.ingest_session_map(server, session, map)
+                    ingest.ingest_session_map(server, session, map, errorlog)
                 except Exception as ex:
                     errorlog.write("\tProblem with session...%s" % ex)
                     
