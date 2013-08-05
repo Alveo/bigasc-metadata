@@ -12,6 +12,9 @@ import convert
 import configmanager
 configmanager.configinit()
 
+## generate a component map, do this only once and we'll use it below
+from convert.session import component_map
+COMPONENT_MAP = component_map()
 
 def make_processor(sessiondir, outdir, server):
     """Return a function to generate output to the given dir"""
@@ -44,7 +47,7 @@ def make_processor(sessiondir, outdir, server):
             for tr in newmeta:
                 graph.add(tr)
         # upload the lot to the server
-        server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
+        server.output_graph(graph, convert.generate_item_path(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
         return n
     
     return process_item

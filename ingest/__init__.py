@@ -5,6 +5,7 @@ import convert
 from data import map_session
 import os, sys
 
+
       
 def ingest_session_map(server, sessiondir, csvdata, errorlog):
     """Given a base directory for a session, upload the metadata
@@ -17,7 +18,7 @@ def ingest_session_map(server, sessiondir, csvdata, errorlog):
         
         try:
             graph = mapper.item_rdf(item_path+".xml", csvdata)
-            server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)))
+            server.output_graph(graph, convert.generate_item_path(site, spkr, session, component, os.path.basename(item_path)))
         except Exception as ex:
             errorlog.write("Problem with item: %s\n\t%s\n" % (item_path, ex))
             

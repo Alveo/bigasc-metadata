@@ -13,6 +13,7 @@ from convert.namespaces import DATA_URI_TEMPLATE
 from convert.item import parse_item_filename
 from convert.participant import participant_uri, item_site_name
 from convert.session import component_map
+import ingest
 
 import hashlib
 import os
@@ -85,12 +86,17 @@ def newest_file(files):
             
     return newest
 
-def process_results(results, outdir):
+def process_results(server, results, outdir, origin, format):
     
     for key in sorted(results.keys()):
 
+        graph = ann_metadata(key, origin, format)
+        server.output_graph(graph)
+        
         source = newest_file(results[key])            
         copy_file(source, os.path.join(outdir, key))
+        
+
 
 def copy_file(src, dest):
     """Copy src to dest but make sure that the directories in dest exist"""
@@ -101,16 +107,38 @@ def copy_file(src, dest):
     shutil.copy(src, dest)
     
     
+def ann_metadata(annfile, origin, format):
 
+    (path, ext) = os.path.splitext(annfile)
+
+    ann_uri = DATA_NS[annfile]
+    
+    item_uri = generate_item_uri(path)
+    
+    graph = Graph()
+    graph.add((URIRef(item_uri), NS['has_annotation'], ann_uri))
+    graph.add((maus_uri, RDF.type, NS.AnnotationFile))
+    graph.add((maus_uri, NS['origin'], Literal(origin)))
+    graph.add((maus_uri, NS['format'], Literal(format)))
+    
+    return graph
 
 if __name__ == '__main__':
     
     import sys, os
     
+    if len(sys.argv) != 5:
+        print "Usage: harvest_annotations.py <input dir> <ext> <output dir> <origin>"
+        exit()
+    
     dirname = sys.argv[1]
     ext = sys.argv[2]
     outdir = sys.argv[3]
+    origin = sys.argv[4]
     
+    server_url = configmanager.get_config("SESAME_SERVER")
+    server = ingest.SesameServer(server_url)
+
     for dirpath, dirnames, filenames in os.walk(dirname):
         results = dict()
         for fn in filenames:
@@ -123,7 +151,7 @@ if __name__ == '__main__':
                         results[newfn].append(fullpath)
                     else:
                         results[newfn] = [fullpath]
-        process_results(results, outdir)
+        process_results(server, results, outdir, origin, ext)
                     
 
             

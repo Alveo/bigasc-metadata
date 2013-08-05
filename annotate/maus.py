@@ -13,6 +13,7 @@ from StringIO import StringIO
 import configmanager
 configmanager.configinit()
 from rdflib import Graph, Literal, URIRef
+import convert
 from convert.namespaces import *
 from data import COMPONENT_MAP
 
@@ -334,7 +335,7 @@ def make_maus_processor(server, outputdir):
             return
         
         basename = os.path.basename(item_path)
-        outpath = os.path.join("MAUS", site, spkr, session, COMPONENT_MAP[int(component)], basename + ".TextGrid")
+        outpath = os.path.join("MAUS", convert.generate_item_path(site, spkr, session, component, basename + ".TextGrid"))
         outfile = os.path.join(outputdir, outpath)
         
         if not os.path.exists(os.path.dirname(outfile)):
@@ -355,7 +356,7 @@ def make_maus_processor(server, outputdir):
                 h.close()
                 
                 graph = maus_metadata(details['item_uri'], outpath)
-                server.output_graph(graph, os.path.join(site, spkr, session, component, basename+"-m"))
+                server.output_graph(graph, convert.generate_item_path(site, spkr, session, component, basename+"-m"))
                 
             except MausException as e:
                 print "ERROR", basename, e
