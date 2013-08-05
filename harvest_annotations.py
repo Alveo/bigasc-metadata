@@ -9,11 +9,12 @@ gather together annotation files into an appropriate directory structure
 
 import configmanager
 configmanager.configinit()
-from convert.namespaces import DATA_URI_TEMPLATE
+from convert.namespaces import DATA_URI_TEMPLATE, DATA_NS, generate_item_uri
 from convert.item import parse_item_filename
 from convert.participant import participant_uri, item_site_name
 from convert.session import component_map
 import ingest
+from rdflib import Graph
 
 import hashlib
 import os
