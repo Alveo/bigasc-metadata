@@ -118,9 +118,9 @@ def ann_metadata(annfile, origin, format):
     
     graph = Graph()
     graph.add((URIRef(item_uri), NS['has_annotation'], ann_uri))
-    graph.add((maus_uri, RDF.type, NS.AnnotationFile))
-    graph.add((maus_uri, NS['origin'], Literal(origin)))
-    graph.add((maus_uri, NS['format'], Literal(format)))
+    graph.add((ann_uri, RDF.type, NS.AnnotationFile))
+    graph.add((ann_uri, NS['origin'], Literal(origin)))
+    graph.add((ann_uri, NS['format'], Literal(format)))
     
     return graph
 
