@@ -18,8 +18,8 @@ def ingest_session_map(server, sessiondir, csvdata, errorlog):
         try:
             graph = mapper.item_rdf(item_path+".xml", csvdata)
             server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)))
-        except:
-            errorlog.write("Problem with item: %s" % item_path)
+        except Exception as ex:
+            errorlog.write("Problem with item: %s\n\t%s\n" % (item_path, ex))
             
     result = [x for x in map_session(sessiondir, process_item)]
 

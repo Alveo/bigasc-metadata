@@ -87,6 +87,29 @@ def parse_media_filename(filename, errorlog=sys.stderr):
          
      #print "PMF: ", filename, result
      return result
+ 
+ 
+ 
+def parse_item_filename(self, filename, errorlog=sys.stderr):
+    """Get the session, component and item ids
+    from the file name, return a dictionary with keys 'session', 'component', 'item'"""
+
+    import re
+    result = dict()
+    parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
+    match = parse_it.search(filename)
+    if match:
+        groups = match.groups() 
+        result['colour'] = groups[0]
+        result['animal'] = groups[1]
+        result['speaker'] = groups[0]+"_"+groups[1]
+        result['session']   = groups[2]
+        result['component'] = groups[3]
+        result['item']      = str(int(groups[4]))  # do this to trim leading zeros
+    else:
+        errorlog.write("'%s' doesn't match the filename pattern\n" % filename )
+        
+    return result
 
 class ItemMapper:
     
@@ -134,33 +157,14 @@ class ItemMapper:
         #self.itemmap.add('componentName', ignore=True)
 
 
-    def parse_item_filename(self, filename):
-        """Get the session, component and item ids
-        from the file name, return a dictionary with keys 'session', 'component', 'item'"""
-    
-        import re
-        result = dict()
-        parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
-        match = parse_it.search(filename)
-        if match:
-            groups = match.groups() 
-            result['colour'] = groups[0]
-            result['animal'] = groups[1]
-            result['speaker'] = groups[0]+"_"+groups[1]
-            result['session']   = groups[2]
-            result['component'] = groups[3]
-            result['item']      = str(int(groups[4]))  # do this to trim leading zeros
-        else:
-            self.error("'%s' doesn't match the filename pattern" % filename )
-            
-        return result
+
 
     def media_uri(self, itemuri, filename):
         """Given a filename, return a URI for
         this file on the data server"""
         
     
-        info = self.parse_item_filename(filename)
+        info = parse_item_filename(filename, self.errorlog)
         info['filename'] = filename
         
         info['componentName'] = self.component_map[int(info['component'])]

@@ -33,7 +33,7 @@ def process(datadir, limit, errorlog):
                 try:
                     ingest.ingest_session_map(server, session, map, errorlog)
                 except Exception as ex:
-                    errorlog.write("\tProblem with session...%s" % ex)
+                    errorlog.write("\tProblem with session...%s\n" % ex)
                     
                 limit += -1
                 if limit <= 0:
