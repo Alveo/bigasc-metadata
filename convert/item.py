@@ -21,37 +21,37 @@ def parse_media_filename(filename, errorlog=sys.stderr):
      return a dictionary.
  
 
- >>> im.parse_media_filename('1_178_1_2_150-ch1-maptask.wav')
+ >>> parse_media_filename('1_178_1_2_150-ch1-maptask.wav')
  {'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}
      
- >>> im.parse_media_filename('1_178_1_2_150-n-ch1-maptask.wav')
+ >>> parse_media_filename('1_178_1_2_150-n-ch1-maptask.wav')
  {'basename': '1_178_1_2_150', 'version': 2, 'type': 'audio', 'channel': 'ch1-maptask'}
      
- >>> im.parse_media_filename('1_178_1_2_150-n-n-ch1-maptask.wav')
+ >>> parse_media_filename('1_178_1_2_150-n-n-ch1-maptask.wav')
  {'basename': '1_178_1_2_150', 'version': 3, 'type': 'audio', 'channel': 'ch1-maptask'}
  
- >>> im.parse_media_filename('1_178_1_2_150-n-n-n-n-n-ch1-maptask.wav')
+ >>> parse_media_filename('1_178_1_2_150-n-n-n-n-n-ch1-maptask.wav')
  {'basename': '1_178_1_2_150', 'version': 6, 'type': 'audio', 'channel': 'ch1-maptask'}
  
- >>> im.parse_media_filename('1_178_1_2_150-camera-0-left.mp4')
+ >>> parse_media_filename('1_178_1_2_150-camera-0-left.mp4')
  {'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}
  
- >>> im.parse_media_filename('1_178_2_16_001-camera-0-right.mp4')
+ >>> parse_media_filename('1_178_2_16_001-camera-0-right.mp4')
  {'basename': '1_178_2_16_001', 'version': 1, 'type': 'video', 'channel': 'camera-0-right'}
  
- >>> im.parse_media_filename('1_1121_1_12_001-ch4-c2Left.wav')
+ >>> parse_media_filename('1_1121_1_12_001-ch4-c2Left.wav')
  {'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}
  
- >>> im.parse_media_filename('1_1121_1_12_001-ch6-speaker-yes.wav')
+ >>> parse_media_filename('1_1121_1_12_001-ch6-speaker-yes.wav')
  {'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'response': 'yes', 'channel': 'ch6-speaker'}
  
- >>> im.parse_media_filename('1_178_1_2_150-camera-0-no-left.mp4')
+ >>> parse_media_filename('1_178_1_2_150-camera-0-no-left.mp4')
  {'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'response': 'no', 'channel': 'camera-0-left'}
  
- >>> im.parse_media_filename('1_178_1_2_150-n-n-camera-0-yes-left.mp4')
+ >>> parse_media_filename('1_178_1_2_150-n-n-camera-0-yes-left.mp4')
  {'basename': '1_178_1_2_150', 'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
  
- >>> im.parse_media_filename('1_178_1_2_150-ch6-speaker16.wav')
+ >>> parse_media_filename('1_178_1_2_150-ch6-speaker16.wav')
  {'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
      """
      
@@ -333,7 +333,7 @@ class ItemMapper:
     
         """
         
-        md = read_metadata(url)
+        md = self.read_metadata(url)
         # generate a URI for this component 
         component_uri = generate_component_uri(md['colour'], md['animal'], md['session'], md['component'])
         # the prototype is the component we're an example of
@@ -478,18 +478,18 @@ class ItemMapper:
     >>> server = SesameServer(serverurl)
     >>> im = ItemMapper(server)
     >>> mdfile = "test/1_1121_1_12_001.xml"
-    >>> read_metadata(mdfile)
+    >>> im.read_metadata(mdfile)
     {'files': {'1_1121_1_12_001-ch6-speaker.wav': {'checksum': 'e0012015d6babdce61cb553939d87792', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch6-speaker.wav', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker'}, '1_1121_1_12_001-ch1-maptask.wav': {'checksum': '3a1ac90a5a3940ac1cb9046d5546b574', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch1-maptask.wav', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}, '1_1121_1_12_001-ch4-c2Left.wav': {'checksum': 'db028ab9647fe0e04377f338451ed53a', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch4-c2Left.wav', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}, '1_1121_1_12_001-camera-0-left.mp4': {'checksum': '6065f4a33f4008b592a1f6d178bea5fb', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-camera-0-left.mp4', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}, '1_1121_1_12_001-ch5-c2Right.wav': {'checksum': '630d4d53a57e9f5ae01c6d764d8f169a', 'basename': '1_1121_1_12_001', 'filename': '1_1121_1_12_001-ch5-c2Right.wav', 'version': 1, 'type': 'audio', 'channel': 'ch5-c2Right'}}, 'participant': "Gold-Blainville's Beaked Whale", 'cameraSN1': '10251399', 'cameraSN0': '10251399', 'componentName': 'Words Session 1', 'colour': '1', 'component': '12', 'item': '1', 'session': '1', 'animal': '1121', 'timestamp': 'Mon Jul 18 16:48:43 2011', 'prompt': 'slide2.jpg', 'path': '/tmp/tmph7F7_g', 'basename': '1_1121_1_12_001'}
     
     # an example of regenerated metadata, has no basename so we need to reconstruct it
     >>> mdfile = "test/1_178_4_12_001.xml"
-    >>> md = read_metadata(mdfile)
+    >>> md = im.read_metadata(mdfile)
     >>> md['basename']
     '1_178_4_12_001'
     
     # grab an example that has -n files
     >>> mdurl = "test/1_178_2_16_001.xml"
-    >>> md = read_metadata(mdurl)
+    >>> md = im.read_metadata(mdurl)
     >>> md['cameraSN1']
     '11072159'
     >>> md['files'].keys()
