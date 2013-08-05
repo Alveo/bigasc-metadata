@@ -58,7 +58,7 @@ if __name__ == '__main__':
     else:
         limit = 1000000
 
-    errorlog = open('item-errors.txt')
+    errorlog = open('item-errors.txt', 'w')
 
     process(datadir, limit, errorlog)
     
