@@ -4,6 +4,7 @@ from session import session_metadata, component_metadata, item_metadata
 from ra_maptask import RAMapTask
 
 
+import os
 
 ## generate a component map, do this only once and we'll use it below
 from session import component_map
