@@ -111,8 +111,6 @@ if __name__ == '__main__':
     ext = sys.argv[2]
     outdir = sys.argv[3]
     
-    
-    
     for dirpath, dirnames, filenames in os.walk(dirname):
         results = dict()
         for fn in filenames:

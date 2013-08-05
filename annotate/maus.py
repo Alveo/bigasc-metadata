@@ -294,7 +294,7 @@ def make_bpf_generator(server, outputdir):
             return
         
         basename = os.path.basename(item_path)
-        outpath = os.path.join("MAUS", site, spkr, session, COMPONENT_MAP[int(component)], basename + ".phb")
+        outpath = os.path.join("BPF", site, spkr, session, COMPONENT_MAP[int(component)], basename + ".phb")
         outfile = os.path.join(outputdir, outpath)
         
         lex = load_lexicon()        
@@ -355,7 +355,7 @@ def make_maus_processor(server, outputdir):
                 h.close()
                 
                 graph = maus_metadata(details['item_uri'], outpath)
-                server.upload_graph(graph, os.path.join(site, spkr, session, component, basename+"-m"))
+                server.output_graph(graph, os.path.join(site, spkr, session, component, basename+"-m"))
                 
             except MausException as e:
                 print "ERROR", basename, e

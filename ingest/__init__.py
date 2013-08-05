@@ -19,7 +19,7 @@ def ingest_session_map(server, sessiondir, csvdata):
             graph = mapper.item_rdf(item_path+".xml", csvdata)
             sys.stdout.write('.')
             sys.stdout.flush()
-            server.upload_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)))
+            server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)))
         except:
             print "Problem with item: ", item_path
             
@@ -38,17 +38,17 @@ def ingest_protocol(server):
     graph = convert.session_metadata()
     
     print "Uploading", len(graph), "triples for sessions"
-    server.upload_graph(graph, 'protocol/sessions')
+    server.output_graph(graph, 'protocol/sessions')
     
     graph = convert.component_metadata()
     
     print "Uploading", len(graph), "triples for components"
-    server.upload_graph(graph, 'protocol/components')
+    server.output_graph(graph, 'protocol/components')
         
     graph = convert.item_metadata()
     
     print "Uploading", len(graph), "triples for items"
-    server.upload_graph(graph, 'protocol/items')
+    server.output_graph(graph, 'protocol/items')
         
 
 def ingest_participants(server):
@@ -76,7 +76,7 @@ def ingest_participants(server):
         graph = convert.participant_rdf(p_info, csvdata)
     
         print "Uploading", len(graph), "triples for participant", p
-        server.upload_graph(graph, os.path.join('participants', p))
+        server.output_graph(graph, os.path.join('participants', p))
         
     
 def ingest_participant(server, participant):
@@ -90,6 +90,6 @@ def ingest_participant(server, participant):
     graph = convert.participant_rdf(p_info)
 
     print "Uploading", len(graph), "triples for participant", participant
-    server.upload_graph(graph, p_info['name'])
+    server.output_graph(graph, p_info['name'])
         
         

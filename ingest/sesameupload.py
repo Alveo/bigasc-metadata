@@ -115,59 +115,35 @@ class SesameServer():
                 print "problem with retry of ", fn
                 #retry.append(fn)
 
-    def upload_graph(self, graph, name=None):
+    def output_graph(self, graph, name=None):
         """Upload the contents of an RDFlib graph to the store"""
 
-        # add namespaces to the graph before uploading
+        # add namespaces to the graph before output
         graph = bind_graph(graph)
 
         data = graph.serialize(format=RDF_GRAPH_FORMAT)
 
         # check to see if we should store the graphs somewhere
-        graphdir = configmanager.get_config('STORE_GRAPHS', False)
-        if graphdir:
-            if not os.path.exists(graphdir):
-                os.makedirs(graphdir)
-            if name!=None:
-                # write out to the filename given with a suffix
-                filename = os.path.join(graphdir, name + "." + RDF_GRAPH_FORMAT)
-                if not os.path.exists(os.path.dirname(filename)):
-                    os.makedirs(os.path.dirname(filename))
-                h = open(filename, 'w')
-            else:
-                # make a temp file name
-                (fd, filename) = tempfile.mkstemp(prefix='graph-', suffix='.'+RDF_GRAPH_FORMAT, dir=graphdir)
-                h = os.fdopen(fd)
-
-                data = graph.serialize(format=RDF_GRAPH_FORMAT)
-            h.write(data)
-            h.close()
-            return filename
+        graphdir = configmanager.get_config('STORE_GRAPHS', 'metadata')        
+        
+        if not os.path.exists(graphdir):
+            os.makedirs(graphdir)
+        if name!=None:
+            # write out to the filename given with a suffix
+            filename = os.path.join(graphdir, name + "." + RDF_GRAPH_FORMAT)
+            if not os.path.exists(os.path.dirname(filename)):
+                os.makedirs(os.path.dirname(filename))
+            h = open(filename, 'w')
         else:
+            # make a temp file name
+            (fd, filename) = tempfile.mkstemp(prefix='graph-', suffix='.'+RDF_GRAPH_FORMAT, dir=graphdir)
+            h = os.fdopen(fd)
 
-            if isinstance(graph.identifier, URIRef):
-                args = {'context': "<%s>" % graph.identifier}
-                path = "/statements?%s" % urllib.urlencode(args)
-            else:
-                path = "/statements"
-
-            if RDF_GRAPH_FORMAT == 'turtle':
-                headers = {'Content-Type': 'application/x-turtle'}
-            elif RDF_GRAPH_FORMAT == 'nt':
-                headers = {'Content-Type': 'text/plain'}
-            else:
-                print "Unknown graph format in configuration: ", RDF_GRAPH_FORMAT
-                exit()
-            
-            
-            req = urllib2.Request(self.url+path, data=data, headers=headers)
-
-            result = self._get(req)
-            # check that return code is 204
-            if result[0] == 204:
-                return result[1]
-            else:
-                raise Exception("Problem with upload of data, result code %s" % result[0])
+            data = graph.serialize(format=RDF_GRAPH_FORMAT)
+        h.write(data)
+        h.close()
+        return filename
+        
 
 
     def clear(self, context=None):

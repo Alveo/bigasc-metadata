@@ -3,16 +3,14 @@ SESAME_SERVER = http://115.146.93.47/openrdf-sesame/repositories/bigasc_native
 MAUS_URL = http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
 
 
-# if STORE_GRAPHS is set then graphs will be written to this directory rather than
-# being uploaded
-# STORE_GRAPHS = /var/syndisk/austalk-graphs/
-STORE_GRAPHS = /tmp/austalk-graphs/
-
-# SITE_DIR is the location of the primary data (site directories)
+# DATA_DIR is the location of the primary data (site directories)
 DATA_DIR = /var/fileserver/bigasc/data/real/
 
 # OUTPUT_DIR is the location of the generated data 
 OUTPUT_DIR = /var/syndisk/published/
+
+# GRAPH_DIR is the location to write out metadata graphs, relative to OUTPUT_DIR 
+GRAPH_DIR = metadata
 
 # set PARTICIPANT_DETAIL to: 
 #  FULL - to include all properties
