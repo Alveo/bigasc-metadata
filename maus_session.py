@@ -1,7 +1,8 @@
 
 if __name__=='__main__':
     
-    import sys 
+    import sys
+    import os
     from annotate.maus import make_maus_processor, make_bpf_generator
     from data import site_sessions, map_session
     import configmanager

@@ -37,7 +37,7 @@ def make_processor(sessiondir, outdir, server):
             (newpath, newmeta) = resampled_metadata(site, spkr, session, component, os.path.basename(audio))
             # skip generating the downsampled file if it's already there
             if not os.path.exists(os.path.join(outdir, newpath)):
-                newaudio = resample(audio, os.path.join(outdir, newpath))
+                resample(audio, os.path.join(outdir, newpath))
                 n += 1
                 
             # add in metadata for newly created audio tracks

@@ -6,7 +6,7 @@ Created on Sep 25, 2012
 upload metadata about some or all sessions for a site to the server
 
 '''
-
+import os
 import ingest
 from convert.ra_maptask import RAMapTask
 from data import site_sessions
@@ -42,7 +42,7 @@ def process(datadir, limit):
         
 if __name__ == '__main__':
     
-    import sys, os
+    import sys
     
     if len(sys.argv) > 1:
         print "Usage upload_site.py <limit>?"
