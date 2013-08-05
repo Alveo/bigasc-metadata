@@ -17,8 +17,6 @@ def ingest_session_map(server, sessiondir, csvdata):
         
         try:
             graph = mapper.item_rdf(item_path+".xml", csvdata)
-            sys.stdout.write('.')
-            sys.stdout.flush()
             server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)))
         except:
             print "Problem with item: ", item_path

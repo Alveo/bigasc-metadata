@@ -45,13 +45,6 @@ def make_processor(sessiondir, outdir, server):
                 graph.add(tr)
         # upload the lot to the server
         server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
-        
-        if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
-            # progress...
-            sys.stdout.write('.')
-            sys.stdout.flush()
-            
-             
         return n
     
     return process_item
@@ -83,7 +76,7 @@ if __name__=='__main__':
         if os.path.isdir(sitedir):
             for session in site_sessions(sitedir):
                 if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
-                    print "Session: ", session  
+                    print "Session: ", session
                 
                 files = [m for m in map_session(session, make_processor(sitedir, outdir, server))]
                 
