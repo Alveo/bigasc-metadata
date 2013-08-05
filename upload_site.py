@@ -17,7 +17,7 @@ configmanager.configinit()
     
     
 
-def process(datadir, limit):
+def process(datadir, limit, errorlog):
     
     server_url = configmanager.get_config("SESAME_SERVER") 
     server = ingest.SesameServer(server_url)
@@ -29,11 +29,11 @@ def process(datadir, limit):
         sitedir = os.path.join(datadir, d)
         if os.path.isdir(sitedir):
             for session in site_sessions(sitedir):
-                print "Session: ", session   
+                print "Session: ", session
                 try:
                     ingest.ingest_session_map(server, session, map)
                 except Exception as ex:
-                    print "\tProblem with session...", ex
+                    errorlog.write("\tProblem with session...%s" % ex)
                     
                 limit += -1
                 if limit <= 0:
@@ -58,7 +58,9 @@ if __name__ == '__main__':
     else:
         limit = 1000000
 
-    process(datadir, limit)
+    errorlog = open('item-errors.txt')
+
+    process(datadir, limit, errorlog)
     
 #    import cProfile
 #    cProfile.run("process(server_url, limit)", "profile.dat")

@@ -18,13 +18,21 @@ from participant import item_site_name
 
 class ItemMapper:
     
-    def __init__(self, server):
+    def __init__(self, server, errorlog=None):
         """Initialise an item mapper with a SesameServer instance"""
         
         self.server = server
+        if errorlog == None:
+            self.errorlog = sys.stderr
+        else:
+            self.errorlog = errorlog
         self.init_map()
         self.component_map = component_map()
 
+    def error(self, message):
+        """Log an error"""
+        self.errorlog.write(message)
+    
     
     def init_map(self):
         """Initialise the RDF map"""
@@ -54,12 +62,33 @@ class ItemMapper:
         #self.itemmap.add('componentName', ignore=True)
 
 
+    def parse_item_filename(self, filename):
+        """Get the session, component and item ids
+        from the file name, return a dictionary with keys 'session', 'component', 'item'"""
+    
+        import re
+        result = dict()
+        parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
+        match = parse_it.search(filename)
+        if match:
+            groups = match.groups() 
+            result['colour'] = groups[0]
+            result['animal'] = groups[1]
+            result['speaker'] = groups[0]+"_"+groups[1]
+            result['session']   = groups[2]
+            result['component'] = groups[3]
+            result['item']      = str(int(groups[4]))  # do this to trim leading zeros
+        else:
+            self.error("'%s' doesn't match the filename pattern" % filename )
+            
+        return result
+
     def media_uri(self, itemuri, filename):
         """Given a filename, return a URI for
         this file on the data server"""
         
     
-        info = parse_item_filename(filename)
+        info = self.parse_item_filename(filename)
         info['filename'] = filename
         
         info['componentName'] = self.component_map[int(info['component'])]
@@ -93,7 +122,7 @@ class ItemMapper:
                 if value[filename].has_key(prop):
                     result.append((m_uri, NS[prop], Literal(value[filename][prop])))
                 else:
-                    print "file %s has no '%s' property: %s" % (filename, prop, str(value[filename]))
+                    self.error("file %s has no '%s' property: %s" % (filename, prop, str(value[filename])))
             # add identifier field which is just the filename
             result.append((m_uri, DC.identifier, Literal(filename)))
         
@@ -297,7 +326,7 @@ class ItemMapper:
                     graph.add((item_uri, NS.information_follower, self.participant_uri))
                     graph.add((item_uri, NS.information_giver, other_participant_uri))
             else:
-                print "\tNo role for item", md['basename']
+                self.error("\tNo role for item: %s" % md['basename'])
                 
             # generate a triple for the map, standardising the name
             maps = {'Map A - architecture': 'map/A-architecture',
@@ -315,7 +344,7 @@ class ItemMapper:
                 map = PROTOCOL_NS[maps[map]]
                 graph.add((item_uri, NS.map, map))
             else:
-                print "\tUnknown map name: ", map, "in ", md['basename']
+                self.error("\tUnknown map name: %s in %s " % (map, md['basename']))
 
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
         
@@ -455,26 +484,6 @@ def read_metadata(url):
     return result
 
 
-def parse_item_filename(filename):
-    """Get the session, component and item ids
-    from the file name, return a dictionary with keys 'session', 'component', 'item'"""
-
-    import re
-    result = dict()
-    parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
-    match = parse_it.search(filename)
-    if match:
-        groups = match.groups() 
-        result['colour'] = groups[0]
-        result['animal'] = groups[1]
-        result['speaker'] = groups[0]+"_"+groups[1]
-        result['session']   = groups[2]
-        result['component'] = groups[3]
-        result['item']      = str(int(groups[4]))  # do this to trim leading zeros
-    else:
-        print filename, "doesn't match the filename pattern"
-    return result
-
 
 
 def parse_media_filename(filename):
@@ -549,62 +558,6 @@ def parse_media_filename(filename):
     return result
 
 
-def read_manifest(baseurl):
-    """Read the manifest of a session given the URL of 
-    the session directory, return a list
-    of URLs for the XML metadata files for each item in the session
-
-#>>> session_url = "https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1"
-
-#>>> items = read_manifest(session_url)
-#>>> len(items)
-#371
-#>>> items[0]
-#'https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1/Session1_2/1_178_1_2_021.xml'
->>> session_dir = "test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1"
->>> items = read_manifest(session_dir)
->>> len(items)
-54
->>> items[0]
-'test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_001.xml'
-    """
-    
-    # https://austalk.edu.au/dav/bigasc/data/real/Australian_National_University,_Canberra/Spkr1_178/Spkr1_178_Session1
-    TEMPLATE = "Session%(session)s_%(component)s/%(basename)s.xml"
-    
-    manifest_url = os.path.join(baseurl, 'manifest.txt')
-
-    if manifest_url.startswith('http'):
-        try:
-            # grab the manifest
-            h = urllib2.urlopen(manifest_url)
-            manifest_lines = h.readlines()
-            h.close()
-        except:
-            print "Manifest not available for session", baseurl
-            return []
-    elif os.path.exists(manifest_url):
-        
-        h = open(manifest_url)
-        manifest_lines = h.readlines()
-        h.close()
-    else:
-        print "Manifest not available for session", baseurl
-        return []
-    
-    items = []
-    for line in manifest_lines:
-        if line.startswith('@'):
-            continue
-        elif line.strip() == '':
-            continue
-        else:
-            info = parse_item_filename(line)
-            info['basename'] = line.strip()
-            itemurl = os.path.join(baseurl, TEMPLATE % info)
-            items.append(itemurl)
-
-    return items
 
 
 if __name__=='__main__':

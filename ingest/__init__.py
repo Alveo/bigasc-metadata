@@ -6,11 +6,11 @@ from data import map_session
 import os, sys
 
       
-def ingest_session_map(server, sessiondir, csvdata):
+def ingest_session_map(server, sessiondir, csvdata, errorlog):
     """Given a base directory for a session, upload the metadata
     for the session to the server"""
 
-    mapper = convert.ItemMapper(server)
+    mapper = convert.ItemMapper(server, errorlog)
     
     def process_item(site, spkr, session, component, item_path):
         """upload metadata for a single item"""
@@ -19,7 +19,7 @@ def ingest_session_map(server, sessiondir, csvdata):
             graph = mapper.item_rdf(item_path+".xml", csvdata)
             server.output_graph(graph, os.path.join(site, spkr, session, component, os.path.basename(item_path)))
         except:
-            print "Problem with item: ", item_path
+            errorlog.write("Problem with item: %s" % item_path)
             
     result = [x for x in map_session(sessiondir, process_item)]
 
