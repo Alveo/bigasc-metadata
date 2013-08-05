@@ -19,10 +19,6 @@ if __name__ == '__main__':
 
     server = ingest.SesameServer(server_url)
     
-    if len(sys.argv) == 2 and sys.argv[1] == "clear":
-        print "clearing all participants"
-        server.clear(NS['graphs/participants'])
-    
     ingest.ingest_participants(server)
     
     

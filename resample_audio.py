@@ -68,8 +68,8 @@ if __name__=='__main__':
     datadir = configmanager.get_config('DATA_DIR')
     outdir =  configmanager.get_config('OUTPUT_DIR')
 
-    if len(sys.argv) == 1:
-        limit = int(sys.argv[0])
+    if len(sys.argv) == 2:
+        limit = int(sys.argv[1])
     else:
         limit = 1000000
     

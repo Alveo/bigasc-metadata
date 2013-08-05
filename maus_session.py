@@ -8,7 +8,7 @@ if __name__=='__main__':
     import configmanager
     import ingest
     
-    if len(sys.argv) not in [1,2]:
+    if len(sys.argv) not in [2,3]:
         print "Usage: maus_session.py maus|bpf <limit>?"
         exit()  
         

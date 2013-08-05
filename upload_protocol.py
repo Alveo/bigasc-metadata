@@ -19,14 +19,7 @@ if __name__ == '__main__':
     
     server = ingest.SesameServer(server_url)
     
-    # clear the store if the second arg is 'clear
-    if len(sys.argv) == 2 and sys.argv[1] == "clear":
-        server.clear()
-    elif len(sys.argv) != 1:
-        print "Usage upload_protocol.py clear?"
-        print "  if first arg is 'clear' then the store is cleared before uploading"
-    
+    if len(sys.argv) != 1:
+        print "Usage upload_protocol.py"
     
     ingest.ingest_protocol(server)
-    
-    print "Size: ", server.size()
