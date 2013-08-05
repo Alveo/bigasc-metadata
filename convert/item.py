@@ -90,7 +90,7 @@ def parse_media_filename(filename, errorlog=sys.stderr):
  
  
  
-def parse_item_filename(self, filename, errorlog=sys.stderr):
+def parse_item_filename(filename, errorlog=sys.stderr):
     """Get the session, component and item ids
     from the file name, return a dictionary with keys 'session', 'component', 'item'"""
 
