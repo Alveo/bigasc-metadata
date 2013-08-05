@@ -9,18 +9,18 @@ gather together annotation files into an appropriate directory structure
 
 import configmanager
 configmanager.configinit()
-from convert.namespaces import DATA_URI_TEMPLATE, DATA_NS, generate_item_uri
+from convert.namespaces import *
 from convert.item import parse_item_filename
 from convert.participant import participant_uri, item_site_name
 from convert.session import component_map
 import ingest
-from rdflib import Graph
+from rdflib import Graph, URIRef, Literal
 
 import hashlib
 import os
 import shutil
 
-def normalise_filename(filename, ext='.TextGrid'):
+def normalise_filename(filename, ext='TextGrid'):
     """Given an annotation filename, return a path that we can 
     use to store it in the right place"""
     
@@ -36,7 +36,7 @@ def normalise_filename(filename, ext='.TextGrid'):
         p['item'] = int(p['item'])
         
         basename = "%(speaker)s_%(session)s_%(component)s_%(item)03d" % p
-        p['filename'] = basename + ext
+        p['filename'] = basename + "." + ext
         
         return DATA_URI_TEMPLATE % p
 
@@ -92,7 +92,7 @@ def process_results(server, results, outdir, origin, format):
     for key in sorted(results.keys()):
 
         graph = ann_metadata(key, origin, format)
-        server.output_graph(graph)
+        server.output_graph(graph, key)
         
         source = newest_file(results[key])            
         copy_file(source, os.path.join(outdir, key))
@@ -130,6 +130,8 @@ if __name__ == '__main__':
     
     if len(sys.argv) != 5:
         print "Usage: harvest_annotations.py <input dir> <ext> <output dir> <origin>"
+        print "  <ext> is file extension without the period (eg. TextGrid, trs)"
+        print "  <origin> is a string descriptor of the origin of the annotation eg. 'Manual'"
         exit()
     
     dirname = sys.argv[1]
