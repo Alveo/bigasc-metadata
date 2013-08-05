@@ -21,11 +21,7 @@ def ingest_session_map(server, sessiondir, csvdata):
         except:
             print "Problem with item: ", item_path
             
-    
-    sys.stdout.write(os.path.basename(sessiondir))
-    sys.stdout.flush()
     result = [x for x in map_session(sessiondir, process_item)]
-    sys.stdout.write('\n')
 
 def ingest_protocol(server):
     """Generate RDF for the protocol and upload it 
