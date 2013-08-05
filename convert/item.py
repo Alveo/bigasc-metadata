@@ -73,7 +73,7 @@ def parse_media_filename(filename, errorlog=sys.stderr):
          type = 'video'
      else:
          # unknown file pattern
-         errorlog.write("filename doesn't match media pattern: %s" % filename)
+         errorlog.write("filename doesn't match media pattern: %s\n" % filename)
          return dict()
              
      if n == None:
@@ -458,16 +458,9 @@ class ItemMapper:
         return graph
 
     
-    def item_participant(self, url):
-        """Return the participant Id (1_123) for this item"""
     
-        md = self.read_metadata(url)
-
-        return "%(colour)s_%(animal)s" % md
-    
-    
-    def read_metadata(self, url):
-        """Read item metadata from the given url
+    def read_metadata(self, mdfile):
+        """Read item metadata from the given file
         return a dictionary of values
     
     >>> import sys
@@ -501,18 +494,14 @@ class ItemMapper:
     
         result = dict()
         
-        # parse the xml, might fail but we'll just pass on the exception
-        # might have an http url but maybe a local file
-        if url.startswith('http'):
-            h = urllib2.urlopen(url)
-            xmltext = h.read()
-            h.close()
-        else:
-            h = open(url)
-            xmltext = h.read()
-            h.close()
-            
-            
+        # parse the xml, might fail but we'll just pass on the exception 
+
+        h = open(mdfile)
+        xmltext = h.read()
+        h.close()
+        
+        dirname = os.path.dirname(mdfile)
+        
         root = ElementTree.fromstring(xmltext)
         
         if root is None:
@@ -530,7 +519,10 @@ class ItemMapper:
                     filename = ch.text
                     # early versions were writing .xml files into the metadata, we don't
                     # want to know about that
-                    if not filename.endswith(".xml"):
+                    # we also don't want to know about files that don't exist (eg. some .raw16 files
+                    # are in the metadata but were removed
+                
+                    if not filename.endswith(".xml") and os.path.exists(os.path.join(dirname, filename)):
                         
                         # for each file we'll make a dictionary with it's properties
                         if not result['files'].has_key(filename):
@@ -551,7 +543,7 @@ class ItemMapper:
                 # handle old style checksums in a separate element
                 for ch in node.findall(".//md5hash"):
                     filename = ch.get('file')
-                    if not result['files'].has_key(filename):
+                    if not result['files'].has_key(filename) and os.path.exists(os.path.join(dirname, filename)):
                         result['files'][filename] = {'filename': filename}
                     result["files"][filename]['checksum'] = ch.text
     
