@@ -92,7 +92,7 @@ def process_results(server, results, outdir, origin, format):
     for key in sorted(results.keys()):
 
         graph = ann_metadata(key, origin, format)
-        server.output_graph(graph, key)
+        server.output_graph(graph, key+"ann")
         
         source = newest_file(results[key])            
         copy_file(source, os.path.join(outdir, key))
