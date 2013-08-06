@@ -20,7 +20,7 @@ import hashlib
 import os
 import shutil
 
-def normalise_filename(filename, ext='TextGrid'):
+def item_path(filename):
     """Given an annotation filename, return a path that we can 
     use to store it in the right place"""
     
@@ -35,15 +35,28 @@ def normalise_filename(filename, ext='TextGrid'):
         
         p['item'] = int(p['item'])
         
-        basename = "%(speaker)s_%(session)s_%(component)s_%(item)03d" % p
-        p['filename'] = basename + "." + ext
+        p['filename'] = ''
         
         return DATA_URI_TEMPLATE % p
 
     except:
         return ''
 
+def item_basename(filename):
+    """Given a filename, if it matches the pattern for an item file
+    return just the item filename (ie without any channel info)
+    otherwise return None"""
+    
+    pattern = "(\d+_\d+_\d+_\d+)"
+    m = re.match(pattern, filename)
+    if m:
+        return m.group(1)
+    else:
+        return None
+    
 
+    
+    
 def md5hexdigest(filename):
     """Compute an md5 signature for the given file,
     return the signature as a Hex digest string.
@@ -89,10 +102,13 @@ def newest_file(files):
 
 def process_results(server, results, outdir, origin, format):
     
-    for key in sorted(results.keys()):
+    for basename in sorted(results.keys()):
 
-        graph = ann_metadata(key, origin, format)
-        server.output_graph(graph, key+"ann")
+
+        path = item_path(basename)
+        
+        graph = ann_metadata(basename, origin, format)
+        server.output_graph(graph, path)
         
         source = newest_file(results[key])            
         copy_file(source, os.path.join(outdir, key))
@@ -146,14 +162,14 @@ if __name__ == '__main__':
         results = dict()
         for fn in filenames:
             if fn.find(ext) >= 0:
-                newfn = normalise_filename(fn, ext)
-                if newfn != '':
+                basename = item_basename(fn)
+                if basename != None:
                     fullpath = os.path.join(dirpath, fn)
                     
-                    if results.has_key(newfn):
-                        results[newfn].append(fullpath)
+                    if results.has_key(basename):
+                        results[basename].append(fullpath)
                     else:
-                        results[newfn] = [fullpath]
+                        results[basename] = [fullpath]
         process_results(server, results, outdir, origin, ext)
                     
 
