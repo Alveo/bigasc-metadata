@@ -254,8 +254,7 @@ class ItemMapper:
         
         item_uri = generate_item_uri(md['basename'])
         
-        # generate participant uri and from that query the
-        # remote db for the site name which we'll use
+        # generate participant uri and use it to find the site name which we'll use
         # later in mapping file names to uris
         
         self.participant_uri = participant_uri(md['colour'], md['animal'])

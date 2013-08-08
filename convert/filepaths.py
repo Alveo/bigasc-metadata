@@ -8,6 +8,10 @@ import sys
 import os
 import re
 
+from session import component_map
+from participant import item_site_name, participant_uri
+from namespaces import DATA_URI_TEMPLATE, DATA_NS
+
 
 def parse_media_filename(filename, errorlog=sys.stderr):
      """Extract the channel name, media type and -n status from a filename
@@ -85,21 +89,102 @@ def parse_media_filename(filename, errorlog=sys.stderr):
  
 def parse_item_filename(filename, errorlog=sys.stderr):
     """Get the session, component and item ids
-    from the file name, return a dictionary with keys 'session', 'component', 'item'"""
+    from the file name, return a dictionary with keys 'session', 'component', 'item'
+    
+>>> parse_item_filename('1_178_1_2_150.xml')
+{'basename': '1_178_1_2_150', 'component': '2', 'item': '150', 'session': '1', 'speaker': '1_178', 'animal': '178', 'colour': '1'}
+    
+    """
 
     import re
     result = dict()
-    parse_it = re.compile(r'^(\d*)_(\d*)_(\d*)_(\d*)_(\d*)')
+    parse_it = re.compile(r'^((\d*)_(\d*)_(\d*)_(\d*)_(\d*))')
     match = parse_it.search(filename)
     if match:
         groups = match.groups() 
-        result['colour'] = groups[0]
-        result['animal'] = groups[1]
-        result['speaker'] = groups[0]+"_"+groups[1]
-        result['session']   = groups[2]
-        result['component'] = groups[3]
-        result['item']      = str(int(groups[4]))  # do this to trim leading zeros
+        result['basename'] = groups[0]
+        result['colour'] = groups[1]
+        result['animal'] = groups[2]
+        result['speaker'] = groups[1]+"_"+groups[2]
+        result['session']   = groups[3]
+        result['component'] = groups[4]
+        result['item']      = str(int(groups[5]))  # do this to trim leading zeros
     else:
         errorlog.write("'%s' doesn't match the filename pattern\n" % filename )
         
     return result
+
+
+
+def item_file_uri(filename, dirname=None):
+    """Given a filename for one of the files in an item, return a URI for
+     this file on the data server
+     
+>>> item_file_uri('1_178_1_2_150-ch6-speaker16.wav')
+rdflib.term.URIRef(u'http://data.austalk.edu.au/audio/ANU/1_178/1/words-1/1_178_1_2_150-ch6-speaker16.wav')
+
+     """
+    path = item_file_path(filename, dirname)
+    
+    return DATA_NS[path]
+
+def item_file_path(filename, dirname=None):
+    """Given a filename for one of the files in an item, return a path that we can 
+    use to store it in the right place. This is a relative path, you still
+    need to add OUTPUT_DIR to get an absolute path.
+    
+>>> item_file_path('1_178_1_2_150-ch6-speaker16.wav')
+'audio/ANU/1_178/1/words-1/1_178_1_2_150-ch6-speaker16.wav'
+>>> item_file_path('1_178_1_2_150.nt', 'metadata')
+'metadata/ANU/1_178/1/words-1/1_178_1_2_150.nt'
+   
+    """
+    
+    info = parse_item_filename(filename)
+    info['filename'] = filename
+            
+    m = component_map()
+    info['componentName'] = m[int(info['component'])]
+    info['site'] = item_site_name(participant_uri(info['colour'], info['animal']))
+    
+    path = DATA_URI_TEMPLATE % info
+    
+    if dirname == None:
+        
+        # we modify the path based on the file type since we're splitting
+        # audio and video data
+        minfo = parse_media_filename(filename)
+        if minfo.has_key('type'):
+            dirname = minfo['type']
+        else:
+            raise Exception("Can't work out directory name in item_file_path(%s)" % filename)
+        
+    path = os.path.join(dirname, path)
+    
+    return path
+
+def item_file_basename(filename):
+    """Given a filename for one of the files in an item, return the basename
+    of the item
+    
+>>> item_file_basename('1_178_1_2_150-ch6-speaker16.wav')
+'1_178_1_2_150'
+>>> item_file_basename('2_267_1_2_001-ch6-speaker.TextGrid')
+'2_267_1_2_001'
+    
+    """
+    
+    info = parse_item_filename(filename)
+    return info['basename']
+    
+    
+    
+    
+
+if __name__=='__main__':
+        
+        import doctest
+        doctest.testmod()
+        
+        
+

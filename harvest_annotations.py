@@ -14,76 +14,12 @@ from convert.item import parse_item_filename
 from convert.participant import participant_uri, item_site_name
 from convert.session import component_map
 import ingest
+from convert.filepaths import item_file_path, item_file_uri, item_file_basename
 from rdflib import Graph, URIRef, Literal
 
 import hashlib
 import os
 import shutil
-
-def item_path(filename):
-    """Given an annotation filename, return a path that we can 
-    use to store it in the right place"""
-    
-    try:
-        p = parse_item_filename(filename)
-
-    
-        p['site'] = item_site_name(participant_uri(p['colour'], p['animal']))
-        
-        m = component_map()
-        p['componentName'] = m[int(p['component'])]
-        
-        p['item'] = int(p['item'])
-        
-        p['filename'] = ''
-        
-        return DATA_URI_TEMPLATE % p
-
-    except:
-        return ''
-
-def item_basename(filename):
-    """Given a filename, if it matches the pattern for an item file
-    return just the item filename (ie without any channel info)
-    otherwise return None"""
-    
-    pattern = "(\d+_\d+_\d+_\d+)"
-    m = re.match(pattern, filename)
-    if m:
-        return m.group(1)
-    else:
-        return None
-    
-
-    
-    
-def md5hexdigest(filename):
-    """Compute an md5 signature for the given file,
-    return the signature as a Hex digest string.
-    filename is an absolute filename."""
-
-    # if there is no file here, return a dummy checksum
-    if not os.path.exists(filename):
-        return "missing file"
-            
-    md5 = hashlib.md5()
-    with open(filename,'rb') as f:
-        for chunk in iter(lambda: f.read(1024*md5.block_size), ''):
-            md5.update(chunk)
-    return md5.hexdigest()
-
-
-def check_file_versions(files):
-    """Given a list of files, check that they are all
-    the same (via a checksum), return True if they are and
-    False if not"""
-    
-    checksum = md5hexdigest(files[0])
-    for f in files[1:]:
-        cs = md5hexdigest(f)
-        if cs != checksum:
-            return False
-    return True
 
 
 def newest_file(files):
@@ -100,20 +36,27 @@ def newest_file(files):
             
     return newest
 
-def process_results(server, results, outdir, origin, format):
+def process_results(server, basenames, outdir, origin, format):
+    """Given a dictionary of basenames and the files associated with them, 
+     find the most recent file for each basename and copy it to it's 
+     intended location. Also write a metadata file for each item."""
     
-    for basename in sorted(results.keys()):
+    for basename in sorted(basenames.keys()):
 
+        source = newest_file(basenames[basename]) 
+        source_basename = os.path.basename(source)
 
-        path = item_path(basename)
+        # need to tidy up the name because of extensions like '.TextGrid 2'
+        (b, e) = os.path.splitext(source_basename)
+        dest_basename = b + "." + format
         
-        graph = ann_metadata(basename, origin, format)
-        server.output_graph(graph, path)
-        
-        source = newest_file(results[key])            
-        copy_file(source, os.path.join(outdir, key))
-        
+        graph = ann_metadata(dest_basename, origin, format)
+        server.output_graph(graph, item_file_path(basename+"-ann", "annotation-metadata"))
 
+        path = item_file_path(dest_basename, os.path.join("annotation", origin))
+        copy_file(source, os.path.join(outdir, path))
+        
+        
 
 def copy_file(src, dest):
     """Copy src to dest but make sure that the directories in dest exist"""
@@ -125,12 +68,10 @@ def copy_file(src, dest):
     
     
 def ann_metadata(annfile, origin, format):
-
-    (path, ext) = os.path.splitext(annfile)
-
-    ann_uri = DATA_NS[annfile]
     
-    item_uri = generate_item_uri(path)
+    ann_uri = item_file_uri(annfile, os.path.join("annotation", origin))
+    basename = item_file_basename(annfile)
+    item_uri = generate_item_uri(basename)
     
     graph = Graph()
     graph.add((URIRef(item_uri), NS['has_annotation'], ann_uri))
@@ -144,32 +85,34 @@ if __name__ == '__main__':
     
     import sys, os
     
-    if len(sys.argv) != 5:
-        print "Usage: harvest_annotations.py <input dir> <ext> <output dir> <origin>"
+    if len(sys.argv) != 4:
+        print "Usage: harvest_annotations.py <input dir> <ext> <origin>"
         print "  <ext> is file extension without the period (eg. TextGrid, trs)"
         print "  <origin> is a string descriptor of the origin of the annotation eg. 'Manual'"
         exit()
     
     dirname = sys.argv[1]
-    ext = sys.argv[2]
-    outdir = sys.argv[3]
-    origin = sys.argv[4]
+    ext = sys.argv[2] 
+    origin = sys.argv[3]
     
+    outdir = configmanager.get_config("OUTPUT_DIR")
     server_url = configmanager.get_config("SESAME_SERVER")
     server = ingest.SesameServer(server_url)
 
     for dirpath, dirnames, filenames in os.walk(dirname):
+        # find all files associated with each basename in this directory
+        # store them in a dictionary with the basename as a key
         results = dict()
         for fn in filenames:
             if fn.find(ext) >= 0:
-                basename = item_basename(fn)
-                if basename != None:
-                    fullpath = os.path.join(dirpath, fn)
+                basename = item_file_basename(fn)
+                fullpath = os.path.join(dirpath, fn)
+                
+                if results.has_key(basename):
+                    results[basename].append(fullpath)
+                else:
+                    results[basename] = [fullpath]
                     
-                    if results.has_key(basename):
-                        results[basename].append(fullpath)
-                    else:
-                        results[basename] = [fullpath]
         process_results(server, results, outdir, origin, ext)
                     
 

@@ -36,8 +36,8 @@ def item_site_name(spkruri):
     
     if SITE_MAP == None:
         if not os.path.exists(SITE_MAPPING_FILE):
-            print "ERROR: No site mapping file, run upload_participants first"
-            exit()
+            raise Exception("ERROR: No site mapping file, run upload_participants first")
+           
         
         h = open(SITE_MAPPING_FILE, 'r')
         lines = h.readlines()
