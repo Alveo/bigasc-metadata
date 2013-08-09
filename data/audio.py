@@ -71,54 +71,6 @@ True
     else:
         return None
 
-def resampled_metadata(site, spkr, session, component, audiofile):
-    """Generate metadata to describe the newly created
-    resampled audio file, 
-    basedir is the speaker directory that this audio file is found within
-    audiofile is the basename of the old audio file
-    
-    We generate a new name for the audio file by adding 16 to the channel
-    name:
-    
-    1_1121_1_12_001-ch6-speaker.wav -> 1_1121_1_12_001-ch6-speaker16.wav
-    
-    Return a tuple (path, meta) where
-    path is the path name to the new file relative to some base directory
-    meta is a list of triples that can be added to
-    a graph"""
-    
-    # audiofile is like 1_123_1_2_003-ch6speaker.wav
-    
-    info = parse_media_filename(os.path.basename(audiofile))
-
-    newfilename = audiofile.replace('ch6-speaker', 'ch6-speaker16')
-    
-    info['filename'] = newfilename
-    info['site'] = site
-    info['speaker'] = spkr
-    info['session'] = session
-    info['component'] = component
-    info['componentName'] = COMPONENT_MAP[int(component)]
-    
-    # need to rewrite the channel in metadata
-    info['channel'] = 'ch6-speaker16'
-    path = DATA_URI_TEMPLATE % info
-    
-    # we add 'downsampled' to the front of the path since this will be kept separate
-    # from the main data
-    path = os.path.join('downsampled', path)
-    
-    item_uri = generate_item_uri(info['basename'])
-    file_uri = DATA_NS[path]
-    
-    meta = [(item_uri, NS.media, file_uri),
-              (file_uri, RDF.type, NS.MediaFile),
-              (file_uri, NS.type, Literal(info['type'])),
-              (file_uri, NS.channel, Literal(info['channel'])),
-              (file_uri, NS.version, Literal(info['version'])),
-              ]
-    
-    return (path, meta)
 
 if __name__=='__main__':
         

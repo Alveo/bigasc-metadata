@@ -325,7 +325,7 @@ def make_bpf_generator(server, outputdir):
 def make_maus_processor(server, outputdir):
         
     def maus_item(site, spkr, session, component, item_path):
-        """Procudure for use with map_session to send the audio data
+        """Procedure for use with map_session to send the audio data
         for one item to MAUS and store the resulting annotation 
         files"""
         

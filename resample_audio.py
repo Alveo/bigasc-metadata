@@ -33,21 +33,30 @@ def make_processor(sessiondir, outdir, server):
         n = 0
         
         graph = Graph()
-        for audio in glob.glob(item_path + "*-ch6-speaker*.wav"):
-            path = os.path.join(outdir, item_path[(len(os.path.dirname(sessiondir))+1):])
-            path = os.path.dirname(path) 
-            
-            (newpath, newmeta) = resampled_metadata(site, spkr, session, component, os.path.basename(audio))
-            # skip generating the downsampled file if it's already there
-            if not os.path.exists(os.path.join(outdir, newpath)):
-                resample(audio, os.path.join(outdir, newpath))
-                n += 1
+        goodfiles, badfiles = item_file_versions(item_path)
+        
+        for fn in goodfiles:
+            # only worry about ch6-speaker
+            if fn.find('ch6-speaker') >= 0:
                 
-            # add in metadata for newly created audio tracks
-            for tr in newmeta:
-                graph.add(tr)
+                basename = os.path.basename(fn)
+                # where do we put this new file
+                newname = basename.replace('ch6-speaker', 'ch6-speaker16')
+                newpath = item_file_path(basename, "downsampled")
+                
+                # generate metadata
+                meta = generate_file_metadata(newpath)
+                
+                # skip generating the downsampled file if it's already there
+                if not os.path.exists(os.path.join(outdir, newpath)):
+                    resample(fn, os.path.join(outdir, newpath))
+                    n += 1
+                    
+                # add in metadata for newly created audio tracks
+                for tr in newmeta:
+                    graph.add(tr)
         # upload the lot to the server
-        server.output_graph(graph, convert.generate_item_path(site, spkr, session, component, os.path.basename(item_path)+"-ds"))
+        server.output_graph(graph, item_file_path(basename+"-file", "metadata"))
         return n
     
     return process_item

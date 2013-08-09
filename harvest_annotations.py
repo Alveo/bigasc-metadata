@@ -51,7 +51,7 @@ def process_results(server, basenames, outdir, origin, format):
         dest_basename = b + "." + format
         
         graph = ann_metadata(dest_basename, origin, format)
-        server.output_graph(graph, item_file_path(basename+"-ann", "annotation-metadata"))
+        server.output_graph(graph, item_file_path(basename+"-"+origin, "annotation"))
 
         path = item_file_path(dest_basename, os.path.join("annotation", origin))
         copy_file(source, os.path.join(outdir, path))

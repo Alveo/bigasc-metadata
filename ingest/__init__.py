@@ -11,7 +11,7 @@ def ingest_session_map(server, sessiondir, csvdata, errorlog):
     """Given a base directory for a session, upload the metadata
     for the session to the server"""
 
-    mapper = convert.ItemMapper(server, errorlog)
+    mapper = convert.ItemMapper(errorlog)
     
     def process_item(site, spkr, session, component, item_path):
         """upload metadata for a single item"""

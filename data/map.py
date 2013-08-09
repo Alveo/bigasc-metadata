@@ -15,8 +15,8 @@ def site_sessions(dirname):
     site directory.  We look for speaker directories
     first then sessions within those.
 
->>> list(site_sessions('../test/University_of_Tasmania,_Hobart/'))
-['../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1']
+>>> list(site_sessions('test/University_of_Tasmania,_Hobart/'))
+['test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1']
 
     """
     for spkrdir in os.listdir(dirname):
@@ -79,22 +79,6 @@ def parse_component_dir(dirname):
         return match.groups()
     else:
         return None
-
-def item_files(path):
-    """Given the base path of an item, return a list
-    of the files associated with that item - ie. all
-    files starting with this prefix except the .xml
-    metadata file.
-
->>> sorted(item_files('../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003'))
-['../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003camera-1.raw16', '../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003left.wav', '../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003right.wav']
-    """
-    
-    from glob import glob
-    
-    files = glob(path + '*')
-    return [f for f in files if not f.endswith('.xml')]
-
     
 
 def map_session(sessiondir, fn):
@@ -112,13 +96,13 @@ def map_session(sessiondir, fn):
     return value is an iterator over the results of the individual
     function calls (calls are lazy via yield)
     
->>> paths = list(map_session('../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1', lambda a, b, c, d, e: e ))
+>>> paths = list(map_session('test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1', lambda a, b, c, d, e: e ))
 >>> len(paths)
 54
 >>> paths[2]
-'../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_012'
+'test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_5/2_2_1_5_012'
     """
-    
+
     # progressively split off directories
     (spath, sessdirname) = os.path.split(sessiondir)
     (spath, spkrdirname) = os.path.split(spath)
@@ -127,7 +111,6 @@ def map_session(sessiondir, fn):
     # get info from session directory name
     (spkrid, sessionid) = parse_session_dir(sessdirname)
     siteid = parse_site_dir(sitedirname)
-    
     
     
     for cdir in os.listdir(sessiondir):

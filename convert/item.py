@@ -15,8 +15,29 @@ from session import component_map
 from participant import participant_uri
 
 from participant import item_site_name
-from filepaths import parse_item_filename, parse_media_filename
+from filepaths import parse_item_filename, parse_media_filename, item_file_uri
 
+
+def generate_file_metadata(self, filename):
+    """Generate metadata records for a single media file
+    associated with an item, given the filename"""
+    
+    result = []
+    item_uri = item_uri(filename)
+    m_uri = item_file_uri(filename)
+    properties = parse_media_filename(filename)
+    
+    result.append((item_uri, AUSNC.document, m_uri))
+    # add file properties
+    result.append((m_uri, RDF.type, FOAF.Document))
+    for prop in ['version', 'checksum', 'type', 'channel']:
+        if properties.has_key(prop):
+            result.append((m_uri, NS[prop], Literal(properties[prop])))
+            
+    # add identifier field which is just the filename
+    result.append((m_uri, DC.identifier, Literal(filename)))
+
+    return result
 
 class ItemMapper:
     
@@ -45,7 +66,6 @@ class ItemMapper:
         self.itemmap.add('item', ignore=True) # will be replaced with a link to item
         self.itemmap.add('participant', ignore=True) # will replace with pointer to participant
         self.itemmap.add('component', mapper=self.map_component)
-        self.itemmap.add('files', mapper=self.map_files)
         self.itemmap.add('session', mapper=self.map_session)
         
         self.itemmap.add('timestamp', mapto=DC.created)
@@ -58,35 +78,9 @@ class ItemMapper:
         self.itemmap.add('otherParticipant', ignore=True)
         self.itemmap.add('role', ignore=True)
         self.itemmap.add('map', ignore=True)
-        
-        # these we don't need as they are redundant
-        #self.itemmap.add('componentName', ignore=True)
 
-
-
-
-    def media_uri(self, itemuri, filename):
-        """Given a filename, return a URI for
-        this file on the data server"""
-        
-    
-        info = parse_item_filename(filename, self.errorlog)
-        info['filename'] = filename
-        
-        info['componentName'] = self.component_map[int(info['component'])]
-        # here we reference the 'current' site name which
-        # was generated in item_rdf
-        info['site'] = self.site_name
-        #info['component'] = component_map[info['component']]
-        path = DATA_URI_TEMPLATE % info
-        
-        # we modify the path based on the file type since we're splitting
-        # audio and video data
-        minfo = parse_media_filename(filename, self.errorlog)
-        path = os.path.join(minfo['type'], path)
-        
-        return DATA_NS[path]
-        
+        #self.itemmap.add('files', mapper=self.map_files)
+        self.itemmap.add('files', ignore=True)
         
     def map_files(self, subj, prop, value):
         """Map the file list
@@ -96,7 +90,8 @@ class ItemMapper:
         result = []
         for filename in value.keys():
             
-            m_uri = self.media_uri(subj, filename)
+            m_uri = item_file_uri(filename)
+            
             result.append((subj, AUSNC.document, m_uri))
             # add file properties
             result.append((m_uri, RDF.type, FOAF.Document))
@@ -110,8 +105,7 @@ class ItemMapper:
         
         return result    
     
-        
-        
+
     def map_component(self, subj, prop, value):
         """Map the component field to point to the 
         appropriate component URI"""
@@ -130,7 +124,6 @@ class ItemMapper:
         #sid = PROTOCOL_NS[SESSION_URI_TEMPLATE % value]
         
         return [(subj, NS.session, Literal(value))]
-    
 
         
     COMPONENTS = {'spontaneous': [
@@ -194,7 +187,7 @@ class ItemMapper:
 
         
     
-    def item_rdf(self, url, csvdata=None):
+    def item_rdf(self, xmlfile, csvdata=None):
         """Given the url of an item xml file, read the metadata and map
         to RDF, returning a graph
         
@@ -236,12 +229,12 @@ class ItemMapper:
     >>> [t for t in graph3.subject_objects(NS.information_giver)]
     [(rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_719_4_10_001'), rdflib.term.URIRef(u'http://id.austalk.edu.au/participant/2_114'))]
     
-    # print graph3.serialize(format='turtle')   
+    >>> print graph3.serialize(format='turtle')   
 
     
         """
         
-        md = self.read_metadata(url)
+        md = self.read_metadata(xmlfile)
         # generate a URI for this component 
         component_uri = generate_component_uri(md['colour'], md['animal'], md['session'], md['component'])
         # the prototype is the component we're an example of
@@ -328,9 +321,6 @@ class ItemMapper:
         # add some standard metadata
         graph.add((item_uri, DC.title, Literal(md['basename'])))
         
-        
-        
-        
         # part of the component, which has a prototype
         graph.add((component_uri, NS.prototype, component_prototype))
         graph.add((component_uri, RDF.type, NS.RecordedComponent))
@@ -372,7 +362,6 @@ class ItemMapper:
     
     >>> import sys
     >>> sys.path.append("..")
-    >>> from ingest import SesameServer
     >>> mdurl = "test/items/1_178_2_16_001.xml"
     >>> im = ItemMapper()
     >>> mdfile = "test/items/1_1121_1_12_001.xml"
@@ -442,6 +431,7 @@ class ItemMapper:
                         info = parse_media_filename(filename, self.errorlog)
                         for key in info.keys():
                             result['files'][filename][key] = info[key]
+                        
     
     
             elif name == "checksums":
