@@ -116,7 +116,7 @@ class SesameServer():
                 #retry.append(fn)
 
     def output_graph(self, graph, name=None):
-        """Upload the contents of an RDFlib graph to the store"""
+        """Output the contents of the graph to a file"""
 
         # add namespaces to the graph before output
         graph = bind_graph(graph)
@@ -124,9 +124,7 @@ class SesameServer():
         data = graph.serialize(format=RDF_GRAPH_FORMAT)
 
         # check to see if we should store the graphs somewhere
-        graphdir = configmanager.get_config('STORE_GRAPHS', 'metadata')
-        outputdir = configmanager.get_config('OUTPUT_DIR', '')
-        graphdir = os.path.join(outputdir, graphdir)    
+        graphdir = configmanager.get_config('OUTPUT_DIR', '')
         
         if not os.path.exists(graphdir):
             os.makedirs(graphdir)

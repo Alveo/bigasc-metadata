@@ -18,32 +18,33 @@ def ingest_session_map(server, sessiondir, csvdata, errorlog):
         
         try:
             graph = mapper.item_rdf(item_path+".xml", csvdata)
-            server.output_graph(graph, convert.generate_item_path(site, spkr, session, component, os.path.basename(item_path)))
+            server.output_graph(graph, convert.item_file_path(item_path, "metadata"))
         except Exception as ex:
             errorlog.write("Problem with item: %s\n\t%s\n" % (item_path, ex))
             
     result = [x for x in map_session(sessiondir, process_item)]
+    return result
 
 def ingest_protocol(server):
     """Generate RDF for the protocol and upload it 
     to the server (an instance of SesameServer)"""
     
     assert(isinstance(server, SesameServer))
-    import convert
+
     graph = convert.session_metadata()
     
     print "Uploading", len(graph), "triples for sessions"
-    server.output_graph(graph, 'protocol/sessions')
+    server.output_graph(graph, 'metadata/protocol/sessions')
     
     graph = convert.component_metadata()
     
     print "Uploading", len(graph), "triples for components"
-    server.output_graph(graph, 'protocol/components')
+    server.output_graph(graph, 'metadata/protocol/components')
         
     graph = convert.item_metadata()
     
     print "Uploading", len(graph), "triples for items"
-    server.output_graph(graph, 'protocol/items')
+    server.output_graph(graph, 'metadata/protocol/items')
         
 
 def ingest_participants(server):
@@ -51,14 +52,14 @@ def ingest_participants(server):
     to the server (an instance of SesameServer)"""
     
     assert(isinstance(server, SesameServer))
-    import convert
+
     participants = convert.get_participant_list()
     print "Uploading", len(participants), "participants"
     
     convert.reset_site_mapping()
     
     maptask = RAMapTask()
-    (spkr, map) = maptask.read_all()
+    (spkr, mapname) = maptask.read_all()
     
     for p in participants:
         
@@ -71,20 +72,6 @@ def ingest_participants(server):
         graph = convert.participant_rdf(p_info, csvdata)
     
         print "Uploading", len(graph), "triples for participant", p
-        server.output_graph(graph, os.path.join('participants', p))
-        
-    
-def ingest_participant(server, participant):
-    """Generate RDF for one participant and upload it 
-    to the server (an instance of SesameServer)"""
-    
-    assert(isinstance(server, SesameServer))
-    import convert
+        server.output_graph(graph, os.path.join('metadata', 'participants', p))
 
-    p_info = convert.get_participant(participant)
-    graph = convert.participant_rdf(p_info)
-
-    print "Uploading", len(graph), "triples for participant", participant
-    server.output_graph(graph, p_info['name'])
-        
         

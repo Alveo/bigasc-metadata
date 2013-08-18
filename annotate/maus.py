@@ -17,6 +17,9 @@ import convert
 from convert.namespaces import *
 from data import COMPONENT_MAP
 
+
+OUTPUT_DIR = configmanager.get_config('OUTPUT_DIR')
+
 LEXICON = os.path.join(os.path.dirname(__file__), "AUSTALK.lex")
 
 class MausException(Exception):
@@ -201,6 +204,8 @@ MAUSABLE_COMPONENTS = [5, 2, 22, 32, 43, 23, 33, 13, 14, 6, 16, 17] # 3 is story
 
 import ingest
 import re
+from convert.session import item_prompt
+from convert.filepaths import item_file_uri
 
 def item_details(basename):
     """Return the prompt text and media file URL for this item
@@ -211,76 +216,38 @@ def item_details(basename):
 >>> sorted(d.keys())
 ['item_uri', 'media', 'prompt']
 >>> d['media']
-u'http://data.austalk.edu.au/downsampled/ANU/1_1119/2/sentences/1_1119_2_16_049-ch6-speaker16.wav'
+'audio/ANU/1_1119/2/sentences/1_1119_2_16_049-ch6-speaker16.wav'
 >>> d['item_uri']
-u'http://id.austalk.edu.au/item/1_1119_2_16_049'
+rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_1119_2_16_049')
 >>> d['prompt']
-u'My mother gets cross when they say "yeah" instead of "yes".'
+'My mother gets cross when they say "yeah" instead of "yes".'
 >>> print item_details('not a good basename')
 None
 >>> d = item_details('4_488_2_5_002')
 >>> d['prompt']
-u'nine four two oh'
+'nine four two oh'
 >>> d = item_details('4_1368_1_5_012')
 >>> d['prompt']
-u'oh four two nine'
+'oh four two nine'
 >>> item_details('2_1122_1_2_054')['prompt']
-u'harl'
+'harl'
 >>> p = item_details('2_1122_1_2_142')['prompt']
 >>> p
-u'pure'
+'pure'
 >>> item_details('3_1202_3_14_073')['prompt']
-u'hode'
+'hode'
      """
     
-    
-    server_url = configmanager.get_config("SESAME_SERVER")
-    server = ingest.SesameServer(server_url)
-    
-    # query to find the media file URL and prompt text
-    qq = """
-        PREFIX austalk:<http://ns.austalk.edu.au/>
-        PREFIX ausnc:<http://ns.ausnc.org.au/schemas/ausnc_md_model/>
+    media_name = basename + '-ch6-speaker16.wav'
+    try:
+        result = {'prompt': item_prompt(basename),
+                  'media': os.path.join(OUTPUT_DIR, convert.item_file_path(media_name)),
+                  'item_uri': generate_item_uri(basename),
+                  } 
         
-        select distinct ?item ?media ?prompt where {
-          ?item a ausnc:AusNCObject .
-          ?item austalk:basename "%s" .
-          ?item austalk:media ?media .
-          ?media austalk:channel "ch6-speaker16" .
-          ?item austalk:prototype ?ip .
-          ?ip austalk:prompt ?prompt .
-        }
-        """ % basename
-        
-    result = dict()
-    qresult = server.query(qq)
-    if qresult != None and qresult['results']['bindings'] != []:
-        row = qresult['results']['bindings'][0]
-        result['media'] = row['media']['value']
-        result['item_uri'] = row['item']['value']
-        
-        # prompt might need some work
-        prompt = row['prompt']['value']
-        # if the prompt contains 'sounds like' then we want just the first word
-        m = re.match('([a-z ]+).*sounds like.*', prompt)
-        if m:
-            prompt = m.group(1).replace(' ', '')
-            
-        # super special case
-        if prompt == u'p ure':
-            prompt = u'pure'
-            
-        # digit prompts include two parts '0123:zero one two three'
-        m = re.match('[0-9o]+\s*:(.*)', prompt)
-        if m:
-            prompt = m.group(1)
-        
-        result['prompt'] = prompt.strip()
         return result
-    else:
+    except:
         return None
-    
-            
 
 
 def make_bpf_generator(server, outputdir):
@@ -295,7 +262,7 @@ def make_bpf_generator(server, outputdir):
             return
         
         basename = os.path.basename(item_path)
-        outpath = os.path.join("BPF", site, spkr, session, COMPONENT_MAP[int(component)], basename + ".phb")
+        outpath = convert.item_file_path(basename + ".phb", "BPF")
         outfile = os.path.join(outputdir, outpath)
         
         lex = load_lexicon()        
@@ -305,7 +272,6 @@ def make_bpf_generator(server, outputdir):
         
         details = item_details(basename)
         if details != None:
-            media_file = url_to_path(details['media']) 
 
             phb = text_phb(details['prompt'], lex)
 
@@ -335,7 +301,7 @@ def make_maus_processor(server, outputdir):
             return
         
         basename = os.path.basename(item_path)
-        outpath = os.path.join("MAUS", convert.generate_item_path(site, spkr, session, component, basename + ".TextGrid"))
+        outpath = convert.item_file_path(basename + "-ch6-speaker16.TextGrid", "MAUS")
         outfile = os.path.join(outputdir, outpath)
         
         if not os.path.exists(os.path.dirname(outfile)):
@@ -344,10 +310,11 @@ def make_maus_processor(server, outputdir):
         details = item_details(basename)
         if details != None:    
             
-            media_file = url_to_path(details['media'])
+            media_file = details['media']
             try:
-                annotation = maus(media_file, details['prompt'])
-
+                #annotation = maus(media_file, details['prompt'])
+                annotation = "foo"
+                
                 sys.stdout.write('.')
                 sys.stdout.flush()
                 
@@ -356,7 +323,7 @@ def make_maus_processor(server, outputdir):
                 h.close()
                 
                 graph = maus_metadata(details['item_uri'], outpath)
-                server.output_graph(graph, convert.generate_item_path(site, spkr, session, component, basename+"-m"))
+                server.output_graph(graph, convert.item_file_path(basename+"-m", "metadata"))
                 
             except MausException as e:
                 print "ERROR", basename, e
@@ -367,18 +334,24 @@ def make_maus_processor(server, outputdir):
     
     
 def maus_metadata(item_uri, mausfile):
-
+    """Generate metadata for the output of MAUS"""
+    
     maus_uri = DATA_NS[mausfile]
     
+    fmeta = convert.generate_file_metadata(mausfile, "MAUS")
+    
     graph = Graph()
+    
+    for t in fmeta:
+        graph.add(t)
+    
     graph.add((URIRef(item_uri), NS['has_annotation'], maus_uri))
     graph.add((maus_uri, RDF.type, NS.AnnotationFile))
     graph.add((maus_uri, NS['origin'], Literal("MAUS")))
-    graph.add((maus_uri, NS['format'], Literal("TextGrid")))
     
     return graph
-    
-    
+
+
 
 def url_to_path(media):
     """Convert a media URL to a path on the local

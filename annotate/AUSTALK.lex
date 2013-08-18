@@ -486,7 +486,7 @@ ointment	oIntm@nt
 old	@}ld
 on	On
 once	w6ns
-one    wOn
+one    w6n
 onion	 6nj@n 
 only	 @}nli: 
 or	o:
@@ -765,6 +765,6 @@ you	 j}:
 you'll	j}:l
 your	jo:
 yuppie	j6pi:
-zero   zI@r@}
+zero   zI@r\@}
 zombie	zOmbi:
 zoo	z}:

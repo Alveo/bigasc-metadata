@@ -5,9 +5,9 @@ save a copy in a new location
 import os, glob
 
 import ingest 
-from data import site_sessions, map_session, resample, resampled_metadata
+from data import site_sessions, map_session, resample
 from rdflib import Graph
-import convert 
+from convert import generate_file_metadata, item_file_versions
 
 import configmanager
 configmanager.configinit()

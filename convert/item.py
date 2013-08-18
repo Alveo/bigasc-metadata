@@ -11,20 +11,26 @@ import os, urllib2, re
 
 import map
 from namespaces import *
-from session import component_map
+from session import component_map, clean_prompt, item_prompt
 from participant import participant_uri
 
 from participant import item_site_name
-from filepaths import parse_item_filename, parse_media_filename, item_file_uri
+from filepaths import parse_item_filename, parse_media_filename, item_file_uri, item_file_basename
 
 
-def generate_file_metadata(self, filename):
+def generate_file_metadata(filename, dirname=None):
     """Generate metadata records for a single media file
-    associated with an item, given the filename"""
+    associated with an item, given the filename
+
+>>> md = generate_file_metadata("test/items/1_178_2_16_001-ch6-speaker.wav")
+>>> len(md)
+6
+    """
     
     result = []
-    item_uri = item_uri(filename)
-    m_uri = item_file_uri(filename)
+    basename = item_file_basename(filename)
+    item_uri = generate_item_uri(basename)
+    m_uri = item_file_uri(filename, dirname)
     properties = parse_media_filename(filename)
     
     result.append((item_uri, AUSNC.document, m_uri))
@@ -35,9 +41,11 @@ def generate_file_metadata(self, filename):
             result.append((m_uri, NS[prop], Literal(properties[prop])))
             
     # add identifier field which is just the filename
-    result.append((m_uri, DC.identifier, Literal(filename)))
+    result.append((m_uri, DC.identifier, Literal(os.path.basename(filename))))
 
     return result
+
+
 
 class ItemMapper:
     
@@ -82,29 +90,6 @@ class ItemMapper:
         #self.itemmap.add('files', mapper=self.map_files)
         self.itemmap.add('files', ignore=True)
         
-    def map_files(self, subj, prop, value):
-        """Map the file list
-        we create 'media' entities for each file
-        and attach various properties to them"""
-        
-        result = []
-        for filename in value.keys():
-            
-            m_uri = item_file_uri(filename)
-            
-            result.append((subj, AUSNC.document, m_uri))
-            # add file properties
-            result.append((m_uri, RDF.type, FOAF.Document))
-            for prop in ['version', 'checksum', 'type', 'channel']:
-                if value[filename].has_key(prop):
-                    result.append((m_uri, NS[prop], Literal(value[filename][prop])))
-                else:
-                    self.error("file %s has no '%s' property: %s" % (filename, prop, str(value[filename])))
-            # add identifier field which is just the filename
-            result.append((m_uri, DC.identifier, Literal(filename)))
-        
-        return result    
-    
 
     def map_component(self, subj, prop, value):
         """Map the component field to point to the 
@@ -235,6 +220,11 @@ class ItemMapper:
         """
         
         md = self.read_metadata(xmlfile)
+        
+        # reset prompt from the session
+        prompt = item_prompt(md['basename'])
+        md['prompt'] = prompt
+        
         # generate a URI for this component 
         component_uri = generate_component_uri(md['colour'], md['animal'], md['session'], md['component'])
         # the prototype is the component we're an example of
@@ -266,9 +256,9 @@ class ItemMapper:
             if md.has_key('otherColour') and md.has_key('otherAnimal'):
                 other_participant_uri = participant_uri(md['otherColour'], md['otherAnimal'])
                 if md.has_key('map'):
-                    map = md['map']
+                    mapname = md['map']
                 else:
-                    map = None
+                    mapname = None
                     
                 if md.has_key('role'):
                     role=md['role']
@@ -278,11 +268,11 @@ class ItemMapper:
             elif csvdata != None and csvdata.has_key(participant_id): 
                 other_participant_id = csvdata[participant_id]['partner']
                 other_participant_uri = participant_uri('', '', other_participant_id)
-                map = csvdata[participant_id]['map']
+                mapname = csvdata[participant_id]['map']
                 role = csvdata[participant_id]['role']
             else:
                 other_participant_uri = None
-                map = None
+                mapname = None
                 role = None
                 
             if other_participant_uri != None:
@@ -310,11 +300,11 @@ class ItemMapper:
                     'MapB-Colour': 'map/B-colour'
             }
 
-            if maps.has_key(map):
-                map = PROTOCOL_NS[maps[map]]
-                graph.add((item_uri, NS.map, map))
+            if maps.has_key(mapname):
+                mapname = PROTOCOL_NS[maps[mapname]]
+                graph.add((item_uri, NS.map, mapname))
             else:
-                self.error("\tUnknown map name: %s in %s " % (map, md['basename']))
+                self.error("\tUnknown map name: %s in %s " % (mapname, md['basename']))
 
         graph.add((item_uri, RDF.type, AUSNC.AusNCObject))
         
