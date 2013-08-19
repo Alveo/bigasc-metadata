@@ -7,6 +7,7 @@
 import convert
 import shutil
 import sys
+from rdflib import Graph
 
 def make_copy_processor(server, outdir, what):
     
@@ -17,24 +18,48 @@ def make_copy_processor(server, outdir, what):
 
         if True:    
             # copy the files 
-            goodfiles, badfiles = convert.item_file_versions(item_path)
+            versions = convert.item_file_versions(item_path)
+            basename = convert.item_file_basename(item_path)
             
-            for fn in goodfiles:
-                # need to rename versions here
+            graph = Graph()
+            for base in versions['good'].keys(): 
                 
-                path = convert.item_file_path(fn, what)
-                basename = os.path.basename(fn)
-                
+                for fn in versions['good'][base]:
+                    
+                    props = convert.parse_media_filename(fn)
+                    if props['type'] == what:
+                        newname = convert.change_item_file_basename(os.path.basename(fn), base)            
+                        path = convert.item_file_path(newname, what)
+                        
+                        #print "COPY:", os.path.basename(fn), path
+                        
+                        convert.generate_file_metadata(graph, path, what)
+                        
+                        path = os.path.join(outdir, path)
+                        
+                        if not os.path.exists(os.path.dirname(path)):
+                            os.makedirs(os.path.dirname(path))
+                            
+                        shutil.copy(fn, path)
+                        
+                        
+            # output metadata for all files
+            server.output_graph(graph, convert.item_file_path(basename+"-files", "metadata"))
+        
+            for fn in versions['rejected']:
                 
                 props = convert.parse_media_filename(fn)
                 if props['type'] == what:
-                    print "COPY:", basename, path
-                    #shutil.copy(fn, path)
-                
-                
-        try:      
+                    path = convert.item_file_path(fn, os.path.join('rejected', what))
+                    #print "REJECT:", os.path.basename(fn), path
+                    path = os.path.join(outdir, path)
+                    
+                    if not os.path.exists(os.path.dirname(path)):
+                        os.makedirs(os.path.dirname(path))
+                        
+                    shutil.copy(fn, path)
+        try:
             pass
-            #server.output_graph(graph, convert.item_file_path(item_path, "metadata"))
         except Exception as ex:
             sys.stderr.write("Problem with item: %s\n\t%s\n" % (item_path, ex))
             

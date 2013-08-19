@@ -18,32 +18,35 @@ from participant import item_site_name
 from filepaths import parse_item_filename, parse_media_filename, item_file_uri, item_file_basename
 
 
-def generate_file_metadata(filename, dirname=None):
+def generate_file_metadata(graph, filename, dirname=None):
     """Generate metadata records for a single media file
-    associated with an item, given the filename
+    associated with an item, given the filename. dirname if supplied
+    is the new directory that this file is to be stored in, eg. audio, downsampled.
+    This is used to generate the file uri in the description.
 
->>> md = generate_file_metadata("test/items/1_178_2_16_001-ch6-speaker.wav")
+>>> from rdflib import Graph
+>>> graph = Graph()
+>>> md = generate_file_metadata(graph, "test/items/1_178_2_16_001-ch6-speaker.wav")
 >>> len(md)
 6
     """
     
-    result = []
     basename = item_file_basename(filename)
     item_uri = generate_item_uri(basename)
     m_uri = item_file_uri(filename, dirname)
     properties = parse_media_filename(filename)
     
-    result.append((item_uri, AUSNC.document, m_uri))
+    graph.add((item_uri, AUSNC.document, m_uri))
     # add file properties
-    result.append((m_uri, RDF.type, FOAF.Document))
-    for prop in ['version', 'checksum', 'type', 'channel']:
+    graph.add((m_uri, RDF.type, FOAF.Document))
+    for prop in ['version', 'checksum', 'type', 'channel', 'sequence']:
         if properties.has_key(prop):
-            result.append((m_uri, NS[prop], Literal(properties[prop])))
+            graph.add((m_uri, NS[prop], Literal(properties[prop])))
             
     # add identifier field which is just the filename
-    result.append((m_uri, DC.identifier, Literal(os.path.basename(filename))))
+    graph.add((m_uri, DC.identifier, Literal(os.path.basename(filename))))
 
-    return result
+    return graph
 
 
 

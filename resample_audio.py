@@ -7,7 +7,7 @@ import os, glob
 import ingest 
 from data import site_sessions, map_session, resample
 from rdflib import Graph
-from convert import generate_file_metadata, item_file_versions
+import convert
 
 import configmanager
 configmanager.configinit()
@@ -33,30 +33,31 @@ def make_processor(sessiondir, outdir, server):
         n = 0
         
         graph = Graph()
-        goodfiles, badfiles = item_file_versions(item_path)
+        versions = convert.item_file_versions(item_path)
+        basename = convert.item_file_basename(item_path)
         
-        for fn in goodfiles:
-            # only worry about ch6-speaker
-            if fn.find('ch6-speaker') >= 0:
+        for base in versions['good'].keys(): 
                 
-                basename = os.path.basename(fn)
-                # where do we put this new file
-                newname = basename.replace('ch6-speaker', 'ch6-speaker16')
-                newpath = item_file_path(basename, "downsampled")
+            for fn in versions['good'][base]:
                 
-                # generate metadata
-                meta = generate_file_metadata(newpath)
-                
-                # skip generating the downsampled file if it's already there
-                if not os.path.exists(os.path.join(outdir, newpath)):
-                    resample(fn, os.path.join(outdir, newpath))
-                    n += 1
+                # only worry about ch6-speaker
+                if fn.find('ch6-speaker') >= 0:
                     
-                # add in metadata for newly created audio tracks
-                for tr in newmeta:
-                    graph.add(tr)
+                    
+                    newname = convert.change_item_file_basename(os.path.basename(fn), base) 
+                    newname = newname.replace('ch6-speaker', 'ch6-speaker16')
+                    path = convert.item_file_path(newname, "downsampled")
+                    
+                    # generate metadata
+                    convert.generate_file_metadata(graph, path, "downsampled")
+                    
+                    # skip generating the downsampled file if it's already there
+                    if not os.path.exists(os.path.join(outdir, path)):
+                        resample(fn, os.path.join(outdir, path))
+                        n += 1
+
         # upload the lot to the server
-        server.output_graph(graph, item_file_path(basename+"-file", "metadata"))
+        server.output_graph(graph, convert.item_file_path(basename+"-ds", "metadata"))
         return n
     
     return process_item

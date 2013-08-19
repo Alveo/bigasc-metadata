@@ -57,26 +57,30 @@ def parse_media_filename(filename, errorlog=sys.stderr):
 
 >>> parse_media_filename('1_178_1_2_150-ch6-speaker16.raw16')
 {'basename': '1_178_1_2_150', 'version': 1, 'type': 'raw16', 'channel': 'ch6-speaker16'}
+
+>>> parse_media_filename('1_178_1_2_150A-ch6-speaker16.wav')
+{'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16', 'sequence': 'A'}
     """
     
     basename = os.path.basename(filename)
     
-    pattern_general = "([0-9_]+)-((n-)*)(ch[0-9]-[a-zA-Z0-9]+)(-(yes|no))?\.(.*)"
+    pattern_general = "([0-9_]+)([A-Z]?)-((n-)*)(ch[0-9]-[a-zA-Z0-9]+)(-(yes|no))?\.(.*)"
     
-    pattern_video = "([0-9_]+)-((n-)*)((camera-[0-9])(-(yes|no))?(-left|-right))\.(.*)"
+    pattern_video = "([0-9_]+)([A-Z]?)-((n-)*)((camera-[0-9])(-(yes|no))?(-left|-right))\.(.*)"
     
     m_gen = re.match(pattern_general, basename)
     m_vid = re.match(pattern_video, basename)
     
     if m_gen:
-        (base, alln, n, channel, ignore, yesno, ext) =  m_gen.groups() #@UnusedVariable
+        (base, ab, alln, n, channel, ignore, yesno, ext) =  m_gen.groups() #@UnusedVariable
+        #print "MATCH: ", (base, ab, alln, n, channel, ignore, yesno, ext )
         if ext == 'wav':
             tipe = 'audio'
         else:
             tipe = ext
     elif m_vid:
-        (base, alln, n, ignore, camera, ignore, yesno, leftright, ext) = m_vid.groups()
-        #print "MATCH: ", (base, alln, n, ignore, camera, ignore, yesno, leftright )
+        (base, ab, alln, n, ignore, camera, ignore, yesno, leftright, ext) = m_vid.groups()
+        
         channel = camera + leftright
         if ext == 'mp4':
             tipe = 'video'
@@ -86,13 +90,23 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         # unknown file pattern
         errorlog.write("filename doesn't match media pattern: %s\n" % basename)
         return dict()
-            
+    
+    sequence = None
     if n == None:
-        version = 1
+        if ab == '':
+            version = 1
+        else:
+            # this is a new ABC sequenced file
+            sequence = ab
+            version = 1
     else:
         version = len(alln)/2 + 1
     
+
     result = {'basename': base, 'channel': channel, 'type': tipe, 'version': version}
+    if sequence != None:
+        result['sequence'] = sequence
+        
     if yesno != None:
         result['response'] = yesno
         
@@ -146,10 +160,12 @@ def item_file_path(filename, dirname=None):
     
 >>> item_file_path('1_178_1_2_150-ch6-speaker16.wav')
 'audio/ANU/1_178/1/words-1/1_178_1_2_150-ch6-speaker16.wav'
+>>> item_file_path('1_178_1_2_150A-ch6-speaker16.wav')
+'audio/ANU/1_178/1/words-1/1_178_1_2_150A-ch6-speaker16.wav'
 >>> item_file_path('1_178_1_2_150.nt', 'metadata')
 'metadata/ANU/1_178/1/words-1/1_178_1_2_150.nt'
 >>> item_file_path('/foo/bar/test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_1/1_1216_1_1_001', 'metadata')
-''
+'metadata/USCM/1_1216/1/yes-no-opening-1/1_1216_1_1_001'
     """
 
     info = parse_item_filename(filename)
@@ -222,21 +238,42 @@ def versionselect():
         return VERSIONS
 
 def item_file_versions(path):
-    """Given the base path of an item, return a tuple
-    that contains two lists (good, bad) where good is a 
-    list of files that should be kept and bad is a list
-    of files that should not.  The data comes from
+    """Given the base path of an item, work out which
+    the good and bad versions are.  The data comes from
     the versionselect application where there are more
-    than one version of a recording for an item
+    than one version of a recording for an item.
     
->>> item_file_versions('test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016')
-(['test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-camera-0-left.mp4', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-camera-0-right.mp4', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-ch1-maptask.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-ch2-boundary.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-ch3-strobe.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-ch4-c2Left.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-ch5-c2Right.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016-ch6-speaker.wav'], [])
+    Return
+    
+    {'rejected': [<list of rejected files>],
+     'good': {'1_1216_1_4_001A': ['path/to/1_1216_1_4_001-n-camera-0-left.mp4', 'path/to/1_1216_1_4_001-n-camera-0-right.mp4'],
+              '1_1216_1_4_001B': etc.,
+              }
+    }
+    
+    
+>>> x = item_file_versions('test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016')
+>>> x['rejected']
+[]
+>>> x['good'].keys()
+['1_1216_1_11_016']
 
 # fake this a little
 >>> versions = versionselect()
 >>> versions['1_1216_1_4_001'] = [2]
->>> item_file_versions('test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001')
-(['test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-camera-0-left.mp4', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-camera-0-right.mp4', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-ch1-maptask.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-ch2-boundary.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-ch3-strobe.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-ch4-c2Left.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-ch5-c2Right.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-n-ch6-speaker.wav'], ['test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-camera-0-left.mp4', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-camera-0-right.mp4', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-ch1-maptask.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-ch2-boundary.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-ch3-strobe.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-ch4-c2Left.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-ch5-c2Right.wav', 'test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001-ch6-speaker.wav'])
+>>> x = item_file_versions('test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001')
+>>> len(x['rejected'])
+8
+>>> x['good'].keys()
+['1_1216_1_4_001']
+>>> versions['1_1216_1_4_001'] = [1, 2]
+>>> x = item_file_versions('test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_4/1_1216_1_4_001')
+>>> len(x['rejected'])
+0
+>>> x['good'].keys()
+['1_1216_1_4_001A', '1_1216_1_4_001B']
+>>> len(x['good']['1_1216_1_4_001A'])
+8
     """
     
     versions = versionselect()
@@ -254,29 +291,79 @@ def item_file_versions(path):
         else:
             fv[v] = [fn]
     
-    
-    
     if len(fv) == 1:
         # we only have one version
-        return (all_files, [])
+        return {'rejected': [], 'good': {basename: all_files}}
     
     # see if we have versionselect data for this item    
     if versions.has_key(basename):
         goodversions = versions[basename]
-        goodfiles = []
+        goodfiles = dict()
         badfiles = []
+        
+        N = 0
         for v in goodversions:
-            goodfiles.extend(fv[v])
+            files = fv[v]
+            newbase = generate_new_item_basename(basename, N, len(goodversions))
+            goodfiles[newbase] = files
             del fv[v]
+            N += 1
+            
         # now badfiles is the rest
         for v in fv.keys():
             badfiles.extend(fv[v])
 
-        return (goodfiles, badfiles)
+        return {'rejected': badfiles, 'good': goodfiles}
 
     else:
         print "Duplicate recordings and no version info for ", basename
-        return ([], [])
+        return {'rejected': [], 'good': {}}
+    
+    
+    
+def generate_new_item_basename(basename, n, total):
+    """Generate a basename for an item that might be 
+    one of a number of good versions. n is the index
+    of this version, total is the total number of good
+    versions
+    
+>>> generate_new_item_basename('1_123_1_2_001', 0, 1)
+'1_123_1_2_001'
+>>> generate_new_item_basename('1_123_1_2_001', 0, 2)
+'1_123_1_2_001A'
+>>> generate_new_item_basename('1_123_1_2_001', 1, 2)
+'1_123_1_2_001B'
+    """
+
+    if total == 1:
+        return basename
+    letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    return basename+letters[n]
+
+
+def change_item_file_basename(f, basename):
+    """Change the basename of a file without changing any of the other
+    parts
+
+>>> change_item_file_basename('1_123_1_2_001-ch6-speaker.wav', '1_123_1_2_001')
+'1_123_1_2_001-ch6-speaker.wav'
+>>> change_item_file_basename('1_123_1_2_001-ch6-speaker.wav', '1_123_1_2_001A')
+'1_123_1_2_001A-ch6-speaker.wav'
+>>> change_item_file_basename('1_123_1_2_001-n-n-ch6-speaker.wav', '1_123_1_2_001A')
+'1_123_1_2_001A-ch6-speaker.wav'
+    """
+
+    pattern = '^([0-9_]+(-n)*)(.*)$'
+    m = re.match(pattern, f)
+    if m:
+        (obase, n, rest) = m.groups()
+        return basename+rest
+    else:
+        raise Exception("filename '%s' doesn't match pattern in change_item_file_basename" % f)
+    
+    
+    
+    
         
 def item_files(path):
     """Given the base path of an item, return a list
