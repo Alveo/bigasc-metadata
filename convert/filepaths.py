@@ -17,6 +17,20 @@ from namespaces import DATA_URI_TEMPLATE, DATA_NS
 import configmanager
 configmanager.configinit()
 
+def extension_mimetype(ext):
+    """Return the mimetype for this extension"""
+    
+    extmap = {'wav': 'audio/wav',
+              'mp4': 'video/mp4',
+              'TextGrid': 'text/praat-textgrid', # http://www.isocat.org/rest/dc/2562
+              }
+    if extmap.has_key(ext):
+        return extmap[ext]
+    else:
+        raise Exception("Unknown extension: '%s'" % ext)
+    
+
+
 def parse_media_filename(filename, errorlog=sys.stderr):
     """Extract the channel name, media type and -n status from a filename
     return a dictionary.
@@ -75,7 +89,7 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         (base, ab, alln, n, channel, ignore, yesno, ext) =  m_gen.groups() #@UnusedVariable
         #print "MATCH: ", (base, ab, alln, n, channel, ignore, yesno, ext )
         if ext == 'wav':
-            tipe = 'audio'
+            tipe = 'Audio'
         else:
             tipe = ext
     elif m_vid:
@@ -83,7 +97,7 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         
         channel = camera + leftright
         if ext == 'mp4':
-            tipe = 'video'
+            tipe = 'Video'
         else:
             tipe = ext
     else:
@@ -91,6 +105,8 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         errorlog.write("filename doesn't match media pattern: %s\n" % basename)
         return dict()
     
+    mimetype = extension_mimetype(ext)
+
     sequence = None
     if n == None:
         if ab == '':
@@ -103,7 +119,12 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         version = len(alln)/2 + 1
     
 
-    result = {'basename': base, 'channel': channel, 'type': tipe, 'version': version}
+    result = {'basename': base, 
+              'channel': channel, 
+              'type': tipe, 
+              'mimetype': mimetype,
+              'version': version}
+    
     if sequence != None:
         result['sequence'] = sequence
         

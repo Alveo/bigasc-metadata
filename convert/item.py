@@ -39,7 +39,10 @@ def generate_file_metadata(graph, filename, dirname=None):
     graph.add((item_uri, AUSNC.document, m_uri))
     # add file properties
     graph.add((m_uri, RDF.type, FOAF.Document))
-    for prop in ['version', 'checksum', 'type', 'channel', 'sequence']:
+    graph.add((m_uri, DC['format'], Literal(properties['mimetype'])))
+    graph.add((m_uri, DC.type, Literal(properties['type'])))
+    
+    for prop in ['version', 'checksum', 'channel', 'sequence']:
         if properties.has_key(prop):
             graph.add((m_uri, NS[prop], Literal(properties[prop])))
             
@@ -92,6 +95,7 @@ class ItemMapper:
 
         #self.itemmap.add('files', mapper=self.map_files)
         self.itemmap.add('files', ignore=True)
+        self.itemmap.add('componentName', ignore=True)
         
 
     def map_component(self, subj, prop, value):
@@ -146,7 +150,8 @@ class ItemMapper:
          
         # get the component short name, easier to work with
         component = self.component_map[int(component)]
-         
+        
+        graph.add((item_uri, AUSNC.componentName, Literal(component)))
         graph.add((item_uri, AUSNC.mode, AUSNC.spoken))
         
         # face_to_face, distance
