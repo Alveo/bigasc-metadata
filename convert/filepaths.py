@@ -322,6 +322,11 @@ def item_file_versions(path):
         goodfiles = dict()
         badfiles = []
         
+        # a zero in goodversions means there's no good version
+        if 0 in goodversions:
+            print "No good version of ", basename
+            return {'rejected': all_files, 'good': {}}
+        
         N = 0
         for v in goodversions:
             if fv.has_key(v):
@@ -330,8 +335,6 @@ def item_file_versions(path):
                 goodfiles[newbase] = files
                 del fv[v]
                 N += 1
-            else:
-                print "Missing files for item: ", path, v
             
         # now badfiles is the rest
         for v in fv.keys():
