@@ -306,11 +306,15 @@ def item_file_versions(path):
     fv = dict()
     for fn in all_files:
         props = parse_media_filename(fn)
-        v = props['version']
-        if fv.has_key(v):
-            fv[v].append(fn)
+        if props.has_key('version'):
+            v = props['version']
+            if fv.has_key(v):
+                fv[v].append(fn)
+            else:
+                fv[v] = [fn]
         else:
-            fv[v] = [fn]
+            # filename is malformed - message already printed by parse_media_filename
+            pass
     
     if len(fv) == 1:
         # we only have one version
