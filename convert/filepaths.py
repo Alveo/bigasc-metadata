@@ -324,11 +324,14 @@ def item_file_versions(path):
         
         N = 0
         for v in goodversions:
-            files = fv[v]
-            newbase = generate_new_item_basename(basename, N, len(goodversions))
-            goodfiles[newbase] = files
-            del fv[v]
-            N += 1
+            if fv.has_key(v):
+                files = fv[v]
+                newbase = generate_new_item_basename(basename, N, len(goodversions))
+                goodfiles[newbase] = files
+                del fv[v]
+                N += 1
+            else:
+                print "Missing files for item: ", path, v
             
         # now badfiles is the rest
         for v in fv.keys():
