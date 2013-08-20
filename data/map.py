@@ -26,6 +26,9 @@ def site_sessions(dirname):
                     yield(os.path.join(dirname, spkrdir, sessiondir))
     
 
+
+
+
 def parse_site_dir(dirname):
     """Given a site directory name (University_of_Tasmania,_Hobart)
     return the new short site identifier that the new 
@@ -125,6 +128,60 @@ def map_session(sessiondir, fn):
                     
                     yield( fn(siteid, spkrid, sessionid, componentid, path) )
 
+
+
+def pub_site_speakers(dirname):
+    """
+    Returns a sequence of speakers for the given
+    site directory.  We look for speaker directories
+    first then sessions within those.
+
+
+    """
+    for spkrdir in os.listdir(dirname):
+        if os.path.isdir(os.path.join(dirname, spkrdir)):
+            for sessiondir in os.listdir(os.path.join(dirname, spkrdir)): 
+                yield(os.path.join(dirname, spkrdir, sessiondir))
+
+
+from fnmatch import fnmatch 
+
+def pub_map_session(sessiondir, fn, pattern):
+    """Call fn for every item in the given session directory
+    with the published directory structure.  
+    
+    Unlike map_session this maps over files rather than items. The
+    pattern argument is a glob pattern that matches the files you
+    want to see - typically this will be a channel name or extension.
+    
+    fn is a callable that takes arguments:
+    
+    fn(site, spkr, session, component, item_path)
+    
+     - site is the site id (UTAS, UNSW, etc)
+     - spkr is speaker id 1_123
+     - session is session id [1, 2, 3, 4]
+     - component is the component name (words-1, sentences)
+     - item_path is the base path to the item /home/foo/Spkr1_123/2/22/1_123_2_22
+     
+    return value is an iterator over the results of the individual
+    function calls (calls are lazy via yield)
+    
+    """
+
+    # progressively split off directories
+    (spath, sessionid) = os.path.split(sessiondir)
+    (spath, spkrid) = os.path.split(spath)
+    (basepath, siteid) = os.path.split(spath)
+    
+    for component in os.listdir(sessiondir):
+        
+        for ifile in os.listdir(os.path.join(sessiondir, component)):
+
+            if fnmatch(ifile, pattern):
+                path = os.path.join(sessiondir, component, ifile)
+                
+                yield( fn(siteid, spkrid, sessionid, component, path) )
 
 if __name__=='__main__':
         

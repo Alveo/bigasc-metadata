@@ -199,7 +199,9 @@ None
     return result
 
 # list of component ids that we can run MAUS over because they are read
-MAUSABLE_COMPONENTS = [5, 2, 22, 32, 43, 23, 33, 13, 14, 6, 16, 17] # 3 is story
+MAUSABLE_COMPONENTS = ['digits', 'words-1', 'words-2', 'words-3', 
+                       'words-1-2', 'words-2-2', 'words-2-3', 
+                       'sentences', 'sentences-e']
 
 
 import ingest
@@ -207,42 +209,44 @@ import re
 from convert.session import item_prompt
 from convert.filepaths import item_file_uri
 
-def item_details(basename):
+def item_details(mediafile):
     """Return the prompt text and media file URL for this item
     Return a dictionary with keys 'media', 'item_uri' and 'prompt', 
      if no details can be found, return None
      
->>> d = item_details('1_1119_2_16_049')
+>>> d = item_details('1_1119_2_16_049-ch6-speaker16.wav')
 >>> sorted(d.keys())
-['item_uri', 'media', 'prompt']
->>> d['media']
-'audio/ANU/1_1119/2/sentences/1_1119_2_16_049-ch6-speaker16.wav'
+['basename', 'item_uri', 'prompt']
 >>> d['item_uri']
 rdflib.term.URIRef(u'http://id.austalk.edu.au/item/1_1119_2_16_049')
 >>> d['prompt']
 'My mother gets cross when they say "yeah" instead of "yes".'
+>>> d['basename']
+'1_1119_2_16_049'
 >>> print item_details('not a good basename')
 None
->>> d = item_details('4_488_2_5_002')
+>>> d = item_details('4_488_2_5_002-ch6-speaker16.wav')
 >>> d['prompt']
 'nine four two oh'
->>> d = item_details('4_1368_1_5_012')
+>>> d = item_details('4_1368_1_5_012-ch6-speaker16.wav')
 >>> d['prompt']
 'oh four two nine'
->>> item_details('2_1122_1_2_054')['prompt']
+>>> item_details('2_1122_1_2_054-ch6-speaker16.wav')['prompt']
 'harl'
->>> p = item_details('2_1122_1_2_142')['prompt']
+>>> p = item_details('2_1122_1_2_142-ch6-speaker16.wav')['prompt']
 >>> p
 'pure'
->>> item_details('3_1202_3_14_073')['prompt']
+>>> item_details('3_1202_3_14_073-ch6-speaker16.wav')['prompt']
 'hode'
      """
     
-    media_name = basename + '-ch6-speaker16.wav'
+
+    
     try:
+        basename = convert.item_file_basename(mediafile)
         result = {'prompt': item_prompt(basename),
-                  'media': os.path.join(OUTPUT_DIR, convert.item_file_path(media_name)),
                   'item_uri': generate_item_uri(basename),
+                  'basename': basename,
                   } 
         
         return result
@@ -257,12 +261,12 @@ def make_bpf_generator(server, outputdir):
         annotation file for input to MAUS"""
         
         
-        if not int(component) in MAUSABLE_COMPONENTS:
-            print "Can't MAUS component", component
+        if not component in MAUSABLE_COMPONENTS:
             return
         
         basename = os.path.basename(item_path)
-        outpath = convert.item_file_path(basename + ".phb", "BPF")
+        (name, ext) = os.path.splitext(basename)
+        outpath = convert.item_file_path(name + ".bpf", "BPF")
         outfile = os.path.join(outputdir, outpath)
         
         lex = load_lexicon()        
@@ -296,12 +300,12 @@ def make_maus_processor(server, outputdir):
         files"""
         
         
-        if not int(component) in MAUSABLE_COMPONENTS:
-            print "Can't MAUS component", component
+        if not component in MAUSABLE_COMPONENTS:
             return
         
         basename = os.path.basename(item_path)
-        outpath = convert.item_file_path(basename + "-ch6-speaker16.TextGrid", "MAUS")
+        (name, ext) = os.path.splitext(basename)
+        outpath = convert.item_file_path(name + ".TextGrid", "MAUS")
         outfile = os.path.join(outputdir, outpath)
         
         if not os.path.exists(os.path.dirname(outfile)):
@@ -310,9 +314,8 @@ def make_maus_processor(server, outputdir):
         details = item_details(basename)
         if details != None:    
             
-            media_file = details['media']
             try:
-                #annotation = maus(media_file, details['prompt'])
+                #annotation = maus(item_path, details['prompt'])
                 annotation = "foo"
                 
                 sys.stdout.write('.')
@@ -323,7 +326,8 @@ def make_maus_processor(server, outputdir):
                 h.close()
                 
                 graph = maus_metadata(details['item_uri'], outpath)
-                server.output_graph(graph, convert.item_file_path(basename+"-m", "metadata"))
+                
+                server.output_graph(graph, convert.item_file_path(details['basename']+"-m", "metadata"))
                 
             except MausException as e:
                 print "ERROR", basename, e
@@ -337,13 +341,8 @@ def maus_metadata(item_uri, mausfile):
     """Generate metadata for the output of MAUS"""
     
     maus_uri = DATA_NS[mausfile]
-    
-    fmeta = convert.generate_file_metadata(mausfile, "MAUS")
-    
-    graph = Graph()
-    
-    for t in fmeta:
-        graph.add(t)
+    graph = Graph()    
+    convert.generate_file_metadata(graph, mausfile, "MAUS")
     
     graph.add((URIRef(item_uri), NS['has_annotation'], maus_uri))
     graph.add((maus_uri, RDF.type, NS.AnnotationFile))
