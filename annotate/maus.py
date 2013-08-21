@@ -9,6 +9,7 @@ Created on Oct 31, 2012
 import urllib, urllib2
 import MultipartPostHandler
 import os, sys
+import subprocess
 from StringIO import StringIO
 import configmanager
 configmanager.configinit()
@@ -16,7 +17,7 @@ from rdflib import Graph, Literal, URIRef
 import convert
 from convert.namespaces import *
 from data import COMPONENT_MAP
-
+from tempfile import NamedTemporaryFile
 
 OUTPUT_DIR = configmanager.get_config('OUTPUT_DIR')
 
@@ -80,7 +81,7 @@ MausException: Internal Server Error
                    ('ENDWORD', str(endword)),
                    ('MAUSSHIFT', str(mausshift)),
                    ('INSPROB', str(insprob)),
-                   ('SIGNAL', open(wavfile)),
+                   ('SIGNAL', wavfile),
                    ('BPF', StringIO(phb)),
                    ('OUTFORMAT', str(outformat)),
                    ('USETRN', maus_boolean(usetrn)),
@@ -89,18 +90,63 @@ MausException: Internal Server Error
                    ('INSORTTEXTGRID', maus_boolean(insorttextgrid)),
                 ))
     
+    if configmanager.get_config("MAUS_LOCAL", "no") == "yes":
+        params['SIGNAL'] = wavfile
+        h = NamedTemporaryFile(prefix='bpf', delete=False) 
+        h.write(phb)
+        h.close()
+        params['BPF'] = h.name
+        
+        outfile = NamedTemporaryFile(prefix='textgrid', delete=False)
+        outfile.close()
+        
+        params['OUT'] = outfile.name
+        
+        maus_program = configmanager.get_config("MAUS_PROGRAM")
+
+        maus_cmd = [maus_program]
+        for key in params.keys():
+            maus_cmd.append("%s=%s" % (key, params[key]))
+        #print " ".join(maus_cmd)
+        
+        try:
+            # send err output to nowhere
+            devnull = open(os.devnull, "w")
+            process =  subprocess.Popen(maus_cmd, stdout=devnull, stderr=devnull)
     
-    handler = MultipartPostHandler.MultipartPostHandler(debuglevel=0)
-    opener = urllib2.build_opener(handler)
-    
-    MAUS_URL = configmanager.get_config("MAUS_URL")
-    try:
-        response = opener.open(MAUS_URL, params)
-    except urllib2.HTTPError as e:
-        errormessage = e.read()
-        raise MausException(e.msg)
-    
-    result = response.read()
+            while process.poll() == None:
+                pass
+        except:
+            print "Error calling MAUS"
+     
+        os.unlink(h.name)
+        
+        if os.path.exists(outfile.name):
+            # grab the result
+            h = open(outfile.name)
+            result = h.read()
+            h.close()
+            
+            os.unlink(outfile.name)
+        else:
+            result = ""
+        
+    else:
+        # for the web call we open the wav file
+        params['SIGNAL'] = open(wavfile)
+        params['BPF'] = StringIO(phb)
+        
+        handler = MultipartPostHandler.MultipartPostHandler(debuglevel=0)
+        opener = urllib2.build_opener(handler)
+        
+        MAUS_URL = configmanager.get_config("MAUS_URL")
+        try:
+            response = opener.open(MAUS_URL, params)
+        except urllib2.HTTPError as e:
+            errormessage = e.read()
+            raise MausException(e.msg)
+        
+        result = response.read()
     
     if result.startswith('File type = "ooTextFile"'):
         # everything was ok

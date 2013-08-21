@@ -1,6 +1,5 @@
 [DEFAULT]
 SESAME_SERVER = http://115.146.93.47/openrdf-sesame/repositories/bigasc_native
-MAUS_URL = http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
 
 
 # DATA_DIR is the location of the primary data (site directories)
@@ -24,8 +23,9 @@ PARTICIPANT_DETAIL = MINIMAL
 #   nt is fast but hard to read
 RDF_GRAPH_FORMAT = nt
 
-
-# if SHOW_PROGRESS is yes then progress messages will be printed
-# any other value will suppress messages
-SHOW_PROGRESS = yes
  
+# MAUS config
+
+MAUS_URL = http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
+MAUS_LOCAL = yes
+MAUS_PROGRAM = /home/steve/MAUS/maus
