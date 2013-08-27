@@ -80,7 +80,7 @@ def make_processor(sessiondir, outdir, server):
                     # skip generating the downsampled file if it's already there
                     if not os.path.exists(os.path.join(outdir, path)):
                         resample(fn, os.path.join(outdir, path))
-                        m += 1
+                    
             
             # output metadata if any
             server.output_graph(bgraph, convert.item_file_path(basename+"-ds", "versionselect-meta"))
