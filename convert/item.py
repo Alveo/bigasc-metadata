@@ -151,7 +151,7 @@ class ItemMapper:
         # get the component short name, easier to work with
         component = self.component_map[int(component)]
         
-        graph.add((item_uri, AUSNC.componentName, Literal(component)))
+        graph.add((item_uri, NS.componentName, Literal(component)))
         graph.add((item_uri, AUSNC.mode, AUSNC.spoken))
         
         # face_to_face, distance

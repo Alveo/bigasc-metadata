@@ -56,8 +56,35 @@ def make_processor(sessiondir, outdir, server):
                         resample(fn, os.path.join(outdir, path))
                         n += 1
 
-        # upload the lot to the server
+        # output metadata
         server.output_graph(graph, convert.item_file_path(basename+"-ds", "metadata"))
+    
+        # in the case when we don't have versionselect info we want to write the 
+        # data somewhere so that someone can look at it
+        if versions['rejected'] == [] and versions['good'].keys() == []:
+
+            print "Unknown versions: ", basename
+            bgraph = Graph()
+            # for rejected files we still downsample but this time to the rejected directory
+            for fn in convert.item_files(item_path):
+                
+                # only worry about ch6-speaker
+                if fn.find('ch6-speaker') >= 0:
+                     
+                    newname = fn.replace('ch6-speaker', 'ch6-speaker16')
+                    path = convert.item_file_path(newname, "versionselect")
+                    
+                    # generate metadata
+                    convert.generate_file_metadata(bgraph, path, "versionselect")
+                    
+                    # skip generating the downsampled file if it's already there
+                    if not os.path.exists(os.path.join(outdir, path)):
+                        resample(fn, os.path.join(outdir, path))
+                        m += 1
+            
+            # output metadata if any
+            server.output_graph(bgraph, convert.item_file_path(basename+"-ds", "versionselect-meta"))
+            
         return n
     
     return process_item
