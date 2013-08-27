@@ -61,7 +61,7 @@ def make_processor(sessiondir, outdir, server):
     
         # in the case when we don't have versionselect info we want to write the 
         # data somewhere so that someone can look at it
-        if versions['rejected'] == [] and versions['good'].keys() == []:
+        if versions.has_key('versioninfo') and versions['versioninfo'] == 'missing':
 
             print "Unknown versions: ", basename
             bgraph = Graph()

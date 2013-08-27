@@ -272,6 +272,7 @@ def item_file_versions(path):
               }
     }
     
+    if there is no version info then add the key 'versioninfo' with the value 'missing'
     
 >>> x = item_file_versions('test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_11/1_1216_1_11_016')
 >>> x['rejected']
@@ -316,8 +317,8 @@ def item_file_versions(path):
             # filename is malformed - message already printed by parse_media_filename
             pass
     
-    if len(fv) == 1:
-        # we only have one version
+    if len(fv) <= 1:
+        # we only have one version (or zero if there is only an xml file for this item)
         return {'rejected': [], 'good': {basename: all_files}}
     
     # see if we have versionselect data for this item    
@@ -348,7 +349,7 @@ def item_file_versions(path):
 
     else:
         print "Duplicate recordings and no version info for ", basename
-        return {'rejected': [], 'good': {}}
+        return {'rejected': [], 'good': {}, 'versioninfo': 'missing'}
     
     
     
