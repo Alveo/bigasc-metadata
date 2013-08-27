@@ -29,3 +29,10 @@ RDF_GRAPH_FORMAT = nt
 MAUS_URL = http://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUS
 MAUS_LOCAL = yes
 MAUS_PROGRAM = /home/steve/MAUS/maus
+
+# VERSIONSELECT_URL is the location to download the dump of versionselect data
+#VERSIONSELECT_URL = http://localhost:8000/dump/
+VERSIONSELECT_URL = http://versionselect.stevecassidy.net/dump/
+
+# VERSIONSELECT_CACHE is the local cache of this data
+VERSIONSELECT_CACHE = versionselect.json

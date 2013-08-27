@@ -117,7 +117,7 @@ MausException: Internal Server Error
             while process.poll() == None:
                 pass
         except:
-            print "Error calling MAUS"
+            pass
      
         os.unlink(h.name)
         
@@ -129,7 +129,7 @@ MausException: Internal Server Error
             
             os.unlink(outfile.name)
         else:
-            result = ""
+            result = "Error Calling MAUS"
         
     else:
         # for the web call we open the wav file
