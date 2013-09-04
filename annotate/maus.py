@@ -148,6 +148,8 @@ MausException: Internal Server Error
         
         result = response.read()
     
+    print "RESULT: ", result
+    
     if result.startswith('File type = "ooTextFile"'):
         # everything was ok
         return result

@@ -1,3 +1,6 @@
+beat     bi:t 
+boot     b}:t
+high     hAe
 Al	 {l 
 Alan	{l@n
 Alps	{lps
