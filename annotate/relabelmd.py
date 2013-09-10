@@ -55,7 +55,7 @@ def make_phb(segments):
     """Given a set of segments, make a PHB format
     label file"""
     
-    words = [seg[2] for seg in segments if seg[2] not in ("B", "#")]
+    words = [seg[2] for seg in segments if seg[2] not in ("B", "#", "+")]
 
     return " ".join(words)
 
@@ -64,18 +64,24 @@ if __name__=='__main__':
     
     wavfile = sys.argv[1]
     basename, ext = os.path.splitext(wavfile)
-    labfile = basename + ".fword"
     
-    if os.path.exists(labfile):
-        l = read_esps(labfile)
-        text = make_phb(l)
-        print text
-        
-        textgrid = maus(wavfile, text)
-    
-        print textgrid
+    if os.path.exists(basename + ".word"):
+        labfile = basename + ".word"
+    elif os.path.exists(basename + ".fword"):
+        labfile = basename + ".fword"
     else:
-        print "No fword file for ", wavfile
+         print "No fword file for ", basename
+         sys.exit()
+
+
+    l = read_esps(labfile)
+    text = make_phb(l)
+    
+    textgrid = maus(wavfile, text, outformat='TextGrid')
+    h = open(basename+".TextGrid", 'w')
+    h.write(textgrid)
+    h.close()
+        
         
         
         
