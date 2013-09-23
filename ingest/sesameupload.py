@@ -61,11 +61,23 @@ class SesameServer():
     def upload(self, filename):
         """Upload RDF data from filename"""
 
-        path = "/statements"
-        h = open(filename)
-        data = h.read()
-        h.close()
+        return self.upload_many([filename])
+        
+        
+    def upload_many(self, filenames):
+        """Upload RDF data from multiple files in a single request"""
+        
+        if len(filenames) > 1:
+            print "Uploading", len(filenames), "files"
 
+        path = "/statements"
+        
+        data = ''
+        for filename in filenames:
+            h = open(filename)
+            data += '\n'+ h.read() # add a newline in case there isn't one at the end of file
+            h.close()
+        
         # need to replace true|false with quoted version
         # because the turtle that Sesame understands is not quite
         # the same as the turtle that rdflib generates
@@ -89,31 +101,59 @@ class SesameServer():
         else:
             raise Exception("Problem with upload of data, result code %s" % result[0])
 
+        
+
     def upload_dir(self, dirname):
         """upload all RDF files found inside dirname and
         subdirectories (recursively)"""
 
-        retry = []
+        BATCH_UPLOAD_RDF = configmanager.get_config('BATCH_UPLOAD_RDF', 'no') == 'yes'
+        BATCH_UPLOAD_SIZE = int(configmanager.get_config('BATCH_UPLOAD_SIZE', 100))
 
+        retry = []
+        rdffiles = []
         for dirpath, dirnames, filenames in os.walk(dirname):
             print "Directory: ", dirpath
             for fn in filenames:
                 if fn.endswith(RDF_GRAPH_FORMAT):
-                    try:
-                        self.upload(os.path.join(dirpath, fn))
-                    except:
-                        print "problem uploading", fn
-                        retry.append(os.path.join(dirpath, fn))
-
-        print "Retrying ", len(retry), "uploads"
-        while len(retry) > 0:
-            fn = retry.pop()
-            print "Upload", fn
+                    if BATCH_UPLOAD_RDF:
+                        rdffiles.append(os.path.join(dirpath, fn))
+                        if len(rdffiles) > BATCH_UPLOAD_SIZE:
+                            try:
+                                self.upload_many(rdffiles)
+                                rdffiles = []
+                            except Exception as e:
+                                print "problem uploading", len(rdffiles), "files from ", dirname
+                                print e
+                                retry.extend(rdffiles)
+                                rdffiles = []
+                    else:
+                        try:
+                            self.upload(os.path.join(dirpath, fn))
+                        except:
+                            print "problem uploading", fn
+                            retry.append(os.path.join(dirpath, fn))
+                            
+        # upload any remaining batch of files
+        if BATCH_UPLOAD_RDF and len(rdffiles) > 0:
             try:
-                self.upload(fn)
+                self.upload_many(rdffiles)
+                rdffiles = []
             except:
-                print "problem with retry of ", fn
-                #retry.append(fn)
+                print "problem uploading", len(rdffiles), "files from ", dirname
+                retry.extend(rdffiles)
+
+        if len(retry) > 0:
+            print "Retrying ", len(retry), "uploads"
+            while len(retry) > 0:
+                fn = retry.pop()
+                print "Upload", fn
+                try:
+                    self.upload(fn)
+                except Exception as e:
+                    print "problem with retry of ", fn
+                    print e
+                    #retry.append(fn)
 
     def output_graph(self, graph, name=None):
         """Output the contents of the graph to a file"""

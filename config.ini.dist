@@ -36,3 +36,10 @@ VERSIONSELECT_URL = http://versionselect.stevecassidy.net/dump/
 
 # VERSIONSELECT_CACHE is the local cache of this data
 VERSIONSELECT_CACHE = versionselect.json
+
+
+# BATCH_UPLOAD_RDF and BATCH_UPLOAD_SIZE control how we send data to sesame
+# if yes then we send in batches of a given number of files
+# if no we send one file at a time
+BATCH_UPLOAD_RDF = yes
+BATCH_UPLOAD_SIZE = 1000

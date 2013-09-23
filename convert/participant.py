@@ -474,8 +474,9 @@ def participant_rdf(part_md, csvdata=None):
 >>> graph_min = participant_rdf(p, csvdata['3_726'])
 >>> len(graph_min)
 149
-
-#print graph_min.serialize(format='turtle')
+>>> p = get_participant('2_1165')
+>>> graph = participant_rdf(p, csvdata['2_1165'])
+>>> print graph_min.serialize(format='turtle')
     """
     
     p_id = "%s_%s" % (part_md['colour']['id'], part_md['animal']['id'])
@@ -520,9 +521,16 @@ def participant_rdf(part_md, csvdata=None):
                 if  str(age) != str(refage):
                     print "\tDOBs differ for %s, '%s' changed to '%s'" % (p_id, age, refage)
                     
+                    newtriples = map_dob(p_uri, 'dob', refyr+"-"+m+"-"+d)
+                    
+                    for tr in newtriples:
+                        s, p, o = tr
+                        graph.remove((s, p, None))
+                        graph.add(tr)
+                    
                     # modify the graph
-                    graph.remove((p_uri, FOAF.age, age))
-                    graph.add((p_uri, FOAF.age, Literal(refage)))
+                    #graph.remove((p_uri, FOAF.age, age))
+                    #graph.add((p_uri, FOAF.age, Literal(refage)))
         else:
             print "No DOB"
            

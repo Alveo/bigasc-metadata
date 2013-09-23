@@ -29,6 +29,9 @@ if __name__ == '__main__':
         server_url = configmanager.get_config("SESAME_SERVER")
 
     server = ingest.SesameServer(server_url)
-
+    
+    import time
+    
+    start = time.time()
     server.upload_dir(dirname)
-
+    print "Time taken: ", time.time()-start
