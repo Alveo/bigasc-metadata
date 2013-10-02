@@ -46,7 +46,8 @@ if __name__=='__main__':
                             for item in os.listdir(compdir):
                                 mauspath = os.path.join(site, sdir, sessiondir, cdir, item)
                                 mausfile = os.path.join(mausdir, mauspath)
-                                audioname = os.path.basename(item) + ".wav"
+                                (base, ext) = os.path.splitext(item)
+                                audioname = base + ".wav"
                                 audiopath = os.path.join(site, sdir, sessiondir, cdir, audioname)
                                 audiofile = os.path.join(audiodir, audiopath)
                                 
