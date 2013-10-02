@@ -8,6 +8,7 @@ import ingest
 from data import site_sessions, map_session, resample
 from rdflib import Graph
 import convert
+import zipfile
 
 import configmanager
 configmanager.configinit()
@@ -25,6 +26,9 @@ if __name__=='__main__':
 
     spkrid = sys.argv[1]
     
+    outfile = spkrid + ".zip"
+    zfile = zipfile.ZipFile(outfile, 'w')
+    
     audiodir = os.path.join(outdir, 'downsampled')
     mausdir = os.path.join(outdir, 'MAUS')
     
@@ -40,11 +44,17 @@ if __name__=='__main__':
                         for cdir in os.listdir(os.path.join(speakerdir, sessiondir)):
                             compdir = os.path.join(speakerdir, sessiondir, cdir)
                             for item in os.listdir(compdir):
-                                mausfile = os.path.join(compdir, item)
+                                mauspath = os.path.join(site, sdir, sessiondir, cdir, item)
+                                mausfile = os.path.join(mausdir, mauspath)
                                 audioname = os.path.basename(item) + ".wav"
-                                audiofile = os.path.join(audiodir, site, sdir, sessiondir, cdir, audioname)
+                                audiopath = os.path.join(site, sdir, sessiondir, cdir, audioname)
+                                audiofile = os.path.join(audiodir, audiopath)
                                 
                                 # add mausfile and audiofile to zip
-                                
-                                
-            
+                                zfile.write(audiofile, audiopath)
+                                zfile.write(mausfile, mauspath)
+    zfile.close()
+    
+
+
+
