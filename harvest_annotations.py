@@ -109,13 +109,17 @@ if __name__ == '__main__':
                 continue
             
             if fn.find(ext) >= 0:
-                basename = item_file_basename(fn)
-                fullpath = os.path.join(dirpath, fn)
-                
-                if results.has_key(basename):
-                    results[basename].append(fullpath)
-                else:
-                    results[basename] = [fullpath]
+                try:
+                    # guard against wierd filenames
+                    basename = item_file_basename(fn)
+                    fullpath = os.path.join(dirpath, fn)
+                    
+                    if results.has_key(basename):
+                        results[basename].append(fullpath)
+                    else:
+                        results[basename] = [fullpath]
+                except:
+                    print "Odd filename ignored:", fn
                     
         process_results(server, results, outdir, origin, ext)
                     
