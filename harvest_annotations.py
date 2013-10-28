@@ -115,7 +115,7 @@ if __name__ == '__main__':
                     fullpath = os.path.join(dirpath, fn)
                     
                     # ignore basenames with added spaces - 
-                    if basename.find(' ') >= 0:
+                    if fullpath.find(' ') >= 0:
                         print "Ignoring due to spaces:", fn
                         continue
                     
