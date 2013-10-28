@@ -33,17 +33,17 @@ def ingest_protocol(server):
 
     graph = convert.session_metadata()
     
-    print "Uploading", len(graph), "triples for sessions"
+    print "Generated", len(graph), "triples for sessions"
     server.output_graph(graph, 'metadata/protocol/sessions')
     
     graph = convert.component_metadata()
     
-    print "Uploading", len(graph), "triples for components"
+    print "Generated", len(graph), "triples for components"
     server.output_graph(graph, 'metadata/protocol/components')
         
     graph = convert.item_metadata()
     
-    print "Uploading", len(graph), "triples for items"
+    print "Generated", len(graph), "triples for items"
     server.output_graph(graph, 'metadata/protocol/items')
         
 
@@ -54,7 +54,7 @@ def ingest_participants(server):
     assert(isinstance(server, SesameServer))
 
     participants = convert.get_participant_list()
-    print "Uploading", len(participants), "participants"
+    print "Processing", len(participants), "participants"
     
     convert.reset_site_mapping()
     
@@ -71,7 +71,7 @@ def ingest_participants(server):
         p_info = convert.get_participant(p)
         graph = convert.participant_rdf(p_info, csvdata)
     
-        print "Uploading", len(graph), "triples for participant", p
+        print "Generated", len(graph), "triples for participant", p
         server.output_graph(graph, os.path.join('metadata', 'participants', p))
 
         

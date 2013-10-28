@@ -104,6 +104,10 @@ if __name__ == '__main__':
         # store them in a dictionary with the basename as a key
         results = dict()
         for fn in filenames:
+            # ignore files containing 'Copy', there are only a few and they are not different
+            if fn.find("Copy"):
+                continue
+            
             if fn.find(ext) >= 0:
                 basename = item_file_basename(fn)
                 fullpath = os.path.join(dirpath, fn)
