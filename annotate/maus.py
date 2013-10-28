@@ -361,8 +361,7 @@ def make_maus_processor(server, outputdir):
         if details != None:    
             
             try:
-                #annotation = maus(item_path, details['prompt'])
-                annotation = "foo"
+                annotation = maus(item_path, details['prompt'])
                 
                 sys.stdout.write('.')
                 sys.stdout.flush()
