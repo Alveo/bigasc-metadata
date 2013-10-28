@@ -108,18 +108,23 @@ if __name__ == '__main__':
             if fn.find("Copy") >= 0:
                 continue
             
-            if fn.find(ext) >= 0:
+            if fn.endswith(ext):
                 try:
                     # guard against wierd filenames
                     basename = item_file_basename(fn)
                     fullpath = os.path.join(dirpath, fn)
+                    
+                    # ignore basenames with added spaces - 
+                    if basename.find(' ') >= 0:
+                        print "Ignoring due to spaces:", fn
+                        continue
                     
                     if results.has_key(basename):
                         results[basename].append(fullpath)
                     else:
                         results[basename] = [fullpath]
                 except:
-                    print "Odd filename ignored:", fn
+                    pass
                     
         process_results(server, results, outdir, origin, ext)
                     
