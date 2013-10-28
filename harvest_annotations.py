@@ -105,7 +105,7 @@ if __name__ == '__main__':
         results = dict()
         for fn in filenames:
             # ignore files containing 'Copy', there are only a few and they are not different
-            if fn.find("Copy"):
+            if fn.find("Copy") >= 0:
                 continue
             
             if fn.find(ext) >= 0:
