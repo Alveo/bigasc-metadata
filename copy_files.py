@@ -27,7 +27,7 @@ def make_copy_processor(server, outdir, what):
                 for fn in versions['good'][base]:
                     
                     props = convert.parse_media_filename(fn)
-                    if props['type'] == what:
+                    if props.has_key('type') and props['type'] == what:
                         newname = convert.change_item_file_basename(os.path.basename(fn), base)            
                         path = convert.item_file_path(newname, what)
                         
@@ -49,7 +49,7 @@ def make_copy_processor(server, outdir, what):
             for fn in versions['rejected']:
                 
                 props = convert.parse_media_filename(fn)
-                if props['type'] == what:
+                if props.has_key('type') and props['type'] == what:
                     path = convert.item_file_path(fn, os.path.join('rejected', what))
                     #print "REJECT:", os.path.basename(fn), path
                     path = os.path.join(outdir, path)
