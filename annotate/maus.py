@@ -37,7 +37,8 @@ def maus_boolean(value):
 
 def maus(wavfile, text, language='aus', canonly=False, minpauselen=5, 
          startword=0, endword=999999, mausshift=10, insprob=0.0,
-         inskantextgrid=True, insorttextgrid=True, usetrn=False, outformat='TextGrid'):
+         inskantextgrid=True, insorttextgrid=True, usetrn=False, outformat='TextGrid',
+         lexicon=None):
     """Send the given wavfile to MAUS for forced alignment
     text is the orthographic transcription
     
@@ -68,11 +69,15 @@ MausException: Internal Server Error
 #something
     """
     
-    lex = load_lexicon()
+    if lexicon is None:
+        lex = load_lexicon()
+    else:
+        lex = load_lexicon(lexicon)
     phb = text_phb(text, lex)
     
     if phb == None:
-        raise MausException("Can't generate phonetic transcription for text '%s'" % text)
+        truncated_text = (text[:100] + '...') if len(text) > 100 else text
+        raise MausException("Can't generate phonetic transcription for text '%s'" % truncated_text)
 
     params = dict((('LANGUAGE', language),
                    ('CANONLY', maus_boolean(canonly)),
@@ -156,7 +161,7 @@ MausException: Internal Server Error
         raise MausException(result)
 
 
-def load_lexicon():
+def load_lexicon(lex=None):
     """Load the lexicon from AUSTALK.lex and return 
     a dictionary with words as keys
     
@@ -167,7 +172,10 @@ def load_lexicon():
 'z}:'
     """
 
-    h = open(LEXICON)
+    if lex is None:
+        lex = LEXICON
+
+    h = open(lex)
     lines = h.readlines()
     h.close()
     
@@ -175,8 +183,9 @@ def load_lexicon():
     for line in lines:
         words = line.split()
         if len(words) > 2:
-            print "Too many fields:", line
-        ort = words[0].lower()
+            #print "Too many fields:", line
+            continue
+        ort = words[0]
         phn = words[1]
         result[ort] = phn
         
