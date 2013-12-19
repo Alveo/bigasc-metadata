@@ -23,8 +23,7 @@ import sys
 sys.path.append(blackbox_path)
 from recorder import Persistence
 
-from rdflib import Namespace, Graph, Literal
-from rdflib.term import URIRef
+from rdflib import Namespace, Graph, Literal, URIRef
 
 from namespaces import *
 import re

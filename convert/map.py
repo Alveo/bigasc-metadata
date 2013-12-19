@@ -1,8 +1,7 @@
 """Mapping property names and values for metadata and annotation ingest"""
 
 
-from rdflib import Namespace, Graph, Literal, BNode
-from rdflib.term import URIRef 
+from rdflib import Namespace, Graph, Literal, BNode, URIRef
 from namespaces import NS
 
 
