@@ -40,7 +40,7 @@ if __name__=='__main__':
     audiodir = os.path.join(outdir, 'downsampled')
     mausdir = os.path.join(outdir, 'MAUS')
     
-    for site in os.listdir(mausdir):
+    for site in os.listdir(audiodir):
         
         sitedir = os.path.join(audiodir, site)
         print sitedir
@@ -48,11 +48,11 @@ if __name__=='__main__':
             for sdir in os.listdir(sitedir):
                 if sdir == spkrid:
                     speakerdir = os.path.join(sitedir, sdir)
-                    print speakerdir
+                    #print speakerdir
                     for sessiondir in os.listdir(speakerdir):
-                        print sessiondir
+                        #print sessiondir
                         for cdir in os.listdir(os.path.join(speakerdir, sessiondir)):
-                            print cdir
+                            #print cdir
                             if components != [] and cdir in components:
                                 compdir = os.path.join(speakerdir, sessiondir, cdir)
                                 for item in os.listdir(compdir):
