@@ -36,16 +36,21 @@ def make_processor(sessiondir, outdir, server):
         versions = convert.item_file_versions(item_path)
         basename = convert.item_file_basename(item_path)
         
+        # we want to grab the maptask channel if this is a maptask component
+        getmaptask = component in ['8', '10']
+        
         for base in versions['good'].keys(): 
                 
             for fn in versions['good'][base]:
                 
                 # only worry about ch6-speaker
-                if fn.find('ch6-speaker') >= 0:
-                    
-                    
+                # unless this is a maptask when we want ch1-maptask as well
+                
+                if fn.find('ch6-speaker') >= 0 or (getmaptask and fn.find('ch1-maptask') >= 0):
+                
                     newname = convert.change_item_file_basename(os.path.basename(fn), base) 
                     newname = newname.replace('ch6-speaker', 'ch6-speaker16')
+                    newname = newname.replace('ch1-maptask', 'ch1-maptask16')
                     path = convert.item_file_path(newname, "downsampled")
                     
                     # generate metadata
@@ -68,10 +73,12 @@ def make_processor(sessiondir, outdir, server):
             # for rejected files we still downsample but this time to the rejected directory
             for fn in convert.item_files(item_path):
                 
-                # only worry about ch6-speaker
-                if fn.find('ch6-speaker') >= 0:
+                # only worry about ch6-speaker or ch1-maptask if we're in a maptask
+                if fn.find('ch6-speaker') >= 0 or (getmaptask and fn.find('ch1-maptask') >= 0):
                      
                     newname = fn.replace('ch6-speaker', 'ch6-speaker16')
+                    newname = fn.replace('ch1-maptask', 'ch1-maptask16')
+                    
                     path = convert.item_file_path(newname, "versionselect")
                     
                     # generate metadata
