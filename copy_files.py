@@ -27,20 +27,22 @@ def make_copy_processor(server, outdir, what):
                 for fn in versions['good'][base]:
                     
                     props = convert.parse_media_filename(fn)
-                    if props.has_key('type') and props['type'] == what:
+                    if props.has_key('type') and props['type'].lower() == what.lower():
                         newname = convert.change_item_file_basename(os.path.basename(fn), base)            
-                        path = convert.item_file_path(newname, what)
+                        path = convert.item_file_path(newname, what.lower())
                         
                         #print "COPY:", os.path.basename(fn), path
                         
-                        convert.generate_file_metadata(graph, path, what)
+                        convert.generate_file_metadata(graph, path, what.lower())
                         
                         path = os.path.join(outdir, path)
                         
                         if not os.path.exists(os.path.dirname(path)):
                             os.makedirs(os.path.dirname(path))
-                            
-                        shutil.copy(fn, path)
+                        
+                        # copy if not already present
+                        if not os.path.exists(path):
+                            shutil.copy(fn, path)
                         
                         
             # output metadata for all files
