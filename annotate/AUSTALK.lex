@@ -1,3 +1,7 @@
+let's   lets
+pass    p6:s
+pick    pIk
+aerodrome       e:r\@dr\@}m
 beat     bi:t 
 boot     b}:t
 high     hAe
