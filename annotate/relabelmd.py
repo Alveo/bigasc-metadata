@@ -5,8 +5,8 @@ unknown amount.
 
 PROMPTS = {
            's1': 'beat boot say so high how',
-           's2': "let's pick a good quiet spot by the water and pass the morning surfing and relaxing in the sun",
-           's3': 'the plane flew low over the runway then increased speed and circled the aerodrome a second time',
+           's2': "let's pick a good spot near the water and pass the morning surfing and relaxing in the sun",
+           's3': 'the plane flew down low over the runway then increased speed and circled the aerodrome a second time',
            }
 
 
