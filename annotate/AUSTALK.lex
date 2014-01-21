@@ -1,6 +1,7 @@
 let's   lets
 pass    p6:s
 pick    pIk
+quiet	kwAe@t
 aerodrome       e:r\@dr\@}m
 beat     bi:t 
 boot     b}:t
