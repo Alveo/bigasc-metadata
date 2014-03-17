@@ -135,6 +135,9 @@ def map_language_name(subj, prop, value):
                     pass
     if lang == None or getattr(lang, 'alpha2', None) == None:
         print "No language found for '%s'" % name
+        #h = open("unknown-languages.txt", "a")
+        #h.write(name + " " + subj + "\n")
+        #h.close()
         return [(subj, NS[prop], Literal(name))]
     else:
         code = getattr(lang, 'alpha2', None)
@@ -503,34 +506,37 @@ def participant_rdf(part_md, csvdata=None):
     # check and update some values from csvdata
     if csvdata != None: 
         if csvdata.has_key('DOB'):
-            (d, m, y) = csvdata['DOB'].split('/')
-            if len(y) == 2:
-                if int(y) < 12:
-                    refyr = "20"+y 
+            try:
+                (d, m, y) = csvdata['DOB'].split('/')
+                if len(y) == 2:
+                    if int(y) < 12:
+                        refyr = "20"+y 
+                    else:
+                        refyr = "19"+y
+                elif len(y) == 4:
+                    refyr = y
                 else:
-                    refyr = "19"+y
-            elif len(y) == 4:
-                refyr = y
-            else:
-                print "Odd year:", y
-            
-            refage = 2012-int(refyr)
-            
-            ages = graph.objects(subject=p_uri, predicate=FOAF.age)
-            for age in ages:
-                if  str(age) != str(refage):
-                    print "\tDOBs differ for %s, '%s' changed to '%s'" % (p_id, age, refage)
-                    
-                    newtriples = map_dob(p_uri, 'dob', refyr+"-"+m+"-"+d)
-                    
-                    for tr in newtriples:
-                        s, p, o = tr
-                        graph.remove((s, p, None))
-                        graph.add(tr)
-                    
-                    # modify the graph
-                    #graph.remove((p_uri, FOAF.age, age))
-                    #graph.add((p_uri, FOAF.age, Literal(refage)))
+                    print "Odd year:", y
+                
+                refage = 2012-int(refyr)
+                
+                ages = graph.objects(subject=p_uri, predicate=FOAF.age)
+                for age in ages:
+                    if  str(age) != str(refage):
+                        print "\tDOBs differ for %s, '%s' changed to '%s'" % (p_id, age, refage)
+                        
+                        newtriples = map_dob(p_uri, 'dob', refyr+"-"+m+"-"+d)
+                        
+                        for tr in newtriples:
+                            s, p, o = tr
+                            graph.remove((s, p, None))
+                            graph.add(tr)
+                        
+                        # modify the graph
+                        #graph.remove((p_uri, FOAF.age, age))
+                        #graph.add((p_uri, FOAF.age, Literal(refage)))
+            except:
+                print "Bad DOB for", p_id, ":", csvdata['DOB']
         else:
             print "No DOB"
            
