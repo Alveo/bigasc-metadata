@@ -535,7 +535,7 @@ def participant_rdf(part_md, csvdata=None):
             print "No DOB"
            
         # SES status
-        if csvdata.has_key('SES'):
+        if csvdata.has_key('SES') and csvdata['SES'] != '':
             ses = csvdata['SES']
             if ses.lower().startswith('prof'):
                 ses = Literal('Professional')
@@ -543,6 +543,7 @@ def participant_rdf(part_md, csvdata=None):
                 ses = Literal('Non Professional')
             else:
                 print "Unknown SES category: ", ses
+                ses = Literal('Unknown')
                 
             graph.add((p_uri, NS.ses, ses))
 
