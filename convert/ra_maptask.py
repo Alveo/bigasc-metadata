@@ -12,7 +12,7 @@ from recorder.Domain import colourIdMap
 
 ## names for site RA spreadsheet exports
 CSVDIR = os.path.join(os.path.dirname(__file__), "../ra-spreadsheets")
-ALLSITES = ['ANU', 'Bathurst', 'Townsville', 'UC', 'USYD', 'UTAS', 'UWA']
+ALLSITES = ['ANU', 'Bathurst', 'Townsville', 'UC', 'USYD', 'UTAS', 'UWA', 'Armidale', 'UNSW', 'FLIN']
 
 KEYMAP = {'ID Number': 'ID',
         'Gender': 'Gender',
@@ -104,7 +104,7 @@ u'Red'
     def parse_maptask (self, source, report = False):
         """ This function parses a map task CSV document as provided by the RA's. 
 >>> maptask = RAMapTask ()
->>> results = maptask.parse_maptask ("../ra-spreadsheets/ANU-MapTask.csv")
+>>> results = maptask.parse_maptask ("ra-spreadsheets/ANU-MapTask.csv")
 >>> len (results)
 48
 >>> sorted(results['4_864'].items())
@@ -124,7 +124,7 @@ u'Red'
             for values in file_handle:
                 s1 = values[1].strip()
                 s2 = values[2].strip()
-                
+                 
                 if s1 in nonspeakers or s2 in nonspeakers:
                     continue
                 
@@ -152,14 +152,17 @@ u'Red'
     def parse_speaker (self, source, report = False):
         """ RA's have also recorded speaker meta data in their spreadsheets. This function parsers that meta
         data, and allows us to add it to the map task meta.
-        
+
 >>> maptask = RAMapTask ()
->>> meta_fields = maptask.parse_speaker ("../ra-spreadsheets/ANU-Speaker.csv", True)
+>>> meta_fields = maptask.parse_speaker ("ra-spreadsheets/FLIN-Speaker.csv", True)
+>>> len(meta_fields)
+109
+>>> meta_fields = maptask.parse_speaker ("ra-spreadsheets/ANU-Speaker.csv", True)
 >>> len (meta_fields)
 48
 >>> sorted(meta_fields['2_1151'].items())
 [('AgeGroup', '>50'), ('ClosestSite', ''), ('Comments', ''), ('DOB', '21/06/1948'), ('Gender', 'M'), ('ID', 'Green Pygmy Sperm Whale'), ('Postcode', '2903'), ('SES', 'Prof-M'), ('Session1', '4/01/12'), ('Session2', '11/01/12'), ('Session3', '23/01/12'), ('State', 'ACT'), ('Suburb', 'Wanniassa')]
->>> meta_fields = maptask.parse_speaker ("../ra-spreadsheets/USYD-Speaker.csv", True)
+>>> meta_fields = maptask.parse_speaker ("ra-spreadsheets/USYD-Speaker.csv", True)
         """
         results = {}
 
@@ -171,7 +174,7 @@ u'Red'
                 if not values[0].strip () in ["", "BigASC Participant Sheet", "Location", "ID Number"]:
                     # Identify the speaker first
                     speaker = self.identify_speaker (values[0].strip ())
-
+                    
                     if not speaker["id"] is None:
                         results[speaker["id"]] = self.extract_speaker_meta (values, headers)
                     else:
@@ -180,6 +183,8 @@ u'Red'
                 else:
                     if values[0].strip() == 'ID Number':
                         headers = values
+        else:
+            print "SPEAKER FILE MISSING: ", source
 
         return results
 
@@ -241,7 +246,7 @@ u'Red'
             if KEYMAP.has_key(keys[index]):
                 results[KEYMAP[keys[index]]] = source[index].strip ()
             
-        if results.has_key('SES') and results['SES'].find('rof') < 0:
+        if results.has_key('SES') and results['SES'] != '' and results['SES'].find('rof') < 0:
             print "Bad SES value: ", results['SES']
             
         return results
@@ -253,9 +258,9 @@ u'Red'
 >>> maptask = RAMapTask()
 >>> (s, m) = maptask.read_all()
 >>> len(s.keys())
-375
+538
 >>> len(m.keys())
-358
+486
 >>> sorted(s['3_166'].items())
 [('AgeGroup', '>50'), ('ClosestSite', 'Charles Sturt University'), ('Comments', ''), ('DOB', '12/10/39'), ('Email', ''), ('FirstName', ''), ('Gender', 'F'), ('ID', 'Red Black Breasted Buzzard'), ('LastName', ''), ('Phone', ''), ('Postcode', '2795'), ('SES', 'Prof-F'), ('Session1', '22/07/11'), ('Session2', '1/08/11'), ('Session3', '15/11/11'), ('State', 'NSW'), ('Suburb', 'Kelso')]
         """
@@ -264,13 +269,13 @@ u'Red'
         maptask = dict()
         
         for site in ALLSITES:
-            
+
             mapcsv = os.path.join(CSVDIR, site+"-MapTask.csv")
             spkrcsv = os.path.join(CSVDIR, site+"-Speaker.csv")
 
             spkr.update(self.parse_speaker(spkrcsv, report))
             maptask.update(self.parse_maptask(mapcsv, report))
-        
+            
         return (spkr, maptask)
         
         

@@ -324,13 +324,15 @@ class ItemMapper:
         graph.add((component_uri, RDF.type, NS.RecordedComponent))
         graph.add((item_uri, DC.isPartOf, component_uri))
         graph.add((component_uri, OLAC.speaker, self.participant_uri))
+        # a redundant property to make web queries for speaker+session faster
+        graph.add((component_uri, NS.session, Literal(md['session'])))
         
         # and part of the session
         graph.add((session_uri, NS.prototype, session_prototype))
         graph.add((session_uri, RDF.type, NS.RecordedSession))
         graph.add((component_uri, DC.isPartOf, session_uri))
         graph.add((session_uri, OLAC.speaker, self.participant_uri))
-        
+        graph.add((session_uri, NS.session, Literal(md['session'])))
         
         # add link to item prototype
         iid = PROTOCOL_NS[ITEM_URI_TEMPLATE % (md['component'], md['item'])]
