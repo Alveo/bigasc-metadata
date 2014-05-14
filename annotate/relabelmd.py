@@ -58,4 +58,12 @@ if __name__=='__main__':
 
     dirname = sys.argv[1]
 
-    tg = label_dir(dirname)
+    l = read_esps(labfile)
+    text = make_phb(l)
+    
+    textgrid = maus(wavfile, text, outformat='TextGrid')
+    h = open(basename+".TextGrid", 'w')
+    h.write(textgrid)
+    h.close()
+    
+    

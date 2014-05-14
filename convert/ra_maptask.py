@@ -12,7 +12,8 @@ from recorder.Domain import colourIdMap
 
 ## names for site RA spreadsheet exports
 CSVDIR = os.path.join(os.path.dirname(__file__), "../ra-spreadsheets")
-ALLSITES = ['ANU', 'Bathurst', 'Townsville', 'UC', 'USYD', 'UTAS', 'UWA', 'Armidale', 'UNSW', 'FLIN']
+
+ALLSITES = ['ANU', 'Bathurst', 'Townsville', 'UC', 'USYD', 'UTAS', 'UWA', 'Armidale', 'UNSW', 'FLIN', 'Castlemaine']
 
 KEYMAP = {'ID Number': 'ID',
         'Gender': 'Gender',
@@ -212,18 +213,27 @@ u'Red'
         import re
         
         pattern = "([A-Za-z]+)[ -]+([a-zA-Z- ']+)(\s*\([0-9-]+\))?"
+        numpattern = "([1234])_(\d+)"
         
         m = re.match(pattern, speaker)
         if not m == None:
             (colour, animal, ignore) = m.groups()
             colour = colour.strip()
             animal = animal.strip()
+
+            colour_id = self.colour_to_id (colour)
+            animal_id = self.animal_to_id (animal)
         else:
-            print "Malformed id: '%s'" % (speaker,)
-            return {'id': None}
+            # try direct match of numerical id
+            m = re.match(numpattern, speaker)
+            if not m == None:
+                (colour_id, animal_id) = m.groups()
+                colour = self.id_to_colour(int(colour_id))
+                animal = self.id_to_animal(int(animal_id))
+            else:
+                print "Malformed id: '%s'" % (speaker,)
+                return {'id': None}
         
-        colour_id = self.colour_to_id (colour)
-        animal_id = self.animal_to_id (animal)
             
         if colour_id is None or animal_id is None: 
             return {"id" : None, 
@@ -258,9 +268,9 @@ u'Red'
 >>> maptask = RAMapTask()
 >>> (s, m) = maptask.read_all()
 >>> len(s.keys())
-538
+565
 >>> len(m.keys())
-486
+508
 >>> sorted(s['3_166'].items())
 [('AgeGroup', '>50'), ('ClosestSite', 'Charles Sturt University'), ('Comments', ''), ('DOB', '12/10/39'), ('Email', ''), ('FirstName', ''), ('Gender', 'F'), ('ID', 'Red Black Breasted Buzzard'), ('LastName', ''), ('Phone', ''), ('Postcode', '2795'), ('SES', 'Prof-F'), ('Session1', '22/07/11'), ('Session2', '1/08/11'), ('Session3', '15/11/11'), ('State', 'NSW'), ('Suburb', 'Kelso')]
         """
