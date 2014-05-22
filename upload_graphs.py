@@ -17,7 +17,7 @@ if __name__ == '__main__':
     import sys
 
     if len(sys.argv) not in [2, 3]:
-        print "Usage output_graphs.py <directory> <server uri>?"
+        print "Usage upload_graphs.py <directory> <server uri>?"
         print "  upload all RDF graphs in the given directory and sub-directories"
         print "  use the configured server URI unless one is specified on the command line"
         exit()
