@@ -19,8 +19,7 @@ from data import resample
 #from convert.session import component_map
 #COMPONENT_MAP = component_map()
 
-
-from merge_video_audio import *
+from data.video import *
 import time
 
 def process_item(speakers):
