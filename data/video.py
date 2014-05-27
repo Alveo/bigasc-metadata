@@ -125,6 +125,12 @@ def convert_video(sourcefile, targetfile, force=False):
         print format
         return False 
 
+def resample_video(sourcefile, targetfile, rate='24'):
+    b = ffmpeg(sourcefile, targetfile, options=['-r', rate])
+    print 'b  from ffmeg : ' , b
+    return True
+
+
 
 def merge_video_audio(video_sourcefile, audio_sourcefile, targetfile, timeout=1560):
     errormsg = ""

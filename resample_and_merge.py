@@ -7,27 +7,31 @@
 import os, glob
 from multiprocessing import Process, Queue
 import thread
-#import ingest 
+import ingest 
 from data import pub_site_speakers, parse_session_dir
-#from rdflib import Graph
-#from convert import item_file_versions, item_file_basename, change_item_file_basename, item_file_path, item_files
+from rdflib import Graph
+from convert import item_file_versions, item_file_basename, change_item_file_basename, item_file_path, item_files, generate_file_metadata
 from data import resample
-#import configmanager
-#configmanager.configinit()
+import configmanager
+configmanager.configinit()
 
 ## generate a component map, do this only once and we'll use it below
-#from convert.session import component_map
-#COMPONENT_MAP = component_map()
+from convert.session import component_map
+COMPONENT_MAP = component_map()
 
 from data.video import *
 import time
 
+def check_create_directory(path):
+    if not os.path.exists(os.path.dirname(path)):
+                    os.makedirs(os.path.dirname(path))
+            
 def process_item(speakers):
     print len(speakers), ' Speakers Found'
     for speaker in speakers:
-        #graph = Graph()
+        graph = Graph()
         #versions = item_file_versions(item_path)
-        #basename = item_file_basename(item_path)
+        
 
         #print speaker
         #video_source = ''
@@ -45,11 +49,14 @@ def process_item(speakers):
         video_file_name = speaker_id + video_component
         audio_file_name = speaker_id + audio_component
 
-        video_source = os.path.join(speaker, 'Session1_3', video_file_name)
+        video_source = item_path = os.path.join(speaker, 'Session1_3', video_file_name)
         original_audio_source = os.path.join(speaker, 'Session1_3', audio_file_name)
         
+        basename = item_file_basename(item_path)
+        print 'basename - ', basename
         # Temporary output for resampled audio
-        resampled_audio_source = os.path.join(outdir, audio_file_name)
+        resampled_audio_source = os.path.join(outdir, 'tmp_audio', audio_file_name)
+        check_create_directory(resampled_audio_source)
 
         if not os.path.exists(resampled_audio_source):
             print 'resampling audio'
@@ -63,30 +70,39 @@ def process_item(speakers):
 
         # Only process to convert and merge files if the actual source files are present
         if (os.path.isfile(resampled_audio_source)  and os.path.isfile(video_source)) :
+            print 'resampling video '
+            temporary_resampled_video = os.path.join(outdir, "tmp_resampled_video", video_file_name )
+            check_create_directory(temporary_resampled_video)
+
+            resample_video(video_source, temporary_resampled_video, '24')
+
             print 'converting video to h264'
-            converted_video_source = os.path.join('/Users/surendrashrestha/Desktop/Output/converted', video_file_name )
+            
+            converted_video_source = os.path.join(outdir, "tmp_video", video_file_name )
+            check_create_directory(converted_video_source)
             #m = merge_video_audio( '/Users/surendrashrestha/Desktop/Output/1_109_1_3_005-camera-0-right.mp4','/Users/surendrashrestha/Desktop/Output/1_109_1_3_005-ch6-speaker.wav')
             
             try:
                 #print 'video source: ', video_source
                 #print 'converted video source: ', converted_video_source
                 # convert the video to h264 format for web
-                c = convert_video(video_source, converted_video_source)    
+                #c = convert_video(video_source, converted_video_source)    
+                c = convert_video(temporary_resampled_video, converted_video_source)    
                 
                 if c == True:
-                    merged_target_file = os.path.join('/Users/surendrashrestha/Desktop/Output/merged', video_file_name)    
+                    merged_target_file = os.path.join(outdir, video_file_name)    
                     print 'convert successful.. now trying to merge'
                     # merge the converted h264 video and resampled audio 
 
                     m = merge_video_audio(converted_video_source,  resampled_audio_source, merged_target_file)
                     # if exit code is 0 , the merging executed successfully
                     if m == 0:
+                        print "merge success .. generating metadata"
                         # generate metadata
-                        #convert.generate_file_metadata(graph, merged_target_file, "audio video merged")
+                        generate_file_metadata(graph, merged_target_file, "webvideo")
                         # output metadata if any
-                        #server.output_graph(bgraph, convert.item_file_path(basename+"-av", "versionselect-meta"))
+                        server.output_graph(graph, item_file_path(basename+"-wv", "versionselect-meta"))
                         
-                        print ('merge successful')
                         # Delete temporary video and audio files
                         os.remove(converted_video_source)
                         os.remove(resampled_audio_source)
@@ -98,8 +114,8 @@ def process_item(speakers):
                 else:
                     print 'video conversion to h264 failed'
                     #print m
-            except:
-                print 'unkown error'
+            except Exception,e:
+                print str(e)
 
 '''           
 
@@ -130,10 +146,10 @@ if __name__=='__main__':
         print "Usage: resample_audio.py <limit>?"
         exit()
 
-    #datadir = configmanager.get_config('DATA_DIR')
-    #outdir =  configmanager.get_config('OUTPUT_DIR')
-    datadir = '/Users/surendrashrestha/Projects/BIGASC/BIGASC-Metadata/test/data'
-    outdir = '/Users/surendrashrestha/Desktop/Output'
+    datadir = configmanager.get_config('DATA_DIR')
+    outdir =  configmanager.get_config('OUTPUT_DIR')
+    #datadir = '/Users/surendrashrestha/Projects/BIGASC/BIGASC-Metadata--old/test/data'
+    #outdir = '/Users/surendrashrestha/Desktop/Output'
 
     # declaring the variables to select the exact audio and video files.
     # can just change this section to choose different video / audio
@@ -146,8 +162,8 @@ if __name__=='__main__':
     else:
         limit = 1000000
     
-    #server_url = configmanager.get_config("SESAME_SERVER")
-    #server = ingest.SesameServer(server_url)
+    server_url = configmanager.get_config("SESAME_SERVER")
+    server = ingest.SesameServer(server_url)
 
     #resample('/Users/surendrashrestha/Desktop/1_109_1_3_005-ch6-speaker.wav', '/Users/surendrashrestha/Desktop/Output/1_109_1_3_005-ch6-speaker-downsampled.wav')
 
@@ -165,8 +181,8 @@ if __name__=='__main__':
             #run_thread(speakers)
 
 
-            #if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
-            #    print sum(files)
+            if configmanager.get_config('SHOW_PROGRESS', '') == 'yes':
+                print sum(speakers)
             
             limit -= 1
             if limit <= 0:
