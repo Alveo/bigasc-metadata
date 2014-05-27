@@ -127,7 +127,7 @@ def convert_video(sourcefile, targetfile, force=False):
 
 def resample_video(sourcefile, targetfile, rate='24'):
     b = ffmpeg(sourcefile, targetfile, options=['-r', rate])
-    print 'b  from ffmeg : ' , b
+    #print 'b  from ffmeg : ' , b
     return True
 
 

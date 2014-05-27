@@ -2,10 +2,29 @@
 @author : Suren
 @date : 21 May 2014
 
+Variable Names:
+video_file_name     :   to find the exact video to merge (similar to basename), 
+                        basename cannot be used initially because the exact filename is hardcoded
+audio_file_name     :   original audio file name without extension
+original_video_source : location of main video file specified by datadir
+original_audio_source : location of main audio file specified by datadir
+
+resampled_video_source : resampled video file with 30 frames per second (original : 48)
+resampled_audio_source : downsampled audio file with 16 KHz
+
+converted_video_source : h264 video
+
+merged_target_file  : h264 video + resampled audio
+
+Steps:
+1. Resample audio
+2. Resample video
+3. Convert video to h264
+4. Merge video and audio
 
 """
 import os, glob
-from multiprocessing import Process, Queue
+import multiprocessing
 import thread
 import ingest 
 from data import pub_site_speakers, parse_session_dir
@@ -26,20 +45,13 @@ def check_create_directory(path):
     if not os.path.exists(os.path.dirname(path)):
                     os.makedirs(os.path.dirname(path))
             
-def process_item(speakers):
-    print len(speakers), ' Speakers Found'
+def process_item(speaker):
+    print len(speaker), ' Speakers Found'
+
     for speaker in speakers:
+        print ('--------------------------------------------------')
         graph = Graph()
-        #versions = item_file_versions(item_path)
         
-
-        #print speaker
-        #video_source = ''
-        #audio_source = ''
-        #session_dir =  os.path.join(speaker, 'Session1_3')
-        #print ('session directory : ', session_dir)
-        
-
         # Get speaker id to create the exact file name 
         # input : /University_of_Canberra,_Canberra/Spkr1_109/Spkr1_109_Session1
         # speaker_id : 1_109
@@ -49,11 +61,11 @@ def process_item(speakers):
         video_file_name = speaker_id + video_component
         audio_file_name = speaker_id + audio_component
 
-        video_source = item_path = os.path.join(speaker, 'Session1_3', video_file_name)
+        original_video_source = item_path = os.path.join(speaker, 'Session1_3', video_file_name)
         original_audio_source = os.path.join(speaker, 'Session1_3', audio_file_name)
         
         basename = item_file_basename(item_path)
-        print 'basename - ', basename
+        
         # Temporary output for resampled audio
         resampled_audio_source = os.path.join(outdir, 'tmp_audio', audio_file_name)
         check_create_directory(resampled_audio_source)
@@ -65,17 +77,20 @@ def process_item(speakers):
 
 
 
-        # print 'video source: ', video_source
+        # print 'video source: ', original_video_source
         # print 'audio source: ',resampled_audio_source
 
-        # Only process to convert and merge files if the actual source files are present
-        if (os.path.isfile(resampled_audio_source)  and os.path.isfile(video_source)) :
+        if os.path.isfile(original_video_source):
             print 'resampling video '
-            temporary_resampled_video = os.path.join(outdir, "tmp_resampled_video", video_file_name )
-            check_create_directory(temporary_resampled_video)
+            resampled_video_source = os.path.join(outdir, "tmp_resampled_video", video_file_name )
+            check_create_directory(resampled_video_source)
 
-            resample_video(video_source, temporary_resampled_video, '24')
+            resample_video(original_video_source, resampled_video_source, '30')
 
+
+        # Only process to convert and merge files if the actual source files are present
+        if (os.path.isfile(resampled_audio_source)  and os.path.isfile(resampled_video_source)) :
+            
             print 'converting video to h264'
             
             converted_video_source = os.path.join(outdir, "tmp_video", video_file_name )
@@ -87,7 +102,7 @@ def process_item(speakers):
                 #print 'converted video source: ', converted_video_source
                 # convert the video to h264 format for web
                 #c = convert_video(video_source, converted_video_source)    
-                c = convert_video(temporary_resampled_video, converted_video_source)    
+                c = convert_video(resampled_video_source, converted_video_source)    
                 
                 if c == True:
                     merged_target_file = os.path.join(outdir, video_file_name)    
@@ -106,34 +121,40 @@ def process_item(speakers):
                         # Delete temporary video and audio files
                         os.remove(converted_video_source)
                         os.remove(resampled_audio_source)
+                        os.remove(resampled_video_source)
                         #final_file = os.path.join('/Users/surendrashrestha/Desktop/Output/merged/final', filename)
+                        
                     else: 
                         # exit code is not 0. so the merge process failed.
                         print 'merge failed'
+                        
                     
                 else:
                     print 'video conversion to h264 failed'
+                    
                     #print m
             except Exception,e:
                 print str(e)
 
-'''           
+            
 
-def run_thread(speakers):
-  proc = []
-  q = Queue()
-  for speaker in speakers:
-    print 'inside thread'
-    p = thread.start_new_thread(process_item(speaker))
-    p.daemon = True
-    proc.append(p)
-    p.start()
-  
-  for p in proc:
-    
-    p.join()
+           
 
 '''
+@ todo  : Run the script in the server and test the execution speed
+        : Since server has 16 CPUs, multiprocessing would be effective I believe
+        : Test with only 8 CPUs
+'''
+def run_thread(speakers):
+
+    i = 0
+    pool = multiprocessing.Pool(multiprocessing.cpu_count()/2)
+
+    pool.map(process_item, speakers)
+
+    
+
+
 
 
 
@@ -188,5 +209,5 @@ if __name__=='__main__':
             if limit <= 0:
                 print "Stopping after hitting limit"
                 exit()  
-        
+    
     print 'time taken to execute: ', time.time() - start_time
