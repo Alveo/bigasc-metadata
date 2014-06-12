@@ -22,6 +22,7 @@ def extension_mimetype(ext):
     
     extmap = {'wav': 'audio/wav',
               'mp4': 'video/mp4',
+              'raw16': 'video/raw16',
               'TextGrid': 'text/praat-textgrid', # http://www.isocat.org/rest/dc/2562
               }
     if extmap.has_key(ext):
@@ -37,44 +38,45 @@ def parse_media_filename(filename, errorlog=sys.stderr):
 
 
 >>> parse_media_filename('1_178_1_2_150-ch1-maptask.wav')
-{'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'mimetype': 'audio/wav', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch1-maptask'}
     
 >>> parse_media_filename('1_178_1_2_150-n-ch1-maptask.wav')
-{'basename': '1_178_1_2_150', 'version': 2, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'mimetype': 'audio/wav', 'basename': '1_178_1_2_150', 'version': 2, 'type': 'audio', 'channel': 'ch1-maptask'}
     
 >>> parse_media_filename('1_178_1_2_150-n-n-ch1-maptask.wav')
-{'basename': '1_178_1_2_150', 'version': 3, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'mimetype': 'audio/wav', 'basename': '1_178_1_2_150', 'version': 3, 'type': 'audio', 'channel': 'ch1-maptask'}
 
 >>> parse_media_filename('1_178_1_2_150-n-n-n-n-n-ch1-maptask.wav')
-{'basename': '1_178_1_2_150', 'version': 6, 'type': 'audio', 'channel': 'ch1-maptask'}
+{'mimetype': 'audio/wav', 'basename': '1_178_1_2_150', 'version': 6, 'type': 'audio', 'channel': 'ch1-maptask'}
 
 >>> parse_media_filename('1_178_1_2_150-camera-0-left.mp4')
-{'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}
+{'mimetype': 'video/mp4', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'channel': 'camera-0-left'}
 
 >>> parse_media_filename('1_178_2_16_001-camera-0-right.mp4')
-{'basename': '1_178_2_16_001', 'version': 1, 'type': 'video', 'channel': 'camera-0-right'}
+{'mimetype': 'video/mp4', 'basename': '1_178_2_16_001', 'version': 1, 'type': 'video', 'channel': 'camera-0-right'}
 
 >>> parse_media_filename('1_1121_1_12_001-ch4-c2Left.wav')
-{'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}
+{'mimetype': 'audio/wav', 'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'channel': 'ch4-c2Left'}
 
 >>> parse_media_filename('1_1121_1_12_001-ch6-speaker-yes.wav')
-{'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'response': 'yes', 'channel': 'ch6-speaker'}
+{'mimetype': 'audio/wav', 'basename': '1_1121_1_12_001', 'version': 1, 'type': 'audio', 'response': 'yes', 'channel': 'ch6-speaker'}
 
 >>> parse_media_filename('1_178_1_2_150-camera-0-no-left.mp4')
-{'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'response': 'no', 'channel': 'camera-0-left'}
+{'mimetype': 'video/mp4', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'response': 'no', 'channel': 'camera-0-left'}
 
 >>> parse_media_filename('1_178_1_2_150-n-n-camera-0-yes-left.mp4')
-{'basename': '1_178_1_2_150', 'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
+{'mimetype': 'video/mp4', 'basename': '1_178_1_2_150', 'version': 3, 'type': 'video', 'response': 'yes', 'channel': 'camera-0-left'}
 
 >>> parse_media_filename('1_178_1_2_150-ch6-speaker16.wav')
-{'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
+{'mimetype': 'audio/wav', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
 
 >>> parse_media_filename('1_178_1_2_150-ch6-speaker16.raw16')
-{'basename': '1_178_1_2_150', 'version': 1, 'type': 'raw16', 'channel': 'ch6-speaker16'}
+{'mimetype': 'video/raw16', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'raw16', 'channel': 'ch6-speaker16'}
 
 >>> parse_media_filename('1_178_1_2_150A-ch6-speaker16.wav')
-{'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16', 'sequence': 'A'}
-    """
+{'mimetype': 'audio/wav', 'sequence': 'A', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
+       
+              """
     
     basename = os.path.basename(filename)
     
@@ -89,7 +91,7 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         (base, ab, alln, n, channel, ignore, yesno, ext) =  m_gen.groups() #@UnusedVariable
         #print "MATCH: ", (base, ab, alln, n, channel, ignore, yesno, ext )
         if ext == 'wav':
-            tipe = 'Audio'
+            tipe = 'audio'
         else:
             tipe = ext
     elif m_vid:
@@ -97,7 +99,7 @@ def parse_media_filename(filename, errorlog=sys.stderr):
         
         channel = camera + leftright
         if ext == 'mp4':
-            tipe = 'Video'
+            tipe = 'video'
         else:
             tipe = ext
     else:
@@ -142,6 +144,8 @@ def parse_item_filename(filename, errorlog=sys.stderr):
     {'basename': '1_178_1_2_150', 'component': '2', 'item': '150', 'session': '1', 'speaker': '1_178', 'animal': '178', 'colour': '1'}
     >>> parse_item_filename('../test/University_of_Tasmania,_Hobart/Spkr2_2/Spkr2_2_Session1/Session1_11/2_2_1_11_003')
     {'basename': '2_2_1_11_003', 'component': '11', 'item': '3', 'session': '1', 'speaker': '2_2', 'animal': '2', 'colour': '2'}
+
+    
     """
     
     basename = os.path.basename(filename)
@@ -187,6 +191,7 @@ def item_file_path(filename, dirname=None):
 'metadata/ANU/1_178/1/words-1/1_178_1_2_150.nt'
 >>> item_file_path('/foo/bar/test/University_of_the_Sunshine_Coast,_Maroochydore/Spkr1_1216/Spkr1_1216_Session1/Session1_1/1_1216_1_1_001', 'metadata')
 'metadata/USCM/1_1216/1/yes-no-opening-1/1_1216_1_1_001'
+
     """
 
     info = parse_item_filename(filename)
