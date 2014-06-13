@@ -76,13 +76,16 @@ def parse_media_filename(filename, errorlog=sys.stderr):
 >>> parse_media_filename('1_178_1_2_150A-ch6-speaker16.wav')
 {'mimetype': 'audio/wav', 'sequence': 'A', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'audio', 'channel': 'ch6-speaker16'}
        
+>>> parse_media_filename('1_178_1_2_150-webvideo.mp4')
+{'mimetype': 'video/mp4', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'channel': 'webvideo'}
+
               """
     
     basename = os.path.basename(filename)
     
     pattern_general = "([0-9_]+)([A-Z]?)-((n-)*)(ch[0-9]-[a-zA-Z0-9]+)(-(yes|no))?\.(.*)"
     
-    pattern_video = "([0-9_]+)([A-Z]?)-((n-)*)((camera-[0-9])(-(yes|no))?(-left|-right))\.(.*)"
+    pattern_video = "([0-9_]+)([A-Z]?)-((n-)*)((camera-[0-9])(-(yes|no))?(-left|-right)|webvideo)\.(.*)"
     
     m_gen = re.match(pattern_general, basename)
     m_vid = re.match(pattern_video, basename)
@@ -97,7 +100,10 @@ def parse_media_filename(filename, errorlog=sys.stderr):
     elif m_vid:
         (base, ab, alln, n, ignore, camera, ignore, yesno, leftright, ext) = m_vid.groups()
         
-        channel = camera + leftright
+        if camera != None:
+            channel = camera + leftright
+        else:
+            channel = 'webvideo'
         if ext == 'mp4':
             tipe = 'video'
         else:

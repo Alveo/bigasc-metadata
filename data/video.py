@@ -57,7 +57,7 @@ def ffmpeg(sourcefile, targetfile, timeout=2160, options=[]):
     ffmpeg += options
     ffmpeg += [targetfile]
  
-    #print " ".join(ffmpeg)
+    print " ".join(ffmpeg)
     
     process =  Popen(ffmpeg, stdout=PIPE, stderr=PIPE)
     start = time.time()
@@ -134,11 +134,7 @@ def resample_video(sourcefile, targetfile, rate='24'):
 
 def merge_video_audio(video_sourcefile, audio_sourcefile, targetfile, timeout=1560):
     errormsg = ""
-    #targetfile =  "/Users/surendrashrestha/Desktop/Output/mixed.mp4"    
-    ffmpeg = [FFMPEG_PROGRAM, "-i", video_sourcefile, "-i", audio_sourcefile, targetfile]
-
-    #ffmpeg += options
-    #ffmpeg += [targetfile]
+    ffmpeg = [FFMPEG_PROGRAM, "-y", "-i", video_sourcefile, "-i", audio_sourcefile, "-vcodec", "h264", targetfile]
  
     #print " ".join(ffmpeg)
     
@@ -150,7 +146,7 @@ def merge_video_audio(video_sourcefile, audio_sourcefile, targetfile, timeout=15
             # we've gone over time, kill the process  
             os.kill(process.pid, signal.SIGKILL)
             print "Killing ffmpeg process for merge"
-            errormsg = "Conversion of video took too long.  This site is only able to host relatively short videos."
+            errormsg = "Conversion of video took too long."
             return errormsg
         
     status = process.poll()
