@@ -53,21 +53,28 @@ def process_speaker(speaker_dir):
         
     outdir =  configmanager.get_config('OUTPUT_DIR') 
     
-
+    
     graph = Graph()        
     # Get speaker id to create the exact file name 
-    # input : /University_of_Canberra,_Canberra/Spkr1_109/Spkr1_109_Session1
+    # input : /University_of_Canberra,_Canberra/Spkr1_109
     # speaker_id : 1_109        
-    (speaker_id, session) = parse_session_dir(os.path.basename(speaker_dir))
-    #print speaker_id
+
+    m = re.search('Spkr(\d_\d+)', speaker_dir)
+
+    if not m:
+        return
+    
+    speaker_id = m.groups()[0]
+
+    print "SPEAKER:", speaker_id
 
     # create the exact video and audio source file names
     video_file_name = speaker_id + video_component
     audio_file_name = speaker_id + audio_component
 
-    video_source = item_path = os.path.join(speaker_dir, 'Session1_3', video_file_name)
-    audio_source = os.path.join(speaker_dir, 'Session1_3', audio_file_name)
-    
+    video_source = item_path = os.path.join(speaker_dir, 'Spkr'+speaker_id+'_Session1', 'Session1_3', video_file_name)
+    audio_source = os.path.join(speaker_dir, 'Spkr'+speaker_id+'_Session1', 'Session1_3', audio_file_name)
+        
     basename = item_file_basename(item_path)
 
     merged_video = os.path.join(outdir, item_file_path(basename + "-webvideo.mp4", "webvideo"))
@@ -121,7 +128,7 @@ if __name__=='__main__':
     import sys 
     import fnmatch
     if len(sys.argv) > 2:
-        print "Usage: resample_audio.py <limit>?"
+        print "Usage: generate_web_video.py <limit>?"
         exit()
 
     datadir = configmanager.get_config('DATA_DIR')
@@ -147,12 +154,13 @@ if __name__=='__main__':
         sitedir = os.path.join(datadir, d)        
         if os.path.isdir(sitedir):
             # Get all the speakers in the data source directory
-            for sdir in pub_site_speakers(sitedir):
-                process_speaker(sdir)
+            for sdir in os.listdir(sitedir):
+                process_speaker(os.path.join(sitedir, sdir))
             
-            limit -= 1
             if limit <= 0:
                 print "Stopping after hitting limit"
                 break  
+            limit -= 1
+                
     
     print 'time taken to execute: ', time.time() - start_time
