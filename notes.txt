@@ -23,11 +23,11 @@ upload_graphs.py OUTPUT_DIR/metadata
 # copy audio files and upload metadata
 resample_audio.py 
 copy_files.py audio 
-upload_graphs.py OUTPUT_DIR/metadata/
+upload_graphs.py OUTPUT_DIR/metadata
 
 # copy video files and upload metadata
 copy_files video
-upload_graphs OUTPUT_DIR/metadata/
+upload_graphs OUTPUT_DIR/metadata
 
 # optional steps
 # harvest any annotations and upload them

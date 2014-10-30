@@ -43,6 +43,7 @@ def process_results(server, basenames, outdir, origin, format):
     
     for basename in sorted(basenames.keys()):
 
+        print basename
         source = newest_file(basenames[basename]) 
         source_basename = os.path.basename(source)
 
@@ -51,7 +52,8 @@ def process_results(server, basenames, outdir, origin, format):
         dest_basename = b + "." + format
         
         graph = ann_metadata(dest_basename, origin, format)
-        server.output_graph(graph, item_file_path(basename+"-"+origin, os.path.join("annotation", "metadata")))
+        annotation_rdf(source, graph)
+        server.output_graph(graph, item_file_path(basename+"-ann-"+origin, "metadata"))
 
         path = item_file_path(dest_basename, os.path.join("annotation", origin))
         copy_file(source, os.path.join(outdir, path))
@@ -66,7 +68,11 @@ def copy_file(src, dest):
     
     shutil.copy(src, dest)
     
-    
+
+FORMATS = {"trs": Literal("Transcriber"),
+           "TextGrid": Literal("TextGrid"),
+       }
+
 def ann_metadata(annfile, origin, format):
     
     ann_uri = item_file_uri(annfile, os.path.join("annotation", origin))
@@ -74,12 +80,30 @@ def ann_metadata(annfile, origin, format):
     item_uri = generate_item_uri(basename)
     
     graph = Graph()
-    graph.add((URIRef(item_uri), NS['has_annotation'], ann_uri))
-    graph.add((ann_uri, RDF.type, NS.AnnotationFile))
+    graph.add((URIRef(item_uri), NS['document'], ann_uri))
+    graph.add((ann_uri, RDF.type, FOAF.Document))
+    graph.add((ann_uri, DC.identifier, Literal(annfile)))
+    graph.add((ann_uri, DC.title, Literal(basename + " " + origin + " annotation")))
     graph.add((ann_uri, NS['origin'], Literal(origin)))
-    graph.add((ann_uri, NS['format'], Literal(format)))
+    graph.add((ann_uri, DC.type, FORMATS[format]))
+    graph.add((ann_uri, DC.source, ann_uri))
     
     return graph
+
+
+import annotationrdf
+
+def annotation_rdf(annfile, graph):
+    
+    corpusid = URIRef("http://ns.austalk.edu.au/corpus")
+    basename = item_file_basename(annfile)
+    itemid = generate_item_uri(basename)
+    
+    collection = annotationrdf.maus_annotations(annfile, corpusid, itemid)
+
+    collection.to_rdf(graph)
+    
+
 
 if __name__ == '__main__':
     
