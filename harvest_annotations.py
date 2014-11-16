@@ -80,7 +80,7 @@ def ann_metadata(annfile, origin, format):
     item_uri = generate_item_uri(basename)
     
     graph = Graph()
-    graph.add((URIRef(item_uri), NS['document'], ann_uri))
+    graph.add((URIRef(item_uri), AUSNC.document, ann_uri))
     graph.add((ann_uri, RDF.type, FOAF.Document))
     graph.add((ann_uri, DC.identifier, Literal(annfile)))
     graph.add((ann_uri, DC.title, Literal(basename + " " + origin + " annotation")))
