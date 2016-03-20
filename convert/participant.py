@@ -132,7 +132,7 @@ LANGMAP ={
  'Englsh': 'English',
  'Enlish': 'English',
  'Farsi': 'Persian',
- 'Flemish': 'Dutch; Flemish',
+ 'Flemish': 'Dutch',
  'Frenc': 'French',
  'Gaelic': 'Irish',
  'Germany': 'German',
