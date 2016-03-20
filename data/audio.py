@@ -54,7 +54,7 @@ True
         pass
 
     # convert to 16kHz/16 bit and normalise amplitude to -3db
-    soxcmd = [SOX_PROGRAM, sourcefile, "-b16", targetfile, "rate", "-I", "16k", "gain", "-n", "-3" ]
+    soxcmd = [SOX_PROGRAM, sourcefile, "-b16", targetfile, "rate", "-I", "16k", "gain", "-3" ]
 
     #print " ".join(soxcmd)
 
