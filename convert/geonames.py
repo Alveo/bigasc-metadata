@@ -24,12 +24,11 @@ class GeoNames:
 
 >>> g = GeoNames()
 >>> g.placename_info("Sydney", "NSW", "Australia")
-{'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'state':'New South Wales', 'long': 151.207323074341, 'countryname': u'Australia', 'lat': -33.8678499639382}
+{'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'long': u'151.20732', 'countryname': u'Australia', 'state': u'New South Wales', 'lat': u'-33.86785'}
 >>> g.placename_info("dksjhdfkjskdjf", "Vic", "Australia")
 
 >>> g.placename_info("Sidney", "NSW", "Australia")
-{'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'state':'New South Wales', 'long': 151.207323074341, 'countryname': u'Australia', 'lat': -33.8678499639382}
-
+{'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'long': u'151.20732', 'countryname': u'Australia', 'state': u'New South Wales', 'lat': u'-33.86785'}
         """
         
         place = city+" "+state+" "+country
@@ -56,9 +55,9 @@ class GeoNames:
             # and it should be a populated place
             for gn in info['geonames']:
                 #TODO test: I suspect checking this gn['name']==city will be a problem for misspelt places
-                if gn['name'].lower() == city.lower() and gn['fcode'].startswith('PPL'):
+                if gn['fcode'].startswith('PPL'):
                     location = gn 
-            
+                    
                     result = dict()
                     result['geoname'] = location['geonameId']
                     result['town'] = location['name']
@@ -89,7 +88,7 @@ class GeoNames:
 if __name__=='__main__':
         
         import doctest
-        doctest.testmod()
+        doctest.testmod(verbose=True)
         
             
         

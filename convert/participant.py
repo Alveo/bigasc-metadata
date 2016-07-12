@@ -307,8 +307,8 @@ def add_geolocation(p_uri, predicate, location, graph):
     graph.add((pob_uri, RDF.type, GEO.Feature))
     graph.add((pob_uri, GEO.lat, Literal(info['lat'])))
     graph.add((pob_uri, GEO.long, Literal(info['long'])))
-    graph.add((pob_uri, GEO.countryName, Literal(info['countryName'])))
-    graph.add((pob_uri, GEO.countryCode, Literal(info['countryCode'])))
+    graph.add((pob_uri, GEO.countryName, Literal(info['countryname'])))
+    graph.add((pob_uri, GEO.countryCode, Literal(info['countrycode'])))
     graph.add((pob_uri, GEO.town, Literal(info['town'])))
     graph.add((pob_uri, GEO.state, Literal(info['state'])))
 
@@ -531,7 +531,7 @@ def participant_rdf(part_md, csvdata=None):
 >>> from ra_maptask import RAMapTask
 >>> part_file = "test/participant.json"
 >>> maptask = RAMapTask ()
->>> csvdata = maptask.parse_speaker ("ra-spreadsheets/ANU-Speaker.csv", True)
+>>> csvdata = maptask.parse_speaker (os.path.dirname(os.path.realpath(__file__))+os.sep+".."+os.sep+"ra-spreadsheets"+os.sep+"ANU-Speaker.csv", True)
 >>> p = get_participant('3_726')
 >>> graph = participant_rdf(p, csvdata['3_726'])
 >>> len(graph)
@@ -565,6 +565,12 @@ def participant_rdf(part_md, csvdata=None):
     if PARTICIPANT_DETAIL != "MINIMAL":
         birthLoc = (part_md['pob_town'], part_md['pob_state'], part_md['pob_country'])
         add_geolocation(p_uri, NS.birthPlace, birthLoc, graph)
+        
+        birthLoc = (part_md['mother_pob_town'], part_md['mother_pob_state'], part_md['mother_pob_country'])
+        add_geolocation(p_uri, NS.mother_birthPlace, birthLoc, graph)
+        
+        birthLoc = (part_md['father_pob_town'], part_md['father_pob_state'], part_md['father_pob_country'])
+        add_geolocation(p_uri, NS.father_birthPlace, birthLoc, graph)
 
     if part_md.has_key('rating'):
         map_ratings(graph, part_md)
