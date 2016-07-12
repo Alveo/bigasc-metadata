@@ -303,7 +303,7 @@ def add_geolocation(p_uri, predicate, location, graph):
 
     pob_uri = g.placename_uri(info)
 
-    graph.add((p_uri, NS.birthPlace, pob_uri))
+    graph.add((p_uri, predicate, pob_uri))
     graph.add((pob_uri, RDF.type, GEO.Feature))
     graph.add((pob_uri, GEO.lat, Literal(info['lat'])))
     graph.add((pob_uri, GEO.long, Literal(info['long'])))
