@@ -24,8 +24,11 @@ class GeoNames:
 
 >>> g = GeoNames()
 >>> g.placename_info("Sydney", "NSW", "Australia")
-{'placename': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'long': 151.207323074341, 'countryname': u'Australia', 'lat': -33.8678499639382}
+{'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'state':'New South Wales', 'long': 151.207323074341, 'countryname': u'Australia', 'lat': -33.8678499639382}
 >>> g.placename_info("dksjhdfkjskdjf", "Vic", "Australia")
+
+>>> g.placename_info("Sidney", "NSW", "Australia")
+{'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'state':'New South Wales', 'long': 151.207323074341, 'countryname': u'Australia', 'lat': -33.8678499639382}
 
         """
         
@@ -52,17 +55,21 @@ class GeoNames:
             # find a good match, name should match our place name
             # and it should be a populated place
             for gn in info['geonames']:
-                
+                #TODO test: I suspect checking this gn['name']==city will be a problem for misspelt places
                 if gn['name'].lower() == city.lower() and gn['fcode'].startswith('PPL'):
                     location = gn 
             
                     result = dict()
                     result['geoname'] = location['geonameId']
-                    result['placename'] = location['name']
+                    result['town'] = location['name']
                     result['countryname'] = location['countryName']
                     result['countrycode'] = location['countryCode']
                     result['lat'] = location['lat']
                     result['long'] = location['lng']
+                    if 'adminName1' in location.keys():
+                        result['state'] = location['adminName1']
+                    else:
+                        result['state'] = ''
                     #print result
                     return result
         #print "nothing found"

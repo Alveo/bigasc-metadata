@@ -266,7 +266,7 @@ def get_participant_from_file(filename):
     get the participant metadata from the given filename and
     return as a dictionary (mainly for testing)
 
->>> part_file = "test/participant.json"
+>>> part_file = os.path.dirname(os.path.realpath(__file__))+os.sep+".."+os.sep+"test"+os.sep+"participant.json"
 >>> p = get_participant_from_file(part_file)
 >>> p['animal']['id']
 450
@@ -289,6 +289,7 @@ def add_geolocation(p_uri, predicate, location, graph):
     which will be used to
     find a geonames URI for the location and then add a location to the graph
     (p_uri, predicate, <location>)
+    
     """
 
     from geonames import GeoNames
@@ -306,8 +307,10 @@ def add_geolocation(p_uri, predicate, location, graph):
     graph.add((pob_uri, RDF.type, GEO.Feature))
     graph.add((pob_uri, GEO.lat, Literal(info['lat'])))
     graph.add((pob_uri, GEO.long, Literal(info['long'])))
-
-
+    graph.add((pob_uri, GEO.countryName, Literal(info['countryName'])))
+    graph.add((pob_uri, GEO.countryCode, Literal(info['countryCode'])))
+    graph.add((pob_uri, GEO.town, Literal(info['town'])))
+    graph.add((pob_uri, GEO.state, Literal(info['state'])))
 
 
 def map_gender(subj, prop, value):

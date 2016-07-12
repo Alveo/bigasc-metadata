@@ -2,3 +2,9 @@
 syntax: glob
 .project
 .pydevproject
+
+#ignore compiled python files
+*.pyc
+
+#ignore some misc
+convert\sitemap.dat
