@@ -1,0 +1,4 @@
+#Ignore Eclipse Pydev workspace files
+syntax: glob
+.project
+.pydevproject
