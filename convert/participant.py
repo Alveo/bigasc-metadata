@@ -121,7 +121,6 @@ LANGMAP ={
  'Day': 'English',
  'Dialect': 'English',
  'Djambarrkbuyngu': 'Djambarrkbuyngu',
- 'Dutch': 'Dutch; Flemish',
  'Egnlish': 'English',
  'Elglish': 'English',
  'Emglish': 'English',
@@ -177,10 +176,9 @@ def map_language_name(subj, prop, value):
     to a standard language name and return some triples"""
 
     name = value.strip().capitalize()
-
+        
     if name in LANGMAP.keys():
         name = LANGMAP[name]
-
 
     # try to get the language directly
     lang = None
@@ -190,9 +188,9 @@ def map_language_name(subj, prop, value):
         # try splitting the words
         name = name.replace('/', ' ')
         if name.find(' '):
-            for name in name.split():
+            for n in name.split():
                 try:
-                    lang = languages.get(name=name.strip().capitalize())
+                    lang = languages.get(name=n.strip().capitalize())
                     break
                 except KeyError:
                     pass
