@@ -164,7 +164,7 @@ class SesameServer():
         data = graph.serialize(format=RDF_GRAPH_FORMAT)
 
         # check to see if we should store the graphs somewhere
-        graphdir = configmanager.get_config('OUTPUT_DIR', '')
+        graphdir = configmanager.get_config('OUTPUT_DIR', 'c:' if os.name=='nt' else '')
         
         if not os.path.exists(graphdir):
             os.makedirs(graphdir)
