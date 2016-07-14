@@ -7,4 +7,7 @@ syntax: glob
 *.pyc
 
 #ignore some misc
+sitemap.dat
 convert\sitemap.dat
+metadata\*
+.settings\*
