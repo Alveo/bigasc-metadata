@@ -1,5 +1,5 @@
 
-from sesameupload import SesameServer
+from ingest.upload import SesameServer,Server
 from convert.ra_maptask import RAMapTask
 import convert
 from data import map_session
@@ -29,7 +29,7 @@ def ingest_protocol(server):
     """Generate RDF for the protocol and upload it 
     to the server (an instance of SesameServer)"""
     
-    assert(isinstance(server, SesameServer))
+    assert(isinstance(server, Server))
 
     graph = convert.session_metadata()
     
@@ -51,7 +51,7 @@ def ingest_participants(server):
     """Generate RDF for all participants and upload it 
     to the server (an instance of SesameServer)"""
     
-    assert(isinstance(server, SesameServer))
+    assert(isinstance(server, Server))
 
     participants = convert.get_participant_list()
     print "Processing", len(participants), "participants"
