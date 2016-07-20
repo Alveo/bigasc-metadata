@@ -23,18 +23,16 @@ class GeoNames:
         Dictionary will have keys: geoname, placename, countryname, countrycode
 
 >>> g = GeoNames()
->>> g.placename_info("Sydney", "NSW", "Australia")
+>>> g.placename_info(u"Sydney", u"NSW", u"Australia")
 {'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'long': u'151.20732', 'countryname': u'Australia', 'state': u'New South Wales', 'lat': u'-33.86785'}
->>> g.placename_info("dksjhdfkjskdjf", "Vic", "Australia")
+>>> g.placename_info(u"dksjh\xe4dfkjskdjf", u"Vic", u"Australia")
 
 >>> g.placename_info("Sidney", "NSW", "Australia")
 {'town': u'Sydney', 'countrycode': u'AU', 'geoname': 2147714, 'long': u'151.20732', 'countryname': u'Australia', 'state': u'New South Wales', 'lat': u'-33.86785'}
         """
         
-        place = city+" "+state+" "+country
-        
-        query_enc = urllib.urlencode({'q': place,    
-                                      'username': self.USERNAME})
+        place = unicode(city+u" "+state+u" "+country).encode('utf-8')
+        query_enc = urllib.urlencode({'q': place,'username': self.USERNAME})
         headers = {'Accept': 'application/json'}
         req = urllib2.Request(self.SERVER_URL+'?' + query_enc, headers=headers)
         
