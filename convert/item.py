@@ -42,7 +42,7 @@ def generate_file_metadata(graph, filename, dirname=None):
     graph.add((m_uri, DC['format'], Literal(properties['mimetype'])))
     graph.add((m_uri, DC.type, Literal(properties['type'])))
     
-    for prop in ['version', 'checksum', 'channel', 'sequence']:
+    for prop in ['version', 'checksum', 'channel', 'sequence','response']:
         if properties.has_key(prop):
             graph.add((m_uri, NS[prop], Literal(properties[prop])))
             
@@ -457,7 +457,6 @@ class ItemMapper:
     
 
 if __name__=='__main__':
-        
         import doctest
         doctest.testmod()
         
