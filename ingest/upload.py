@@ -335,10 +335,13 @@ if __name__=='__main__':
 
     import sys
     
-    if len(sys.argv)==1:
+    if len(sys.argv)>=1:
         #run tests
         
-        url = "http://10.46.32.113:9999/blazegraph/sparql"
+        if len(sys.argv>=2):
+            url = sys.argv[1]
+        else:
+            url = "http://10.46.32.113:9999/blazegraph/sparql"
         server = BlazeServer(url)
         size = server.size()
         print "Size:   \t", size
