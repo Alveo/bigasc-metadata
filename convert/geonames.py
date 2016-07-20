@@ -53,7 +53,7 @@ class GeoNames:
             # and it should be a populated place
             for gn in info['geonames']:
                 #TODO test: I suspect checking this gn['name']==city will be a problem for misspelt places
-                if gn['fcode'].startswith('PPL'):
+                if 'fcode' in gn and gn['fcode'].startswith('PPL'):
                     location = gn 
                     
                     result = dict()
