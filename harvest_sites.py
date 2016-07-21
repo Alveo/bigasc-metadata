@@ -19,8 +19,13 @@ configmanager.configinit()
 
 def process(datadir, limit, errorlog):
     
-    server_url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
-    server = ingest.SesameServer(server_url)
+    if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no':
+        server_url = configmanager.get_config("SESAME_SERVER")
+        server = ingest.SesameServer(server_url)
+    else:
+        server_url = configmanager.get_config("BLAZE_SERVER")
+        server = ingest.BlazeServer(server_url)
+    
     # get RA spreadsheet data on maptasks
     maptask = RAMapTask()
     (spkr, map) = maptask.read_all()  

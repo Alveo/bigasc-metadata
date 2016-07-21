@@ -1,5 +1,5 @@
 
-from ingest.upload import SesameServer,Server
+from ingest.upload import SesameServer,BlazeServer,Server
 from convert.ra_maptask import RAMapTask
 import convert
 from data import map_session

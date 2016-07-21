@@ -120,8 +120,12 @@ if __name__ == '__main__':
     origin = sys.argv[3]
     
     outdir = configmanager.get_config("OUTPUT_DIR")
-    server_url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
-    server = ingest.SesameServer(server_url)
+    if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no':
+        server_url = configmanager.get_config("SESAME_SERVER")
+        server = ingest.SesameServer(server_url)
+    else:
+        server_url = configmanager.get_config("BLAZE_SERVER")
+        server = ingest.BlazeServer(server_url)
 
     for dirpath, dirnames, filenames in os.walk(dirname):
         # find all files associated with each basename in this directory
