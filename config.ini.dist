@@ -1,6 +1,7 @@
 [DEFAULT]
 SESAME_SERVER = http://115.146.93.47/openrdf-sesame/repositories/bigasc_native
 BLAZEGRAPH_SERVER = http://10.46.32.113:9999/blazegraph/namespace/bigasc/sparql
+USE_BALZE_SERVER = yes
 
 # DATA_DIR is the location of the primary data (site directories)
 DATA_DIR = /var/fileserver/bigasc/data/real/

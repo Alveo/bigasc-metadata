@@ -19,7 +19,7 @@ configmanager.configinit()
 
 def process(datadir, limit, errorlog):
     
-    server_url = configmanager.get_config("SESAME_SERVER") 
+    server_url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BALZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
     server = ingest.SesameServer(server_url)
     # get RA spreadsheet data on maptasks
     maptask = RAMapTask()
@@ -51,8 +51,10 @@ if __name__ == '__main__':
         exit()
 
     datadir = configmanager.get_config('DATA_DIR')
+    print "Searching for data in "+datadir
     outdir =  configmanager.get_config('OUTPUT_DIR')
-
+    print "Placing output in "+outdir
+    
     if len(sys.argv) == 2:
         limit = int(sys.argv[1])
     else:
