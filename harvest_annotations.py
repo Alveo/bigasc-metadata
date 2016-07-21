@@ -120,7 +120,7 @@ if __name__ == '__main__':
     origin = sys.argv[3]
     
     outdir = configmanager.get_config("OUTPUT_DIR")
-    server_url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BALZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
+    server_url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
     server = ingest.SesameServer(server_url)
 
     for dirpath, dirnames, filenames in os.walk(dirname):

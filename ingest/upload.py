@@ -341,7 +341,7 @@ if __name__=='__main__':
         if len(sys.argv>=2):
             url = sys.argv[1]
         else:
-            url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BALZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
+            url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
         server = BlazeServer(url)
         size = server.size()
         print "Size:   \t", size

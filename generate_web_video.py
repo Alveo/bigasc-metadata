@@ -145,7 +145,7 @@ if __name__=='__main__':
     else:
         limit = 1000000
     
-    server_url = configmanager.get_config("SESAME_SERVER")
+    server_url = configmanager.get_config("SESAME_SERVER") if configmanager.get_config("USE_BLAZE_SERVER",'no')=='no' else configmanager.get_config("BLAZE_SERVER")
     server = ingest.SesameServer(server_url)
  
 
