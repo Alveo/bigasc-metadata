@@ -77,9 +77,9 @@ def copy_if_changed(source, dest):
             # no action needed
             return
 
-    # otherwise we copy the file but don't crash
+    # otherwise we hard link the file but don't crash
     try:
-        shutil.copy(source, dest)
+        os.link(source, dest)
     except IOError:
         with open('filewrite-errors.log', 'a') as log:
             log.write("Error writing '%s' '%s'\n" % (source, dest))
