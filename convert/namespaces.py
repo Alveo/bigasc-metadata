@@ -14,8 +14,7 @@ AUSTALK = Namespace(u"http://ns.austalk.edu.au/")
 # for elements of the protocol
 PROTOCOL_NS = Namespace(u"http://id.austalk.edu.au/protocol/")
 
-# for media files
-DATA_NS = Namespace(u"http://data.austalk.edu.au/")
+ALVEO_AUSTALK_NS = Namespace(u"http://app.alveo.edu.au/catalog/austalk/")
 
 # for all entities (items, participants etc)
 ID_NS = Namespace(u"http://id.austalk.edu.au/")
@@ -37,7 +36,7 @@ ISO639SCHEMA = Namespace("http://downlode.org/rdf/iso-639/schema#")
 
 AUSNC = Namespace(u"http://ns.ausnc.org.au/schemas/ausnc_md_model/")
 
-# this hack finds all of the namespaces defined above and 
+# this hack finds all of the namespaces defined above and
 # puts them into a dictionary that we can use in bind_graph
 import sys
 NameSpaces = dict()
@@ -46,9 +45,9 @@ for ns in namespaces:
     NameSpaces[ns.lower()] = eval(ns)
 
 def bind_graph(graph):
-    
+
     for ns in NameSpaces.keys():
-        graph.bind(ns, NameSpaces[ns]) 
+        graph.bind(ns, NameSpaces[ns])
 
     return graph
 
@@ -70,14 +69,14 @@ DATA_URI_TEMPLATE = "%(site)s/%(speaker)s/%(session)s/%(componentName)s/%(filena
 
 def generate_component_uri(colour_id, animal_id, session, component):
     """Return the URI for the component identified by these ids"""
-    
+
     return ID_NS['component/%s_%s_%s_%s' % (colour_id, animal_id, session, component)]
 
 def generate_session_uri(colour_id, animal_id, session):
     """Return the URI for the session identified by these ids"""
-    
+
     return ID_NS['session/%s_%s_%s' % (colour_id, animal_id, session)]
 
 def generate_item_uri(basename):
-    
-    return ID_NS["item/" + basename]
+
+    return ALVEO_AUSTALK_NS[basename]

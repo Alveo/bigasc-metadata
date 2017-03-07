@@ -30,7 +30,6 @@ def make_copy_processor(server, outdir, what):
                     if props.has_key('type') and props['type'].lower() == what.lower():
                         newname = convert.change_item_file_basename(os.path.basename(fn), base)
                         path = convert.item_file_path(newname, what.lower())
-
                         convert.generate_file_metadata(graph, path, what.lower())
 
                         path = os.path.join(outdir, path)

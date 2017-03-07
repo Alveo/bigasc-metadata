@@ -12,7 +12,7 @@ import json
 
 from session import component_map
 from participant import item_site_name, participant_uri
-from namespaces import DATA_URI_TEMPLATE, DATA_NS
+from namespaces import DATA_URI_TEMPLATE, ALVEO_AUSTALK_NS
 
 import configmanager
 configmanager.configinit()
@@ -79,6 +79,15 @@ def parse_media_filename(filename, errorlog=sys.stderr):
 >>> parse_media_filename('1_178_1_2_150-webvideo.mp4')
 {'mimetype': 'video/mp4', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'video', 'channel': 'webvideo'}
 
+>>> parse_media_filename('1_178_1_2_150.trs')
+{'mimetype': 'trs', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'trs', 'channel': ''}
+
+>>> parse_media_filename('1_178_1_2_150-n-n.trs')
+{'mimetype': 'trs', 'basename': '1_178_1_2_150', 'version': 3, 'type': 'trs', 'channel': ''}
+
+>>> parse_media_filename('1_178_1_2_150-yes.trs')
+{'mimetype': 'trs', 'basename': '1_178_1_2_150', 'version': 1, 'type': 'trs', 'response': 'yes', 'channel': ''}
+
               """
 
     basename = os.path.basename(filename)
@@ -87,8 +96,12 @@ def parse_media_filename(filename, errorlog=sys.stderr):
 
     pattern_video = "([0-9_]+)([A-Z]?)-((n-)*)((camera-[0-9])(-(yes|no))?(-left|-right)|webvideo)\.(.*)"
 
+    pattern_other = "([0-9_]+)([A-Z]?)((-n)*)(-(yes|no))?\.(.*)"
+
+
     m_gen = re.match(pattern_general, basename)
     m_vid = re.match(pattern_video, basename)
+    m_oth = re.match(pattern_other, basename)
 
     if m_gen:
         (base, ab, alln, n, channel, ignore, yesno, ext) =  m_gen.groups() #@UnusedVariable
@@ -108,6 +121,11 @@ def parse_media_filename(filename, errorlog=sys.stderr):
             tipe = 'video'
         else:
             tipe = ext
+    elif m_oth:
+        #print "MATCH: ", m_oth.groups()
+        (base, ab, alln, n, ignore, yesno, ext) =  m_oth.groups() #@UnusedVariable
+        channel = ''
+        tipe = ext
     else:
         # unknown file pattern
         errorlog.write("filename doesn't match media pattern: %s\n" % basename)
@@ -166,6 +184,7 @@ def parse_item_filename(filename, errorlog=sys.stderr):
         result['speaker'] = groups[1]+"_"+groups[2]
         result['session']   = groups[3]
         result['component'] = groups[4]
+        result['itemfull']  = groups[5]
         result['item']      = str(int(groups[5]))  # do this to trim leading zeros
     else:
         errorlog.write("'%s' doesn't match the filename pattern\n" % filename )
@@ -179,10 +198,13 @@ def item_file_uri(filename, dirname=None):
 >>> item_file_uri('1_178_1_2_150-ch6-speaker16.wav')
 rdflib.term.URIRef(u'http://data.austalk.edu.au/audio/ANU/1_178/1/words-1/1_178_1_2_150-ch6-speaker16.wav')
 
-     """
-    path = item_file_path(filename, dirname)
+    """
 
-    return DATA_NS[path]
+    info = parse_item_filename(filename)
+    basename = os.path.basename(filename)
+    TEMPLATE = "%(speaker)s_%(session)s_%(component)s_%(itemfull)s/document/" + basename
+
+    return ALVEO_AUSTALK_NS[TEMPLATE % info]
 
 def item_file_path(filename, dirname=None):
     """Given a filename for one of the files in an item, return a path that we can
