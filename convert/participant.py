@@ -175,7 +175,7 @@ def map_language_name(subj, prop, value):
     to a standard language name and return some triples"""
 
     name = value.strip().capitalize()
-        
+
     if name in LANGMAP.keys():
         name = LANGMAP[name]
 
@@ -286,7 +286,7 @@ def add_geolocation(p_uri, predicate, location, graph):
     which will be used to
     find a geonames URI for the location and then add a location to the graph
     (p_uri, predicate, <location>)
-    
+
     """
 
     from geonames import GeoNames
@@ -380,8 +380,8 @@ rdflib.term.URIRef(u'http://id.austalk.edu.au/453dd33bc7976708d8b64f94fb2e50e8')
         hash = hashlib.md5(salt+user).hexdigest()
 
     # make a person ID and record them as a foaf:Person
-    return [(subj, OLAC.recorder, ID_NS[hash]),
-            (ID_NS[hash], RDF.type, FOAF.Person)]
+    return [(subj, OLAC.recorder, SPEAKERS[hash]),
+            (SPEAKERS[hash], RDF.type, FOAF.Person)]
 
 
 def map_location(subj, prop, value):
@@ -509,11 +509,11 @@ def participant_uri(colour, animal, id=None):
     or their id (1_123), id overrides other args if provided"""
 
     if id == None:
-        p_id = "participant/%s_%s" % (colour, animal)
+        p_id = "%s_%s" % (colour, animal)
     else:
-        p_id = "participant/"+id
+        p_id = id
 
-    return ID_NS[p_id]
+    return SPEAKERS[p_id]
 
 
 def participant_rdf(part_md, csvdata=None):
@@ -557,15 +557,16 @@ def participant_rdf(part_md, csvdata=None):
     graph.add((p_uri, RDF.type, FOAF.Person))
     graph.add((p_uri, NS.id, Literal(p_id)))
     graph.add((p_uri, NS.name, Literal(p_name)))
+    graph.add((p_uri, DC.isPartOf, ALVEO['austalk']))
 
 
     if PARTICIPANT_DETAIL != "MINIMAL":
         birthLoc = (part_md['pob_town'], part_md['pob_state'], part_md['pob_country'])
         add_geolocation(p_uri, NS.birthPlace, birthLoc, graph)
-        
+
         birthLoc = (part_md['mother_pob_town'], part_md['mother_pob_state'], part_md['mother_pob_country'])
         add_geolocation(p_uri, NS.mother_birthPlace, birthLoc, graph)
-        
+
         birthLoc = (part_md['father_pob_town'], part_md['father_pob_state'], part_md['father_pob_country'])
         add_geolocation(p_uri, NS.father_birthPlace, birthLoc, graph)
 

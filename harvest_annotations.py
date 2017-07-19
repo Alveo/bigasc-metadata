@@ -15,7 +15,7 @@ from convert.item import parse_item_filename
 from convert.participant import participant_uri, item_site_name
 from convert.session import component_map
 import ingest
-from convert.filepaths import item_file_path, item_file_uri, item_file_basename
+from convert.filepaths import item_file_path, item_file_uri, item_file_basename, parse_item_filename, parse_media_filename, item_file_basename
 from rdflib import Graph, URIRef, Literal
 
 import hashlib
@@ -49,20 +49,25 @@ def process_results(server, basenames, outdir, format):
         versions = convert.item_file_versions(source)
         basename = convert.item_file_basename(source)
 
+        graph = Graph()
         for base in versions['good'].keys():
 
             for fn in versions['good'][base]:
 
                 newname = convert.change_item_file_basename(os.path.basename(fn), base)
                 path = convert.item_file_path(newname, "annotation")
+                generate_ann_metadata(graph, path, format)
 
                 if '-ch6-speaker' in newname:
                     newname = newname.replace('-ch6-speaker','')
                 if '-ch1-maptask' in newname:
                     newname = newname.replace('-ch1-maptask','')
 
-                print fn, os.path.join(outdir, newname)
-                copy_file(fn, os.path.join(outdir, newname))
+                print fn, os.path.join(outdir, path)
+                copy_file(fn, os.path.join(outdir, path))
+
+            # output metadata for all files
+            server.output_graph(graph, convert.item_file_path(basename+"-annfiles", "metadata"))
 
 
 def copy_file(src, dest):
@@ -77,6 +82,34 @@ def copy_file(src, dest):
 FORMATS = {"trs": Literal("Transcriber"),
            "TextGrid": Literal("TextGrid"),
        }
+
+
+
+def generate_ann_metadata(graph, filename, format):
+    """Generate metadata records for a single media file
+    associated with an item, given the filename. dirname if supplied
+    is the new directory that this file is to be stored in, eg. audio, downsampled.
+    This is used to generate the file uri in the description.
+
+    """
+
+    basename = item_file_basename(filename)
+    item_uri = generate_item_uri(basename)
+    m_uri = item_file_uri(filename, dirname)
+    properties = parse_media_filename(filename)
+
+    graph.add((item_uri, AUSNC.document, m_uri))
+    # add file properties
+    graph.add((m_uri, RDF.type, FOAF.Document))
+    graph.add((m_uri, DC['format'], Literal(FORMATS[format])))
+    graph.add((m_uri, DC.type, Literal('annotation')))
+
+    # add identifier field which is just the filename
+    graph.add((m_uri, DC.identifier, Literal(os.path.basename(filename))))
+
+    return graph
+
+
 
 def ann_metadata(annfile, origin, format):
 
@@ -136,10 +169,6 @@ if __name__ == '__main__':
         # store them in a dictionary with the basename as a key
         results = dict()
         for fn in filenames:
-            # ignore files containing 'Copy', there are only a few and they are not different
-            if fn.find("Copy") >= 0:
-                continue
-
             if fn.endswith(ext):
                 try:
                     # guard against wierd filenames

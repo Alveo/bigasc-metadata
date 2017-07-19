@@ -33,6 +33,8 @@ GEO = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#") # for lat and long
 ISO639 = Namespace("http://downlode.org/rdf/iso-639/languages#")
 ISO639SCHEMA = Namespace("http://downlode.org/rdf/iso-639/schema#")
 
+ALVEO = Namespace(u"https://app.alveo.edu.au/catalog/")
+SPEAKERS = Namespace(u"https://app.alveo.edu.au/speakers/austalk/")
 
 AUSNC = Namespace(u"http://ns.ausnc.org.au/schemas/ausnc_md_model/")
 
