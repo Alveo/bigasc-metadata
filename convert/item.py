@@ -41,6 +41,7 @@ def generate_file_metadata(graph, filename, dirname=None):
     graph.add((m_uri, RDF.type, FOAF.Document))
     graph.add((m_uri, DC['format'], Literal(properties['mimetype'])))
     graph.add((m_uri, DC.type, Literal(properties['type'])))
+    graph.add((m_uri, DC.source, Literal(filename)))
 
     for prop in ['version', 'checksum', 'channel', 'sequence','response']:
         if properties.has_key(prop):

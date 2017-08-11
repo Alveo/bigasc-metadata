@@ -28,6 +28,14 @@ copy_files.py audio
 # copy video files and upload metadata
 copy_files video
 
+# separate out non-austalk accented speakers
+separate_accented_speakers.py
+
+# generate JSON for ingest into Alveo
+usage: generate_alveo_json.py [-h] [--items] [--speakers] [--all] [--indent]
+                              [--clear] --output_dir OUTPUT_DIR
+                              [--limit LIMIT]
+
 
 # optional steps
 # harvest any annotations and upload them
