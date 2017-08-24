@@ -382,6 +382,8 @@ def rewrite_collection(js, old, new):
     """Rewrite all mentions of the collection name in the JSON data"""
 
     js = js.replace('"austalk:collection": "%s",' % old, '"austalk:collection": "%s",' % new)
+    js = js.replace('"dcterms:isPartOf": "%s",' % old, '"dcterms:isPartOf": "%s",' % new)
+
     js = js.replace('/speakers/%s' % old, '/speakers/%s' % new)
     js = js.replace('/catalog/%s' % old, '/catalog/%s' % new)
 
