@@ -242,7 +242,7 @@ def graph_speakers_to_json(graphs, indent=False):
             meta = graph_subject_to_json(graph, subject)
             # if this is a speaker, make sure it has a dcterms:identifier
             if '@type' in meta and meta['@type'] == 'foaf:Person':
-                meta['dcterms:identifier'] = meta['@id']
+                meta['dcterms:identifier'] = speakerID
             item['@graph'].append(meta)
 
         result['items'].append(item)
