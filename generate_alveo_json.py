@@ -143,7 +143,7 @@ def identify_display_document(graph):
         if "ch6-speaker16" in o:
             graph.add((s, ALVEO.display_document, o))
 
-def files_to_graphs(files):
+def files_to_graphs(files, limit=1000000):
     '''Generate RDF graphs for a list of RDF files'''
     graphs = []
     count = 0
@@ -155,6 +155,8 @@ def files_to_graphs(files):
         graphs.append((g,basename.split(os.sep)[-1]))
 
         count += 1
+        if count >= limit:
+            break
 
     return graphs
 
@@ -228,17 +230,23 @@ def prefix(uri_or_literal, context):
 def graph_speakers_to_json(graphs, indent=False):
     ''' Process an rdf graph into a JSON-ND file '''
     result = {'items':[]}
-    for graph,itemName in graphs:
-        #put all metadata here, remember ausnc:document is a list
-        #and will count towards the ausnc:document sibling of metadata
-
-        item = {"@context":[SPEAKER_CONTEXT],'@graph':[],'alveo:metadata':{'dcterms:isPartOf':CATALOG},'ausnc:document':[]}
+    for graph, speakerID in graphs:
+        # generate speaker metadata in the @graph property
+        # item info is null in this case
+        item = {"@context":[SPEAKER_CONTEXT],
+                '@graph':[],
+                'alveo:metadata':{},
+                'ausnc:document':[]}
 
         for subject in graph.subjects():
             meta = graph_subject_to_json(graph, subject)
+            # if this is a speaker, make sure it has a dcterms:identifier
+            if '@type' in meta and meta['@type'] == 'foaf:Person':
+                meta['dcterms:identifier'] = meta['@id']
             item['@graph'].append(meta)
 
         result['items'].append(item)
+
 
     return json.dumps(result, indent=indent)
 
@@ -363,27 +371,51 @@ def graph_items_to_json(src_dir, graphs, indent=None):
 
     return json.dumps(result, indent=indent)
 
-def process_speakers(src_dir, output_dir, indent=None):
+
+def rewrite_url_domain(json_string, original, new):
+    """Rewrite all URLs using https://original/ to https://new/ in
+    the json string"""
+
+    return json_string.replace('https://%s/' % original, 'https://%s/' % new)
+
+def rewrite_collection(js, old, new):
+    """Rewrite all mentions of the collection name in the JSON data"""
+
+    js = js.replace('"austalk:collection": "%s",' % old, '"austalk:collection": "%s",' % new)
+    js = js.replace('/speakers/%s' % old, '/speakers/%s' % new)
+    js = js.replace('/catalog/%s' % old, '/catalog/%s' % new)
+
+    return js
+
+
+def process_speakers(src_dir, output_dir, limit, indent=None, domain='', collection=''):
 
     start_time = time.time()
     tally = 0
     count = 0
     for files in get_speaker_files(src_dir):
         #get all the .nt files and process them into graphs
-        graphs = files_to_graphs(files)
+        graphs = files_to_graphs(files, limit)
         tally += len(graphs)
         #write out the graph into a json format
         json_string = graph_speakers_to_json(graphs, indent=indent)
 
+        if domain:
+            json_string = rewrite_url_domain(json_string, 'app.alveo.edu.au', domain)
+
+        if collection:
+            json_string = rewrite_collection(json_string, 'austalk', collection)
+
         #Open up the destination JSON file and write json output
-        with open(os.path.join(output_dir, "speaker-%d.json" % count),"w") as out_json:
+        with open(os.path.join(output_dir, "speaker-%d.json" % count), "w") as out_json:
             out_json.write(json_string)
+
         count += 1
 
     print "Processed %d speaker files in %s" % (tally, time.time()-start_time)
 
 
-def process_items(src_dir, output_dir, limit, indent=None):
+def process_items(src_dir, output_dir, limit, indent=None, domain='', collection=''):
 
     start_time = time.time()
     tally = 0
@@ -395,8 +427,14 @@ def process_items(src_dir, output_dir, limit, indent=None):
         #write out the graph into a json format
         json_string = graph_items_to_json(src_dir, graphs, indent=indent)
 
+        if domain:
+            json_string = rewrite_url_domain(json_string, 'app.alveo.edu.au', domain)
+
+        if collection:
+            json_string = rewrite_collection(json_string, 'austalk', collection)
+
         #Open up the destination JSON file and write json output
-        with open(os.path.join(output_dir, "items-%d.json" % count),"w") as out_json:
+        with open(os.path.join(output_dir, "items-%d.json" % count), "w") as out_json:
             out_json.write(json_string)
 
         count += 1
@@ -407,16 +445,30 @@ def process_items(src_dir, output_dir, limit, indent=None):
     print "Processed %d items in %s" % (tally, time.time()-start_time)
 
 def parser():
-    parser = argparse.ArgumentParser(description="Process Austalk RDF Files for Alveo ingest")
-    parser.add_argument('--items', required=False, action="store_const", const=True, default=False, help="process items")
-    parser.add_argument('--speakers', required=False, action="store_const", const=True, default=False, help="process speakers")
-    parser.add_argument('--all', required=False, action="store_const", const=True, default=False, help="process everything")
-    parser.add_argument('--indent', required=False, action="store_const", const=2, default=None, help="indent JSON")
-    parser.add_argument('--clear', required=False, action="store_const", const=True, default=False, help="remove previous JSON output")
-    parser.add_argument('--output_dir', required=True, action="store", type=str, help="Output Directory")
-    parser.add_argument('--input_dir', required=False, action="store", type=str, help="Input Directory (default to output of RDF generation)")
-    parser.add_argument('--limit', required=False, action="store", type=int, default=10000, help="Max Items to process")
-    return parser.parse_args()
+    """Argument parser"""
+    theparser = argparse.ArgumentParser(description="Process Austalk RDF Files for Alveo ingest")
+    theparser.add_argument('--items', required=False, action="store_const",
+                           const=True, default=False, help="process items")
+    theparser.add_argument('--speakers', required=False, action="store_const",
+                           const=True, default=False, help="process speakers")
+    theparser.add_argument('--all', required=False, action="store_const",
+                           const=True, default=False, help="process everything")
+    theparser.add_argument('--indent', required=False, action="store_const",
+                           const=2, default=None, help="indent JSON")
+    theparser.add_argument('--clear', required=False, action="store_const",
+                           const=True, default=False, help="remove previous JSON output")
+    theparser.add_argument('--output_dir', required=True, action="store",
+                           type=str, help="Output Directory")
+    theparser.add_argument('--input_dir', required=False, action="store",
+                           type=str, help="Input Directory (default to output of RDF generation)")
+    theparser.add_argument('--limit', required=False, action="store",
+                           type=int, default=10000, help="Max Items to process")
+    theparser.add_argument('--domain', required=False, action="store",
+                           type=str, default="",
+                           help="Rewrite domain name of all app.alveo.edu.au URLs to this")
+    theparser.add_argument('--collection', required=False, action="store",
+                           type=str, default="austalk", help="Collection name if not austalk")
+    return theparser.parse_args()
 
 
 if __name__ == '__main__':
@@ -441,8 +493,11 @@ if __name__ == '__main__':
         inputdir = configmanager.get_config('OUTPUT_DIR')
 
     if args.speakers or args.all:
-        process_speakers(inputdir, args.output_dir, indent=args.indent)
+        process_speakers(inputdir, args.output_dir, limit=args.limit,
+                         indent=args.indent, domain=args.domain,
+                         collection=args.collection)
     if args.items or args.all:
-        process_items(inputdir, args.output_dir, limit=args.limit, indent=args.indent)
+        process_items(inputdir, args.output_dir, limit=args.limit,
+                      indent=args.indent, domain=args.domain, collection=args.collection)
 
     print "Finished, Exiting Program"
