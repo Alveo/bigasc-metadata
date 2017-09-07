@@ -49,7 +49,7 @@ ITEM_CONTEXT = {
            }
 
 SPEAKER_CONTEXT = {
-            "dc": "http://purl.org/dc/terms/",
+            "dcterms": "http://purl.org/dc/terms/",
             "austalk": "http://ns.austalk.edu.au/",
             "olac": "http://www.language-archives.org/OLAC/1.1/",
             "ausnc": "http://ns.ausnc.org.au/schemas/ausnc_md_model/",
@@ -268,7 +268,7 @@ def graph_subject_to_json(graph, subject):
         meta['@type'] = meta['rdf:type']
         meta.pop('rdf:type')
         if meta['@type'] == 'foaf:Person':
-            meta['@id'] = subject
+            meta['@id'] = ensure_https(subject)
 
     elif 'protocol' in subject:
         #  Item in the protocol doesn't have a type
@@ -281,11 +281,19 @@ def graph_subject_to_json(graph, subject):
     return meta
 
 
+def ensure_https(uri):
+    """Ensure that all app.alveo.edu.au URIs are https://"""
+
+    if 'app.alveo.edu.au' in uri and uri.startswith('http:'):
+        uri = uri.replace('http:', 'https:')
+
+    return uri
+
 def document_uri(doc):
     """Generate a URI for a document"""
 
     # now it should be correct already
-    return doc
+    return ensure_https(doc)
 
 
 def graph_items_to_json(src_dir, graphs, indent=None):
@@ -298,7 +306,7 @@ def graph_items_to_json(src_dir, graphs, indent=None):
         metadata = {}
         item = {"@context":[ITEM_CONTEXT],'@graph':[],'alveo:metadata':{},'ausnc:document':[]}
 
-        metadata['@id'] = ITEM_PREFIX+itemName
+        metadata['@id'] = ensure_https(ITEM_PREFIX+itemName)
         metadata['dcterms:isPartOf'] = CATALOG
         metadata['ausnc:document'] = []
 
@@ -307,12 +315,11 @@ def graph_items_to_json(src_dir, graphs, indent=None):
         itemURI = URIRef(ITEM_PREFIX+itemName)
         subjects_processed = [itemURI]
 
-
         res = graph.predicate_objects(itemURI)
 
-        for predicate,object in res:
+        for predicate, object in res:
 
-            predicate, object = fix_context(predicate,object)
+            predicate, object = fix_context(predicate, object)
 
             #ausnc:document is special and needs to be a list
             if predicate=='ausnc:document':
@@ -341,7 +348,7 @@ def graph_items_to_json(src_dir, graphs, indent=None):
 
             subjects_processed.append(URIRef(doc))
 
-            docmeta['@id'] = doc
+            docmeta['@id'] = ensure_https(doc)
 
             for predicate,object in res:
 
