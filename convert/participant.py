@@ -15,6 +15,10 @@ from namespaces import *
 import configmanager
 configmanager.configinit()
 PARTICIPANT_DETAIL = configmanager.get_config("PARTICIPANT_DETAIL", "FULL")
+PARTICIPANT_CACHE_FILE = configmanager.get_config("PARTICIPANT_CACHE_FILE", "participants.json")
+PARTICIPANT_CACHE_DIR =  configmanager.get_config("PARTICIPANT_CACHE_DIR", "participant_cache")
+if not os.path.exists(PARTICIPANT_CACHE_DIR):
+    os.makedirs(PARTICIPANT_CACHE_DIR)
 
 # file to write site mapping to in map_location
 # used to speed up lookup of sites for items
@@ -193,7 +197,7 @@ def map_language_name(subj, prop, value):
                     break
                 except KeyError:
                     pass
-    if lang == None or getattr(lang, 'iso639_2T_code', None) == None:
+    if lang is None or getattr(lang, 'iso639_2T_code', None) is None:
         print "No language found for '%s'" % name
         #h = open("unknown-languages.txt", "a")
         #h.write(name + " " + subj + "\n")
@@ -213,13 +217,21 @@ def map_language_name(subj, prop, value):
 def get_participant_list():
     """Return a list of participant ids"""
 
-    uri = PARTICIPANT_URI
+    if os.path.exists(PARTICIPANT_CACHE_FILE):
+        with open(PARTICIPANT_CACHE_FILE) as fd:
+            result = json.load(fd)
+    else:
+        uri = PARTICIPANT_URI
 
-    h = urllib2.urlopen(uri)
-    data = h.read()
-    h.close()
+        h = urllib2.urlopen(uri)
+        data = h.read()
+        h.close()
 
-    result = json.loads(data)
+        result = json.loads(data)
+
+        with open(PARTICIPANT_CACHE_FILE, 'w') as out:
+            json.dump(result, out, indent=4)
+
     # we just want the 'id' field from each record
     result = [r['id'] for r in result]
 
@@ -245,14 +257,24 @@ def get_participant(id):
 
     #print "get_participant", id
 
-    uri = PARTICIPANT_URI + id
 
+    cachefile = os.path.join(PARTICIPANT_CACHE_DIR, id+'.json')
+    if os.path.exists(cachefile):
+        with open(cachefile) as fd:
+            result = json.load(fd)
+    else:
 
-    h = urllib2.urlopen(uri)
-    data = h.read()
-    h.close()
+        uri = PARTICIPANT_URI + id
 
-    result = json.loads(data)
+        h = urllib2.urlopen(uri)
+        data = h.read()
+        h.close()
+
+        result = json.loads(data)
+
+        with open(cachefile, 'w') as out:
+            json.dump(result, out, indent=4)
+
     #print "result", result['animal']
 
     return result

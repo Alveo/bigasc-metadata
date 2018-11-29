@@ -47,7 +47,7 @@ class GeoNames:
 
         info = json.loads(response)
         # check that we have at least one geoname for our query
-        if info['totalResultsCount'] > 0:
+        if 'totalResultsCount' in info and info['totalResultsCount'] > 0:
              
             # find a good match, name should match our place name
             # and it should be a populated place
@@ -69,7 +69,7 @@ class GeoNames:
                         result['state'] = ''
                     #print result
                     return result
-        #print "nothing found"
+        print "no location found for ", city, state, country
         return None
         
     def placename_uri(self, info):

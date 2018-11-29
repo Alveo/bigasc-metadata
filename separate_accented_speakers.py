@@ -29,6 +29,13 @@ def copy(src,dst):
     print "Copy", src, dst
     shutil.copytree(src, dst)
 
+
+for fname in os.listdir(basedir):
+    if os.path.splitext(fname)[0] in SPEAKERS:
+        move(os.path.join(basedir, fname), os.path.join(outdir, fname))
+
+exit()
+
 # copy all of protocol directory
 protdir = os.path.join(basedir, 'metadata/protocol')
 targetdir = os.path.join(outdir, 'metadata/protocol')
