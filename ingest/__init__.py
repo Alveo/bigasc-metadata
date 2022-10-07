@@ -69,9 +69,11 @@ def ingest_participants(server):
             csvdata = None
         
         p_info = convert.get_participant(p)
-        graph = convert.participant_rdf(p_info, csvdata)
-    
-        print "Generated", len(graph), "triples for participant", p
-        server.output_graph(graph, os.path.join('metadata', 'participants', p))
-
+        if p_info:
+            graph = convert.participant_rdf(p_info, csvdata)
+        
+            print "Generated", len(graph), "triples for participant", p
+            server.output_graph(graph, os.path.join('metadata', 'participants', p))
+        else:
+            print "Skipping ", p
         

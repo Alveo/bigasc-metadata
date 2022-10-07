@@ -265,16 +265,18 @@ def get_participant(id):
     else:
 
         uri = PARTICIPANT_URI + id
+        try:
+            h = urllib2.urlopen(uri)
+            data = h.read()
+            h.close()
 
-        h = urllib2.urlopen(uri)
-        data = h.read()
-        h.close()
+            result = json.loads(data)
 
-        result = json.loads(data)
-
-        with open(cachefile, 'w') as out:
-            json.dump(result, out, indent=4)
-
+            with open(cachefile, 'w') as out:
+                json.dump(result, out, indent=4)
+        except:
+            print "Participant", id, "not found"
+            return False
     #print "result", result['animal']
 
     return result

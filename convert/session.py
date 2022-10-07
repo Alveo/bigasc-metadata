@@ -10,7 +10,7 @@ Convert metadata from the Blackbox Recorder software to RDF
 # find the path to the blackbox project
 # hacketty hack hack hoo
 import os
-bbpaths = [os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'blackbox/src')]
+bbpaths = ['./blackbox/src', os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'blackbox/src')]
 
 for p in bbpaths:
     if os.path.exists(p):
@@ -162,6 +162,6 @@ if __name__=='__main__':
 
     graph = session_metadata()
 
-    print "Graph has ", len(graph), "statements"
+    print("Graph has ", len(graph), "statements")
     s = graph.serialize(format='turtle')
-    print s
+    print(s)
