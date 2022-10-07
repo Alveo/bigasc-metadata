@@ -1,0 +1,263 @@
+{
+    "hobbies_details": "Road cycling, swimming, pilates.", 
+    "rating": [
+        {
+            "comment": "recording volume too low", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 456
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 457
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 461
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 459
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 458
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 462
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 460
+        }, 
+        {
+            "comment": "recording volume too low, Camera angle", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 792
+        }, 
+        {
+            "comment": "recording volume too low, Camera angle", 
+            "component": 7, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 793
+        }, 
+        {
+            "comment": "recording volume too low, Camera angle", 
+            "component": 9, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 794
+        }, 
+        {
+            "comment": "recording volume too low, Camera angle", 
+            "component": 16, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 795
+        }, 
+        {
+            "comment": "recording volume too low, Camera angle", 
+            "component": 21, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 796
+        }, 
+        {
+            "comment": "recording volume too low, Camera angle", 
+            "component": 22, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 797
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 246, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Economist", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": true, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "St Mary's Primary School, Lancefield, VIC", 
+            "id": 942
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 7, 
+            "name": "Brocklesby Public School, NSW", 
+            "id": 943
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Xavier High School, Albury, NSW", 
+            "id": 944
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "Australian National University, ACT", 
+            "id": 945
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "Australian National University", 
+        "id": 1
+    }, 
+    "animal": {
+        "name": "Brushfooted trapdoor spider", 
+        "id": 1262
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": true, 
+    "is_left_handed": false, 
+    "father_accent": "none", 
+    "RA": {
+        "username": "katharine gosling", 
+        "first_name": "katharine", 
+        "last_name": "gosling", 
+        "is_active": true, 
+        "email": "katharine.gosling@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-10-04 15:49:48", 
+        "id": 16, 
+        "date_joined": "2011-07-20 12:57:59"
+    }, 
+    "father_pob_town": "Lancefield", 
+    "professional_occupation": "Economist", 
+    "father_professional_category": "labourer", 
+    "profession_history": [
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 695, 
+            "name": "Research Economist"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 696, 
+            "name": "Macroeconomic analyst"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 254
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Lancefield", 
+    "residence_history": [
+        {
+            "town": "Lancefield", 
+            "age_to": 7, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Brocklesby", 
+            "age_to": 18, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 26, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "none", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1985-03-10", 
+    "speech_problems_details": "Required speech therapy in primary school.", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Kyneton", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "Required gromits when I was 4 years old.", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

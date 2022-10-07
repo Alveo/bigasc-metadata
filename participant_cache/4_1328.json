@@ -1,0 +1,252 @@
+{
+    "hobbies_details": "Sax AMEB grade 6; ", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4412
+        }, 
+        {
+            "comment": "", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4411
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4410
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4409
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4408
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4407
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4406
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4417
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4418
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4416
+        }, 
+        {
+            "comment": "Video frame skipping", 
+            "component": 16, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 4415
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4414
+        }, 
+        {
+            "comment": "", 
+            "component": 23, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4413
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4421
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4420
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4419
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 754, 
+    "student_course": "BSci", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "Atheist", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 6, 
+            "name": "Cardinia International College", 
+            "id": 2925
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "University of Melbourne", 
+            "id": 2926
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Red'n'black spider", 
+        "id": 1328
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Joshua Clothier", 
+        "first_name": "Joshua", 
+        "last_name": "Clothier", 
+        "is_active": true, 
+        "email": "joshuajc@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2018-02-01 16:17:40", 
+        "id": 20, 
+        "date_joined": "2011-09-08 08:39:29"
+    }, 
+    "father_pob_town": "Geelong", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 895
+        }
+    ], 
+    "student_aspiration": "Chemical Engineer", 
+    "mother_pob_town": "Geelong", 
+    "residence_history": [
+        {
+            "town": "Geelong", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }, 
+        {
+            "town": "Parkville", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1992-11-27", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Geelong", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "a bit of a sniffle", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

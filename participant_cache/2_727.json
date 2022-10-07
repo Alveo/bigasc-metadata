@@ -1,0 +1,191 @@
+{
+    "hobbies_details": "Computer games, reading, origami, art", 
+    "rating": [
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1791
+        }, 
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 2, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 1792
+        }, 
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1793
+        }, 
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1794
+        }, 
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1795
+        }, 
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1796
+        }, 
+        {
+            "comment": "UNDERLIGHTED", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1797
+        }, 
+        {
+            "comment": "RA's arm in video", 
+            "component": 5, 
+            "session": 2, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 1798
+        }, 
+        {
+            "comment": "RA's arm in video", 
+            "component": 7, 
+            "session": 2, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 1799
+        }, 
+        {
+            "comment": "RA's arm in video", 
+            "component": 9, 
+            "session": 2, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 1800
+        }, 
+        {
+            "comment": "RA's arm in video", 
+            "component": 16, 
+            "session": 2, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 1801
+        }, 
+        {
+            "comment": "RA's arm in video", 
+            "component": 21, 
+            "session": 2, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 1802
+        }, 
+        {
+            "comment": "RA's arm in video", 
+            "component": 22, 
+            "session": 2, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 1803
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": true, 
+    "father_pob_country": "GB", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "english", 
+    "id": 194, 
+    "student_course": "Bachelor of Science", 
+    "has_piercings": true, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "agnostic", 
+    "education_history": [], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Sacred Kingfisher", 
+        "id": 727
+    }, 
+    "reading_problems_details": "I had some learning difficulties when I was a child simiar to dislexia. However, my reading skills w", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "british english", 
+    "RA": {
+        "username": "Tom Anderson", 
+        "first_name": "Tom", 
+        "last_name": "Anderson", 
+        "is_active": true, 
+        "email": "tom.anderson@flinders.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-12-06 10:50:46", 
+        "id": 23, 
+        "date_joined": "2011-10-17 10:58:48"
+    }, 
+    "father_pob_town": "unknown", 
+    "professional_occupation": null, 
+    "father_professional_category": "intermediate clerical and service", 
+    "profession_history": [], 
+    "has_health_problems": true, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "Eyebrows", 
+    "language_usage": [], 
+    "student_aspiration": "Unsure", 
+    "mother_pob_town": "Adelaide", 
+    "residence_history": [], 
+    "father_pob_state": "", 
+    "mother_accent": "australian", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "AU", 
+    "dob": "1989-10-27", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "english", 
+    "pob_town": "Adelaide", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "I have sinus problems.", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

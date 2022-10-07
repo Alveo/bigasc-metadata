@@ -1,0 +1,194 @@
+{
+    "hobbies_details": "Electronics, computing", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4500
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4503
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4501
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4502
+        }
+    ], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 725, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Cert in Electronics/Telecommunications, PGDip Digital Communications", 
+    "vocal_training_details": "", 
+    "other_languages": "Italian, Tetun", 
+    "has_hearing_problems": false, 
+    "religion": "Non-practising Christian", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Myrtleford Consolidated", 
+            "id": 2798
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Myrtleford HS", 
+            "id": 2799
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "Wangaratta Tech", 
+            "id": 2800
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 19, 
+            "name": "Preston Tech", 
+            "id": 2801
+        }, 
+        {
+            "age_to": 45, 
+            "age_from": 42, 
+            "name": "Monash Clayton", 
+            "id": 2802
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Sandy Inland Mouse", 
+        "id": 1230
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Joshua Clothier", 
+        "first_name": "Joshua", 
+        "last_name": "Clothier", 
+        "is_active": true, 
+        "email": "joshuajc@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2018-02-01 16:17:40", 
+        "id": 20, 
+        "date_joined": "2011-09-08 08:39:29"
+    }, 
+    "father_pob_town": "Geelong", 
+    "professional_occupation": "Network Analyst", 
+    "father_professional_category": "elementary clerical", 
+    "profession_history": [
+        {
+            "age_to": 57, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1699, 
+            "name": "Voice and data communications"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "labourer", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Travel, in social situations in NS country", 
+            "frequency": 2, 
+            "name": "Italian", 
+            "id": 859
+        }, 
+        {
+            "situation": "Travel, in social situations in NS country", 
+            "frequency": 2, 
+            "name": "Tetun", 
+            "id": 860
+        }, 
+        {
+            "situation": "all other", 
+            "frequency": 96, 
+            "name": "English", 
+            "id": 861
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Lavington", 
+    "residence_history": [
+        {
+            "town": "Myrtleford", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Northcote", 
+            "age_to": 57, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1955-11-06", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Myrtleford", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "A little bit of hayfever", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

@@ -1,0 +1,145 @@
+{
+    "hobbies_details": "", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "nsw", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "english", 
+    "id": 768, 
+    "student_course": "speech and hearing science (honours)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "athiest", 
+    "education_history": [
+        {
+            "age_to": 28, 
+            "age_from": 25, 
+            "name": "macquarie university", 
+            "id": 2977
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 22, 
+            "name": "unsw", 
+            "id": 2978
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "maroochydore high school", 
+            "id": 2979
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Eastern Tube-nosed Bat", 
+        "id": 29
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "n/a", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "wagga wagga", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "every day", 
+            "frequency": 100, 
+            "name": "english", 
+            "id": 911
+        }
+    ], 
+    "student_aspiration": "academic", 
+    "mother_pob_town": "campsie", 
+    "residence_history": [
+        {
+            "town": "werribee", 
+            "age_to": 10, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "maroochydore", 
+            "age_to": 20, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }, 
+        {
+            "town": "sydney", 
+            "age_to": 28, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "albury", 
+            "age_to": 15, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "nsw", 
+    "mother_accent": "n/a", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1984-01-07", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "english", 
+    "pob_town": "werribee", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

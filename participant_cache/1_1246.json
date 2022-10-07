@@ -1,0 +1,143 @@
+{
+    "hobbies_details": "Reading news, listening to music, watching just some TV series, having a coffee with a few friends every week, travelling. ", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "MY", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "English", 
+    "id": 886, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Unemployed", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "OLSH Primary Randwick", 
+            "id": 3334
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 11, 
+            "name": "Marcellin College Randwick", 
+            "id": 3335
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 17, 
+            "name": "UNSW", 
+            "id": 3336
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Australian Featherleg spider", 
+        "id": 1246
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Malaysian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Klang", 
+    "professional_occupation": "N/A", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1889, 
+            "name": "Casual retail team member"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": true, 
+            "age_from": 22, 
+            "id": 1890, 
+            "name": "Casual bookstore assistant"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": true, 
+            "age_from": 22, 
+            "id": 1891, 
+            "name": "Cafe part-time member"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1078
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Singapore", 
+    "residence_history": [
+        {
+            "town": "Coogee", 
+            "age_to": 23, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Singaporean", 
+    "father_cultural_heritage": "North-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1991-06-07", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "SG", 
+    "mother_first_language": "Hainanese ", 
+    "pob_town": "Darlinghurst", 
+    "father_first_language": "Hokkien", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": "unemployed", 
+    "has_hobbies": true
+}

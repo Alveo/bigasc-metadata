@@ -1,0 +1,165 @@
+{
+    "hobbies_details": "", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 626, 
+    "student_course": "MAAL", 
+    "has_piercings": true, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Did some singing lessons when I lived in France. Also participated in some amateur theatre when in F", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "St Mary's Catholic Primary School", 
+            "id": 2416
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 11, 
+            "name": "O'Connor Catholic High School", 
+            "id": 2417
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 18, 
+            "name": "University of Queensland", 
+            "id": 2418
+        }, 
+        {
+            "age_to": 37, 
+            "age_from": 30, 
+            "name": "University of New England", 
+            "id": 2419
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Forest Kingfisher", 
+        "id": 363
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian accent", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Armidale", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "Nose", 
+    "language_usage": [
+        {
+            "situation": "Outside the home", 
+            "frequency": 50, 
+            "name": "English", 
+            "id": 734
+        }, 
+        {
+            "situation": "At home with partner and children ", 
+            "frequency": 50, 
+            "name": "French", 
+            "id": 735
+        }
+    ], 
+    "student_aspiration": "Linguistics", 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Armidale", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 24, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Gimhae", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "KR", 
+            "state": ""
+        }, 
+        {
+            "town": "Paris", 
+            "age_to": 30, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "FR", 
+            "state": ""
+        }, 
+        {
+            "town": "Armidale", 
+            "age_to": 37, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian accent", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1975-08-01", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Armidale", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

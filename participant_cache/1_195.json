@@ -1,0 +1,151 @@
+{
+    "hobbies_details": "Walking. ", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Other: Other: English", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "GB", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 656, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Computer science", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Chuch of England", 
+    "education_history": [
+        {
+            "age_to": 14, 
+            "age_from": 7, 
+            "name": "Hampstead primary", 
+            "id": 2537
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 15, 
+            "name": "Nailsworth High School", 
+            "id": 2538
+        }, 
+        {
+            "age_to": 27, 
+            "age_from": 20, 
+            "name": "Flinders University", 
+            "id": 2539
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Blue-and-white Flycatcher", 
+        "id": 195
+    }, 
+    "reading_problems_details": "Dyslexic", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "English", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Kent", 
+    "professional_occupation": "Business Analyst", 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 1579, 
+            "name": "Tax return processing/unemployed/surveyer"
+        }, 
+        {
+            "age_to": 37, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1580, 
+            "name": "Office Clerk"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 1581, 
+            "name": "Business Analyst"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 771
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Becksley Heath", 
+    "residence_history": [
+        {
+            "town": "Dover", 
+            "age_to": 6, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "adelaide", 
+            "age_to": 49, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "english", 
+    "father_cultural_heritage": "Other: Other: English", 
+    "pob_country": "GB", 
+    "dob": "1963-03-16", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "GB", 
+    "mother_first_language": "English", 
+    "pob_town": "Dover", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Other: English", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

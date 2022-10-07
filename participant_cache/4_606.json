@@ -1,0 +1,158 @@
+{
+    "hobbies_details": "Sports, music, beach", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Vocational Graduate Diploma", 
+    "first_language": "English", 
+    "id": 296, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Exercise Physiologist", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 6, 
+            "name": "Kellerberrin District Primary School", 
+            "id": 1147
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Vasse Primary School", 
+            "id": 1148
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "MacKillop Catholic College", 
+            "id": 1149
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "The University of Western Australia", 
+            "id": 1150
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Painted Finch", 
+        "id": 606
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "Kellerberrin", 
+    "professional_occupation": "Exercise Rehabilitation", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 827, 
+            "name": "Farm hand"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 828, 
+            "name": "Health and wellness"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 319
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Bridgetown", 
+    "residence_history": [
+        {
+            "town": "Kellerberrin", 
+            "age_to": 9, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Busselton", 
+            "age_to": 17, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Perth ", 
+            "age_to": 26, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1985-06-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Kellerberrin", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

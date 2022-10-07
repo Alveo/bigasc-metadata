@@ -1,0 +1,121 @@
+{
+    "hobbies_details": "Piano, marshall arts, kick boxing, reading, singing", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 491, 
+    "student_course": "BMusic", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Singing (WAPA), acting (highschool)", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Hollywood Primary School", 
+            "id": 1898
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "John 23rd High School", 
+            "id": 1899
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "WAPA, Mt Lawley", 
+            "id": 1900
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Lewin's Honeyeater", 
+        "id": 492
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "PERTH", 
+    "professional_occupation": null, 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 562
+        }
+    ], 
+    "student_aspiration": "Concert pianist", 
+    "mother_pob_town": "ADELAIDE", 
+    "residence_history": [
+        {
+            "town": "PERTH", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1993-09-27", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "PERTH", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

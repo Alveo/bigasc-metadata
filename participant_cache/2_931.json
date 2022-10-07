@@ -1,0 +1,330 @@
+{
+    "hobbies_details": "Basketball, Volleyball, Football (Social); Debating (International Intervarsity competitions); Writer (Newspaper editorials & creative)\r\n", 
+    "rating": [
+        {
+            "comment": "NOISE", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2087
+        }, 
+        {
+            "comment": "Background Noise (slight); Lighting rather low", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4939
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2088
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2089
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2090
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2091
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2092
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2093
+        }, 
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4941
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2094
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2095
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2096
+        }, 
+        {
+            "comment": "Video lighting rather low", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4942
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2097
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2098
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2099
+        }, 
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4940
+        }, 
+        {
+            "comment": "Missing items: video from cam1", 
+            "component": 8, 
+            "session": 3, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4944
+        }, 
+        {
+            "comment": "", 
+            "component": 14, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4943
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "Philippines", 
+    "mother_pob_state": "Leyte", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Vocational Graduate Certificate", 
+    "first_language": "English", 
+    "id": 57, 
+    "student_course": "Bachelor of Philosophy (Honours)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Filipino, German, English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "St Paul of the Cross, Dulwich Hill", 
+            "id": 221
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 11, 
+            "name": "Picnic Point Public School", 
+            "id": 222
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Sydney Boys High School", 
+            "id": 223
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 19, 
+            "name": "Australian National University", 
+            "id": 224
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "University of Canberra", 
+        "id": 8
+    }, 
+    "animal": {
+        "name": "Yellow Thornbill", 
+        "id": 931
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Filipino", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Manila", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "General day to day", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 39
+        }, 
+        {
+            "situation": "Family household", 
+            "frequency": 14, 
+            "name": "Filipino", 
+            "id": 40
+        }, 
+        {
+            "situation": "Recreationally amongst German-speaking friends or when in-country", 
+            "frequency": 3, 
+            "name": "German", 
+            "id": 41
+        }, 
+        {
+            "situation": "Recreationally amongst French-speaking friends or when in-country", 
+            "frequency": 3, 
+            "name": "French", 
+            "id": 42
+        }
+    ], 
+    "student_aspiration": "Life Coach", 
+    "mother_pob_town": "Burauen", 
+    "residence_history": [
+        {
+            "town": "Dulwich Hill", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Hurlstone Park", 
+            "age_to": 8, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Canterbury", 
+            "age_to": 10, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Padstow", 
+            "age_to": 18, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Braddon", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Filipino", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "Australia", 
+    "dob": "1990-11-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Philippines", 
+    "mother_first_language": "Warai", 
+    "pob_town": "Sydney", 
+    "father_first_language": "Bikol", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "South-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

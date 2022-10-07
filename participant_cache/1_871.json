@@ -1,0 +1,165 @@
+{
+    "hobbies_details": "gardening", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Other: Other: Indisch", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "ID", 
+    "mother_pob_state": "Java", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Diploma", 
+    "first_language": "Dutch", 
+    "id": 182, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Graduate Diploma of Career Education", 
+    "vocal_training_details": "", 
+    "other_languages": "English, ", 
+    "has_hearing_problems": true, 
+    "religion": "agnostic", 
+    "education_history": [
+        {
+            "age_to": 25, 
+            "age_from": 24, 
+            "name": "Mt Gravatt Teachers Collage, Griffith University", 
+            "id": 719
+        }, 
+        {
+            "age_to": 33, 
+            "age_from": 18, 
+            "name": "University of Queensland", 
+            "id": 720
+        }, 
+        {
+            "age_to": 49, 
+            "age_from": 48, 
+            "name": "RMIT University", 
+            "id": 721
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "White Gallinule", 
+        "id": 871
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "faint Dutch accent", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Surabaya", 
+    "professional_occupation": "careers counsellor", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 533, 
+            "name": "bank clerk"
+        }, 
+        {
+            "age_to": 57, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 534, 
+            "name": "teacher"
+        }, 
+        {
+            "age_to": 59, 
+            "less_than_a_year": false, 
+            "age_from": 40, 
+            "id": 535, 
+            "name": "careers counsellor"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Java", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "rarely", 
+            "frequency": 5, 
+            "name": "Dutch", 
+            "id": 178
+        }, 
+        {
+            "situation": "all the time", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 179
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Batavia", 
+    "residence_history": [
+        {
+            "town": "The Hague", 
+            "age_to": 4, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "NL", 
+            "state": "Holland"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 25, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Thursday Island", 
+            "age_to": 28, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }
+    ], 
+    "father_pob_state": "Java", 
+    "mother_accent": "faint Dutch accent", 
+    "father_cultural_heritage": "Other: Other: Indisch", 
+    "pob_country": "ID", 
+    "dob": "1947-04-04", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "ID", 
+    "mother_first_language": "Dutch", 
+    "pob_town": "Surabaya", 
+    "father_first_language": "Dutch", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Other: Indisch", 
+    "hearing_problems_details": "Tinnitus", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

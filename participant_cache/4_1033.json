@@ -1,0 +1,304 @@
+{
+    "hobbies_details": "local multisport competition, reading", 
+    "rating": [
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1392
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1393
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1394
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1395
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1396
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1397
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1398
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1399
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1400
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1401
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1402
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1403
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1404
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1405
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1406
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1407
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1408
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "nsw", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "english", 
+    "id": 10, 
+    "student_course": "Bachelor of Psychology", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "none", 
+    "has_hearing_problems": false, 
+    "religion": "na", 
+    "education_history": [
+        {
+            "age_to": 15, 
+            "age_from": 5, 
+            "name": "St Joseph's School", 
+            "id": 44
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 15, 
+            "name": "Kinross Wolaroi Orange", 
+            "id": 45
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Charles Sturt Uni Wagga Wagga", 
+            "id": 46
+        }, 
+        {
+            "age_to": 32, 
+            "age_from": 28, 
+            "name": "Charles Sturt Uni Bathurst", 
+            "id": 47
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Mareeba Rock-wallaby", 
+        "id": 1033
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "oberon", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "everyday", 
+            "frequency": 100, 
+            "name": "english", 
+            "id": 10
+        }
+    ], 
+    "student_aspiration": "Cognition research", 
+    "mother_pob_town": "Oberon", 
+    "residence_history": [
+        {
+            "town": "Oberon", 
+            "age_to": 15, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Orange", 
+            "age_to": 18, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Wagga Wagga", 
+            "age_to": 24, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Newcastle", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "London", 
+            "age_to": 28, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "UK", 
+            "state": ""
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 32, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "nsw", 
+    "mother_accent": "australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1979-05-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "english", 
+    "pob_town": "Sydney", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

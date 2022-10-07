@@ -1,0 +1,226 @@
+{
+    "hobbies_details": "Swimming, cycling, running, photography, reading", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "English", 
+    "id": 773, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Media & Com Degree / Training Certificates", 
+    "vocal_training_details": "", 
+    "other_languages": "Italian, Spanish", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 4, 
+            "name": "Mt Tully Primary", 
+            "id": 2995
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "Severn Lea Primary School", 
+            "id": 2996
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Stanthorpe State High School", 
+            "id": 2997
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 17, 
+            "name": "QLD University of Technology", 
+            "id": 2998
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 24, 
+            "name": "QLD University of Technology", 
+            "id": 2999
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 26, 
+            "name": "UQ - Language Centre", 
+            "id": 3000
+        }, 
+        {
+            "age_to": 31, 
+            "age_from": 31, 
+            "name": "Sydney Inst. TAFE - Ultimo", 
+            "id": 3001
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "White-bellied Storm-Petrel", 
+        "id": 877
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "None", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "Finance Systems Trainer", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1764, 
+            "name": "Farm Work - picking / packing"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1765, 
+            "name": "Retail/Hospitality (while studying) - sunglasses, photolabs, restaurants, cafes, & mobile phones"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1766, 
+            "name": "Call Centre / Tech Support"
+        }, 
+        {
+            "age_to": 33, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 1767, 
+            "name": "UNSW - Finance"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "daily", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 917
+        }, 
+        {
+            "situation": "rarely", 
+            "frequency": 4, 
+            "name": "Italian", 
+            "id": 918
+        }, 
+        {
+            "situation": "very rarely", 
+            "frequency": 1, 
+            "name": "Spanish", 
+            "id": 919
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Stanthorpe", 
+            "age_to": 17, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 18, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 24, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 26, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 33, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1979-08-10", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Brisbane", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Hay fever - currently very mild however voice not currently 100% clear", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

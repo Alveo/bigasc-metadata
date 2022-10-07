@@ -1,0 +1,127 @@
+{
+    "hobbies_details": "Sports - Weightlifting & Tennis\r\nMusic - Piano\r\nHobbies - Computer Games", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "VN", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "Vietnamese", 
+    "id": 761, 
+    "student_course": "Commerce (Liberal Studies)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "St Mary's Georges Hall", 
+            "id": 2950
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "LaSalle Catholic College Bankstown", 
+            "id": 2951
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "University of New South Wales", 
+            "id": 2952
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Southern Common Cuscus", 
+        "id": 1080
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "American", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Vietnam", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Home", 
+            "frequency": 20, 
+            "name": "Vietnamese", 
+            "id": 903
+        }, 
+        {
+            "situation": "daily", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 904
+        }
+    ], 
+    "student_aspiration": "Corporate Finance", 
+    "mother_pob_town": "Vietnam", 
+    "residence_history": [
+        {
+            "town": "Condell Park", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "American", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1993-03-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "VN", 
+    "mother_first_language": "Vietnamese", 
+    "pob_town": "Bankstown", 
+    "father_first_language": "Vietnamese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Southern and Central Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

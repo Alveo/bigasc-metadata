@@ -1,0 +1,209 @@
+{
+    "hobbies_details": "Family history, gardening, reading", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "UK", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 412, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Teacher", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": true, 
+    "religion": "Anglican", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Gin Gin Primary School", 
+            "id": 1582
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Methodist Ladies College, Perth", 
+            "id": 1583
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "The Kindergarten Teaching College", 
+            "id": 1584
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Greater Broad-nosed Bat", 
+        "id": 38
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "PERTH", 
+    "professional_occupation": "Retired", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 58, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1094, 
+            "name": "Kindergarten teaching"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 446
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "RUGLEY", 
+    "residence_history": [
+        {
+            "town": "GIN GIN", 
+            "age_to": 12, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 20, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "GERALDTON", 
+            "age_to": 23, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 26, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "SYDNEY", 
+            "age_to": 28, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "NARUBI ", 
+            "age_to": 34, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "ZA", 
+            "state": "EAST AFRIC"
+        }, 
+        {
+            "town": "SYDNEY", 
+            "age_to": 36, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "PAPA NEW GUINEA", 
+            "age_to": 38, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "PG", 
+            "state": "PNG"
+        }, 
+        {
+            "town": "SUVA", 
+            "age_to": 42, 
+            "age_from": 38, 
+            "less_than_a_year": false, 
+            "country": "FJ", 
+            "state": "FIJI"
+        }, 
+        {
+            "town": "HAWAII", 
+            "age_to": 44, 
+            "age_from": 42, 
+            "less_than_a_year": false, 
+            "country": "US", 
+            "state": "HAWAII"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 73, 
+            "age_from": 45, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1939-06-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "GB", 
+    "mother_first_language": "English", 
+    "pob_town": "PERTH", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "Age related hearing loss", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

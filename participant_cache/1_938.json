@@ -1,0 +1,171 @@
+{
+    "hobbies_details": "Tennis, reading, computer games.", 
+    "rating": [
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4182
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4183
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4184
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4181
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4180
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4179
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 43, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4178
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 829, 
+    "student_course": "Science", 
+    "has_piercings": false, 
+    "professional_qualification": "", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Belmont Primary", 
+            "id": 3203
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Kardinia International College", 
+            "id": 3204
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "University of Melbourne", 
+            "id": 3205
+        }
+    ], 
+    "location": {
+        "city": "Castlemaine", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 5
+    }, 
+    "animal": {
+        "name": "Yellow-legged Flycatcher", 
+        "id": 938
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Winchelsea", 
+    "professional_occupation": "", 
+    "father_professional_category": "unemployed", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "Zoology", 
+    "mother_pob_town": "Camberwell", 
+    "residence_history": [
+        {
+            "town": "Geelong", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1994-03-14", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Geelong", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

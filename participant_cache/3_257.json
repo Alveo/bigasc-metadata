@@ -1,0 +1,190 @@
+{
+    "hobbies_details": "writing fiction and poetry, gardening, stamp collecting", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "Graduate Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "ZW", 
+    "mother_pob_state": "BC", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 798, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "MA in Creative Writing", 
+    "vocal_training_details": "Choir training at church in childhood, singing lessons at high school", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Blackwood High School", 
+            "id": 3102
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Flinders University", 
+            "id": 3103
+        }, 
+        {
+            "age_to": 47, 
+            "age_from": 44, 
+            "name": "Tabor Adelaide", 
+            "id": 3104
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Chestnut-breasted Mannikin", 
+        "id": 257
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Rhodesian", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Bulawayo", 
+    "professional_occupation": "lecturer", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1844, 
+            "name": "part-time retail sales assistant"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1845, 
+            "name": "occupational taxonomist in Public Service"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1846, 
+            "name": "occupational analyst in Public Service"
+        }, 
+        {
+            "age_to": 50, 
+            "less_than_a_year": false, 
+            "age_from": 47, 
+            "id": 1847, 
+            "name": "lecturer, researcher and writer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 952
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Kaslo", 
+    "residence_history": [
+        {
+            "town": "London", 
+            "age_to": null, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 32, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Kailua Kona", 
+            "age_to": 32, 
+            "age_from": 32, 
+            "less_than_a_year": true, 
+            "country": "US", 
+            "state": "Hawaii"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 36, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 50, 
+            "age_from": 36, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "South African Accent", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "GB", 
+    "dob": "1962-04-10", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "CA", 
+    "mother_first_language": "English", 
+    "pob_town": "London", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

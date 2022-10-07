@@ -1,0 +1,135 @@
+{
+    "hobbies_details": "4WDing, Fish keeping, Birds, Wildlife, The ocean", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NWS", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 803, 
+    "student_course": "Aquaculture", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 8, 
+            "age_from": 5, 
+            "name": "Newcastle Gramma School", 
+            "id": 3119
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 9, 
+            "name": "Woodcroft College", 
+            "id": 3120
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 15, 
+            "name": "Urrbrae Agricutural High School", 
+            "id": 3121
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Flinders University", 
+            "id": 3122
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Little Bronze Cuckoo", 
+        "id": 497
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Newcastle", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 956
+        }
+    ], 
+    "student_aspiration": "PhD", 
+    "mother_pob_town": "Newcastle", 
+    "residence_history": [
+        {
+            "town": "Newcastle", 
+            "age_to": 8, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSM"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 21, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1990-12-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Newcastle", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Cold/Flu", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,226 @@
+{
+    "hobbies_details": "Book Group and literary studies, sewing, dancing while listening to music, swimming.", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Qld", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 353, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Registered Nurse and Practice Manager", 
+    "vocal_training_details": "AMEB Diploma - Speech and Drama", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 15, 
+            "age_from": 5, 
+            "name": "Mundubbera State School", 
+            "id": 1358
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "Gayndah State School", 
+            "id": 1359
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Mater Nursing training Hospital", 
+            "id": 1360
+        }, 
+        {
+            "age_to": 39, 
+            "age_from": 35, 
+            "name": "Southern Cross University Lismore(external study)", 
+            "id": 1361
+        }, 
+        {
+            "age_to": 42, 
+            "age_from": 41, 
+            "name": "University of New England Armidale(external study)", 
+            "id": 1362
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Beautiful Firetail", 
+        "id": 149
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Mundubbera", 
+    "professional_occupation": "GP Practice manager", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 13, 
+            "id": 961, 
+            "name": "Part - time retail shop assistant"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 962, 
+            "name": "Trainee nurse"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 963, 
+            "name": "Intensive Care Registered Nurse"
+        }, 
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 964, 
+            "name": "Home duties - child bearing and rearing"
+        }, 
+        {
+            "age_to": 41, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 965, 
+            "name": "Voluntary breastfeeding counsellor"
+        }, 
+        {
+            "age_to": 39, 
+            "less_than_a_year": false, 
+            "age_from": 34, 
+            "id": 966, 
+            "name": "Neurosurgical Registered Nurse - part time"
+        }, 
+        {
+            "age_to": 41, 
+            "less_than_a_year": false, 
+            "age_from": 39, 
+            "id": 967, 
+            "name": "Home duties- 3 children at seoarate schools"
+        }, 
+        {
+            "age_to": 52, 
+            "less_than_a_year": false, 
+            "age_from": 41, 
+            "id": 968, 
+            "name": "Gp Practice Manager and Registered Nurse"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Qld", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Home life and conversation", 
+            "frequency": 30, 
+            "name": "English", 
+            "id": 380
+        }, 
+        {
+            "situation": "Work", 
+            "frequency": 40, 
+            "name": "English", 
+            "id": 381
+        }, 
+        {
+            "situation": "Socialising with friends", 
+            "frequency": 30, 
+            "name": "English", 
+            "id": 382
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Bundaberg", 
+    "residence_history": [
+        {
+            "town": "Mundubbera", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "South Brisbane", 
+            "age_to": 21, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Kedron", 
+            "age_to": 36, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Kurwongbah", 
+            "age_to": 52, 
+            "age_from": 36, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }
+    ], 
+    "father_pob_state": "Qld", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1959-12-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Bundaberg", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

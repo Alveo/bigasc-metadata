@@ -1,0 +1,158 @@
+{
+    "hobbies_details": "Cooking, Running, Reading, Gardening", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 701, 
+    "student_course": "", 
+    "has_piercings": false, 
+    "professional_qualification": "Human Resources", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Risdon Primary School", 
+            "id": 2706
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "John Pirie Secondary School", 
+            "id": 2707
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "University of South Australia", 
+            "id": 2708
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Brush-tailed Mulgara", 
+        "id": 969
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "none", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Crystal Brook", 
+    "professional_occupation": "Human Resources", 
+    "father_professional_category": "labourer", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 1663, 
+            "name": "KFC - Retail Assistant"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1664, 
+            "name": "Spotlight - Retail Assistant"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1665, 
+            "name": "Business SA - Information Services Officer"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1666, 
+            "name": "AHA(SA) - IR/HR Advisor"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All of the time", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 831
+        }
+    ], 
+    "student_aspiration": "", 
+    "mother_pob_town": "Crystal Brook", 
+    "residence_history": [
+        {
+            "town": "Port Pirie", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 28, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1984-02-14", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Port Pirie", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

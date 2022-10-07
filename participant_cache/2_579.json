@@ -1,0 +1,237 @@
+{
+    "hobbies_details": "juggling, reading, music, soccer", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": true, 
+    "father_pob_country": "IT", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "english", 
+    "id": 740, 
+    "student_course": "Science Education", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "french and italian", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 5, 
+            "age_from": 4, 
+            "name": " Lane Cove Public School", 
+            "id": 2859
+        }, 
+        {
+            "age_to": 6, 
+            "age_from": 5, 
+            "name": "Darcy Road Primary School", 
+            "id": 2860
+        }, 
+        {
+            "age_to": 9, 
+            "age_from": 6, 
+            "name": "Narraweena Public School", 
+            "id": 2861
+        }, 
+        {
+            "age_to": 9, 
+            "age_from": 9, 
+            "name": "Urangan Point State Primary", 
+            "id": 2862
+        }, 
+        {
+            "age_to": 10, 
+            "age_from": 9, 
+            "name": "Cromer High School", 
+            "id": 2863
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 10, 
+            "name": "Fraser Coast Anglican College", 
+            "id": 2864
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 17, 
+            "name": "Griffith University", 
+            "id": 2865
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "University of New South Wales", 
+            "id": 2866
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Norfolk Island Ground-Dove", 
+        "id": 579
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "italian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "italy", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "very basic - work", 
+            "frequency": 5, 
+            "name": "italian", 
+            "id": 875
+        }, 
+        {
+            "situation": "social", 
+            "frequency": 5, 
+            "name": "french", 
+            "id": 876
+        }
+    ], 
+    "student_aspiration": "Chemistry Teacher", 
+    "mother_pob_town": "Parramatta", 
+    "residence_history": [
+        {
+            "town": "Wentworthville", 
+            "age_to": 6, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": " Narraweena", 
+            "age_to": 9, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Hervey Bay", 
+            "age_to": 10, 
+            "age_from": 9, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "qld"
+        }, 
+        {
+            "town": "Narraweena", 
+            "age_to": 10, 
+            "age_from": 10, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Hervey Bay", 
+            "age_to": 16, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Logan", 
+            "age_to": 17, 
+            "age_from": 17, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 18, 
+            "age_from": 17, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Kensington", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Maroubra", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Nsw"
+        }, 
+        {
+            "town": "Kensington", 
+            "age_to": 20, 
+            "age_from": 20, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Kingsford", 
+            "age_to": 21, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian English", 
+    "father_cultural_heritage": "Southern and Eastern European", 
+    "pob_country": "AU", 
+    "dob": "1991-06-25", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Hornsby", 
+    "father_first_language": "italian", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

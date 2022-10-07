@@ -1,0 +1,181 @@
+{
+    "hobbies_details": "Music, Powerlifting, Swimming", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Other: Other: North-Eastern-Europe", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "RU", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "Russian", 
+    "id": 759, 
+    "student_course": "Aviation Management", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 5, 
+            "name": "St Kindergen School", 
+            "id": 2945
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 6, 
+            "name": "International Grammar School", 
+            "id": 2946
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "University of New South Wales", 
+            "id": 2947
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Red-cheeked Dunnart", 
+        "id": 1059
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Russian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Moscow", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 900
+        }, 
+        {
+            "situation": "At home/friends", 
+            "frequency": 4, 
+            "name": "Russian", 
+            "id": 901
+        }, 
+        {
+            "situation": "Ocassionally", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 902
+        }
+    ], 
+    "student_aspiration": "Financial Analyst", 
+    "mother_pob_town": "Samarkand", 
+    "residence_history": [
+        {
+            "town": "Moscow", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "RU", 
+            "state": ""
+        }, 
+        {
+            "town": "Auckland", 
+            "age_to": 8, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "NZ", 
+            "state": ""
+        }, 
+        {
+            "town": "Clovelly", 
+            "age_to": 10, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Coogee", 
+            "age_to": 13, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Kingsford", 
+            "age_to": 15, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Coogee", 
+            "age_to": 18, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Willoughby", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Russian", 
+    "father_cultural_heritage": "Other: Other: North-Eastern-Europe", 
+    "pob_country": "RU", 
+    "dob": "1993-04-10", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "UZ", 
+    "mother_first_language": "Russian", 
+    "pob_town": "Moscow", 
+    "father_first_language": "Russian", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Other: North-Eastern-Europe", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

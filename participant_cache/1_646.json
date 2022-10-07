@@ -1,0 +1,143 @@
+{
+    "hobbies_details": "Weightlifting", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "IQ", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Diploma", 
+    "first_language": "Assyrian", 
+    "id": 743, 
+    "student_course": "Electrical Engineering", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 6, 
+            "name": "Farfield Primary", 
+            "id": 2882
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 10, 
+            "name": "Edensor Park Primary", 
+            "id": 2883
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Bonnyrigg High School", 
+            "id": 2884
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Princess Parrot", 
+        "id": 646
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Assyrian english", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Baghdad", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "With family", 
+            "frequency": 30, 
+            "name": "Assyrian", 
+            "id": 879
+        }, 
+        {
+            "situation": "Everywhere else", 
+            "frequency": 70, 
+            "name": "English", 
+            "id": 880
+        }
+    ], 
+    "student_aspiration": "Corporate Executive", 
+    "mother_pob_town": "Baghdad", 
+    "residence_history": [
+        {
+            "town": "Qamishli", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "SY", 
+            "state": ""
+        }, 
+        {
+            "town": "Hobart", 
+            "age_to": 6, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 20, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Assyrian english", 
+    "father_cultural_heritage": "North-East Asian", 
+    "pob_country": "SY", 
+    "dob": "1991-11-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "IQ", 
+    "mother_first_language": "Assyrian", 
+    "pob_town": "Qamishli", 
+    "father_first_language": "Assyrian", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

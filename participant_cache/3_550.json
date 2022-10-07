@@ -1,0 +1,256 @@
+{
+    "hobbies_details": "Listening to music; ", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4696
+        }, 
+        {
+            "comment": "Background noise, very strong on some items", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 4694
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4695
+        }
+    ], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "vic", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 695, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA, BSc, MA", 
+    "vocal_training_details": "", 
+    "other_languages": "French, Latin", 
+    "has_hearing_problems": true, 
+    "religion": "Roman Catholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "St Mary's Hampton", 
+            "id": 2687
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 13, 
+            "name": "St Thomas Moore, ST Kilda", 
+            "id": 2688
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 14, 
+            "name": "Christian Brothers College, St Kilda", 
+            "id": 2689
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "University of Melbourne", 
+            "id": 2690
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 20, 
+            "name": "Secondary Teachers' College", 
+            "id": 2691
+        }, 
+        {
+            "age_to": 28, 
+            "age_from": 24, 
+            "name": "University of Melbourne", 
+            "id": 2692
+        }, 
+        {
+            "age_to": 35, 
+            "age_from": 29, 
+            "name": "University of Melbourne", 
+            "id": 2693
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Masked Lapwing", 
+        "id": 550
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Joshua Clothier", 
+        "first_name": "Joshua", 
+        "last_name": "Clothier", 
+        "is_active": true, 
+        "email": "joshuajc@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2018-02-01 16:17:40", 
+        "id": 20, 
+        "date_joined": "2011-09-08 08:39:29"
+    }, 
+    "father_pob_town": "Yea", 
+    "professional_occupation": "Retired Teacher (Does relief)", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 44, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1651, 
+            "name": "Secondary Teacher"
+        }, 
+        {
+            "age_to": 58, 
+            "less_than_a_year": false, 
+            "age_from": 44, 
+            "id": 1652, 
+            "name": "Principal"
+        }, 
+        {
+            "age_to": 73, 
+            "less_than_a_year": false, 
+            "age_from": 58, 
+            "id": 1653, 
+            "name": "Relief Teaching"
+        }, 
+        {
+            "age_to": 73, 
+            "less_than_a_year": false, 
+            "age_from": 58, 
+            "id": 1654, 
+            "name": "Volunteer Radio Broadcasting (including Training of Broadcasters)"
+        }, 
+        {
+            "age_to": 73, 
+            "less_than_a_year": false, 
+            "age_from": 58, 
+            "id": 1655, 
+            "name": "Voluntary Conducting & Booking - Historic tourist railway"
+        }, 
+        {
+            "age_to": 73, 
+            "less_than_a_year": false, 
+            "age_from": 54, 
+            "id": 1656, 
+            "name": "Civil Marriage Celebrant"
+        }, 
+        {
+            "age_to": 73, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 1657, 
+            "name": "VCE maths methods examiner"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Reading online, books, magazines", 
+            "frequency": 3, 
+            "name": "French", 
+            "id": 823
+        }, 
+        {
+            "situation": "Reading academic texts", 
+            "frequency": 3, 
+            "name": "Latin", 
+            "id": 824
+        }, 
+        {
+            "situation": "All other", 
+            "frequency": 94, 
+            "name": "English", 
+            "id": 825
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Fitzroy", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Hampton", 
+            "age_to": 23, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Armadale", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "East Brighton", 
+            "age_to": 73, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1939-09-08", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Slight sniffle", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "1) Menier's disease - low level of hearing in left ear\r\n2) hearing also down in right ear (not as ba", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

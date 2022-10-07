@@ -1,0 +1,137 @@
+{
+    "hobbies_details": "Horse riding, violin", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Sub-Saharan African", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "ZW", 
+    "mother_pob_state": "Unknown", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 321, 
+    "student_course": "BSc", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 14, 
+            "age_from": 5, 
+            "name": "Penrhos College", 
+            "id": 1237
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "Helena College", 
+            "id": 1238
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "The University of Western Australia", 
+            "id": 1239
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Dusky Moorhen", 
+        "id": 318
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "African/English", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "Unknown", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 341
+        }
+    ], 
+    "student_aspiration": "Physio", 
+    "mother_pob_town": "Unknown", 
+    "residence_history": [
+        {
+            "town": "APPLECROSS", 
+            "age_to": 10, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "GIDGEGANNUP", 
+            "age_to": 17, 
+            "age_from": 11, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH ", 
+            "age_to": 20, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "Unknown", 
+    "mother_accent": "African/English", 
+    "father_cultural_heritage": "Sub-Saharan African", 
+    "pob_country": "AU", 
+    "dob": "1991-06-08", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "ZW", 
+    "mother_first_language": "English", 
+    "pob_town": "PERTH", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Sub-Saharan African", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

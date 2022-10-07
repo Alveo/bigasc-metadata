@@ -1,0 +1,253 @@
+{
+    "hobbies_details": "gardening, cooking, bushwalking, art, ", 
+    "rating": [
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 910
+        }, 
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 911
+        }, 
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 912
+        }, 
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 913
+        }, 
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 914
+        }, 
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 915
+        }, 
+        {
+            "comment": "Backg. Noise too loud, Participant too far from camera", 
+            "component": 12, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 916
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 917
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 918
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 919
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 920
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 921
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 922
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "UK", 
+    "mother_pob_state": "", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "Advanced Diploma", 
+    "first_language": "english", 
+    "id": 19, 
+    "student_course": "media communication", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "none", 
+    "has_hearing_problems": false, 
+    "religion": "catholic", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "brigidine primary school", 
+            "id": 78
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 7, 
+            "name": "st patricks catholic school", 
+            "id": 79
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "monaro high school", 
+            "id": 80
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 22, 
+            "name": "randwick TAFE", 
+            "id": 81
+        }, 
+        {
+            "age_to": 37, 
+            "age_from": 37, 
+            "name": "Western Inst. of TAFE", 
+            "id": 82
+        }, 
+        {
+            "age_to": 39, 
+            "age_from": 37, 
+            "name": "Charles sturt university", 
+            "id": 83
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Arctic Tern", 
+        "id": 94
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "english", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "shefield", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "work in communication industry", 
+    "mother_pob_town": "Tewkesbury", 
+    "residence_history": [
+        {
+            "town": "cooma", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 32, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "bathurst", 
+            "age_to": 39, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "english", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "Australia", 
+    "dob": "1971-09-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "UK", 
+    "mother_first_language": "english", 
+    "pob_town": "cooma", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

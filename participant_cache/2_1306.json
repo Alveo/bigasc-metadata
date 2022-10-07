@@ -1,0 +1,157 @@
+{
+    "hobbies_details": "Scuba Diving (Master Diver), Photography (semi-pro), Motor Sport (ex-racer, now just a fan), Saxophone (beginner)", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "QLD", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 378, 
+    "student_course": "Doctor of Philosophy", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 14, 
+            "age_from": 5, 
+            "name": "Tennant Creek Area School", 
+            "id": 1460
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 15, 
+            "name": "Alice Springs High School", 
+            "id": 1461
+        }, 
+        {
+            "age_to": 36, 
+            "age_from": 32, 
+            "name": "Flinders University", 
+            "id": 1462
+        }, 
+        {
+            "age_to": 43, 
+            "age_from": 42, 
+            "name": "Flinders University", 
+            "id": 1463
+        }, 
+        {
+            "age_to": 46, 
+            "age_from": 43, 
+            "name": "Flinders University", 
+            "id": 1464
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Knobbly Crab spider", 
+        "id": 1306
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Irish", 
+    "RA": {
+        "username": "Tom Anderson", 
+        "first_name": "Tom", 
+        "last_name": "Anderson", 
+        "is_active": true, 
+        "email": "tom.anderson@flinders.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-12-06 10:50:46", 
+        "id": 23, 
+        "date_joined": "2011-10-17 10:58:48"
+    }, 
+    "father_pob_town": "Adelaide", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NT", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all situations", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 412
+        }
+    ], 
+    "student_aspiration": "Academic\\Educator", 
+    "mother_pob_town": "Townsville", 
+    "residence_history": [
+        {
+            "town": "Tennant Creek", 
+            "age_to": 14, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Alice Springs", 
+            "age_to": 18, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Tennant Creek", 
+            "age_to": 28, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 46, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1965-10-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Alice Springs", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

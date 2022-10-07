@@ -1,0 +1,211 @@
+{
+    "hobbies_details": "", 
+    "rating": [], 
+    "education_level": "school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 631, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Registered Marriage Celebrant", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Spiritualist", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "Bonbeach State School", 
+            "id": 2436
+        }, 
+        {
+            "age_to": 8, 
+            "age_from": 7, 
+            "name": "Bentleigh West Primary", 
+            "id": 2437
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 8, 
+            "name": "Taggerty Primary", 
+            "id": 2438
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Alexandra HS", 
+            "id": 2439
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Little Crow", 
+        "id": 500
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "Celebrant", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 1514, 
+            "name": "Bank Clerk"
+        }, 
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1515, 
+            "name": "Real Estate Admin"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 34, 
+            "id": 1516, 
+            "name": "Cruise Director & Business Manager - Floating Restaurant"
+        }, 
+        {
+            "age_to": 50, 
+            "less_than_a_year": false, 
+            "age_from": 49, 
+            "id": 1517, 
+            "name": "Customer Service - Etihad Stadium"
+        }, 
+        {
+            "age_to": 53, 
+            "less_than_a_year": false, 
+            "age_from": 50, 
+            "id": 1518, 
+            "name": "Civil Celebrant"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 743
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Bonbeach", 
+            "age_to": 7, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "East Brighton", 
+            "age_to": 8, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Moorabin", 
+            "age_to": 9, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Taggerty", 
+            "age_to": 19, 
+            "age_from": 9, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Melbourne Eastern Suburbs", 
+            "age_to": 34, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Eildon", 
+            "age_to": 47, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Croydon", 
+            "age_to": 53, 
+            "age_from": 47, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1958-09-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Chelsea", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": false
+}

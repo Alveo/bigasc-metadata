@@ -1,0 +1,167 @@
+{
+    "hobbies_details": "reading, netball, gardening", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Graduate Certificate", 
+    "first_language": "Indonesian", 
+    "id": 434, 
+    "student_course": null, 
+    "has_piercings": true, 
+    "professional_qualification": "", 
+    "vocal_training_details": "Acting/theatre group during school", 
+    "other_languages": "French, English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 18, 
+            "age_from": 5, 
+            "name": "Keith Area School", 
+            "id": 1656
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Island Thrush", 
+        "id": 455
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "Tom Anderson", 
+        "first_name": "Tom", 
+        "last_name": "Anderson", 
+        "is_active": true, 
+        "email": "tom.anderson@flinders.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-12-06 10:50:46", 
+        "id": 23, 
+        "date_joined": "2011-10-17 10:58:48"
+    }, 
+    "father_pob_town": "Adelaide", 
+    "professional_occupation": "Facilities Manager", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1136, 
+            "name": "Facilities Manager"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1137, 
+            "name": "Office Clerk"
+        }, 
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 5, 
+            "id": 1138, 
+            "name": "Student"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "Nose", 
+    "language_usage": [
+        {
+            "situation": "With overseas family", 
+            "frequency": 10, 
+            "name": "Indonesian", 
+            "id": 474
+        }, 
+        {
+            "situation": "When travelling", 
+            "frequency": 2, 
+            "name": "French", 
+            "id": 475
+        }, 
+        {
+            "situation": "Everyday", 
+            "frequency": 90, 
+            "name": "English", 
+            "id": 476
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Atambua", 
+    "residence_history": [
+        {
+            "town": "Adelaide", 
+            "age_to": 34, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Dublin", 
+            "age_to": 28, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "IE", 
+            "state": ""
+        }, 
+        {
+            "town": "Keith", 
+            "age_to": 21, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Atambua", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "ID", 
+            "state": ""
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Indonesian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "ID", 
+    "dob": "1977-05-26", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "ID", 
+    "mother_first_language": "Indonesia", 
+    "pob_town": "Atambua", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Southern and Central Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

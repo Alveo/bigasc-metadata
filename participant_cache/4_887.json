@@ -1,0 +1,310 @@
+{
+    "hobbies_details": "Play the piano, listening to music, volunteer at 3MBS, reading.", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4357
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4358
+        }, 
+        {
+            "comment": "Video frame skipping", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4356
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4359
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4360
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4361
+        }, 
+        {
+            "comment": "", 
+            "component": 43, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4362
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4365
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4368
+        }, 
+        {
+            "comment": "Contains low frequency hum", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4363
+        }, 
+        {
+            "comment": "Contains low frequency hum", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4366
+        }, 
+        {
+            "comment": "Contains low frequency hum", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4364
+        }, 
+        {
+            "comment": "", 
+            "component": 23, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4367
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4369
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4372
+        }, 
+        {
+            "comment": "Camera 0: the speaker is not centred in the frame", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4371
+        }, 
+        {
+            "comment": "Low frequency hum at the beginning", 
+            "component": 33, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 4370
+        }
+    ], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 786, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "NA", 
+    "vocal_training_details": "Some singing training when young.", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 13, 
+            "age_from": 5, 
+            "name": "Spring Road Central", 
+            "id": 3055
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Melbourne High", 
+            "id": 3056
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "University of Melbourne", 
+            "id": 3057
+        }, 
+        {
+            "age_to": 31, 
+            "age_from": 22, 
+            "name": "RMIT", 
+            "id": 3058
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "White-browed Woodswallow", 
+        "id": 887
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Bunbury", 
+    "professional_occupation": "Retired", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1807, 
+            "name": "Book shop - sales assistant"
+        }, 
+        {
+            "age_to": 23, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1808, 
+            "name": "Insurance Company coding clerk"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 1809, 
+            "name": "Baillieu Library - library assistant"
+        }, 
+        {
+            "age_to": 58, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1810, 
+            "name": "The Age - librarian"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Caulfield", 
+    "residence_history": [
+        {
+            "town": "Malvern/E Malvern", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "East St Kilda", 
+            "age_to": 27, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Middle Park", 
+            "age_to": 32, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Abbotsford", 
+            "age_to": 61, 
+            "age_from": 33, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1951-06-14", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Ayr", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "home duties", 
+    "has_hobbies": true
+}

@@ -1,0 +1,177 @@
+{
+    "hobbies_details": "Netball - amateur/recreational\r\n", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Sub-Saharan African", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "ZA", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 592, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Grad Dip Ed (Sec)", 
+    "vocal_training_details": "Singing - Australian Children's Choir\r\n", 
+    "other_languages": "French, Italian, Spanish, Afrikaans", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Sacred Heart PS, Diamond Creek", 
+            "id": 2282
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 12, 
+            "name": "Loyola College, Watsonia", 
+            "id": 2283
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "University of Melbourne", 
+            "id": 2284
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 23, 
+            "name": "RMIT, Bundoora", 
+            "id": 2285
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Redlegged House spider", 
+        "id": 1331
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "South AFrican", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "durban", 
+    "professional_occupation": "High School Teacher", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1427, 
+            "name": "Retail service"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1428, 
+            "name": "Tech services helpdesk operator"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1429, 
+            "name": "High School Teacher"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "teaching, speaking socially with NS & NNS", 
+            "frequency": 30, 
+            "name": "French", 
+            "id": 687
+        }, 
+        {
+            "situation": "Social with NS & other NNS", 
+            "frequency": 3, 
+            "name": "Italian", 
+            "id": 688
+        }, 
+        {
+            "situation": "Remainder", 
+            "frequency": 67, 
+            "name": "English", 
+            "id": 689
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Pratoria", 
+    "residence_history": [
+        {
+            "town": "Diamond Creek", 
+            "age_to": 12, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }, 
+        {
+            "town": "Eden Park", 
+            "age_to": 25, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }, 
+        {
+            "town": "Flemington", 
+            "age_to": null, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "South African", 
+    "father_cultural_heritage": "Sub-Saharan African", 
+    "pob_country": "AU", 
+    "dob": "1985-07-01", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "ZA", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

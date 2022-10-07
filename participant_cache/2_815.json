@@ -1,0 +1,252 @@
+{
+    "hobbies_details": "Indonesian and Chinese dance, ballet and contemporary dance, circus.", 
+    "rating": [
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4237
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4236
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4231
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4235
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4234
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4233
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 43, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4232
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4242
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4243
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4241
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4240
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4239
+        }, 
+        {
+            "comment": "Video lighting is rather low", 
+            "component": 23, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4238
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "ZA", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 831, 
+    "student_course": "Arts", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Did a bit of singing in high school.", 
+    "other_languages": "Indonesian", 
+    "has_hearing_problems": false, 
+    "religion": "Anglican but not religious", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "Flora Hill Primary", 
+            "id": 3209
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Saint Therese's", 
+            "id": 3210
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Flora Hill/Bendigo South East", 
+            "id": 3211
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "Bendigo Senior Secondary", 
+            "id": 3212
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 19, 
+            "name": "University of Melbourne", 
+            "id": 3213
+        }
+    ], 
+    "location": {
+        "city": "Castlemaine", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 5
+    }, 
+    "animal": {
+        "name": "Swinhoe's Storm-Petrel", 
+        "id": 815
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Cape Town", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "General", 
+            "frequency": 90, 
+            "name": "English", 
+            "id": 983
+        }, 
+        {
+            "situation": "Classes", 
+            "frequency": 10, 
+            "name": "Indonesian", 
+            "id": 984
+        }
+    ], 
+    "student_aspiration": "Teacher (Indonesian)", 
+    "mother_pob_town": "Bendigo", 
+    "residence_history": [
+        {
+            "town": "Bendigo", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Parkville", 
+            "age_to": 19, 
+            "age_from": 19, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": " VIC"
+        }
+    ], 
+    "father_pob_state": "W. Cape", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Other: Australian", 
+    "pob_country": "AU", 
+    "dob": "1993-11-24", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Bendigo", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

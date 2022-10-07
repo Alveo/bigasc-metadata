@@ -1,0 +1,218 @@
+{
+    "hobbies_details": "Dance; Zumba ; Pole Dancing; Gym; Reading.", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 928, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Bachelor of Arts", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 4, 
+            "name": "Anula Primary School (Darwin)", 
+            "id": 3517
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 12, 
+            "name": "Sanderson high School", 
+            "id": 3518
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "Casuarina Secondary College", 
+            "id": 3519
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "Charles Darwin University", 
+            "id": 3520
+        }
+    ], 
+    "location": {
+        "city": "Darwin", 
+        "state": "NT", 
+        "name": "Charles Darwin University", 
+        "id": 3
+    }, 
+    "animal": {
+        "name": "Antarctic Prion", 
+        "id": 89
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "bruce.birch", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "email": "bruce.birch@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2015-04-30 10:32:01", 
+        "id": 53, 
+        "date_joined": "2015-01-21 16:41:03"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": "Travel Coordinator", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 15, 
+            "less_than_a_year": true, 
+            "age_from": 15, 
+            "id": 1951, 
+            "name": "Customer Service at Hungry Jacks"
+        }, 
+        {
+            "age_to": 19, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 1952, 
+            "name": "Customer Service at Big W"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 1953, 
+            "name": "Teller at NT Credit Society"
+        }, 
+        {
+            "age_to": 36, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1954, 
+            "name": "Travel Consultant Flight Centre"
+        }, 
+        {
+            "age_to": 37, 
+            "less_than_a_year": false, 
+            "age_from": 36, 
+            "id": 1955, 
+            "name": "NT News Advertising Assistant"
+        }, 
+        {
+            "age_to": 41, 
+            "less_than_a_year": false, 
+            "age_from": 38, 
+            "id": 1956, 
+            "name": "Travel Coordinator at NT General Practice Education"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1150
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Perth", 
+    "residence_history": [
+        {
+            "town": "Port Morseby", 
+            "age_to": 0, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "PG", 
+            "state": ""
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 3, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 22, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "London", 
+            "age_to": 23, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Edinburgh", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 42, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "PG", 
+    "dob": "1973-11-27", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Port Morseby", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

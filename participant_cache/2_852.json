@@ -1,0 +1,185 @@
+{
+    "hobbies_details": "Dancing, Knitting, Reading, Yoga, Played piano when at school AMEB Grade 4", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Graduate Diploma", 
+    "first_language": "English", 
+    "id": 753, 
+    "student_course": "Masters of Human Rights Law and Policy", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "singing and speaking in choir throughout school.\r\nalso performed in stage musicals", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 4, 
+            "name": "Farrer Primary, ACT", 
+            "id": 2918
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "St Peter and Pauls Primary School, Garran, ACT", 
+            "id": 2919
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "St Clare's College, Griffith ACT", 
+            "id": 2920
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "UNSW", 
+            "id": 2921
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 20, 
+            "name": "ANU", 
+            "id": 2922
+        }, 
+        {
+            "age_to": 41, 
+            "age_from": 32, 
+            "name": "unsw", 
+            "id": 2923
+        }, 
+        {
+            "age_to": 44, 
+            "age_from": 44, 
+            "name": "UNSW", 
+            "id": 2924
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Wedge-tailed Eagle", 
+        "id": 852
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian English", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "ACT", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Always", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 894
+        }
+    ], 
+    "student_aspiration": "Human Rights Policy with govt or NGO", 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Canberra", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "sydney", 
+            "age_to": 21, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 25, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 36, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "queanbeyan", 
+            "age_to": 44, 
+            "age_from": 36, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "sydney", 
+            "age_to": 44, 
+            "age_from": 44, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1968-04-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Canberra", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

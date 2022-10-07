@@ -1,0 +1,121 @@
+{
+    "hobbies_details": "Kite surfing, beach, guitar", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "People of the Americas", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NY", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 415, 
+    "student_course": "BEng, BComm", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Ballajura Primary School", 
+            "id": 1592
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Morley Senior High School", 
+            "id": 1593
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "University Of Western Australia", 
+            "id": 1594
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Christmas Island Hawk-Owl", 
+        "id": 270
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "PORTLAND", 
+    "professional_occupation": null, 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 451
+        }
+    ], 
+    "student_aspiration": "Process Engineer", 
+    "mother_pob_town": "ROCHESTER", 
+    "residence_history": [
+        {
+            "town": "PERTH", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "American", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1989-05-31", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "US", 
+    "mother_first_language": "English", 
+    "pob_town": "MT LAWLEY", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Slight cold", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,250 @@
+{
+    "hobbies_details": "Walking Films reading aqua robics", 
+    "rating": [
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1932
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1933
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1934
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1935
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1936
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1937
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1938
+        }
+    ], 
+    "education_level": "Graduate Certificate", 
+    "mother_cultural_heritage": "Southern and Eastern European", 
+    "consent": true, 
+    "mother_education_level": "Graduate Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "PL", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "Polish", 
+    "id": 208, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Retired teacher", 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 5, 
+            "name": "Mater ChristiCollege Mt Gambier", 
+            "id": 782
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "Wattle Park Teachers College", 
+            "id": 783
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Fat-tailed False Antechinus", 
+        "id": 997
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "European", 
+    "RA": {
+        "username": "Marissa Milne", 
+        "first_name": "Marissa", 
+        "last_name": "Milne", 
+        "is_active": true, 
+        "email": "marissa.milne@flinders.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-22 13:13:00", 
+        "id": 18, 
+        "date_joined": "2011-08-31 00:19:16"
+    }, 
+    "father_pob_town": "sroda", 
+    "professional_occupation": "Retired teacher", 
+    "father_professional_category": "labourer", 
+    "profession_history": [
+        {
+            "age_to": 60, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 568, 
+            "name": "Full time teacher"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "labourer", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Social", 
+            "frequency": 1, 
+            "name": "Polish", 
+            "id": 210
+        }, 
+        {
+            "situation": "every day", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 211
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "kharkov", 
+    "residence_history": [
+        {
+            "town": "falingbostel", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "DE", 
+            "state": ""
+        }, 
+        {
+            "town": "Mt Gambier", 
+            "age_to": 17, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": ""
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 26, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "sa"
+        }, 
+        {
+            "town": "Stuttgart", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "DE", 
+            "state": ""
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 28, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "sa"
+        }, 
+        {
+            "town": "Goroka", 
+            "age_to": 29, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "PG", 
+            "state": ""
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 36, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "sa"
+        }, 
+        {
+            "town": "Lichfield", 
+            "age_to": 37, 
+            "age_from": 36, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 65, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "sa"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "European", 
+    "father_cultural_heritage": "Southern and Eastern European", 
+    "pob_country": "DE", 
+    "dob": "1946-03-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "UA", 
+    "mother_first_language": "Ukranian", 
+    "pob_town": "Falingbostel", 
+    "father_first_language": "Polish", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

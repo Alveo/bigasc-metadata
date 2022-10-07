@@ -1,0 +1,200 @@
+{
+    "hobbies_details": "Jogging regularly, making jewelry sometimes, basketry sometimes, playing the following instruments sometimes : guitar, ukelele, didgeridoo, djembe.", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "GB", 
+    "mother_pob_state": "QLD", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 713, 
+    "student_course": "International Studies", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "Murarrie Primary School", 
+            "id": 2756
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "The Risk Public School", 
+            "id": 2757
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 12, 
+            "name": "Hendra Secondary College", 
+            "id": 2758
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 15, 
+            "name": "Erindale Secondary College", 
+            "id": 2759
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Great-winged Petrel", 
+        "id": 394
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "half English and half Australian", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Suffolk", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "Humanitarian and Environmental work", 
+    "mother_pob_town": "Brisbane", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 10, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Cougal", 
+            "age_to": 12, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 15, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 15, 
+            "age_from": 15, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 17, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": 18, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Alice Springs", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Alice Springs", 
+            "age_to": 22, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Murwillumbah", 
+            "age_to": 23, 
+            "age_from": 22, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Armidale", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Other: Australian", 
+    "pob_country": "AU", 
+    "dob": "1987-10-30", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Brisbane", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

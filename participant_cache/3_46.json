@@ -1,0 +1,129 @@
+{
+    "hobbies_details": "Surfing", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 464, 
+    "student_course": "BA", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "St Thomas More Catholic Primary School", 
+            "id": 1785
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Margaret River Senior School", 
+            "id": 1786
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "University Of Western Australia", 
+            "id": 1787
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Large Forest Bat", 
+        "id": 46
+    }, 
+    "reading_problems_details": "Dyslexia", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "GERALDTON", 
+    "professional_occupation": null, 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 515
+        }
+    ], 
+    "student_aspiration": "Surfer", 
+    "mother_pob_town": "PERTH", 
+    "residence_history": [
+        {
+            "town": "MARGARET RIVER", 
+            "age_to": 17, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 19, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1992-07-20", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "MARGARET RIVER", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

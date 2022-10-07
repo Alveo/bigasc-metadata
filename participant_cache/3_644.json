@@ -1,0 +1,148 @@
+{
+    "hobbies_details": "Regular karaoke sessions, Tennis a few times a month", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "VN", 
+    "mother_pob_state": "South Viet", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "Vietnamese", 
+    "id": 335, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "None", 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "Darra Jindalee Catholic School (Our Lady of the Sacred Heart)", 
+            "id": 1287
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "Marist Brothers Rosalie", 
+            "id": 1288
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 16, 
+            "name": "Corinda State High School", 
+            "id": 1289
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 19, 
+            "name": "University of Queensland", 
+            "id": 1290
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Pomarine Jaeger", 
+        "id": 644
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Vietnamese accent", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Saigon", 
+    "professional_occupation": "None", 
+    "father_professional_category": "home duties", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": true, 
+            "age_from": 16, 
+            "id": 919, 
+            "name": "Assistant at fast food restaurant"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 920, 
+            "name": "Full time student"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All the time", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 353
+        }, 
+        {
+            "situation": "With non-english speaking relatives", 
+            "frequency": 1, 
+            "name": "Vietnamese", 
+            "id": 354
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Ba Ria", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 24, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }
+    ], 
+    "father_pob_state": "South Viet", 
+    "mother_accent": "Vietnamese accent", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1987-08-22", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "VN", 
+    "mother_first_language": "Vietnamese", 
+    "pob_town": "Brisbane", 
+    "father_first_language": "Vietnamese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Flu", 
+    "cultural_heritage": "South-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": "unemployed", 
+    "has_hobbies": true
+}

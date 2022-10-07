@@ -1,0 +1,322 @@
+{
+    "hobbies_details": "Music\r\nGuitar\r\nFlute", 
+    "rating": [
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1258
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1259
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1260
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1261
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1262
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1263
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1264
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1265
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1266
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1267
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1268
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1269
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1270
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "", 
+            "audio": "", 
+            "id": 1271
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "", 
+            "audio": "", 
+            "id": 1272
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 3, 
+            "video": "", 
+            "audio": "", 
+            "id": 1273
+        }
+    ], 
+    "education_level": "school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "primary to junior high", 
+    "is_smoker": false, 
+    "father_pob_country": "England", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "primary to junior high", 
+    "first_language": "English", 
+    "id": 3, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Finance Clerk", 
+    "vocal_training_details": "", 
+    "other_languages": "none", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "West Bathurst primary School", 
+            "id": 9
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 12, 
+            "name": "Bathurst High School", 
+            "id": 10
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 13, 
+            "name": "Gorokan High School", 
+            "id": 11
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 13, 
+            "name": "Gawler High School", 
+            "id": 12
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 14, 
+            "name": "Salisbury High School", 
+            "id": 13
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 15, 
+            "name": "Bathurst High School", 
+            "id": 14
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Brown widow spider", 
+        "id": 1260
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Kent", 
+    "professional_occupation": "Clerk", 
+    "father_professional_category": "intermediate production", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 11, 
+            "name": "Shop Assistant"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 12, 
+            "name": "Security Guard"
+        }, 
+        {
+            "age_to": 23, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 13, 
+            "name": "Surveyors assistant"
+        }, 
+        {
+            "age_to": 40, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 14, 
+            "name": "Finance clerk"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Bathurst", 
+    "residence_history": [
+        {
+            "town": "Gawler", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 13, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "Nsw"
+        }, 
+        {
+            "town": "toukley", 
+            "age_to": 14, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "Nsw"
+        }, 
+        {
+            "town": "Gawler", 
+            "age_to": 15, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "Sa"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 40, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "Nsw"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "Australia", 
+    "dob": "1970-08-28", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Elizabeth", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "intermediate clerical and service", 
+    "has_hobbies": true
+}

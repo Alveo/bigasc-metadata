@@ -1,0 +1,149 @@
+{
+    "hobbies_details": "Photography, weightlifting", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Southern and Central Asian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "CN", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "Shanghainese", 
+    "id": 765, 
+    "student_course": "Commerce", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 7, 
+            "name": "Carlton South Public School", 
+            "id": 2966
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Hurstville Public School", 
+            "id": 2967
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "James Ruse Agricultural High School", 
+            "id": 2968
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "University of New South Wales", 
+            "id": 2969
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Godman's Rock-wallaby", 
+        "id": 1002
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Chinese", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Ningbo", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "At home", 
+            "frequency": 10, 
+            "name": "Shanghainese", 
+            "id": 908
+        }, 
+        {
+            "situation": "Daily", 
+            "frequency": 90, 
+            "name": "English", 
+            "id": 909
+        }
+    ], 
+    "student_aspiration": "Financial Consultant", 
+    "mother_pob_town": "Shanghai", 
+    "residence_history": [
+        {
+            "town": "Carlton", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Hurstville", 
+            "age_to": 12, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Rosehill", 
+            "age_to": 22, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Chinese", 
+    "father_cultural_heritage": "Southern and Central Asian", 
+    "pob_country": "AU", 
+    "dob": "1991-09-28", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "CN", 
+    "mother_first_language": "Mandarin", 
+    "pob_town": "Camperdown", 
+    "father_first_language": "Mandarin", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Nose blocked, sore throat", 
+    "cultural_heritage": "Southern and Central Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,331 @@
+{
+    "hobbies_details": "Member of a band (guitar/banjo/vocals)\r\nCamping\r\nReading", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 784, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BEd (Hons)", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 8, 
+            "name": "De La Salle Primary, Orange", 
+            "id": 3044
+        }, 
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "St Mary's Infants, Orange", 
+            "id": 3043
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "St Joseph's Primary, Warren", 
+            "id": 3045
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 13, 
+            "name": "Warren Central School, Warren", 
+            "id": 3046
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 15, 
+            "name": "Courallie High School, Moree", 
+            "id": 3047
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 16, 
+            "name": "Moree High School, Moree", 
+            "id": 3048
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "St John's College Woodlawn, Lismore", 
+            "id": 3049
+        }, 
+        {
+            "age_to": 34, 
+            "age_from": 31, 
+            "name": "Southern Cross University, Lismore", 
+            "id": 3050
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Inland Forest Bat", 
+        "id": 44
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian accent", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Inverell", 
+    "professional_occupation": "Teacher/Lecturer", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1793, 
+            "name": "Full time Bank Officer"
+        }, 
+        {
+            "age_to": 23, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1794, 
+            "name": "Barman"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1795, 
+            "name": "Full time Self Employed (Roadhouse)"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1796, 
+            "name": "Part Time Postal Officer"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 1797, 
+            "name": "Full time Labourer"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": true, 
+            "age_from": 29, 
+            "id": 1798, 
+            "name": "Part time Fruiterer"
+        }, 
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 31, 
+            "id": 1799, 
+            "name": "Full time student"
+        }, 
+        {
+            "age_to": 39, 
+            "less_than_a_year": false, 
+            "age_from": 35, 
+            "id": 1800, 
+            "name": "Full time Primary School teacher"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": false, 
+            "age_from": 40, 
+            "id": 1801, 
+            "name": "Temporary Lecturer (part time/full time)"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Work", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 932
+        }, 
+        {
+            "situation": "Home", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 931
+        }, 
+        {
+            "situation": "Social life", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 933
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Cootamundra", 
+    "residence_history": [
+        {
+            "town": "Orange", 
+            "age_to": 9, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Maclean", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Warren", 
+            "age_to": 14, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Moree", 
+            "age_to": 17, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Lismore", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 20, 
+            "age_from": 20, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Moree", 
+            "age_to": 21, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Yamba", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Coonamble", 
+            "age_to": 27, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Mujumba", 
+            "age_to": 29, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Perth", 
+            "age_to": 30, 
+            "age_from": 30, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "The Channon", 
+            "age_to": 38, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Lismore", 
+            "age_to": 40, 
+            "age_from": 39, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Armidale", 
+            "age_to": null, 
+            "age_from": 41, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian accent", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1963-06-20", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Maclean", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

@@ -1,0 +1,262 @@
+{
+    "hobbies_details": "Surfing, photography, reading.", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 570, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "PhD Animal Behaviour", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Mount Eliza North Primary", 
+            "id": 2182
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Mount Eliza Secondary", 
+            "id": 2183
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "Monash University", 
+            "id": 2184
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 20, 
+            "name": "Deakin University", 
+            "id": 2185
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 21, 
+            "name": "Monash University", 
+            "id": 2186
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 25, 
+            "name": "Melbourne University", 
+            "id": 2187
+        }, 
+        {
+            "age_to": 30, 
+            "age_from": 26, 
+            "name": "Macquarie University", 
+            "id": 2188
+        }, 
+        {
+            "age_to": 37, 
+            "age_from": 36, 
+            "name": "Melbourne University", 
+            "id": 2189
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Mullamullang Cave spider", 
+        "id": 1316
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Wentworthville", 
+    "professional_occupation": "Wildlife Ecologist", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 27, 
+            "less_than_a_year": true, 
+            "age_from": 26, 
+            "id": 1375, 
+            "name": "Research Assistant"
+        }, 
+        {
+            "age_to": 36, 
+            "less_than_a_year": false, 
+            "age_from": 32, 
+            "id": 1376, 
+            "name": "Post doc"
+        }, 
+        {
+            "age_to": 38, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 1377, 
+            "name": "Wildlife Ecologist"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Liverpool", 
+    "residence_history": [
+        {
+            "town": "Camden", 
+            "age_to": 7, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Mount Eliza", 
+            "age_to": 23, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Torquay", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Mount Eliza", 
+            "age_to": 25, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Clayton", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Glen Waverley", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Elsternwick", 
+            "age_to": 28, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "North Ryde", 
+            "age_to": 29, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Newtown", 
+            "age_to": 31, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Marsfield", 
+            "age_to": 32, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Utrecht", 
+            "age_to": 36, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "NL", 
+            "state": ""
+        }, 
+        {
+            "town": "Mount Martha", 
+            "age_to": 37, 
+            "age_from": 36, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Richmond", 
+            "age_to": 38, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1973-09-20", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Camden", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

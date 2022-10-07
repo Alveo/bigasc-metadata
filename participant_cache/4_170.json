@@ -1,0 +1,160 @@
+{
+    "hobbies_details": "Bush walking and reading", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English ", 
+    "id": 350, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Master of Education", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "St Agatha's Pennant Hills ", 
+            "id": 1345
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Mt St Bennedict's", 
+            "id": 1346
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 19, 
+            "name": "University of Sydney ", 
+            "id": 1347
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Black-crowned Night Heron", 
+        "id": 170
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": "Teachering Consultant ", 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 19, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 950, 
+            "name": "Governess "
+        }, 
+        {
+            "age_to": 46, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 951, 
+            "name": "Teacher "
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 46, 
+            "id": 952, 
+            "name": "Teaching consultant "
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSw", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Thornleigh", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Inner West ", 
+            "age_to": 31, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Blaxland", 
+            "age_to": 46, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Inner West", 
+            "age_to": 49, 
+            "age_from": 46, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1964-01-23", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English ", 
+    "pob_town": "Ryde", 
+    "father_first_language": "English ", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

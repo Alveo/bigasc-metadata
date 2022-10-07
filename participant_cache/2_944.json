@@ -1,0 +1,196 @@
+{
+    "hobbies_details": "Listening to music - live & recorded; Cycling; Travelling", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4783
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4784
+        }, 
+        {
+            "comment": "Video frame skipping (on both cameras)", 
+            "component": 12, 
+            "session": 4, 
+            "video": "C", 
+            "audio": "A", 
+            "id": 4785
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4782
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Qld", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 598, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "B Communication Engineering", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Atheist", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Harrow Primary School", 
+            "id": 2304
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 12, 
+            "name": "Westgarth PS", 
+            "id": 2305
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Northcote Boys' School", 
+            "id": 2306
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 19, 
+            "name": "Latrobe", 
+            "id": 2307
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 20, 
+            "name": "RMIT (City)", 
+            "id": 2308
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Yellow-tailed Black-Cockatoo", 
+        "id": 944
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Balmoral", 
+    "professional_occupation": "Engineer", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 1447, 
+            "name": "Printer's assistant"
+        }, 
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1448, 
+            "name": "First Aid Instructor"
+        }, 
+        {
+            "age_to": 54, 
+            "less_than_a_year": false, 
+            "age_from": 34, 
+            "id": 1449, 
+            "name": "Engineer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 697
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Bundaberg", 
+    "residence_history": [
+        {
+            "town": "Harrow", 
+            "age_to": 12, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Inner North Melbourne Suburbs", 
+            "age_to": 54, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1957-08-07", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English ", 
+    "pob_town": "Hamilton", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

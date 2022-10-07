@@ -1,0 +1,216 @@
+{
+    "hobbies_details": "bushwalking and camping, painting/drawing, games - IQ tests, word games, etc., gym ", 
+    "rating": [], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 543, 
+    "student_course": "Speech Pathology", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 8, 
+            "age_from": 4, 
+            "name": "Windsor Primary", 
+            "id": 2073
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 8, 
+            "name": "Bronte Primary", 
+            "id": 2074
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 12, 
+            "name": "Meadowbank Primary", 
+            "id": 2075
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 13, 
+            "name": "Riverside Girls High", 
+            "id": 2076
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 14, 
+            "name": "Hornsby Girls High", 
+            "id": 2077
+        }, 
+        {
+            "age_to": 30, 
+            "age_from": 24, 
+            "name": "Kangan Batman TAFE", 
+            "id": 2078
+        }, 
+        {
+            "age_to": 44, 
+            "age_from": 43, 
+            "name": "ANIBT", 
+            "id": 2079
+        }, 
+        {
+            "age_to": null, 
+            "age_from": 44, 
+            "name": "James Cook University", 
+            "id": 2080
+        }
+    ], 
+    "location": {
+        "city": "Townsville", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 17
+    }, 
+    "animal": {
+        "name": "Honey Possum", 
+        "id": 1010
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Wedderburn", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "Speech Therapist", 
+    "mother_pob_town": "Ballarat", 
+    "residence_history": [
+        {
+            "town": "Ballarat", 
+            "age_to": null, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Prahran", 
+            "age_to": 4, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Glen Iris", 
+            "age_to": 8, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Bondi", 
+            "age_to": 13, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "West Ryde", 
+            "age_to": 14, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Westleigh", 
+            "age_to": 16, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "East St Kilda", 
+            "age_to": 20, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Sunbury", 
+            "age_to": 32, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Lakes Entrance", 
+            "age_to": 44, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Townsville", 
+            "age_to": null, 
+            "age_from": 44, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Qld"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1967-10-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Ballarat", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

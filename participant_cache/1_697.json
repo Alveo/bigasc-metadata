@@ -1,0 +1,144 @@
+{
+    "hobbies_details": "Gardening, Craft, Sewing, Friendship Club", 
+    "rating": [], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 698, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Nurse", 
+    "vocal_training_details": "Elocution, Singing", 
+    "other_languages": "N/A", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "melbourne university highschool", 
+            "id": 2699
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "Emily McPherson College of Domestic Economy", 
+            "id": 2700
+        }, 
+        {
+            "age_to": 29, 
+            "age_from": 28, 
+            "name": "Australian College of Nursing", 
+            "id": 2701
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Regent Parrot", 
+        "id": 697
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "Home", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1658, 
+            "name": "Nursing Training"
+        }, 
+        {
+            "age_to": 50, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 1659, 
+            "name": "Home Nursing"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "vic", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "daily", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 828
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "melbourne", 
+            "age_to": 37, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }, 
+        {
+            "town": "adelaide", 
+            "age_to": 77, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "sa"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "Australia", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1935-02-08", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "home duties", 
+    "has_hobbies": true
+}

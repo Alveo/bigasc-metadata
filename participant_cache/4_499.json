@@ -1,0 +1,165 @@
+{
+    "hobbies_details": "Kayaking, reading, movies, travel", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 374, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Medical Practitioner", 
+    "vocal_training_details": "", 
+    "other_languages": "French, indonesian", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Beaumaris Primary School, Melbourne", 
+            "id": 1450
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Menton Girls Grammar School, Melbourne", 
+            "id": 1451
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 18, 
+            "name": "University of Melbourne", 
+            "id": 1452
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Little Corella", 
+        "id": 499
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "MOONTA", 
+    "professional_occupation": "Medical Practitioner", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1029, 
+            "name": "Hospitality"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 1030, 
+            "name": "Army Reserve"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1031, 
+            "name": "Medical Practitioner"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "TAS", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 408
+        }, 
+        {
+            "situation": "travel ", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 409
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "WHYALLA", 
+    "residence_history": [
+        {
+            "town": "LAUNCESTON", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "MELBOURNE", 
+            "age_to": 23, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 49, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1962-05-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "LAUNCESTON", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

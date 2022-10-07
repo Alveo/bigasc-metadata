@@ -1,0 +1,142 @@
+{
+    "hobbies_details": "Volleyball, cricket, stamp collecting, swimming and fishing ", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "CN", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "Cantonese ", 
+    "id": 386, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Bachelor of Architecture", 
+    "vocal_training_details": "", 
+    "other_languages": "Mandarin", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic ", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "St Raphael Primary Sth Hurstville ", 
+            "id": 1492
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Penshurst Marist High ", 
+            "id": 1493
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 18, 
+            "name": "UNSW", 
+            "id": 1494
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Australian Swiftlet", 
+        "id": 127
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Chinese ", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Hong Kong", 
+    "professional_occupation": "Architect", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1055, 
+            "name": "Tutor "
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1056, 
+            "name": "Architect "
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "intermediate production", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Family and friends ", 
+            "frequency": 50, 
+            "name": "Cantonese ", 
+            "id": 420
+        }, 
+        {
+            "situation": "Friends ", 
+            "frequency": 10, 
+            "name": "Mandarin ", 
+            "id": 421
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Hong Kong ", 
+    "residence_history": [
+        {
+            "town": "Hurstville", 
+            "age_to": 32, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Chinese ", 
+    "father_cultural_heritage": "North-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1980-05-06", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "CN", 
+    "mother_first_language": "Cantonese ", 
+    "pob_town": "Sydney", 
+    "father_first_language": "Cantonese ", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

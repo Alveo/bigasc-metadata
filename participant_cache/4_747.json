@@ -1,0 +1,157 @@
+{
+    "hobbies_details": "Photography, gaming, computer engineering, bass guitar, skateboarding.", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Associate Degree", 
+    "first_language": "English", 
+    "id": 313, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Cert 3 in Security Operations", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": true, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "Flynn Primary School", 
+            "id": 1212
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 11, 
+            "name": "Melba High School", 
+            "id": 1213
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "Copland College", 
+            "id": 1214
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 19, 
+            "name": "CIT Bruce", 
+            "id": 1215
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "Australian National University", 
+        "id": 1
+    }, 
+    "animal": {
+        "name": "Shy Albatross", 
+        "id": 747
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "None", 
+    "RA": {
+        "username": "katharine gosling", 
+        "first_name": "katharine", 
+        "last_name": "gosling", 
+        "is_active": true, 
+        "email": "katharine.gosling@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-10-04 15:49:48", 
+        "id": 16, 
+        "date_joined": "2011-07-20 12:57:59"
+    }, 
+    "father_pob_town": "Casino", 
+    "professional_occupation": "Security", 
+    "father_professional_category": "unemployed", 
+    "profession_history": [
+        {
+            "age_to": 23, 
+            "less_than_a_year": true, 
+            "age_from": 23, 
+            "id": 861, 
+            "name": "ANU Security "
+        }, 
+        {
+            "age_to": 23, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 862, 
+            "name": "Security 1"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 863, 
+            "name": "Serco Sodexo Defence Services"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 335
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Paddington", 
+    "residence_history": [
+        {
+            "town": "Paddington", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Flynn", 
+            "age_to": 23, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "QLD", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1988-03-16", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Paddington", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "I can't hear a few very low tones.", 
+    "professional_category": "tradesperson", 
+    "has_hobbies": true
+}

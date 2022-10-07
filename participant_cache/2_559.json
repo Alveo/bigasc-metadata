@@ -1,0 +1,198 @@
+{
+    "hobbies_details": "Walking, gym, reading, hiking, cooking", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Southern and Eastern European", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "EG", 
+    "mother_pob_state": "CYPRUS", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "Armanian", 
+    "id": 507, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BSc, Masters in Childrens Education", 
+    "vocal_training_details": "", 
+    "other_languages": "Greek, Japanese", 
+    "has_hearing_problems": true, 
+    "religion": "Armenian Orthodox", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 5, 
+            "name": "Mt Pleasant Primary School", 
+            "id": 1955
+        }, 
+        {
+            "age_to": 10, 
+            "age_from": 9, 
+            "name": "Glenelg Primary School", 
+            "id": 1956
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Burrendah Primary School", 
+            "id": 1957
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Willeton Senior High School", 
+            "id": 1958
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Murdoch University", 
+            "id": 1959
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 22, 
+            "name": "Melbourne University", 
+            "id": 1960
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Mountain Thornbill", 
+        "id": 559
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Armanian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "ALEXANDRIA", 
+    "professional_occupation": "Teacher", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 46, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1276, 
+            "name": "Hospitality"
+        }, 
+        {
+            "age_to": 36, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1277, 
+            "name": "Tutoring"
+        }, 
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1278, 
+            "name": "Volunteer work"
+        }, 
+        {
+            "age_to": 46, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1279, 
+            "name": "Teaching"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 586
+        }, 
+        {
+            "situation": "family", 
+            "frequency": 5, 
+            "name": "Armanian", 
+            "id": 587
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "LIMASSOL", 
+    "residence_history": [
+        {
+            "town": "ADELAIDE", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 9, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "ADELAIDE", 
+            "age_to": 10, 
+            "age_from": 9, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 46, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "EGYPT", 
+    "mother_accent": "Greek", 
+    "father_cultural_heritage": "North African and Middle Eastern", 
+    "pob_country": "AU", 
+    "dob": "1966-01-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "CY", 
+    "mother_first_language": "Greek", 
+    "pob_town": "ADELAIDE", 
+    "father_first_language": "Armanian", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Southern and Eastern European", 
+    "hearing_problems_details": "When very young, many ear infections etc. Operation to deal with. ", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

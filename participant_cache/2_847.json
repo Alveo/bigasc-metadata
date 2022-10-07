@@ -1,0 +1,329 @@
+{
+    "hobbies_details": "Played numerous sports from age 16 until recently - now coach and manage\r\nRepresented NSW as a player and coach both in Australia and o'seas\r\nLike cooking photography travel and computer games", 
+    "rating": [
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1235
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1236
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1237
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1238
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1239
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1240
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1241
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1242
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1243
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1244
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1245
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1246
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1247
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1248
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1249
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1250
+        }
+    ], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "primary to junior high", 
+    "first_language": "English", 
+    "id": 8, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Diploma in Tourism", 
+    "vocal_training_details": "", 
+    "other_languages": "Understand Itialian", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Lithgow Public School", 
+            "id": 33
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Lithgow High School", 
+            "id": 34
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "Lithgow TAFE", 
+            "id": 35
+        }, 
+        {
+            "age_to": 51, 
+            "age_from": 48, 
+            "name": "Blue Mountains TAFE", 
+            "id": 36
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Victoria's Riflebird", 
+        "id": 847
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Aust", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Unknown", 
+    "professional_occupation": "Executive Officer", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 32, 
+            "name": "Various Clerical Roles Aust Dept of Defence"
+        }, 
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 33, 
+            "name": "Computer Programer Dept of Defence"
+        }, 
+        {
+            "age_to": 43, 
+            "less_than_a_year": false, 
+            "age_from": 35, 
+            "id": 34, 
+            "name": "Home Duties"
+        }, 
+        {
+            "age_to": 45, 
+            "less_than_a_year": false, 
+            "age_from": 43, 
+            "id": 35, 
+            "name": "Basketball Coach"
+        }, 
+        {
+            "age_to": 47, 
+            "less_than_a_year": false, 
+            "age_from": 45, 
+            "id": 36, 
+            "name": "Restaurant Owner"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 47, 
+            "id": 37, 
+            "name": "Basketball Development Manager"
+        }, 
+        {
+            "age_to": 51, 
+            "less_than_a_year": false, 
+            "age_from": 49, 
+            "id": 38, 
+            "name": "Tourism Manager"
+        }, 
+        {
+            "age_to": 62, 
+            "less_than_a_year": false, 
+            "age_from": 51, 
+            "id": 39, 
+            "name": "Executive Officer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Always", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 6
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Manly", 
+    "residence_history": [
+        {
+            "town": "Lithgow ", 
+            "age_to": 42, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Warsaw", 
+            "age_to": 42, 
+            "age_from": 42, 
+            "less_than_a_year": false, 
+            "country": "USA", 
+            "state": ""
+        }, 
+        {
+            "town": "Lithgow", 
+            "age_to": 62, 
+            "age_from": 42, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1948-12-18", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Lithgow", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

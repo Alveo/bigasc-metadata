@@ -1,0 +1,121 @@
+{
+    "hobbies_details": "Tennis, Piano, Bassoon, Photography, Theatre", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "QLD", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 531, 
+    "student_course": "Speech Pathology", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Opera training (13-18)", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "Townsville Central State Primary School", 
+            "id": 2032
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Thuringowa State High School", 
+            "id": 2033
+        }, 
+        {
+            "age_to": 31, 
+            "age_from": 18, 
+            "name": "Jame Cook University", 
+            "id": 2034
+        }
+    ], 
+    "location": {
+        "city": "Townsville", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 17
+    }, 
+    "animal": {
+        "name": "Little Egret", 
+        "id": 503
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "situational", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 610
+        }
+    ], 
+    "student_aspiration": "Speech Pathologist", 
+    "mother_pob_town": "Ipswich", 
+    "residence_history": [
+        {
+            "town": "Townsville", 
+            "age_to": 31, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1981-05-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Townsville", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

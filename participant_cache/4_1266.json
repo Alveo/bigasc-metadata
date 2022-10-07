@@ -1,0 +1,135 @@
+{
+    "hobbies_details": "Play Piano casually AMEB Grade 4 completed. Some church choir singing during 1988 to 1994. Played Bassoon from 1981 to 2001 including in a number of community orchestras. Hobby electronics. Hobby woodworking. Regular Bicycle rider.", 
+    "rating": [], 
+    "education_level": "Advanced Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Diploma", 
+    "first_language": "English", 
+    "id": 252, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Associate Diploma in Architectural Drafting", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Findon High School", 
+            "id": 964
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "University of South Australia", 
+            "id": 965
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 20, 
+            "name": "Marleston TAFE", 
+            "id": 966
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 21, 
+            "name": "Gilles Plains TAFE", 
+            "id": 967
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Chink Jumping spider", 
+        "id": 1266
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "Tom Anderson", 
+        "first_name": "Tom", 
+        "last_name": "Anderson", 
+        "is_active": true, 
+        "email": "tom.anderson@flinders.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-12-06 10:50:46", 
+        "id": 23, 
+        "date_joined": "2011-10-17 10:58:48"
+    }, 
+    "father_pob_town": "Williamstown", 
+    "professional_occupation": "Building Designer", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 39, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 706, 
+            "name": "Full Time Architectural Drafter"
+        }, 
+        {
+            "age_to": 43, 
+            "less_than_a_year": false, 
+            "age_from": 39, 
+            "id": 707, 
+            "name": "Full Time Building Designer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Cummins", 
+    "residence_history": [
+        {
+            "town": "Adelaide", 
+            "age_to": 43, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1968-07-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Adelaide", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

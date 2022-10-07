@@ -1,0 +1,149 @@
+{
+    "hobbies_details": "Photography, Karate", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Southern and Central Asian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "IN", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Diploma", 
+    "first_language": "Marathi", 
+    "id": 908, 
+    "student_course": "Aerospace Engineering", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Hindu", 
+    "education_history": [
+        {
+            "age_to": 22, 
+            "age_from": 17, 
+            "name": "UNSW", 
+            "id": 3419
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Sydney Boys High School", 
+            "id": 3420
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 9, 
+            "name": "St Peters Anglican Primary School", 
+            "id": 3421
+        }, 
+        {
+            "age_to": 9, 
+            "age_from": 5, 
+            "name": "Bankstown Public School", 
+            "id": 3422
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Greater Sand Plover", 
+        "id": 395
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Indian Accent", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Gotne", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "tradesperson", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Public", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 1114
+        }, 
+        {
+            "situation": "Family", 
+            "frequency": 20, 
+            "name": "Marathi", 
+            "id": 1115
+        }
+    ], 
+    "student_aspiration": "Engineer", 
+    "mother_pob_town": "Ratnagiri", 
+    "residence_history": [
+        {
+            "town": "Moorebank", 
+            "age_to": 22, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Minto", 
+            "age_to": 20, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bankstown", 
+            "age_to": 8, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Indian Accent", 
+    "father_cultural_heritage": "Southern and Central Asian", 
+    "pob_country": "IN", 
+    "dob": "1992-05-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "IN", 
+    "mother_first_language": "Marathi", 
+    "pob_town": "Talegaon", 
+    "father_first_language": "Marathi", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Southern and Central Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

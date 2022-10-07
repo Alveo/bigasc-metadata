@@ -1,0 +1,133 @@
+{
+    "hobbies_details": "Gaming, Playing social Sports, Going to Church", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Southern and Eastern European", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "Italian", 
+    "id": 668, 
+    "student_course": "BSc (Hons)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Spence Primary School", 
+            "id": 2584
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 11, 
+            "name": "Bethesda Christian College", 
+            "id": 2585
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Tabor Christian College", 
+            "id": 2586
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "Flinders University", 
+            "id": 2587
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Striated Pardalote", 
+        "id": 802
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "none", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Ipswich", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All of the time", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 789
+        }, 
+        {
+            "situation": "When talking to grandparents", 
+            "frequency": 1, 
+            "name": "Italian", 
+            "id": 790
+        }
+    ], 
+    "student_aspiration": "Statistics", 
+    "mother_pob_town": "Adelaide", 
+    "residence_history": [
+        {
+            "town": "Aberfoyle Park", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "QLD", 
+    "mother_accent": "none", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1993-05-20", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "Italian", 
+    "pob_town": "Adelaide", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,153 @@
+{
+    "hobbies_details": "Soccer, reading, swimming, gym and pc games ", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "CN", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English ", 
+    "id": 420, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Bachelor of Pharmacy ", 
+    "vocal_training_details": "Speech teacher to \"get rid of Westie accent\" for about 2 years before high school\r\n", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic ", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "North Rocks Christ the King Primary ", 
+            "id": 1612
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "St Ignatius High ", 
+            "id": 1613
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "University of Sydney", 
+            "id": 1614
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Cape Petrel", 
+        "id": 245
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Cantonese ", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Guan Tsi ", 
+    "professional_occupation": "Pharmacist ", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1109, 
+            "name": "Retail sales assistant "
+        }, 
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1110, 
+            "name": "Pharmacist "
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sapian ", 
+    "residence_history": [
+        {
+            "town": "Hornsby", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Carlingford", 
+            "age_to": 26, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Epping ", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Eastwood", 
+            "age_to": 35, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Phillipino ", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1977-01-03", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "PH", 
+    "mother_first_language": "Phillipino ", 
+    "pob_town": "Grafton", 
+    "father_first_language": "Cantonese ", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "South-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

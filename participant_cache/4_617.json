@@ -1,0 +1,228 @@
+{
+    "hobbies_details": "Singing - University studies at conservatorium\r\nmeditation\r\nswimming\r\nreading", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 591, 
+    "student_course": "Dip Creative Industries", 
+    "has_piercings": false, 
+    "professional_qualification": "BAppSci (Speech Path)", 
+    "vocal_training_details": "at uni\r\ntheatre, voiceovers", 
+    "other_languages": "French, German, Italian", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 8, 
+            "age_from": 4, 
+            "name": "Linden Park PS", 
+            "id": 2277
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 9, 
+            "name": "St Peter's Girls' School, Stonyfell", 
+            "id": 2278
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Walford Anglican School for Girls, Unley", 
+            "id": 2279
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "Uni of Adelaide", 
+            "id": 2280
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 22, 
+            "name": "Latrobe", 
+            "id": 2281
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Papuan Spine-tailed Swift", 
+        "id": 617
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Murray Bridge", 
+    "professional_occupation": "Speech Pathologist", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1423, 
+            "name": "Retail service"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 1424, 
+            "name": "Disability support worker"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1425, 
+            "name": "Speech Pathologist"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 1426, 
+            "name": "Student - Diploma of Creative Industries"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Social with NS & other NNS", 
+            "frequency": 2, 
+            "name": "French", 
+            "id": 683
+        }, 
+        {
+            "situation": "Social with NS & other NNS", 
+            "frequency": 1, 
+            "name": "German", 
+            "id": 684
+        }, 
+        {
+            "situation": "Work, and social with NS & other NNS", 
+            "frequency": 1, 
+            "name": "Italian", 
+            "id": 685
+        }, 
+        {
+            "situation": "All other ", 
+            "frequency": 96, 
+            "name": "English", 
+            "id": 686
+        }
+    ], 
+    "student_aspiration": "Course irrelevant to career", 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Toorak Gardens", 
+            "age_to": 20, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Travelling overseas", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": ""
+        }, 
+        {
+            "town": "North Eastern Suburbs Melbourne", 
+            "age_to": 25, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Kensington", 
+            "age_to": 29, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Elwood", 
+            "age_to": 34, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }, 
+        {
+            "town": "Greensborough", 
+            "age_to": 36, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Elwood", 
+            "age_to": null, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1975-01-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Adelaide", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "Early stages of cold (not audibly affecting voice)", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

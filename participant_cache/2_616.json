@@ -1,0 +1,278 @@
+{
+    "hobbies_details": "Yoga, pilates, group fitness classes. Reading. Watching television and foreign films.", 
+    "rating": [
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2252
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2253
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2254
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2255
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2256
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2257
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 12, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2258
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2259
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2260
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2261
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2262
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2263
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2264
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2265
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2266
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2267
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 461, 
+    "student_course": "PhD", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "French and Italian", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 4, 
+            "name": "Armidale City Public School", 
+            "id": 1772
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Martins Gully Public School", 
+            "id": 1773
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Armidale High School", 
+            "id": 1774
+        }, 
+        {
+            "age_to": 29, 
+            "age_from": 17, 
+            "name": "University of New England", 
+            "id": 1775
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Papuan Frogmouth", 
+        "id": 616
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Armidale", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everday + work", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 508
+        }, 
+        {
+            "situation": "In France or with French speaking students", 
+            "frequency": 1, 
+            "name": "french", 
+            "id": 509
+        }
+    ], 
+    "student_aspiration": "Lecturer in Linguistics", 
+    "mother_pob_town": "Wollongong", 
+    "residence_history": [
+        {
+            "town": "Armidale", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Angers", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "FR", 
+            "state": ""
+        }, 
+        {
+            "town": "Armidale", 
+            "age_to": 29, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1983-03-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Armidale", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

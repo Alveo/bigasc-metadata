@@ -1,0 +1,286 @@
+{
+    "hobbies_details": "Reading, skiiing, music, puzzles and crosswords", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Qld", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English ", 
+    "id": 416, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA", 
+    "vocal_training_details": "", 
+    "other_languages": "German ", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Artarmon Public Primary ", 
+            "id": 1595
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Noosa High and Cremore Girls", 
+            "id": 1596
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 16, 
+            "name": "Sydney Girls High  ", 
+            "id": 1597
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "Macquarie Uni ", 
+            "id": 1598
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Northern Shoveler", 
+        "id": 587
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "Part time ESL teacher", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 38, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1095, 
+            "name": "Hospitality and management "
+        }, 
+        {
+            "age_to": 42, 
+            "less_than_a_year": false, 
+            "age_from": 38, 
+            "id": 1096, 
+            "name": "Teaching "
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Friends", 
+            "frequency": 1, 
+            "name": "German ", 
+            "id": 452
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Ayr", 
+    "residence_history": [
+        {
+            "town": "Kew", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Kings Cross", 
+            "age_to": 2, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Hornsby ", 
+            "age_to": 3, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Artarmon", 
+            "age_to": 10, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Noosa", 
+            "age_to": 13, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "North Sydney", 
+            "age_to": 14, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Inner West", 
+            "age_to": 15, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Wooloomooloo", 
+            "age_to": 16, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bondi Junction", 
+            "age_to": 17, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "North Sydney", 
+            "age_to": 20, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "International Travel", 
+            "age_to": 21, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "BO", 
+            "state": "Sth Americ"
+        }, 
+        {
+            "town": "North Sydney ", 
+            "age_to": 25, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "International Travel ", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": "Europe"
+        }, 
+        {
+            "town": "Noosa", 
+            "age_to": 29, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Paddington", 
+            "age_to": 31, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Glebe", 
+            "age_to": 33, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Surry Hills ", 
+            "age_to": 37, 
+            "age_from": 33, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Newtown ", 
+            "age_to": 38, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Marrackville ", 
+            "age_to": 42, 
+            "age_from": 38, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1968-07-23", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English ", 
+    "pob_town": "Kew", 
+    "father_first_language": "English ", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "home duties", 
+    "has_hobbies": true
+}

@@ -1,0 +1,143 @@
+{
+    "hobbies_details": "I love to read and listen to soft music & classical music. ", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Other: Other: Ecuador", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "EC", 
+    "mother_pob_state": "", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "Spanish", 
+    "id": 811, 
+    "student_course": "Masters of Marketing", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "English", 
+    "has_hearing_problems": false, 
+    "religion": "Roman Catholic", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "King Park Public School", 
+            "id": 3147
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 11, 
+            "name": "Westfields Sports High", 
+            "id": 3148
+        }, 
+        {
+            "age_to": 33, 
+            "age_from": 18, 
+            "name": "University of Western Sydney", 
+            "id": 3149
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Magellanic Penguin", 
+        "id": 532
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Spanish accent", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Quito", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "study/work", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 970
+        }, 
+        {
+            "situation": "family/friends", 
+            "frequency": 20, 
+            "name": "Spanish", 
+            "id": 971
+        }
+    ], 
+    "student_aspiration": "To own a marketing business and be a consultant.", 
+    "mother_pob_town": "Quito", 
+    "residence_history": [
+        {
+            "town": "Wakeley", 
+            "age_to": 25, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Pendle Hill", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "St Johns Park", 
+            "age_to": 33, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Spanish Accent", 
+    "father_cultural_heritage": "Other: Other: Ecuador", 
+    "pob_country": "AU", 
+    "dob": "1980-05-01", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "EC", 
+    "mother_first_language": "Spanish", 
+    "pob_town": "Westmead", 
+    "father_first_language": "Spanish", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Other: Ecuador", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

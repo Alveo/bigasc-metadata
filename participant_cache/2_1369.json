@@ -1,0 +1,187 @@
+{
+    "hobbies_details": "Tennis (social club)", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "PH", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English and Tagalog", 
+    "id": 684, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Administration", 
+    "vocal_training_details": "", 
+    "other_languages": "Tagalog", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Bradfordville Primary School", 
+            "id": 2645
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Mulwaree High School", 
+            "id": 2646
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 18, 
+            "name": "University of Wollongong", 
+            "id": 2647
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Wheelweaving orbweaving spider", 
+        "id": 1369
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "American", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Isabella", 
+    "professional_occupation": "Student Administration Officer", 
+    "father_professional_category": "intermediate production", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 1621, 
+            "name": "KFC"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1622, 
+            "name": "Student "
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1623, 
+            "name": "ClubsNSW Administration"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 1624, 
+            "name": "NSW Ombudsman Administration"
+        }, 
+        {
+            "age_to": 31, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 1625, 
+            "name": "UNSW Administration"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Daily", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 810
+        }, 
+        {
+            "situation": "Home and family events", 
+            "frequency": 20, 
+            "name": "Tagalog", 
+            "id": 811
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Zamboanga City", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "PH", 
+            "state": ""
+        }, 
+        {
+            "town": "Goulburn", 
+            "age_to": 18, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Wollongong", 
+            "age_to": 24, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 31, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "British", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "PH", 
+    "dob": "1980-10-01", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Zamboanga City", 
+    "father_first_language": "Tagalog", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "intermediate clerical and service", 
+    "has_hobbies": true
+}

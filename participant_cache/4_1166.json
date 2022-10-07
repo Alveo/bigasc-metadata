@@ -1,0 +1,179 @@
+{
+    "hobbies_details": "Musician: Piano/Voice\r\nRead\r\nGarden\r\nSew/Knit", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Diploma", 
+    "first_language": "English", 
+    "id": 692, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "n/a", 
+    "vocal_training_details": "Singer", 
+    "other_languages": "v.basic french/v. basicitalian", 
+    "has_hearing_problems": false, 
+    "religion": "Anglican", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Denistone East Public School", 
+            "id": 2677
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Ryde High School", 
+            "id": 2678
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "Macquarie University", 
+            "id": 2679
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 21, 
+            "name": "UNE", 
+            "id": 2680
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Spinner Dolphin", 
+        "id": 1166
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": "Executive Assistant", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 1646, 
+            "name": "Governess"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1647, 
+            "name": "Nanny"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1648, 
+            "name": "Barmaid/Music Teacher/Retail"
+        }, 
+        {
+            "age_to": 46, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 1649, 
+            "name": "Home Duties"
+        }, 
+        {
+            "age_to": 57, 
+            "less_than_a_year": false, 
+            "age_from": 48, 
+            "id": 1650, 
+            "name": "Admin/Retail/Retail owner/Admin"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "music", 
+            "frequency": 1, 
+            "name": "italian", 
+            "id": 821
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Denistone East", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Forbes", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "New England", 
+            "age_to": 57, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1954-09-30", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "Salicylate allergy which can  cause the need to clear the throat", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": true
+}

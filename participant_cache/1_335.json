@@ -1,0 +1,263 @@
+{
+    "hobbies_details": "", 
+    "rating": [
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 949
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 950
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 951
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 952
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 953
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 954
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 955
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 956
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 957
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 958
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 959
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 960
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 961
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "England", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Diploma", 
+    "first_language": "English", 
+    "id": 25, 
+    "student_course": "Business Management", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "None", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 4, 
+            "name": "Blue Mountains Grammar School", 
+            "id": 103
+        }, 
+        {
+            "age_to": 9, 
+            "age_from": 6, 
+            "name": "St Josephs School", 
+            "id": 104
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 9, 
+            "name": "Wentowrth Falls Primary School", 
+            "id": 105
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 11, 
+            "name": "Blue Mountains Christian School", 
+            "id": 106
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "Charles Sturt University", 
+            "id": 107
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Eastern Yellow Wagtail", 
+        "id": 335
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Wantage", 
+    "professional_occupation": null, 
+    "father_professional_category": "assoc professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "Management", 
+    "mother_pob_town": "Blacktown", 
+    "residence_history": [
+        {
+            "town": "Jenolan Caves", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Lithgow", 
+            "age_to": 6, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Eden", 
+            "age_to": 9, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Wentworth Falls", 
+            "age_to": 17, 
+            "age_from": 9, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 19, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "Australia", 
+    "dob": "1992-05-22", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Jenolan Caves", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

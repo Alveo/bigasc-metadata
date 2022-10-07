@@ -1,0 +1,224 @@
+{
+    "hobbies_details": "play percussion (since 12 years of age till now), piano (grade 8), guitar (hobby)\r\nrun, cycle (100k)\r\nart (in school, outside classes).", 
+    "rating": [
+        {
+            "comment": "DROPPED VID FRAME", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2716
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2717
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2718
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2719
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2720
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2721
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2722
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2723
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2724
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2725
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "CH", 
+    "mother_pob_state": "ZH", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "english", 
+    "id": 185, 
+    "student_course": "Speech Pathology", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "german, swiss german", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Toowong State School", 
+            "id": 728
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Kenmore State High School", 
+            "id": 729
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "University of Queensland", 
+            "id": 730
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Arctic Warbler", 
+        "id": 95
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "european", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "St Gallen", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NY", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "friends, family", 
+            "frequency": 95, 
+            "name": "english", 
+            "id": 183
+        }, 
+        {
+            "situation": "relatives", 
+            "frequency": 5, 
+            "name": "swiss german", 
+            "id": 184
+        }
+    ], 
+    "student_aspiration": "work with acute cancer patients", 
+    "mother_pob_town": "Zurich", 
+    "residence_history": [
+        {
+            "town": "Cornell", 
+            "age_to": null, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "US", 
+            "state": "NY"
+        }, 
+        {
+            "town": "Zurich", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "CH", 
+            "state": "ZH"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 19, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }
+    ], 
+    "father_pob_state": "SG", 
+    "mother_accent": "european", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "US", 
+    "dob": "1992-08-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "CH", 
+    "mother_first_language": "swiss german", 
+    "pob_town": "Cornell", 
+    "father_first_language": "Swiss German", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

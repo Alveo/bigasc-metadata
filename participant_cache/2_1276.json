@@ -1,0 +1,143 @@
+{
+    "hobbies_details": "Soccer, guitar", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Associate Degree", 
+    "first_language": "English", 
+    "id": 904, 
+    "student_course": "Science (Psychology)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "French (high school level)", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "St. Raphael's Primary School South Hurstville", 
+            "id": 3404
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 11, 
+            "name": "St. Patrick's Primary School Mentone", 
+            "id": 3405
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Mentone Girls' Secondary College", 
+            "id": 3406
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Dewdrop spider", 
+        "id": 1276
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all the time", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1107
+        }, 
+        {
+            "situation": "School", 
+            "frequency": 10, 
+            "name": "French", 
+            "id": 1108
+        }
+    ], 
+    "student_aspiration": "Clinical Psychologist", 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Bexley", 
+            "age_to": 11, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Beaumaris", 
+            "age_to": 18, 
+            "age_from": 11, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }, 
+        {
+            "town": "Kensington", 
+            "age_to": null, 
+            "age_from": 18, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1995-09-23", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

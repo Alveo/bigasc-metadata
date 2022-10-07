@@ -1,0 +1,183 @@
+{
+    "hobbies_details": "Reading, movies, TV", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4788
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4786
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4787
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 596, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "11 years work experience", 
+    "vocal_training_details": "Amateur theatrics", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Cooinda Primary", 
+            "id": 2296
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 11, 
+            "name": "Monash High", 
+            "id": 2297
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "Charles Sturt University", 
+            "id": 2298
+        }, 
+        {
+            "age_to": 28, 
+            "age_from": 25, 
+            "name": "Latrobe University", 
+            "id": 2299
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Lewin's Honeyeater", 
+        "id": 492
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "Archivist - National Archives", 
+    "father_professional_category": "unemployed", 
+    "profession_history": [
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 1442, 
+            "name": "Tax Office"
+        }, 
+        {
+            "age_to": 41, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1443, 
+            "name": "Archivist - National Archives"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Victoria", 
+    "mother_professional_category": "unemployed", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 695
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Melbourne", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Wagga Wagga", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": 41, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VUC"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1971-06-11", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Oakleigh", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

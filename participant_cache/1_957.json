@@ -1,0 +1,177 @@
+{
+    "hobbies_details": "", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 794, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Master of Psychology", 
+    "vocal_training_details": "", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 5, 
+            "name": "Neutral Bay Primary School", 
+            "id": 3087
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 10, 
+            "name": "Cammeray Primary School", 
+            "id": 3088
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Cremorne Girls High", 
+            "id": 3089
+        }, 
+        {
+            "age_to": 35, 
+            "age_from": 30, 
+            "name": "University of New South Wales", 
+            "id": 3090
+        }, 
+        {
+            "age_to": 49, 
+            "age_from": 40, 
+            "name": "University of Sydney", 
+            "id": 3091
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Antilopine Kangaroo", 
+        "id": 957
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian English", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Kempsey", 
+    "professional_occupation": "Clinical Psychologist", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1836, 
+            "name": "Secretrarial work"
+        }, 
+        {
+            "age_to": 44, 
+            "less_than_a_year": false, 
+            "age_from": 35, 
+            "id": 1837, 
+            "name": "University tutor"
+        }, 
+        {
+            "age_to": 66, 
+            "less_than_a_year": false, 
+            "age_from": 44, 
+            "id": 1838, 
+            "name": "Clinical Psychologist"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Daily", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 947
+        }, 
+        {
+            "situation": "travel, friends", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 948
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Sydney", 
+            "age_to": 25, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Christchurch", 
+            "age_to": 26, 
+            "age_from": 26, 
+            "less_than_a_year": true, 
+            "country": "NZ", 
+            "state": ""
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 66, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1946-03-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Lillyfield", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": false
+}

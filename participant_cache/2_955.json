@@ -1,0 +1,142 @@
+{
+    "hobbies_details": "Playing music, grammar and cooking ", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Advanced Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English ", 
+    "id": 426, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA", 
+    "vocal_training_details": "", 
+    "other_languages": "Japanese and German ", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "Mulgoa Public Primary", 
+            "id": 1629
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Penrith Anglican College ", 
+            "id": 1630
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "University of Sydney", 
+            "id": 1631
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Alexandria False Antechinus", 
+        "id": 955
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Revesby", 
+    "professional_occupation": "Music Tutor", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 1117, 
+            "name": "Sales assistant "
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1118, 
+            "name": "Music Tutor"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Travel", 
+            "frequency": 1, 
+            "name": "Japanese ", 
+            "id": 463
+        }, 
+        {
+            "situation": "Travel", 
+            "frequency": 1, 
+            "name": "German ", 
+            "id": 464
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Seven Hills ", 
+    "residence_history": [
+        {
+            "town": "Mulgoa", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "AusE ", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1990-11-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English ", 
+    "pob_town": "Mulgoa", 
+    "father_first_language": "English ", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "unemployed", 
+    "has_hobbies": true
+}

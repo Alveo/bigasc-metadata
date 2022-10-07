@@ -1,0 +1,264 @@
+{
+    "hobbies_details": "Walking, sailing, gardening, reading", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2321
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2322
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2323
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2324
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2325
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2326
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2327
+        }
+    ], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": "parttime", 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 556, 
+    "student_course": "Graduate Certificate in Higher Education", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Pigin English, Arabic", 
+    "has_hearing_problems": false, 
+    "religion": "No affiliation", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 6, 
+            "name": "Artarmon Public School", 
+            "id": 2125
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Surrey Hills Primary School", 
+            "id": 2126
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Box Hill Boys High School", 
+            "id": 2127
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 16, 
+            "name": "Royal Australian Naval College", 
+            "id": 2128
+        }, 
+        {
+            "age_to": 60, 
+            "age_from": 52, 
+            "name": "University of Technology Sydney", 
+            "id": 2129
+        }, 
+        {
+            "age_to": 62, 
+            "age_from": 60, 
+            "name": "University of Sydney", 
+            "id": 2130
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Lemon-bellied Flycatcher", 
+        "id": 483
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "English", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": null, 
+    "father_professional_category": "unemployed", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 98, 
+            "name": "English", 
+            "id": 638
+        }, 
+        {
+            "situation": "Counselling students", 
+            "frequency": 1, 
+            "name": "Pigin", 
+            "id": 639
+        }, 
+        {
+            "situation": "Counselling students", 
+            "frequency": 1, 
+            "name": "Arabic", 
+            "id": 640
+        }
+    ], 
+    "student_aspiration": "Retire!", 
+    "mother_pob_town": "Bridgeport", 
+    "residence_history": [
+        {
+            "town": "Sydney", 
+            "age_to": 10, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": 16, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Jervis Bay", 
+            "age_to": 21, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "At sea", 
+            "age_to": 32, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "AUS"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 40, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Kuwait", 
+            "age_to": 47, 
+            "age_from": 40, 
+            "less_than_a_year": false, 
+            "country": "KW", 
+            "state": "KWT"
+        }, 
+        {
+            "town": "Riyadh", 
+            "age_to": 52, 
+            "age_from": 47, 
+            "less_than_a_year": false, 
+            "country": "SA", 
+            "state": ""
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 62, 
+            "age_from": 52, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "British", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1950-01-29", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

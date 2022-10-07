@@ -1,0 +1,135 @@
+{
+    "hobbies_details": "Playing tennis and badminton. Keeping abreast of current affairs both locally and globally.", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Southern and Central Asian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "BD", 
+    "mother_pob_state": "", 
+    "student_enrollment": "parttime", 
+    "gender": "M", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 884, 
+    "student_course": "Accounting", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Bengali", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Matraville Primary School", 
+            "id": 3325
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Sydney Boys High School", 
+            "id": 3326
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "The University of New South Wales", 
+            "id": 3327
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Cinnamon Quail-thrush", 
+        "id": 275
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Bangladeshi", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Habiganj", 
+    "professional_occupation": null, 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "everyday", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 1075
+        }, 
+        {
+            "situation": "speaking with parents", 
+            "frequency": 15, 
+            "name": "Bengali", 
+            "id": 1076
+        }
+    ], 
+    "student_aspiration": "Chartered Accountant", 
+    "mother_pob_town": "Maulovibazar", 
+    "residence_history": [
+        {
+            "town": "Hilllsdale", 
+            "age_to": 13, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Eastlakes", 
+            "age_to": 22, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Bangladeshi", 
+    "father_cultural_heritage": "Southern and Central Asian", 
+    "pob_country": "AU", 
+    "dob": "1991-11-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "BD", 
+    "mother_first_language": "Bengali", 
+    "pob_town": "Darlinghurst", 
+    "father_first_language": "Bengali", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

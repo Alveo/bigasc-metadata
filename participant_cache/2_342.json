@@ -1,0 +1,311 @@
+{
+    "hobbies_details": "Soccer (club), Trumpet (concert/brass band)", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2047
+        }, 
+        {
+            "comment": "", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4921
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2048
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2049
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2050
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2051
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2052
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2053
+        }, 
+        {
+            "comment": "Background Noise (slight)", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4924
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2054
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2055
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2056
+        }, 
+        {
+            "comment": "Background Noise (slight)", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4923
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2057
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2058
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2059
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4925
+        }, 
+        {
+            "comment": "Missing items: video from cam1", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4927
+        }, 
+        {
+            "comment": "", 
+            "component": 14, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4922
+        }, 
+        {
+            "comment": "This one is Conversation", 
+            "component": 17, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4926
+        }
+    ], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 55, 
+    "student_course": "MPhil", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "None", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Weetangera Primary School", 
+            "id": 212
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Belconnen High School", 
+            "id": 213
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "Hawker College", 
+            "id": 214
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "University of New South Wales", 
+            "id": 215
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 22, 
+            "name": "The University of Queensland", 
+            "id": 216
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "University of Canberra", 
+        "id": 8
+    }, 
+    "animal": {
+        "name": "Erect-crested Penguin", 
+        "id": 342
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "ACT", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "Science Communication", 
+    "mother_pob_town": "Manangatang", 
+    "residence_history": [
+        {
+            "town": "Weetangera", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Kensington", 
+            "age_to": 22, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Highgate Hill", 
+            "age_to": 25, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Weetangera", 
+            "age_to": null, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1986-02-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Canberra", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

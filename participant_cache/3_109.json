@@ -1,0 +1,315 @@
+{
+    "hobbies_details": "SES volunteer and rescue operator\r\nMotor sport fire marshall", 
+    "rating": [
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1307
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1308
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1309
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1310
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1311
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1312
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1313
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1314
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1315
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1316
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1317
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1318
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1319
+        }, 
+        {
+            "comment": "RECORDING VOLUME TOO LOW", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1320
+        }, 
+        {
+            "comment": "RECORDING VOLUME TOO LOW", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1321
+        }, 
+        {
+            "comment": "RECORDING VOLUME TOO LOW", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1322
+        }, 
+        {
+            "comment": "RECORDING VOLUME TOO LOW", 
+            "component": 32, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1323
+        }
+    ], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 6, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Cert 4 Training & Assessment", 
+    "vocal_training_details": "", 
+    "other_languages": "None", 
+    "has_hearing_problems": false, 
+    "religion": "Anglican", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Bathurst Demonstration School", 
+            "id": 24
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Bathurst High School", 
+            "id": 25
+        }, 
+        {
+            "age_to": 42, 
+            "age_from": 40, 
+            "name": "Bathurst TAFE", 
+            "id": 26
+        }, 
+        {
+            "age_to": 47, 
+            "age_from": 46, 
+            "name": "Bathurst TAFE", 
+            "id": 27
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Australasian Shoveler", 
+        "id": 109
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Blayney", 
+    "professional_occupation": "IT Training Officer", 
+    "father_professional_category": "clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 21, 
+            "name": "Flour Packer"
+        }, 
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 22, 
+            "name": "Office Assistant"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 23, 
+            "name": "Casual Waitress"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 24, 
+            "name": "Library Assistant"
+        }, 
+        {
+            "age_to": 36, 
+            "less_than_a_year": false, 
+            "age_from": 32, 
+            "id": 25, 
+            "name": "Library Acquisitions Assistant"
+        }, 
+        {
+            "age_to": 39, 
+            "less_than_a_year": false, 
+            "age_from": 36, 
+            "id": 26, 
+            "name": "IT HelpDesk"
+        }, 
+        {
+            "age_to": 54, 
+            "less_than_a_year": false, 
+            "age_from": 39, 
+            "id": 27, 
+            "name": "IT Trainer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "unemployed", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Bathurst", 
+    "residence_history": [
+        {
+            "town": "Blayney", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 54, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1956-09-16", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Blayney", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "assoc professional", 
+    "has_hobbies": true
+}

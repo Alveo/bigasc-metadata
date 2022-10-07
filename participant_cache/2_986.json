@@ -1,0 +1,184 @@
+{
+    "hobbies_details": "Family history, ballroom dancing", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "GB", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 460, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BSc, Applied Science and Metalgist", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "North Innaloo Primary School", 
+            "id": 1766
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 11, 
+            "name": "Takari Primary School", 
+            "id": 1767
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 13, 
+            "name": "Balcatta High School", 
+            "id": 1768
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 14, 
+            "name": "Karatha Senior High School", 
+            "id": 1769
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 16, 
+            "name": "Careen Senior High School", 
+            "id": 1770
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "Curtin University, WA School of Mines", 
+            "id": 1771
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Daintree River Ringtail Possum", 
+        "id": 986
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": true, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "LONDON", 
+    "professional_occupation": "Senior Metalgist", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 1175, 
+            "name": "Geological Assistant"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1176, 
+            "name": "Plant metalgist"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 1177, 
+            "name": "Research and Development"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 32, 
+            "id": 1178, 
+            "name": "Senior Process Engineer"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 507
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "PERTH", 
+    "residence_history": [
+        {
+            "town": "PERTH", 
+            "age_to": 13, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "KARATHA", 
+            "age_to": 16, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 49, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "UK", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "AU", 
+    "dob": "1962-05-08", 
+    "speech_problems_details": "Stutter - help in teenage years", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "FREMANTLE", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Slight sore throat", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

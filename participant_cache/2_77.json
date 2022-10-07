@@ -1,0 +1,330 @@
+{
+    "hobbies_details": "photography [mainly restoration of old photos], music, reading, film.", 
+    "rating": [
+        {
+            "comment": "NOISE", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1660
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1661
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1662
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1663
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1664
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1665
+        }, 
+        {
+            "comment": "NOISE", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 1666
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1667
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1668
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1669
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1670
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1671
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1672
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1673
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1674
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1675
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1676
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 281, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA Humanities", 
+    "vocal_training_details": "", 
+    "other_languages": "Spanish, French", 
+    "has_hearing_problems": false, 
+    "religion": "nil", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "OLSH  Primary School Elmore", 
+            "id": 1083
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 7, 
+            "name": "St Mary's Primary School Echuca", 
+            "id": 1084
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 11, 
+            "name": "St Joseph's Secondary College Echuca", 
+            "id": 1085
+        }, 
+        {
+            "age_to": 43, 
+            "age_from": 39, 
+            "name": "Flinders University, Adelaide", 
+            "id": 1086
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Troughton's Sheath-tailed Bat", 
+        "id": 77
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "Tom Anderson", 
+        "first_name": "Tom", 
+        "last_name": "Anderson", 
+        "is_active": true, 
+        "email": "tom.anderson@flinders.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-12-06 10:50:46", 
+        "id": 23, 
+        "date_joined": "2011-10-17 10:58:48"
+    }, 
+    "father_pob_town": "Elmore", 
+    "professional_occupation": "Clerical Assistant", 
+    "father_professional_category": "intermediate clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 59, 
+            "less_than_a_year": false, 
+            "age_from": 44, 
+            "id": 783, 
+            "name": "Public Service/clerical assistant"
+        }, 
+        {
+            "age_to": 43, 
+            "less_than_a_year": false, 
+            "age_from": 39, 
+            "id": 784, 
+            "name": "full time student"
+        }, 
+        {
+            "age_to": 40, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 785, 
+            "name": "doctor's secretary, full time and part-time"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "read rarely", 
+            "frequency": 1, 
+            "name": "Spanish", 
+            "id": 302
+        }, 
+        {
+            "situation": "read rarely", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 303
+        }, 
+        {
+            "situation": "every day", 
+            "frequency": 98, 
+            "name": "English", 
+            "id": 304
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Moreland", 
+    "residence_history": [
+        {
+            "town": "Elmore", 
+            "age_to": 7, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Echuca", 
+            "age_to": 17, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Bendigo", 
+            "age_to": 21, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Renmark", 
+            "age_to": 24, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 59, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1952-04-14", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "Englsh", 
+    "pob_town": "Elmore", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": true
+}

@@ -1,0 +1,173 @@
+{
+    "hobbies_details": "Reading, movies, gym, walking", 
+    "rating": [], 
+    "education_level": "Graduate Certificate", 
+    "mother_cultural_heritage": "Southern and Eastern European", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 793, 
+    "student_course": "Master Library and Information Management", 
+    "has_piercings": false, 
+    "professional_qualification": "Library Officer", 
+    "vocal_training_details": "", 
+    "other_languages": "German", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Aberfoyle Park High School", 
+            "id": 3084
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "Flinders University", 
+            "id": 3085
+        }, 
+        {
+            "age_to": 36, 
+            "age_from": 36, 
+            "name": "UniSA", 
+            "id": 3086
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Crescent Honeyeater", 
+        "id": 299
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "none", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Adelaide", 
+    "professional_occupation": "Library Officer", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 14, 
+            "id": 1831, 
+            "name": "Sales Assistant"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 1832, 
+            "name": "Waitress/bar work"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1833, 
+            "name": "Library Assistant"
+        }, 
+        {
+            "age_to": 36, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1834, 
+            "name": "Senior Library Assistant"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": true, 
+            "age_from": 36, 
+            "id": 1835, 
+            "name": "Library Officer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Films/conversation", 
+            "frequency": 1, 
+            "name": "German", 
+            "id": 946
+        }
+    ], 
+    "student_aspiration": "Librarian", 
+    "mother_pob_town": "Fallingbostel", 
+    "residence_history": [
+        {
+            "town": "Adelaide", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Leigh-on-Sea", 
+            "age_to": 36, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": "Essex"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": null, 
+            "age_from": 36, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1976-04-28", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "DE", 
+    "mother_first_language": "Polish", 
+    "pob_town": "Adelaide", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "assoc professional", 
+    "has_hobbies": true
+}

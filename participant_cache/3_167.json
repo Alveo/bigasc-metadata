@@ -1,0 +1,140 @@
+{
+    "hobbies_details": "Horse riding, yoga, acting, filming, running..", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Other: Other: United Kingdom", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Associate Degree", 
+    "first_language": "English", 
+    "id": 146, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "IT Project Manager", 
+    "vocal_training_details": "Theatre training in London Acting school", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Malanda State High", 
+            "id": 623
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Black-browed Albatross", 
+        "id": 167
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "English", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": "IT", 
+    "father_professional_category": "home duties", 
+    "profession_history": [
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 34, 
+            "id": 455, 
+            "name": "IT Project Manager (ABS)"
+        }, 
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 32, 
+            "id": 456, 
+            "name": "QA & CRM Manager (Citibank)"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 31, 
+            "id": 457, 
+            "name": "IT Manager (Clifford Chance)"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 35, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Singapore", 
+            "age_to": 34, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "SG", 
+            "state": ""
+        }, 
+        {
+            "town": "London", 
+            "age_to": 32, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "English", 
+    "father_cultural_heritage": "Other: Other: United Kingdom", 
+    "pob_country": "AU", 
+    "dob": "1976-03-24", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Other: United Kingdom", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

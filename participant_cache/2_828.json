@@ -1,0 +1,135 @@
+{
+    "hobbies_details": "Touch football, dancing, reading, movies.\r\nMusic: ACM Grade 3 piano theory, AMEB Grade 5 piano, ACM Grade 2 Clarinet, UNSW Orchestra percussion", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "QLD", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 887, 
+    "student_course": "B. Engineering", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 13, 
+            "age_from": 6, 
+            "name": "St Thomas' of Villanova Primary School", 
+            "id": 3337
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "Mareeba State High School", 
+            "id": 3338
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "The Glennie School", 
+            "id": 3339
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "University of New South Wales", 
+            "id": 3340
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Tiger Shrike", 
+        "id": 828
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "None", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Brisbane", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Home, work, study", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1079
+        }
+    ], 
+    "student_aspiration": "Mechatronics Systems Engineer", 
+    "mother_pob_town": "Bundaberg", 
+    "residence_history": [
+        {
+            "town": "Mareeba", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 22, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "QLD", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1992-12-28", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Mareeba", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

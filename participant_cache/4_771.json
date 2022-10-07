@@ -1,0 +1,178 @@
+{
+    "hobbies_details": "Foreign languages, ballroom dancing, skiing, reading", 
+    "rating": [], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "English", 
+    "id": 456, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Teacher of the deaf", 
+    "vocal_training_details": "", 
+    "other_languages": "French, German, Italian", 
+    "has_hearing_problems": false, 
+    "religion": "Baha'i", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "Victoria Park Primary School (Cargell St)", 
+            "id": 1746
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "South Perth Primary School", 
+            "id": 1747
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 12, 
+            "name": "Perth College", 
+            "id": 1748
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "Penros Ladies College", 
+            "id": 1749
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 19, 
+            "name": "University of Western Australia", 
+            "id": 1750
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 19, 
+            "name": "Secondary Teachers College", 
+            "id": 1751
+        }, 
+        {
+            "age_to": 50, 
+            "age_from": 48, 
+            "name": "University of Melbourne", 
+            "id": 1752
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Southern Emu-wren", 
+        "id": 771
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "PERTH", 
+    "professional_occupation": "Teacher of the deaf", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1165, 
+            "name": "High School Teacher"
+        }, 
+        {
+            "age_to": 61, 
+            "less_than_a_year": false, 
+            "age_from": 50, 
+            "id": 1166, 
+            "name": "Teacher of the deaf"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 90, 
+            "name": "English", 
+            "id": 497
+        }, 
+        {
+            "situation": "teaching", 
+            "frequency": 8, 
+            "name": "French", 
+            "id": 498
+        }, 
+        {
+            "situation": "travel", 
+            "frequency": 1, 
+            "name": "German", 
+            "id": 499
+        }, 
+        {
+            "situation": "travel", 
+            "frequency": 1, 
+            "name": "Italian", 
+            "id": 500
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "PERTH", 
+    "residence_history": [
+        {
+            "town": "PERTH", 
+            "age_to": 61, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1951-02-04", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "ADELAIDE", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

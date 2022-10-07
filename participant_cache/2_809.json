@@ -1,0 +1,144 @@
+{
+    "hobbies_details": "Rugby Union, Tennis, AFL, online gaming, photography", 
+    "rating": [], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Diploma", 
+    "first_language": "English", 
+    "id": 305, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Certificate III in Commercial Cookery", 
+    "vocal_training_details": "", 
+    "other_languages": "Partial Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "St Peters Lutheran College", 
+            "id": 1181
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "South Bank Institute of Technology", 
+            "id": 1182
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Superb Fruit-Dove", 
+        "id": 809
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "None", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Warnombool", 
+    "professional_occupation": "Chef", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 848, 
+            "name": "Part Time Apprentice Chef"
+        }, 
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 849, 
+            "name": "Full time Chef"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 326
+        }, 
+        {
+            "situation": "with Japanese friends, in Japan", 
+            "frequency": 5, 
+            "name": "Japanese", 
+            "id": 327
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Condobolin", 
+    "residence_history": [
+        {
+            "town": "Kenmore", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Eight Mile Plains", 
+            "age_to": 20, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1991-12-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Auchenflower", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "tradesperson", 
+    "has_hobbies": true
+}

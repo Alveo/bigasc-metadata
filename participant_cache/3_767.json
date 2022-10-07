@@ -1,0 +1,284 @@
+{
+    "hobbies_details": "Cinema, cycling, reading, permaculture, languages", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 577, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "CELTA English Teaching", 
+    "vocal_training_details": "", 
+    "other_languages": "Spanish, Italian/French/Portuguese intermediate", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic/Agnostic", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 4, 
+            "name": "St Paul's Primary", 
+            "id": 2220
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 10, 
+            "name": "St Mary's Primary", 
+            "id": 2221
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 11, 
+            "name": "Sacre Coeur Secondary School", 
+            "id": 2222
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Star of the Sea Secondary School", 
+            "id": 2223
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "University of Melbourne", 
+            "id": 2224
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 22, 
+            "name": "University of Melbourne", 
+            "id": 2225
+        }, 
+        {
+            "age_to": 27, 
+            "age_from": 26, 
+            "name": "Macquarie University", 
+            "id": 2226
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "South Island Pied Oystercatcher", 
+        "id": 767
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "ESL Teacher & Interpreter", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 1392, 
+            "name": "ESL Teacher"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1393, 
+            "name": "Volunteer Coordinator (Conservation)"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1394, 
+            "name": "ESL Teacher"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 1395, 
+            "name": "Interpreter (English, Spanish)"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Victoria", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "General", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 665
+        }, 
+        {
+            "situation": "Interpreting", 
+            "frequency": 5, 
+            "name": "Spanish", 
+            "id": 666
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "West Brunswick", 
+            "age_to": 29, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "Marrickville", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bogota", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "CO", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "Lyon", 
+            "age_to": 25, 
+            "age_from": 25, 
+            "less_than_a_year": true, 
+            "country": "FR", 
+            "state": ""
+        }, 
+        {
+            "town": "Carlton", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Barcelona", 
+            "age_to": 23, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "ES", 
+            "state": "Catalunya"
+        }, 
+        {
+            "town": "Brunswick", 
+            "age_to": 23, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "Perugia", 
+            "age_to": 21, 
+            "age_from": 21, 
+            "less_than_a_year": true, 
+            "country": "IT", 
+            "state": "Umbria"
+        }, 
+        {
+            "town": "Berlin", 
+            "age_to": 21, 
+            "age_from": 20, 
+            "less_than_a_year": true, 
+            "country": "DE", 
+            "state": ""
+        }, 
+        {
+            "town": "East St Kilda", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "Kensington", 
+            "age_to": 19, 
+            "age_from": 19, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "North Essendon", 
+            "age_to": 19, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "East Malvern", 
+            "age_to": 17, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "Kallista", 
+            "age_to": 10, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Victoria"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Southern and Eastern European", 
+    "pob_country": "AU", 
+    "dob": "1983-04-04", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne ", 
+    "father_first_language": "Italian", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

@@ -1,0 +1,153 @@
+{
+    "hobbies_details": "play soccer, boxing, guitar, piano, art", 
+    "rating": [], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "nsw", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "english", 
+    "id": 51, 
+    "student_course": "Double degree in Paramedicin and Nursing", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "understand dutch", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 15, 
+            "age_from": 5, 
+            "name": "home schooled", 
+            "id": 201
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 15, 
+            "name": "NADC TAFE", 
+            "id": 202
+        }, 
+        {
+            "age_to": null, 
+            "age_from": 19, 
+            "name": "Charles Sturt Uni Bathurst", 
+            "id": 203
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Tawny-crowned Honeyeater", 
+        "id": 825
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "liverpool", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "always", 
+            "frequency": 100, 
+            "name": "english", 
+            "id": 33
+        }
+    ], 
+    "student_aspiration": "Flight Nurse", 
+    "mother_pob_town": "liverpool", 
+    "residence_history": [
+        {
+            "town": "liverpool", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "windsor", 
+            "age_to": 7, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "penrith", 
+            "age_to": 12, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "yarramundi", 
+            "age_to": 19, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "bathurst", 
+            "age_to": 21, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "nsw", 
+    "mother_accent": "australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1989-11-06", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "english", 
+    "pob_town": "liverpool", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

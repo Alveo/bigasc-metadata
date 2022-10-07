@@ -1,0 +1,186 @@
+{
+    "hobbies_details": "TENNIS,AUSSIE RULES,SQUASH,CHARITY WORK ", 
+    "rating": [], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "ENGLISH", 
+    "id": 954, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "HR", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "CATHOLIC", 
+    "education_history": [
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "STRATHMONT HIGH SCHOOL", 
+            "id": 3628
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "ADELAIDE UNIVERSITY", 
+            "id": 3629
+        }, 
+        {
+            "age_to": 30, 
+            "age_from": 26, 
+            "name": "ADELAIDE TAFE", 
+            "id": 3630
+        }, 
+        {
+            "age_to": 36, 
+            "age_from": 32, 
+            "name": "ADELAIDE TAFE", 
+            "id": 3631
+        }, 
+        {
+            "age_to": 40, 
+            "age_from": 36, 
+            "name": "ADELAIDE TAFE", 
+            "id": 3632
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Coastal Whistling spider", 
+        "id": 1268
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AUSTRALIAN", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "KEITH", 
+    "professional_occupation": "PAYROLL MANAGER", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 2002, 
+            "name": "ADMIN CLERK"
+        }, 
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 2003, 
+            "name": "PERSONNEL OFFICER"
+        }, 
+        {
+            "age_to": 38, 
+            "less_than_a_year": false, 
+            "age_from": 36, 
+            "id": 2004, 
+            "name": "PAYROLL OFFICER"
+        }, 
+        {
+            "age_to": 55, 
+            "less_than_a_year": false, 
+            "age_from": 39, 
+            "id": 2005, 
+            "name": "PAYROLL MANAGER"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "LIFESTYLE", 
+            "frequency": 100, 
+            "name": "ENGLISH", 
+            "id": 1186
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "MT GAMBIER", 
+    "residence_history": [
+        {
+            "town": "ADELAIDE", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "SYDNEY", 
+            "age_to": 35, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "ADELAIDE", 
+            "age_to": 42, 
+            "age_from": 35, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "SYDNEY", 
+            "age_to": 55, 
+            "age_from": 42, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "AUSTRALIAN", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1960-03-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "ENGLISH", 
+    "pob_town": "adelaide", 
+    "father_first_language": "ENGLISH", 
+    "has_vocal_training": false, 
+    "health_problems_details": "HEADCOLD", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

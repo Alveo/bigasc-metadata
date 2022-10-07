@@ -1,0 +1,185 @@
+{
+    "hobbies_details": "", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 688, 
+    "student_course": "Bachelor of Education w Bachelor of Arts", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Singing lessons and drama lessons as a child", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "N/A", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Port Noarlunga Primary School ", 
+            "id": 2659
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Christies Beach High School", 
+            "id": 2660
+        }, 
+        {
+            "age_to": null, 
+            "age_from": 33, 
+            "name": "Flinders University", 
+            "id": 2661
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Grey Butcherbird", 
+        "id": 404
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Adelaide", 
+    "professional_occupation": null, 
+    "father_professional_category": "unemployed", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All situations", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 819
+        }
+    ], 
+    "student_aspiration": "ESL Teacher", 
+    "mother_pob_town": "Adelaide", 
+    "residence_history": [
+        {
+            "town": "Port Noarlunga South", 
+            "age_to": 23, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Dublin", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "IE", 
+            "state": "IR"
+        }, 
+        {
+            "town": "Grand Cayman", 
+            "age_to": 27, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "KY", 
+            "state": "KY"
+        }, 
+        {
+            "town": "Port Noarlunga South", 
+            "age_to": 28, 
+            "age_from": 27, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "London", 
+            "age_to": 29, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": "UK"
+        }, 
+        {
+            "town": "Port Noarlunga South", 
+            "age_to": 31, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Cairns", 
+            "age_to": 31, 
+            "age_from": 31, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Sasebo", 
+            "age_to": 32, 
+            "age_from": 31, 
+            "less_than_a_year": true, 
+            "country": "JP", 
+            "state": "JP"
+        }, 
+        {
+            "town": "North Brighton", 
+            "age_to": 33, 
+            "age_from": 32, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1979-03-11", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Bedford Park", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

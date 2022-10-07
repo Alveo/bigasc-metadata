@@ -1,0 +1,211 @@
+{
+    "hobbies_details": "", 
+    "rating": [
+        {
+            "comment": "OVEREXPOSURE", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2819
+        }, 
+        {
+            "comment": "OVEREXPOSURE", 
+            "component": 7, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2820
+        }, 
+        {
+            "comment": "OVEREXPOSURE", 
+            "component": 9, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2821
+        }, 
+        {
+            "comment": "OVEREXPOSURE", 
+            "component": 16, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2822
+        }, 
+        {
+            "comment": "OVEREXPOSURE", 
+            "component": 21, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2823
+        }, 
+        {
+            "comment": "OVEREXPOSURE", 
+            "component": 22, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2824
+        }, 
+        {
+            "comment": "camera angle", 
+            "component": 9, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2825
+        }, 
+        {
+            "comment": "camera angle", 
+            "component": 10, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2826
+        }, 
+        {
+            "comment": "camera angle", 
+            "component": 12, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2827
+        }, 
+        {
+            "comment": "camera angle", 
+            "component": 32, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 2828
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "primary to junior high", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "nsw", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "english", 
+    "id": 143, 
+    "student_course": "master of speech pathology studies", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "none", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Oak flats public school", 
+            "id": 615
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 11, 
+            "name": "Wavell state high school", 
+            "id": 616
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 22, 
+            "name": "UQ", 
+            "id": 617
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Indo-Pacific Hump-backed Dolphin", 
+        "id": 1138
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "australian", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "sydney", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "labourer", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "speech pathologist", 
+    "mother_pob_town": "sydney", 
+    "residence_history": [
+        {
+            "town": "blacktown", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "wollongong", 
+            "age_to": 11, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "brisbane", 
+            "age_to": 26, 
+            "age_from": 11, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }
+    ], 
+    "father_pob_state": "nsw", 
+    "mother_accent": "australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1985-01-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "english", 
+    "pob_town": "Blacktown", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

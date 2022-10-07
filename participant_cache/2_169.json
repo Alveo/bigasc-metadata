@@ -1,0 +1,170 @@
+{
+    "hobbies_details": "Writing", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 691, 
+    "student_course": "Diploma of IT", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Uniting Church", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Freestone State School", 
+            "id": 2670
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Warwick State Highschool", 
+            "id": 2671
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 17, 
+            "name": "Griffith University", 
+            "id": 2672
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "University of Queensland", 
+            "id": 2673
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 21, 
+            "name": "Queensland University of Technology", 
+            "id": 2674
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 24, 
+            "name": "Deakin University", 
+            "id": 2675
+        }, 
+        {
+            "age_to": 36, 
+            "age_from": 34, 
+            "name": "TAFE Queensland", 
+            "id": 2676
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Black-chinned Honeyeater", 
+        "id": 169
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Warwick", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Qld", 
+    "mother_professional_category": "labourer", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "Systems Librarian", 
+    "mother_pob_town": "Kyogle", 
+    "residence_history": [
+        {
+            "town": "Warwick", 
+            "age_to": 17, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 24, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }, 
+        {
+            "town": "Mooloolaba", 
+            "age_to": 27, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }, 
+        {
+            "town": "Mackay", 
+            "age_to": 31, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 36, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "qld"
+        }
+    ], 
+    "father_pob_state": "qld", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1976-07-07", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Warwick", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

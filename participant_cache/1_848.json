@@ -1,0 +1,270 @@
+{
+    "hobbies_details": "Basketball, tennis", 
+    "rating": [
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1023
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1024
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1025
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1026
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1027
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1028
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1029
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1030
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1031
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1032
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1033
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1034
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1035
+        }, 
+        {
+            "comment": "CAMERA ANGLE, VOLUME TOO LOW", 
+            "component": 9, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 1036
+        }, 
+        {
+            "comment": "CAMERA ANGLE, VOLUME TOO LOW", 
+            "component": 10, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 1037
+        }, 
+        {
+            "comment": "CAMERA ANGLE, VOLUME TOO LOW", 
+            "component": 12, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 1038
+        }, 
+        {
+            "comment": "CAMERA ANGLE, VOLUME TOO LOW", 
+            "component": 32, 
+            "session": 4, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 1039
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 14, 
+    "student_course": "Bachelor of Education (primary)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "none", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 5, 
+            "name": "Assumption School", 
+            "id": 56
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Holy Family School", 
+            "id": 57
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 12, 
+            "name": "St Stanlislaus College", 
+            "id": 58
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 14, 
+            "name": "Kelso High School", 
+            "id": 59
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "Charles Sturt University - Bathurst Campus", 
+            "id": 60
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Wandering Albatross", 
+        "id": 848
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Bathurst", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "always", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 13
+        }
+    ], 
+    "student_aspiration": "Primary School Teacher", 
+    "mother_pob_town": "Oberon", 
+    "residence_history": [
+        {
+            "town": "Bathurst", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1989-05-03", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Bathurst", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,224 @@
+{
+    "hobbies_details": "Classic music, singing (opera)", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Vocational Graduate Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 473, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA, BEd", 
+    "vocal_training_details": "Singing - started at university", 
+    "other_languages": "French, Italian, Latin, Greek, Zulu", 
+    "has_hearing_problems": true, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 5, 
+            "name": "St Joseph's Primary School, Wagin", 
+            "id": 1822
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 9, 
+            "name": "St Patrick's Primary School, Katanning", 
+            "id": 1823
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 13, 
+            "name": "New Norcia High School", 
+            "id": 1824
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "St Charles Seminary, Guilford", 
+            "id": 1825
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 17, 
+            "name": "University of Western Australia", 
+            "id": 1826
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Spotted Quail-thrush", 
+        "id": 790
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": true, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "PERTH", 
+    "professional_occupation": "Teacher", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 44, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1213, 
+            "name": "Teaching"
+        }, 
+        {
+            "age_to": 65, 
+            "less_than_a_year": false, 
+            "age_from": 45, 
+            "id": 1214, 
+            "name": "Sales"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 90, 
+            "name": "English", 
+            "id": 531
+        }, 
+        {
+            "situation": "university", 
+            "frequency": 5, 
+            "name": "French, Italian", 
+            "id": 532
+        }, 
+        {
+            "situation": "school", 
+            "frequency": 5, 
+            "name": "Latin, Greek", 
+            "id": 533
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "PERTH", 
+    "residence_history": [
+        {
+            "town": "WAGIN", 
+            "age_to": 8, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "KATANNING", 
+            "age_to": 12, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "NEW NORCIA", 
+            "age_to": 15, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 22, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "BINDOON", 
+            "age_to": 25, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "DERBY", 
+            "age_to": 29, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "ZA", 
+            "state": "SA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 32, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "BROOME", 
+            "age_to": 34, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 65, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1946-11-01", 
+    "speech_problems_details": "Slight lisp", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "WAGIN", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "Age related, hereditary ", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

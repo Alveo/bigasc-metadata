@@ -1,0 +1,294 @@
+{
+    "hobbies_details": "", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4461
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4460
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4462
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4459
+        }, 
+        {
+            "comment": "Video frame skipping", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 4456
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4457
+        }, 
+        {
+            "comment": "", 
+            "component": 43, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4458
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4468
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4467
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4466
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4465
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4464
+        }, 
+        {
+            "comment": "", 
+            "component": 23, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4463
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4471
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4470
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4469
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Victoria", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Diploma", 
+    "first_language": "English", 
+    "id": 771, 
+    "student_course": "BA", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Has studied phonetics", 
+    "other_languages": "Spanish", 
+    "has_hearing_problems": false, 
+    "religion": "Atheist", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Ivanhoe PS", 
+            "id": 2987
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 11, 
+            "name": "Ivanhoe Girls' Grammar School", 
+            "id": 2988
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 14, 
+            "name": "Geelong Grammar School", 
+            "id": 2989
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "University of Melbourne", 
+            "id": 2990
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Wandering Whistling-Duck", 
+        "id": 850
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Joshua Clothier", 
+        "first_name": "Joshua", 
+        "last_name": "Clothier", 
+        "is_active": true, 
+        "email": "joshuajc@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2018-02-01 16:17:40", 
+        "id": 20, 
+        "date_joined": "2011-09-08 08:39:29"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Classroom; outside class with other NNS", 
+            "frequency": 4, 
+            "name": "Spanish", 
+            "id": 913
+        }, 
+        {
+            "situation": "All other", 
+            "frequency": 96, 
+            "name": "English", 
+            "id": 914
+        }
+    ], 
+    "student_aspiration": "Something to do with Linguistics", 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Richmond", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Ivanhoe", 
+            "age_to": 8, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Eaglemont", 
+            "age_to": 21, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Ascot Vale", 
+            "age_to": 22, 
+            "age_from": 22, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Moonee Ponds", 
+            "age_to": 23, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1989-09-19", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

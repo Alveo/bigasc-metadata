@@ -1,0 +1,136 @@
+{
+    "hobbies_details": "Bush walking, Traveling Australia, 4WD", 
+    "rating": [], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Vocational Graduate Certificate", 
+    "first_language": "English", 
+    "id": 542, 
+    "student_course": "Diploma Health Science", 
+    "has_piercings": true, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Uniting Church", 
+    "education_history": [
+        {
+            "age_to": 28, 
+            "age_from": 28, 
+            "name": "James Cook University", 
+            "id": 2069
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "Tafe NSW Dubbo Campus", 
+            "id": 2070
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Delroy High School", 
+            "id": 2071
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "North Dubbo Primary School", 
+            "id": 2072
+        }
+    ], 
+    "location": {
+        "city": "Townsville", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 17
+    }, 
+    "animal": {
+        "name": "White-tailed Dunnart", 
+        "id": 1108
+    }, 
+    "reading_problems_details": "Poor eyesight not discovered until late primary school, causing delays with reading.", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Scottish", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Mt Rushworth", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "Other", 
+    "language_usage": [], 
+    "student_aspiration": "Registered Nurse", 
+    "mother_pob_town": "Parramatta", 
+    "residence_history": [
+        {
+            "town": "Bakers Swamp", 
+            "age_to": null, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Dubbo", 
+            "age_to": 25, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Townsville", 
+            "age_to": 28, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Other: Australian", 
+    "pob_country": "AU", 
+    "dob": "1983-07-26", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Wellington", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

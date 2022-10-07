@@ -1,0 +1,173 @@
+{
+    "hobbies_details": "Singing, theatre, live music", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "NL", 
+    "mother_pob_state": "HOLLAND", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "Dutch", 
+    "id": 506, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA (Communication Studies)", 
+    "vocal_training_details": "Singing lessons (highschool), voiceover training (work)", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "Careen Primary School", 
+            "id": 1952
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Careen Senior High School", 
+            "id": 1953
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 20, 
+            "name": "Edith Cowen University, Mt Lawley", 
+            "id": 1954
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Northern Cave Bat", 
+        "id": 61
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "UNKNOWN", 
+    "professional_occupation": "Broadcasting", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1273, 
+            "name": "Hospitality"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1274, 
+            "name": "Customer Service"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1275, 
+            "name": "Various media roles (journalism, radio)"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Unknown", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 70, 
+            "name": "English", 
+            "id": 584
+        }, 
+        {
+            "situation": "family/home", 
+            "frequency": 30, 
+            "name": "Dutch", 
+            "id": 585
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "UNKNOWN", 
+    "residence_history": [
+        {
+            "town": "BERGEN OP ZOOM", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "NL", 
+            "state": "Unknown"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 18, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "KALGOORLIE", 
+            "age_to": 20, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 29, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "HOLLAND", 
+    "mother_accent": "Dutch", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "NL", 
+    "dob": "1982-10-22", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "NL", 
+    "mother_first_language": "Dutch", 
+    "pob_town": "BERGEN OP ZOOM", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": "assoc professional", 
+    "has_hobbies": true
+}

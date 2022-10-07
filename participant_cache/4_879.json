@@ -1,0 +1,271 @@
+{
+    "hobbies_details": "Boxing, Stand-up paddle board, kayaking, yoga, choral music ", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "GR", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English and German", 
+    "id": 957, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": " PhD Electrical and Electronic Engineering", 
+    "vocal_training_details": "very active amateur singer, frequent public speaker", 
+    "other_languages": "German, French and Greek", 
+    "has_hearing_problems": false, 
+    "religion": "Non-practicing Greek Orthodox", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 4, 
+            "name": "Broadmeadows Primary School, Newcastle NSW", 
+            "id": 3641
+        }, 
+        {
+            "age_to": 10, 
+            "age_from": 7, 
+            "name": "Hamilton Hill Primary School, Perth WA", 
+            "id": 3642
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 10, 
+            "name": "South Perth Primary School", 
+            "id": 3643
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 14, 
+            "name": "St. Louis College Perth, WA", 
+            "id": 3644
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 15, 
+            "name": "John XXIII College, Perth WA", 
+            "id": 3645
+        }, 
+        {
+            "age_to": 28, 
+            "age_from": 18, 
+            "name": "University of Western Australia", 
+            "id": 3646
+        }, 
+        {
+            "age_to": 37, 
+            "age_from": 36, 
+            "name": "UC Berkeley", 
+            "id": 3647
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "White-breasted Waterhen", 
+        "id": 879
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Greek", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Delphi", 
+    "professional_occupation": "Technology business development", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 2015, 
+            "name": "Full time University student"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 2016, 
+            "name": "Startup Founder"
+        }, 
+        {
+            "age_to": 36, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 2017, 
+            "name": "Telecommunication Systems Engineer"
+        }, 
+        {
+            "age_to": 45, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 2018, 
+            "name": "Research Director at CSIRO"
+        }, 
+        {
+            "age_to": 52, 
+            "less_than_a_year": false, 
+            "age_from": 45, 
+            "id": 2019, 
+            "name": "Technology business development, NICTA"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "daily activities", 
+            "frequency": 85, 
+            "name": "English", 
+            "id": 1190
+        }, 
+        {
+            "situation": "to father (when alive)", 
+            "frequency": 13, 
+            "name": "German", 
+            "id": 1191
+        }, 
+        {
+            "situation": "rarely", 
+            "frequency": 1, 
+            "name": "Greek", 
+            "id": 1192
+        }, 
+        {
+            "situation": "in France", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 1193
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Sydney", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Athens", 
+            "age_to": 4, 
+            "age_from": 4, 
+            "less_than_a_year": true, 
+            "country": "GR", 
+            "state": ""
+        }, 
+        {
+            "town": "Rotterdam", 
+            "age_to": 5, 
+            "age_from": 4, 
+            "less_than_a_year": true, 
+            "country": "NL", 
+            "state": ""
+        }, 
+        {
+            "town": "Barcelona", 
+            "age_to": 5, 
+            "age_from": 5, 
+            "less_than_a_year": true, 
+            "country": "ES", 
+            "state": ""
+        }, 
+        {
+            "town": "Newcastle", 
+            "age_to": 6, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Perth", 
+            "age_to": 30, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Stuttgart", 
+            "age_to": 31, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "DE", 
+            "state": ""
+        }, 
+        {
+            "town": "Perth", 
+            "age_to": 36, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "San Francisco", 
+            "age_to": 37, 
+            "age_from": 36, 
+            "less_than_a_year": false, 
+            "country": "US", 
+            "state": "CA"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 52, 
+            "age_from": 37, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Southern and Eastern European", 
+    "pob_country": "AU", 
+    "dob": "1962-09-22", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "Greek", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

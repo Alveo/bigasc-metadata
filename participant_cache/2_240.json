@@ -1,0 +1,197 @@
+{
+    "hobbies_details": "Choir; painting", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Graduate Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Vocational Graduate Certificate", 
+    "first_language": "English", 
+    "id": 404, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Primary School Teacher", 
+    "vocal_training_details": "Choir singing", 
+    "other_languages": "Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Star of the Sea Primary School", 
+            "id": 1554
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Chanel College", 
+            "id": 1555
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "University of Central Queensland ", 
+            "id": 1556
+        }, 
+        {
+            "age_to": 30, 
+            "age_from": 25, 
+            "name": "Queensland University of Technology", 
+            "id": 1557
+        }, 
+        {
+            "age_to": 39, 
+            "age_from": 36, 
+            "name": "University of the Sunshine Coast", 
+            "id": 1558
+        }
+    ], 
+    "location": {
+        "city": "Maroochydore", 
+        "state": "QLD", 
+        "name": "University of the Sunshine Coast", 
+        "id": 18
+    }, 
+    "animal": {
+        "name": "Bulwer's Petrel", 
+        "id": 240
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Geelong", 
+    "professional_occupation": "Primary School Teacher", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1080, 
+            "name": "Lawyer"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": true, 
+            "age_from": 39, 
+            "id": 1081, 
+            "name": "School Teacher"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Geelong", 
+    "residence_history": [
+        {
+            "town": "Geelong", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Gladstone", 
+            "age_to": 17, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Rockhampton", 
+            "age_to": 19, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Brisbane ", 
+            "age_to": 21, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Cairns", 
+            "age_to": 23, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Komoro", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "JP", 
+            "state": ""
+        }, 
+        {
+            "town": "Cairns", 
+            "age_to": 25, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 35, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1971-06-15", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Geelong", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

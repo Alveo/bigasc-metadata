@@ -1,0 +1,210 @@
+{
+    "hobbies_details": "Drummer in a rock and roll band", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 530
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "D", 
+            "audio": "D", 
+            "id": 531
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 532
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 533
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 534
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 535
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 536
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 537
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 538
+        }
+    ], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Advanced Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "HU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Vocational Graduate Certificate", 
+    "first_language": "English", 
+    "id": 338, 
+    "student_course": "PhD Fine Art (Painting)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Shoalhaven High School", 
+            "id": 1301
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Charles Sturt University", 
+            "id": 1302
+        }, 
+        {
+            "age_to": 39, 
+            "age_from": 36, 
+            "name": "Australian National University", 
+            "id": 1303
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "Australian National University", 
+        "id": 1
+    }, 
+    "animal": {
+        "name": "Ruff", 
+        "id": 713
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Hungarian", 
+    "RA": {
+        "username": "katharine gosling", 
+        "first_name": "katharine", 
+        "last_name": "gosling", 
+        "is_active": true, 
+        "email": "katharine.gosling@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-10-04 15:49:48", 
+        "id": 16, 
+        "date_joined": "2011-07-20 12:57:59"
+    }, 
+    "father_pob_town": "Budapest", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 358
+        }
+    ], 
+    "student_aspiration": "Artist/Teacher", 
+    "mother_pob_town": "Nowra", 
+    "residence_history": [
+        {
+            "town": "Vincentia", 
+            "age_to": 20, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Wagga Wagga", 
+            "age_to": 34, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 39, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Southern and Eastern European", 
+    "pob_country": "AU", 
+    "dob": "1972-11-28", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "bankstown", 
+    "father_first_language": "Magyar", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

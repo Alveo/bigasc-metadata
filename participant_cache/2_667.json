@@ -1,0 +1,160 @@
+{
+    "hobbies_details": "Reading and running", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "nsw", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English ", 
+    "id": 327, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "PhD (physics)", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Athiest ", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Doonside Primary", 
+            "id": 1253
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Hurlstone Agricultural High ", 
+            "id": 1254
+        }, 
+        {
+            "age_to": 27, 
+            "age_from": 19, 
+            "name": "UNSW", 
+            "id": 1255
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Red-browed Pardalote", 
+        "id": 667
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Sydney ", 
+    "professional_occupation": "Research fellow/lecturer", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 23, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 900, 
+            "name": "Gardening "
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 901, 
+            "name": "Post Doc. research "
+        }, 
+        {
+            "age_to": 31, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 902, 
+            "name": "Lecturer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney ", 
+    "residence_history": [
+        {
+            "town": "Smithfeild", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Randwick", 
+            "age_to": 26, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Salt lake city ", 
+            "age_to": 29, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "US", 
+            "state": ""
+        }, 
+        {
+            "town": "Annadale ", 
+            "age_to": 31, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "nsw", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1980-07-25", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English  ", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English ", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

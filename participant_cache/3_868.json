@@ -1,0 +1,196 @@
+{
+    "hobbies_details": "Ultimate Frisbee (competition level), Mountain Biking (socially), Trombone, Piano", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 778
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 779
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 780
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 781
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Doctoral Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "English", 
+    "id": 331, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Athiest", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Lyneham Primary School", 
+            "id": 1267
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Lyneham High School", 
+            "id": 1268
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "Narrabundah College", 
+            "id": 1269
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "Australian National University", 
+            "id": 1270
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "Australian National University", 
+        "id": 1
+    }, 
+    "animal": {
+        "name": "Whimbrel", 
+        "id": 868
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "katharine gosling", 
+        "first_name": "katharine", 
+        "last_name": "gosling", 
+        "is_active": true, 
+        "email": "katharine.gosling@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-10-04 15:49:48", 
+        "id": 16, 
+        "date_joined": "2011-07-20 12:57:59"
+    }, 
+    "father_pob_town": "Bathurst", 
+    "professional_occupation": "Research Assistant", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 14, 
+            "id": 907, 
+            "name": "Junk mail distributor"
+        }, 
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 908, 
+            "name": "Private Tutor"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 909, 
+            "name": "Physics lecturer and coach (Australian Science Olympiads)"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 910, 
+            "name": "Educational Technologist"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 911, 
+            "name": "Research Assistant"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 349
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Canberra", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "GB", 
+    "dob": "1989-12-04", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Oxford", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

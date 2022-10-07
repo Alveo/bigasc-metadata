@@ -1,0 +1,121 @@
+{
+    "hobbies_details": "Drums, electric guitar, bass guitar, rock band", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "Advanced Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "VN", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "Vietnamese", 
+    "id": 910, 
+    "student_course": "Commerce", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Vietnamese", 
+    "has_hearing_problems": false, 
+    "religion": "Buddhist", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "Oakhill Drive Public School", 
+            "id": 3426
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Cherrybrook Technology High School", 
+            "id": 3427
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 18, 
+            "name": "University of New South Wales", 
+            "id": 3428
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Chestnut Rail", 
+        "id": 253
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Hue", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all the time", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1118
+        }
+    ], 
+    "student_aspiration": "Accountant", 
+    "mother_pob_town": "Saigon", 
+    "residence_history": [
+        {
+            "town": "Castle Hill", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Asian", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1994-12-22", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "VN", 
+    "mother_first_language": "Vietnamese", 
+    "pob_town": "St. Leonards", 
+    "father_first_language": "Vietnamese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "South-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

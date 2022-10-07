@@ -1,0 +1,293 @@
+{
+    "hobbies_details": "Skating, skiing, music, travel, reading knitting, painting, chess, lnguages", 
+    "rating": [
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 897
+        }, 
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 898
+        }, 
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 899
+        }, 
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 900
+        }, 
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 901
+        }, 
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 902
+        }, 
+        {
+            "comment": "Backg. Noise too loud, camera angle looking down on participant", 
+            "component": 12, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "C", 
+            "id": 903
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 904
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 905
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 906
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 907
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 908
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 909
+        }
+    ], 
+    "education_level": "Advanced Diploma", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "England", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 37, 
+    "student_course": "", 
+    "has_piercings": false, 
+    "professional_qualification": "Speech Pathologist", 
+    "vocal_training_details": "Singing", 
+    "other_languages": "French, German", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 4, 
+            "name": "Maroubra Pyblic school ", 
+            "id": 148
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 7, 
+            "name": "SCEGGS Darlinghurst", 
+            "id": 149
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Sydney University ", 
+            "id": 150
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 23, 
+            "name": "Ultimo Technical College", 
+            "id": 151
+        }, 
+        {
+            "age_to": 60, 
+            "age_from": 59, 
+            "name": "Monash University", 
+            "id": 152
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Arnhem Leaf-nosed Bat", 
+        "id": 1
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "None", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Wakefield", 
+    "professional_occupation": "Retired", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 55, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 126, 
+            "name": "Hospital Speech Pathologist "
+        }, 
+        {
+            "age_to": 71, 
+            "less_than_a_year": false, 
+            "age_from": 55, 
+            "id": 127, 
+            "name": "Private practice"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "x", 
+    "language_usage": [
+        {
+            "situation": "Living in Austria", 
+            "frequency": 60, 
+            "name": "German", 
+            "id": 24
+        }
+    ], 
+    "student_aspiration": "", 
+    "mother_pob_town": "Accrington", 
+    "residence_history": [
+        {
+            "town": "Maroubra", 
+            "age_to": 22, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Traralgon", 
+            "age_to": 24, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Maroubra", 
+            "age_to": 29, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "HARTLEY", 
+            "age_to": 31, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Oberon", 
+            "age_to": 32, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Peel", 
+            "age_to": null, 
+            "age_from": 32, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "None", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "Australia", 
+    "dob": "1938-08-15", 
+    "speech_problems_details": "x", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "England", 
+    "mother_first_language": "English", 
+    "pob_town": "Paddington", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "x", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "x", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

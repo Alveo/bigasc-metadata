@@ -1,0 +1,393 @@
+{
+    "hobbies_details": "Bushwalking, jazz music, dancing", 
+    "rating": [
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2328
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2329
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2330
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2331
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2332
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2333
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2334
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2335
+        }, 
+        {
+            "comment": "NOISE AND BEEP", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 2336
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2337
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2338
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2339
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2340
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2341
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2342
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2343
+        }, 
+        {
+            "comment": "BACKG. NOISE", 
+            "component": 32, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 2344
+        }
+    ], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "ViIC", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "english", 
+    "id": 481, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "PhD", 
+    "vocal_training_details": "", 
+    "other_languages": "Urdu, Hindi, Kalasha, Esperanto, Tok Pisin", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "Bexley Infants School", 
+            "id": 1854
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 8, 
+            "name": "Bexley Primary School", 
+            "id": 1855
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Sydney Technical High School", 
+            "id": 1856
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Macquarie University", 
+            "id": 1857
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 26, 
+            "name": "University of Sydney", 
+            "id": 1858
+        }, 
+        {
+            "age_to": 50, 
+            "age_from": 39, 
+            "name": "Macquarie University", 
+            "id": 1859
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Spinner Dolphin", 
+        "id": 1166
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "New Town", 
+    "professional_occupation": "Director, Quality and Compliance", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 54, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 1232, 
+            "name": "Linguist"
+        }, 
+        {
+            "age_to": 57, 
+            "less_than_a_year": false, 
+            "age_from": 54, 
+            "id": 1233, 
+            "name": "Compliance Specialist"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Home, work", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 542
+        }, 
+        {
+            "situation": "Social (friends)", 
+            "frequency": 1, 
+            "name": "Urdu", 
+            "id": 543
+        }, 
+        {
+            "situation": "Social (strangers)", 
+            "frequency": 1, 
+            "name": "Hindi", 
+            "id": 544
+        }, 
+        {
+            "situation": "Social (fiends)", 
+            "frequency": 1, 
+            "name": "Kalasha", 
+            "id": 545
+        }, 
+        {
+            "situation": "Leisure", 
+            "frequency": 1, 
+            "name": "Esperanto", 
+            "id": 546
+        }, 
+        {
+            "situation": "Leisure", 
+            "frequency": 1, 
+            "name": "Tok Pisin", 
+            "id": 547
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Kew", 
+    "residence_history": [
+        {
+            "town": "Bexley", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Telopea", 
+            "age_to": 27, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Rawalpindi", 
+            "age_to": 38, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "PK", 
+            "state": ""
+        }, 
+        {
+            "town": "Kenthurst", 
+            "age_to": 38, 
+            "age_from": 38, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Telopea", 
+            "age_to": 40, 
+            "age_from": 38, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Red Rock", 
+            "age_to": 43, 
+            "age_from": 40, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Coffs Harbour", 
+            "age_to": 44, 
+            "age_from": 43, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Pendle Hill", 
+            "age_to": 47, 
+            "age_from": 44, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Toongabbie", 
+            "age_to": 50, 
+            "age_from": 47, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Castle Hill", 
+            "age_to": 57, 
+            "age_from": 50, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "TAS", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1955-01-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

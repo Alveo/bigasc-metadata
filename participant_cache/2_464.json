@@ -1,0 +1,243 @@
+{
+    "hobbies_details": "", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4780
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4781
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4779
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4778
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4777
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4776
+        }, 
+        {
+            "comment": "Video from camera 1 slightly overexposed", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4773
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4775
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4774
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Graduate Diploma", 
+    "first_language": "English", 
+    "id": 616, 
+    "student_course": null, 
+    "has_piercings": true, 
+    "professional_qualification": "BA/BComm", 
+    "vocal_training_details": "Singing lessons", 
+    "other_languages": "French, Hungarian", 
+    "has_hearing_problems": false, 
+    "religion": "Agnostic", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 4, 
+            "name": "Nilma PS", 
+            "id": 2384
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 7, 
+            "name": "Trafalgar PS", 
+            "id": 2385
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Trafalgar HS", 
+            "id": 2386
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 17, 
+            "name": "University of Melbourne", 
+            "id": 2387
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Kentish Plover", 
+        "id": 464
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "none", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Chelsea", 
+    "professional_occupation": "Public Servant", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 14, 
+            "id": 1486, 
+            "name": "Waitress (part time)"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 1487, 
+            "name": "Public Servant"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "Nose", 
+    "language_usage": [
+        {
+            "situation": "Social/entertainment", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 722
+        }, 
+        {
+            "situation": "Social with NS", 
+            "frequency": 3, 
+            "name": "Hungarian", 
+            "id": 723
+        }, 
+        {
+            "situation": "All other", 
+            "frequency": 96, 
+            "name": "English", 
+            "id": 724
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Budapest", 
+    "residence_history": [
+        {
+            "town": "Nilma", 
+            "age_to": 13, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Warragul", 
+            "age_to": 18, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Carlton", 
+            "age_to": 27, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1985-03-01", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "HU", 
+    "mother_first_language": "Hungarian", 
+    "pob_town": "Warragul", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": false
+}

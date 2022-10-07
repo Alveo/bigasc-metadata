@@ -1,0 +1,212 @@
+{
+    "hobbies_details": "Tennis, reading, gardening", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "QLD", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Graduate Certificate", 
+    "first_language": "English", 
+    "id": 778, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Linguist", 
+    "vocal_training_details": "acting", 
+    "other_languages": "Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 6, 
+            "name": "Wondai State School", 
+            "id": 3017
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 7, 
+            "name": "Gunalda State School", 
+            "id": 3018
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "All Hallows Secondary School", 
+            "id": 3019
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 19, 
+            "name": "The Children's Hospital Camperdown", 
+            "id": 3020
+        }, 
+        {
+            "age_to": 28, 
+            "age_from": 24, 
+            "name": "Macquarie University", 
+            "id": 3021
+        }, 
+        {
+            "age_to": 39, 
+            "age_from": 33, 
+            "name": "Macquarie University", 
+            "id": 3022
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Varied Triller", 
+        "id": 845
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian English", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": "Company Director", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1777, 
+            "name": "Shop Assistant"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1778, 
+            "name": "Office Assistant"
+        }, 
+        {
+            "age_to": 33, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1779, 
+            "name": "Speech Therapist"
+        }, 
+        {
+            "age_to": 44, 
+            "less_than_a_year": false, 
+            "age_from": 43, 
+            "id": 1780, 
+            "name": "Research Assistant, Macquarie Uni"
+        }, 
+        {
+            "age_to": 52, 
+            "less_than_a_year": false, 
+            "age_from": 45, 
+            "id": 1781, 
+            "name": "Research Assistant, Sydney Uni"
+        }, 
+        {
+            "age_to": 65, 
+            "less_than_a_year": false, 
+            "age_from": 52, 
+            "id": 1782, 
+            "name": "Manager (Business Owner)"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "QLD", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Daily", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 924
+        }, 
+        {
+            "situation": "family", 
+            "frequency": 1, 
+            "name": "Japanese", 
+            "id": 925
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Babinda", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Wondai", 
+            "age_to": 6, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Gunalda", 
+            "age_to": 16, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 65, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1946-12-14", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Brisbane", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

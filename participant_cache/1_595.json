@@ -1,0 +1,282 @@
+{
+    "hobbies_details": "I love to dance. I do belly dance, gypsy dance, Russian dance, Historic dance (Renaissance & Regency etc)\r\nI play sport in our inter-hall events at University- Soccer, Hockey & Table Tennis. \r\nI also love to make things- i.e. cooking and sewing. \r\nI grew up surrounded by animals & I love animals.\r\nI love learning about other cultures- particularly the cultures of Japan, China, France, Russia & the Arab world.  ", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 1999
+        }, 
+        {
+            "comment": "Background Noise", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4846
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2000
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2001
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2002
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2003
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2004
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2005
+        }, 
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4852
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4851
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4850
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4849
+        }, 
+        {
+            "comment": "", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4847
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4848
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Graduate Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 65, 
+    "student_course": "Bachelor of Languages", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Russian, Japanese, French, Arabic & Chinese", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 16, 
+            "age_from": 5, 
+            "name": "Dubbo Christian School", 
+            "id": 265
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "Oxley High School, Tamworth", 
+            "id": 266
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "Australian National University", 
+            "id": 267
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "University of Canberra", 
+        "id": 8
+    }, 
+    "animal": {
+        "name": "Oriental Cuckoo", 
+        "id": 595
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Tullamore", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "With my step-mother & brother & sister & with the Eurasian society that I helped create at the ANU", 
+            "frequency": 75, 
+            "name": "Russian", 
+            "id": 57
+        }, 
+        {
+            "situation": "At university ", 
+            "frequency": 50, 
+            "name": "Japanese", 
+            "id": 58
+        }, 
+        {
+            "situation": "At university", 
+            "frequency": 50, 
+            "name": "French", 
+            "id": 59
+        }, 
+        {
+            "situation": "When teaching English to a family from Saudi Arabia", 
+            "frequency": 50, 
+            "name": "Arabic", 
+            "id": 60
+        }, 
+        {
+            "situation": "With my boyfriend who speaks Mandarin.", 
+            "frequency": 60, 
+            "name": "Chinese", 
+            "id": 61
+        }
+    ], 
+    "student_aspiration": "Linguist", 
+    "mother_pob_town": "Dubbo", 
+    "residence_history": [
+        {
+            "town": "Tullamore", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Dubbo", 
+            "age_to": 16, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Tamworth", 
+            "age_to": 18, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 20, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1990-09-15", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Dubbo", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

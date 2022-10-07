@@ -1,0 +1,215 @@
+{
+    "hobbies_details": "Guitar, singing", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "TAS", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 408, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BSc, PHD Mining Grade Control", 
+    "vocal_training_details": "", 
+    "other_languages": "Spanish, French", 
+    "has_hearing_problems": false, 
+    "religion": "Atheist ", 
+    "education_history": [
+        {
+            "age_to": 9, 
+            "age_from": 5, 
+            "name": "Albert Street Primary School", 
+            "id": 1569
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Moe High School", 
+            "id": 1570
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Wesley College, Melbourne", 
+            "id": 1571
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "Melbourne University", 
+            "id": 1572
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 22, 
+            "name": "Macquarie University", 
+            "id": 1573
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Arctic Tern", 
+        "id": 94
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "NAMBROCK", 
+    "professional_occupation": "Mining consultant", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1090, 
+            "name": "Expiration geologist"
+        }, 
+        {
+            "age_to": 45, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 1091, 
+            "name": "Mining geologist"
+        }, 
+        {
+            "age_to": 60, 
+            "less_than_a_year": false, 
+            "age_from": 40, 
+            "id": 1092, 
+            "name": "Mining consultant"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 90, 
+            "name": "English", 
+            "id": 441
+        }, 
+        {
+            "situation": "travel", 
+            "frequency": 5, 
+            "name": "French", 
+            "id": 442
+        }, 
+        {
+            "situation": "travel", 
+            "frequency": 5, 
+            "name": "Spanish", 
+            "id": 443
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "ZEEHAN", 
+    "residence_history": [
+        {
+            "town": "MOE", 
+            "age_to": 13, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "MELBOURNE", 
+            "age_to": 20, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "WHYELLA", 
+            "age_to": 26, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "MOE", 
+            "age_to": 29, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "ALYANGULA", 
+            "age_to": 33, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 61, 
+            "age_from": 34, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1951-08-01", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "YALLOURN", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

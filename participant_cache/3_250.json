@@ -1,0 +1,330 @@
+{
+    "hobbies_details": "Salvation army band, play in concert bands, computing, ameture radio", 
+    "rating": [
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 227
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 228
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 229
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 230
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 231
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 232
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 12, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 233
+        }, 
+        {
+            "comment": "Bad camera angle", 
+            "component": 1, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 234
+        }, 
+        {
+            "comment": "Bad camera angle", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 235
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 7, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 236
+        }, 
+        {
+            "comment": "Bad camera angle", 
+            "component": 9, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 237
+        }, 
+        {
+            "comment": "Backg. Noise, Bad camera angle", 
+            "component": 13, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 238
+        }, 
+        {
+            "comment": "Bad camera angle", 
+            "component": 16, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 239
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 1, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 240
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 241
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 14, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 242
+        }
+    ], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "primary to junior high", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "TAS", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "primary to junior high", 
+    "first_language": "English", 
+    "id": 103, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Radio and TV servicing certificate", 
+    "vocal_training_details": "", 
+    "other_languages": "very basic German", 
+    "has_hearing_problems": true, 
+    "religion": "Salvation Army", 
+    "education_history": [
+        {
+            "age_to": 8, 
+            "age_from": 5, 
+            "name": "Woodbridge Primary", 
+            "id": 448
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 9, 
+            "name": "Albura Street", 
+            "id": 449
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "Hobart Tech College", 
+            "id": 450
+        }, 
+        {
+            "age_to": 31, 
+            "age_from": 30, 
+            "name": "University of Tasmania", 
+            "id": 451
+        }, 
+        {
+            "age_to": 35, 
+            "age_from": 33, 
+            "name": "Hobart Computing Centre", 
+            "id": 452
+        }
+    ], 
+    "location": {
+        "city": "Hobart", 
+        "state": "TAS", 
+        "name": "University of Tasmania", 
+        "id": 14
+    }, 
+    "animal": {
+        "name": "Cattle Egret", 
+        "id": 250
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Rosie Maunder", 
+        "first_name": "Rosie", 
+        "last_name": "Maunder", 
+        "is_active": true, 
+        "email": "Rosie.Maunder@utas.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-01-04 19:19:31", 
+        "id": 10, 
+        "date_joined": "2011-06-28 16:05:19"
+    }, 
+    "father_pob_town": "Port Sorell", 
+    "professional_occupation": "Radio and electronic servicing", 
+    "father_professional_category": "labourer", 
+    "profession_history": [
+        {
+            "age_to": 45, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 308, 
+            "name": "part time teaching"
+        }, 
+        {
+            "age_to": 56, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 309, 
+            "name": "Radio and electronic servicing"
+        }, 
+        {
+            "age_to": 33, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 310, 
+            "name": "news paper proof reading"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 311, 
+            "name": "self employed - radio and tv servicing"
+        }, 
+        {
+            "age_to": 40, 
+            "less_than_a_year": false, 
+            "age_from": 34, 
+            "id": 312, 
+            "name": "chemistry technician"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "TAS", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "when overseas", 
+            "frequency": 1, 
+            "name": "Germany", 
+            "id": 100
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sorell", 
+    "residence_history": [
+        {
+            "town": "New Norfolk", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "Woodbridge", 
+            "age_to": 9, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "Lower Sandy Bay", 
+            "age_to": 13, 
+            "age_from": 9, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "Warrane", 
+            "age_to": 19, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "Moonah", 
+            "age_to": 72, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }
+    ], 
+    "father_pob_state": "TAS", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1938-09-15", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "New Norfolk", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "little bit of a sinus cold but not much", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "little bit of industrial deafness.  Lower levels are okay, higher range dropped out a bit.", 
+    "professional_category": "tradesperson", 
+    "has_hobbies": true
+}

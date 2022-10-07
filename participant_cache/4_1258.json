@@ -1,0 +1,141 @@
+{
+    "hobbies_details": "Music, music production, audio restoration", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": true, 
+    "father_pob_country": "GB", 
+    "mother_pob_state": "", 
+    "student_enrollment": "parttime", 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 623, 
+    "student_course": "BA (extended major in Japanese)", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "atheist", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Wavell Heights Primary", 
+            "id": 2407
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 11, 
+            "name": "St Joseph's Corinda", 
+            "id": 2408
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Corinda High School", 
+            "id": 2409
+        }, 
+        {
+            "age_to": null, 
+            "age_from": 33, 
+            "name": "University Of Queensland", 
+            "id": 2410
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Bronze Aussie jumper", 
+        "id": 1258
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian/ English", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Battersea", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "day to day life", 
+            "frequency": 85, 
+            "name": "English", 
+            "id": 730
+        }, 
+        {
+            "situation": "education, communication with friends overseas", 
+            "frequency": 15, 
+            "name": "Japanese", 
+            "id": 731
+        }
+    ], 
+    "student_aspiration": "Japanese translation", 
+    "mother_pob_town": "Sussex", 
+    "residence_history": [
+        {
+            "town": "Auckland", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "NZ", 
+            "state": ""
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 36, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian/ English", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "NZ", 
+    "dob": "1975-09-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "GB", 
+    "mother_first_language": "English", 
+    "pob_town": "Auckland", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,137 @@
+{
+    "hobbies_details": "AFL; lawn bowls; touch rugby; music (listening to, promoting, coordination of live music performances).  ", 
+    "rating": [], 
+    "education_level": "school certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 642, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Chef - Apprenticeship", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Carrum PS", 
+            "id": 2477
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Aspendale Tech", 
+            "id": 2478
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Black Petrel", 
+        "id": 159
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Northcote", 
+    "professional_occupation": "Police Officer", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1550, 
+            "name": "Apprentice Chef"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1551, 
+            "name": "Chef"
+        }, 
+        {
+            "age_to": 45, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1552, 
+            "name": "Police Officer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 754
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Wigan", 
+    "residence_history": [
+        {
+            "town": "Carrum", 
+            "age_to": 45, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "Slight British Accent", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1966-09-04", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "GB", 
+    "mother_first_language": "English", 
+    "pob_town": "Frankston", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "assoc professional", 
+    "has_hobbies": true
+}

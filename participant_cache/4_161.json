@@ -1,0 +1,224 @@
+{
+    "hobbies_details": "", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "English", 
+    "id": 39, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Speech Pathologist", 
+    "vocal_training_details": "", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 4, 
+            "name": "Newcastle Public School", 
+            "id": 156
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 10, 
+            "name": "Newcastle Grammar School", 
+            "id": 157
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "Sydney University", 
+            "id": 158
+        }, 
+        {
+            "age_to": 32, 
+            "age_from": 28, 
+            "name": "University of NSW", 
+            "id": 159
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Black Tern", 
+        "id": 161
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Dubbo", 
+    "professional_occupation": "Project Officer", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 137, 
+            "name": "Casual retail worker"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 138, 
+            "name": "Speech Pathologist"
+        }, 
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 139, 
+            "name": "Speech Pathology Advisor"
+        }, 
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 140, 
+            "name": "Education Consultant"
+        }, 
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 141, 
+            "name": "Community Health Manager"
+        }, 
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 142, 
+            "name": "Student Placements Coordinator"
+        }, 
+        {
+            "age_to": 34, 
+            "less_than_a_year": false, 
+            "age_from": 31, 
+            "id": 143, 
+            "name": "Workforce Planning Consultant"
+        }, 
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 34, 
+            "id": 144, 
+            "name": "Healthcare Assistant Coordinator - Allied Health"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Nsw", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "if travelling in French speaking country", 
+            "frequency": 10, 
+            "name": "French", 
+            "id": 25
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "London", 
+    "residence_history": [
+        {
+            "town": "Newcastle", 
+            "age_to": 17, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Sydney Uni / Newtown", 
+            "age_to": 21, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Orange", 
+            "age_to": 23, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 26, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 35, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1976-06-15", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "UK", 
+    "mother_first_language": "English", 
+    "pob_town": "Newcastle", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": false
+}

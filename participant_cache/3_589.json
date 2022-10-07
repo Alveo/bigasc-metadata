@@ -1,0 +1,137 @@
+{
+    "hobbies_details": "I do musical theatre with various companies around Adelaide and am part of the Australian Institute of Performing Arts in Sydney. I do jazz and burlesque dance at ACPA in Adelaide, I also sing and play the guitar. ", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 670, 
+    "student_course": "Bachelor of Arts", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "I have been a member of various musical theatre companies for 10 years.", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "Saint Marks College Fatima, Port Pirie", 
+            "id": 2591
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 7, 
+            "name": "Saint Marks College Benidict, Port Pirie", 
+            "id": 2592
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Saint Mark College Bosco, Port Pirie", 
+            "id": 2593
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Olive Whistler", 
+        "id": 589
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Minnipa", 
+    "professional_occupation": null, 
+    "father_professional_category": "intermediate production", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All situations", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 792
+        }
+    ], 
+    "student_aspiration": "Performer ", 
+    "mother_pob_town": "Loveday", 
+    "residence_history": [
+        {
+            "town": "Port Pirie", 
+            "age_to": null, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Warnertown", 
+            "age_to": 19, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": null, 
+            "age_from": 19, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1993-03-23", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Port Pirie", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

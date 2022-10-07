@@ -1,0 +1,214 @@
+{
+    "hobbies_details": "", 
+    "rating": [
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1205
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1206
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1207
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1208
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1209
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1210
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1211
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 35, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Graphic Designer", 
+    "vocal_training_details": "", 
+    "other_languages": "None", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 8, 
+            "age_from": 5, 
+            "name": "Correspondence School", 
+            "id": 140
+        }, 
+        {
+            "age_to": 9, 
+            "age_from": 8, 
+            "name": "Adaminaby Primary", 
+            "id": 141
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 9, 
+            "name": "Brigidine Convent", 
+            "id": 142
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 15, 
+            "name": "Monaro High School", 
+            "id": 143
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "Chatswood High", 
+            "id": 144
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Narcissus Flycatcher", 
+        "id": 566
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Adaminaby ", 
+    "professional_occupation": "Graphic Designer", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 124, 
+            "name": "Part-time shop assistant"
+        }, 
+        {
+            "age_to": 61, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 125, 
+            "name": "Graphic Designer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Adaminaby", 
+    "residence_history": [
+        {
+            "town": "Cooma", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Wollstonecraft", 
+            "age_to": 23, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 61, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1950-03-24", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Cooma", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": false
+}

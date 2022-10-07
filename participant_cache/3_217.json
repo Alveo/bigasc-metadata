@@ -1,0 +1,277 @@
+{
+    "hobbies_details": "Reading, crafts, gardening", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "primary to junior high", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Tas", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 609, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Trained Primary School TEacher's Cert, Trained Teacher Librarian Cert, Grad Dip Computer Education", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "Ulverstone State School", 
+            "id": 2348
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 7, 
+            "name": "Sacred Heart Catholic School, Ulverstone", 
+            "id": 2349
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 12, 
+            "name": "Our Lady of Mercy, Deloraine, Tas", 
+            "id": 2350
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 15, 
+            "name": "Our Lady of Lourdes, Devonport, Tas", 
+            "id": 2351
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 17, 
+            "name": "Launceston Teachers' College", 
+            "id": 2352
+        }, 
+        {
+            "age_to": 27, 
+            "age_from": 27, 
+            "name": "Box Hill HS", 
+            "id": 2353
+        }, 
+        {
+            "age_to": 28, 
+            "age_from": 28, 
+            "name": "Kew HS", 
+            "id": 2354
+        }, 
+        {
+            "age_to": 32, 
+            "age_from": 30, 
+            "name": "Coburg Teachers' College", 
+            "id": 2355
+        }, 
+        {
+            "age_to": 33, 
+            "age_from": 33, 
+            "name": "Melbourne STate College", 
+            "id": 2356
+        }, 
+        {
+            "age_to": 38, 
+            "age_from": 35, 
+            "name": "RMIT City", 
+            "id": 2357
+        }, 
+        {
+            "age_to": 45, 
+            "age_from": 43, 
+            "name": "Deakin ", 
+            "id": 2358
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Brown Goshawk", 
+        "id": 217
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Ulverstone", 
+    "professional_occupation": "Relief Teacher (Primary)", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 1462, 
+            "name": "Primary School Teacher"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1463, 
+            "name": "Soldier (ADF)"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1464, 
+            "name": "Secretarial Work"
+        }, 
+        {
+            "age_to": 55, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 1465, 
+            "name": "Primary School Teacher"
+        }, 
+        {
+            "age_to": 65, 
+            "less_than_a_year": false, 
+            "age_from": 55, 
+            "id": 1466, 
+            "name": "Relief Primary Teacher"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Tas", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 710
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Spreyton", 
+    "residence_history": [
+        {
+            "town": "Ulverstone", 
+            "age_to": 12, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Deloraine", 
+            "age_to": 15, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Ulverstone", 
+            "age_to": 18, 
+            "age_from": 15, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Launceston", 
+            "age_to": 20, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Bagdad", 
+            "age_to": 21, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Sheffield", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Hobart", 
+            "age_to": 22, 
+            "age_from": 22, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Tas"
+        }, 
+        {
+            "town": "Cabalah", 
+            "age_to": 23, 
+            "age_from": 23, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Toowoomba", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Eastern Suburbs Melbourne", 
+            "age_to": 65, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Tas", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1946-09-03", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Ulverstone", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "A bit of hayfever", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

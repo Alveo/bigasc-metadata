@@ -1,0 +1,165 @@
+{
+    "hobbies_details": "Likes Music.", 
+    "rating": [], 
+    "education_level": "Graduate Certificate", 
+    "mother_cultural_heritage": "Aboriginal Australian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NT", 
+    "student_enrollment": "parttime", 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 937, 
+    "student_course": "Masters in Tropical Environmental Management", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Aboriginal English", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "St Mary's Primary (Darwin)", 
+            "id": 3556
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "St John's College (Darwin)", 
+            "id": 3557
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "University of Canberra", 
+            "id": 3558
+        }, 
+        {
+            "age_to": 34, 
+            "age_from": 33, 
+            "name": "ANU", 
+            "id": 3559
+        }
+    ], 
+    "location": {
+        "city": "Darwin", 
+        "state": "NT", 
+        "name": "Charles Darwin University", 
+        "id": 3
+    }, 
+    "animal": {
+        "name": "Southern Cassowary", 
+        "id": 770
+    }, 
+    "reading_problems_details": "Not a strong reader;", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "bruce.birch", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "email": "bruce.birch@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2015-04-30 10:32:01", 
+        "id": 53, 
+        "date_joined": "2015-01-21 16:41:03"
+    }, 
+    "father_pob_town": "Meckering", 
+    "professional_occupation": null, 
+    "father_professional_category": "intermediate clerical and service", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "NT", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 95, 
+            "name": "English", 
+            "id": 1161
+        }, 
+        {
+            "situation": "Remote Community Work", 
+            "frequency": 5, 
+            "name": "Aboriginal English", 
+            "id": 1162
+        }
+    ], 
+    "student_aspiration": "Heritage Management", 
+    "mother_pob_town": "Darwin", 
+    "residence_history": [
+        {
+            "town": "Darwin", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 23, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Alice Springs", 
+            "age_to": 26, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Tennant Creek", 
+            "age_to": 28, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 43, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1972-07-10", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Darwin", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Aboriginal Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

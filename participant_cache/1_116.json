@@ -1,0 +1,325 @@
+{
+    "hobbies_details": "Restore Early Holden Cars, Touch Football, Virtual Reality Photography.", 
+    "rating": [
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 923
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 924
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 925
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 926
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 927
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 928
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 929
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 930
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 931
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 932
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 933
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 934
+        }, 
+        {
+            "comment": "Backg. Noise too loud", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 935
+        }
+    ], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Advanced Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 33, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Mechanic", 
+    "vocal_training_details": "", 
+    "other_languages": "None", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 5, 
+            "age_from": 4, 
+            "name": "Thirroul Public School", 
+            "id": 130
+        }, 
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "Bellambi Public School", 
+            "id": 131
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Mt St Thomas Public School", 
+            "id": 132
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 13, 
+            "name": "Woonona High School", 
+            "id": 133
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 14, 
+            "name": "Wollongong TAFE", 
+            "id": 134
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Australian Magpie", 
+        "id": 116
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Armidale", 
+    "professional_occupation": "Photographer", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 14, 
+            "id": 116, 
+            "name": "Aprentice"
+        }, 
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 14, 
+            "id": 117, 
+            "name": "KFC"
+        }, 
+        {
+            "age_to": 44, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 118, 
+            "name": "Self Employed"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Canley Vale", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Fairfield", 
+            "age_to": 3, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Smithfield", 
+            "age_to": 4, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Thirroul", 
+            "age_to": 5, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bellambi", 
+            "age_to": 10, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Mangerton", 
+            "age_to": 12, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Mildura", 
+            "age_to": 13, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 14, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Wollongong", 
+            "age_to": 38, 
+            "age_from": 14, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 44, 
+            "age_from": 38, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1967-04-26", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Bathurst", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

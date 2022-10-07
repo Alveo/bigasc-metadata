@@ -1,0 +1,146 @@
+{
+    "hobbies_details": "HANDCRAFTS AND HOME GARDENING", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "ENGLISH", 
+    "id": 719, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "ADMINISTRATION ASSISTANT", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "COROMANDEL VALLEY PRIMARY", 
+            "id": 2778
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "BLACKWOOD HIGH SCHOOL", 
+            "id": 2779
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Pied Heron", 
+        "id": 632
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AUSTRALIAN", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "RICHMOND", 
+    "professional_occupation": "ADMINISTRATION", 
+    "father_professional_category": "elementary clerical", 
+    "profession_history": [
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1691, 
+            "name": "RETAIL SALES ASSISTANT"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 35, 
+            "id": 1692, 
+            "name": "ADMINISTRATION ASSISTANT DEPT HEALTH"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "EVERYDAY ", 
+            "frequency": 100, 
+            "name": "ENGLISH", 
+            "id": 853
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "BELAIR", 
+    "residence_history": [
+        {
+            "town": "BLACKWOOD", 
+            "age_to": 22, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "UNLEY", 
+            "age_to": 33, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "MARION", 
+            "age_to": 49, 
+            "age_from": 33, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "AUSTRALIAN", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1963-09-27", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "ENGLISH", 
+    "pob_town": "BELAIR", 
+    "father_first_language": "ENGLISH", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": true
+}

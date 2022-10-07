@@ -1,0 +1,137 @@
+{
+    "hobbies_details": "Netball, Surfing, Travelling, Japanese", 
+    "rating": [], 
+    "education_level": "Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 802, 
+    "student_course": "Nursing", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Reynella East High School", 
+            "id": 3116
+        }, 
+        {
+            "age_to": 29, 
+            "age_from": 28, 
+            "name": "Regency Tafe", 
+            "id": 3117
+        }, 
+        {
+            "age_to": 35, 
+            "age_from": 34, 
+            "name": "Noarlunga Tafe", 
+            "id": 3118
+        }
+    ], 
+    "location": {
+        "city": "Adelaide", 
+        "state": "SA", 
+        "name": "Flinders University", 
+        "id": 6
+    }, 
+    "animal": {
+        "name": "Arctic Jaeger", 
+        "id": 93
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "ADHAM AYABI", 
+        "first_name": "ADHAM", 
+        "last_name": "AYABI", 
+        "is_active": true, 
+        "email": "ATYA0001@FLINDERS.EDU.AU", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-03-11 12:44:26", 
+        "id": 30, 
+        "date_joined": "2012-01-30 12:43:29"
+    }, 
+    "father_pob_town": "Adelaide", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "SA", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 955
+        }
+    ], 
+    "student_aspiration": "Registered Nurse", 
+    "mother_pob_town": "Adelaide", 
+    "residence_history": [
+        {
+            "town": "Adelaide", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Tokyo", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "JP", 
+            "state": "JP"
+        }, 
+        {
+            "town": "Chiang Mai", 
+            "age_to": 23, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "TH", 
+            "state": "Th"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1977-01-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Adelaide", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

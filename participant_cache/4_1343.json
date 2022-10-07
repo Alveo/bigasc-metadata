@@ -1,0 +1,262 @@
+{
+    "hobbies_details": "", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 424
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 425
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 426
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 427
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 428
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 429
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 430
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 431
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 432
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 433
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 434
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 435
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 436
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 1, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 437
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 438
+        }, 
+        {
+            "comment": "Backg. Noise", 
+            "component": 14, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 439
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "TAS", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 102, 
+    "student_course": "Bachelor of Arts", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Little French and Italian", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 4, 
+            "name": "Illawarra Primary School", 
+            "id": 444
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "Mt Carmel College", 
+            "id": 445
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 17, 
+            "name": "Hobart College", 
+            "id": 446
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "University of Tasmania", 
+            "id": 447
+        }
+    ], 
+    "location": {
+        "city": "Hobart", 
+        "state": "TAS", 
+        "name": "University of Tasmania", 
+        "id": 14
+    }, 
+    "animal": {
+        "name": "St Andrew's cross spider", 
+        "id": 1343
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Rosie Maunder", 
+        "first_name": "Rosie", 
+        "last_name": "Maunder", 
+        "is_active": true, 
+        "email": "Rosie.Maunder@utas.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-01-04 19:19:31", 
+        "id": 10, 
+        "date_joined": "2011-06-28 16:05:19"
+    }, 
+    "father_pob_town": "Hobart", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "TAS", 
+    "mother_professional_category": "intermediate clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Overseas", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 98
+        }, 
+        {
+            "situation": "Overseas", 
+            "frequency": 1, 
+            "name": "Italian", 
+            "id": 99
+        }
+    ], 
+    "student_aspiration": "Primary School Teacher", 
+    "mother_pob_town": "Launceston", 
+    "residence_history": [
+        {
+            "town": "Blackmans Bay", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }
+    ], 
+    "father_pob_state": "TAS", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1990-10-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Hobart", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": false
+}

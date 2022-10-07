@@ -1,0 +1,231 @@
+{
+    "hobbies_details": "Rugby (university team), Choral group, fishing, Army reserves.", 
+    "rating": [
+        {
+            "comment": "recording volume too low", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 721
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 722
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 723
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 724
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 725
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 726
+        }, 
+        {
+            "comment": "recording volume too low", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 727
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 283, 
+    "student_course": "PhD History", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "When I was young (less than 5 years old I think), I underwent speech therapy to correct some minor d", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 8, 
+            "age_from": 5, 
+            "name": "Mater Dei Primary School, Blakehurst, Sydney, NSW", 
+            "id": 1090
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 8, 
+            "name": "St Aloysius' College, Milsons Point, Sydney, NSW", 
+            "id": 1091
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 19, 
+            "name": "University of Wollongong, Wollongong, NSW", 
+            "id": 1092
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 21, 
+            "name": "Sophia University, Tokyo, Japan (university exchange)", 
+            "id": 1093
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 23, 
+            "name": "ANU, Canberra, ACT (current)", 
+            "id": 1094
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "Australian National University", 
+        "id": 1
+    }, 
+    "animal": {
+        "name": "Sarus Crane", 
+        "id": 731
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "no accent", 
+    "RA": {
+        "username": "katharine gosling", 
+        "first_name": "katharine", 
+        "last_name": "gosling", 
+        "is_active": true, 
+        "email": "katharine.gosling@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-10-04 15:49:48", 
+        "id": 16, 
+        "date_joined": "2011-07-20 12:57:59"
+    }, 
+    "father_pob_town": "Singleton", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": "High School teacher", 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "Singleton", 
+            "age_to": 2, 
+            "age_from": 1, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Woy Woy", 
+            "age_to": 2, 
+            "age_from": 1, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 18, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Weno", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "FM", 
+            "state": "Chuuk"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 23, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Tokyo", 
+            "age_to": 22, 
+            "age_from": 21, 
+            "less_than_a_year": true, 
+            "country": "JP", 
+            "state": ""
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 24, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "no accent", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1988-01-08", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

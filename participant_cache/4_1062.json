@@ -1,0 +1,159 @@
+{
+    "hobbies_details": "Theatre, arts, gardening", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 580, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA, DipEd, B.Ed.Sts", 
+    "vocal_training_details": "", 
+    "other_languages": "Spanish & French", 
+    "has_hearing_problems": false, 
+    "religion": "Presbyterian", 
+    "education_history": [
+        {
+            "age_to": 13, 
+            "age_from": 5, 
+            "name": "Everton Park State PS, Everton Park, BNE", 
+            "id": 2234
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 14, 
+            "name": "Brisbane Girls Grammar", 
+            "id": 2235
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 17, 
+            "name": "UQ", 
+            "id": 2236
+        }, 
+        {
+            "age_to": 28, 
+            "age_from": 27, 
+            "name": "UQ (External)", 
+            "id": 2237
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Red-necked Wallaby", 
+        "id": 1062
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Perth", 
+    "professional_occupation": "Retired Teacher", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 50, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1402, 
+            "name": "English Teacher"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Qld", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 669
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 23, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "London", 
+            "age_to": 26, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Madrid", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "ES", 
+            "state": ""
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": null, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "vic"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1947-08-10", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Brisbane", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

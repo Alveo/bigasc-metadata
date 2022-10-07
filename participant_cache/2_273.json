@@ -1,0 +1,145 @@
+{
+    "hobbies_details": "I am a writer and published author of four books.", 
+    "rating": [], 
+    "education_level": "primary to junior high", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "primary to junior high", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Q'ld", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "primary to junior high", 
+    "first_language": "English", 
+    "id": 267, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Fitter& Turner", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 14, 
+            "age_from": 6, 
+            "name": "Brighton State School", 
+            "id": 1030
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 14, 
+            "name": "Queensland Technical College, George Street,Brisbane", 
+            "id": 1031
+        }, 
+        {
+            "age_to": 32, 
+            "age_from": 29, 
+            "name": "Queensland Technical College, Kangaroo Point", 
+            "id": 1032
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "Cicadabird", 
+        "id": 273
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": true, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "English", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "Brisbane", 
+    "professional_occupation": "Retired Police Officer", 
+    "father_professional_category": "intermediate clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 46, 
+            "less_than_a_year": false, 
+            "age_from": 35, 
+            "id": 744, 
+            "name": "Officer in Charge of Police Stations"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Q'ld", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Communications", 
+            "frequency": 96, 
+            "name": "Every Day", 
+            "id": 283
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": " Brisbane", 
+    "residence_history": [
+        {
+            "town": "Brisbane", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Q'ld"
+        }, 
+        {
+            "town": "Redcliffe", 
+            "age_to": 6, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Q'ld"
+        }, 
+        {
+            "town": "Sandgate", 
+            "age_to": 19, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Q'ld"
+        }
+    ], 
+    "father_pob_state": "Q'ld", 
+    "mother_accent": "Mother deceased", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1941-09-27", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Brisbane", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

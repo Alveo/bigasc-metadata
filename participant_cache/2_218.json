@@ -1,0 +1,308 @@
+{
+    "hobbies_details": "Cross-country skiing\r\nBicycle touring\r\nPhotography\r\nScience Fiction fandom", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2033
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2034
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2035
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2036
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2037
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2038
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 2039
+        }, 
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4969
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4968
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4970
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4967
+        }, 
+        {
+            "comment": "", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4966
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4965
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4972
+        }, 
+        {
+            "comment": "Missing items: video from cam1", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4973
+        }, 
+        {
+            "comment": "", 
+            "component": 14, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4974
+        }, 
+        {
+            "comment": "Missing component", 
+            "component": 17, 
+            "session": 4, 
+            "video": "D", 
+            "audio": "D", 
+            "id": 4971
+        }
+    ], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Victoria", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 69, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Master of Information Technology", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Wattle Grove Primary", 
+            "id": 291
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Kalamunda SHS", 
+            "id": 292
+        }, 
+        {
+            "age_to": 27, 
+            "age_from": 20, 
+            "name": "Canberra College of Advanced Education", 
+            "id": 293
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 17, 
+            "name": "Perth TAFE", 
+            "id": 294
+        }, 
+        {
+            "age_to": 42, 
+            "age_from": 38, 
+            "name": "University of Canberra", 
+            "id": 295
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "University of Canberra", 
+        "id": 8
+    }, 
+    "animal": {
+        "name": "Brown Hawk-Owl", 
+        "id": 218
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Coolgardie", 
+    "professional_occupation": "Computer Programmer", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 208, 
+            "name": "Clerk"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 209, 
+            "name": "Computer Operator"
+        }, 
+        {
+            "age_to": null, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 210, 
+            "name": "Computer Programmer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "W.A.", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "everywhere", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 67
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "York", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Perth", 
+            "age_to": 20, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": null, 
+            "age_from": 20, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1961-09-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "York", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

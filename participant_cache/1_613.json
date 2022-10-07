@@ -1,0 +1,149 @@
+{
+    "hobbies_details": "Watching soccer, rugby league; going to the casino; jogging; playing chess", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "FJ", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "Chinese", 
+    "id": 899, 
+    "student_course": "B. Agricultural Economics", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Chinese (Taishanese)", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 5, 
+            "name": "Excelsior Public School", 
+            "id": 3383
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 7, 
+            "name": "Jasper Road Public School", 
+            "id": 3384
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Gilroy Catholic College", 
+            "id": 3385
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "The University of Sydney", 
+            "id": 3386
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Pallas's Grasshopper-warbler", 
+        "id": 613
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Tarukua", 
+    "professional_occupation": null, 
+    "father_professional_category": "unemployed", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "home", 
+            "frequency": 20, 
+            "name": "Chinese (Taishanese)", 
+            "id": 1099
+        }, 
+        {
+            "situation": "Everyday", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 1100
+        }
+    ], 
+    "student_aspiration": "Detective", 
+    "mother_pob_town": "Guangdong", 
+    "residence_history": [
+        {
+            "town": "Manly", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Castle Hill", 
+            "age_to": 6, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Baulkham Hills", 
+            "age_to": 21, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Chinese", 
+    "father_cultural_heritage": "Oceanian, Southern and Central Asian", 
+    "pob_country": "AU", 
+    "dob": "1993-04-24", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "CN", 
+    "mother_first_language": "Chinese", 
+    "pob_town": "Manly", 
+    "father_first_language": "Chinese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,316 @@
+{
+    "hobbies_details": "Vegetable grower, Listening to radio and current affairs, home schooling", 
+    "rating": [
+        {
+            "comment": "Backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "B", 
+            "id": 77
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 78
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 79
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 80
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 81
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 82
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 83
+        }, 
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 84
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 85
+        }, 
+        {
+            "comment": "", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 86
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 87
+        }, 
+        {
+            "comment": "", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 88
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 89
+        }, 
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 90
+        }, 
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 91
+        }, 
+        {
+            "comment": "", 
+            "component": 14, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 92
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "GB", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "primary to junior high", 
+    "first_language": "English", 
+    "id": 99, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "", 
+    "vocal_training_details": "Radio training", 
+    "other_languages": "French, Latin", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 4, 
+            "name": "Lennah Valley Primary ", 
+            "id": 433
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "New Town Primary", 
+            "id": 434
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "New Town HIgh School", 
+            "id": 435
+        }
+    ], 
+    "location": {
+        "city": "Hobart", 
+        "state": "TAS", 
+        "name": "University of Tasmania", 
+        "id": 14
+    }, 
+    "animal": {
+        "name": "Pygmy Long-eared Bat", 
+        "id": 69
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Broad Yorkshire", 
+    "RA": {
+        "username": "Rosie Maunder", 
+        "first_name": "Rosie", 
+        "last_name": "Maunder", 
+        "is_active": true, 
+        "email": "Rosie.Maunder@utas.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-01-04 19:19:31", 
+        "id": 10, 
+        "date_joined": "2011-06-28 16:05:19"
+    }, 
+    "father_pob_town": "Ellend", 
+    "professional_occupation": "Pensioner", 
+    "father_professional_category": "intermediate production", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 297, 
+            "name": "ABC clerical assistant"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 298, 
+            "name": "Australian Taxation Office"
+        }, 
+        {
+            "age_to": 38, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 299, 
+            "name": "Radio Station worker"
+        }, 
+        {
+            "age_to": 48, 
+            "less_than_a_year": false, 
+            "age_from": 38, 
+            "id": 300, 
+            "name": "Landscaping business"
+        }, 
+        {
+            "age_to": 56, 
+            "less_than_a_year": false, 
+            "age_from": 48, 
+            "id": 301, 
+            "name": "Disability pension"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Little understanding", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 94
+        }, 
+        {
+            "situation": "Little Understanding", 
+            "frequency": 1, 
+            "name": "Latin", 
+            "id": 95
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Ellend", 
+    "residence_history": [
+        {
+            "town": "Elland", 
+            "age_to": 2, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Austins Ferry", 
+            "age_to": 4, 
+            "age_from": 2, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "New Town", 
+            "age_to": 27, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }, 
+        {
+            "town": "Lennah Valley", 
+            "age_to": 56, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "TAS"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Broad Yorkshire", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "GB", 
+    "dob": "1955-12-12", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "GB", 
+    "mother_first_language": "English", 
+    "pob_town": "Elland", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": "unemployed", 
+    "has_hobbies": true
+}

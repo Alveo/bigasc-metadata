@@ -1,0 +1,168 @@
+{
+    "hobbies_details": "Baseball, French Horn AMEB 6, Trumpet", 
+    "rating": [
+        {
+            "comment": "Background Noise", 
+            "component": 8, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "D", 
+            "id": 4498
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4497
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4499
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Other: Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Saskatchew", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Graduate Diploma", 
+    "first_language": "English", 
+    "id": 726, 
+    "student_course": "BSci", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "No religion", 
+    "education_history": [
+        {
+            "age_to": 5, 
+            "age_from": 5, 
+            "name": "Dookie PS", 
+            "id": 2803
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Bourchier Street PS Shepparton", 
+            "id": 2804
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Wanganui Park SC", 
+            "id": 2805
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 19, 
+            "name": "University of Melbourne", 
+            "id": 2806
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Great Frigatebird", 
+        "id": 390
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Joshua Clothier", 
+        "first_name": "Joshua", 
+        "last_name": "Clothier", 
+        "is_active": true, 
+        "email": "joshuajc@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2018-02-01 16:17:40", 
+        "id": 20, 
+        "date_joined": "2011-09-08 08:39:29"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 862
+        }
+    ], 
+    "student_aspiration": "Research in Genetics or Neuroscience", 
+    "mother_pob_town": "Regina", 
+    "residence_history": [
+        {
+            "town": "Dookie", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Shepparton", 
+            "age_to": 19, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Parkville", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "vic", 
+    "mother_accent": "Canadian English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1992-03-11", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "CA", 
+    "mother_first_language": "English", 
+    "pob_town": "Shepparton", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Slight cold ", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

@@ -1,0 +1,188 @@
+{
+    "hobbies_details": "Long distance running\r\nKarate\r\nFlute (AMEB 8)\r\nPicolo (AMEB 4)\r\nTravel\r\nYoga", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 8, 
+            "session": 3, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4761
+        }, 
+        {
+            "comment": "", 
+            "component": 31, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4757
+        }, 
+        {
+            "comment": "", 
+            "component": 33, 
+            "session": 3, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4756
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Other: Australian", 
+    "consent": true, 
+    "mother_education_level": "Doctoral Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NY", 
+    "student_enrollment": "parttime", 
+    "gender": "F", 
+    "father_education_level": "Doctoral Degree", 
+    "first_language": "English", 
+    "id": 612, 
+    "student_course": "PhD", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "French, Mandarin Chinese, Swedish, Nepali, Polish, Tibetan, Sherpa ", 
+    "has_hearing_problems": false, 
+    "religion": "Buddhist", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Carlton North Primary School", 
+            "id": 2366
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 11, 
+            "name": "Ivanhoe Girls Grammar School", 
+            "id": 2367
+        }, 
+        {
+            "age_to": 29, 
+            "age_from": 18, 
+            "name": "Melbourne University", 
+            "id": 2368
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Banded Honeyeater", 
+        "id": 134
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "AusE", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Geelong", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All other", 
+            "frequency": 65, 
+            "name": "English", 
+            "id": 712
+        }, 
+        {
+            "situation": "Speaking with NS (research)", 
+            "frequency": 25, 
+            "name": "Nepali", 
+            "id": 713
+        }, 
+        {
+            "situation": "Speaking with NS family", 
+            "frequency": 5, 
+            "name": "Polish", 
+            "id": 714
+        }, 
+        {
+            "situation": "Social", 
+            "frequency": 5, 
+            "name": "Sherpa", 
+            "id": 715
+        }
+    ], 
+    "student_aspiration": "Unsure", 
+    "mother_pob_town": "Troy", 
+    "residence_history": [
+        {
+            "town": "Carlton", 
+            "age_to": 6, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Alphington", 
+            "age_to": 22, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Brunswick", 
+            "age_to": 27, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Alphington", 
+            "age_to": 29, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "East Coast American English", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1982-11-03", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "US", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "Polish", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

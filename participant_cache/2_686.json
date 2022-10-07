@@ -1,0 +1,173 @@
+{
+    "hobbies_details": "out door activities", 
+    "rating": [], 
+    "education_level": "TAFE Certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": true, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "nsw", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "english", 
+    "id": 45, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "cert 3 painter and decorator", 
+    "vocal_training_details": "", 
+    "other_languages": "none", 
+    "has_hearing_problems": false, 
+    "religion": "christian", 
+    "education_history": [
+        {
+            "age_to": 13, 
+            "age_from": 5, 
+            "name": "marrara christian school", 
+            "id": 181
+        }, 
+        {
+            "age_to": 14, 
+            "age_from": 13, 
+            "name": "taminmin high school", 
+            "id": 182
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 14, 
+            "name": "sandersan high school", 
+            "id": 183
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Red-rumped Parrot", 
+        "id": 686
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "ipswicth", 
+    "professional_occupation": "paint reprasentative", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 18, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 159, 
+            "name": "print media logistics officer "
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 160, 
+            "name": "storeman"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 161, 
+            "name": "labourer _ ta"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 162, 
+            "name": "apprentice"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 163, 
+            "name": "truck driver"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 164, 
+            "name": "paint reprasentative"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "sydney", 
+    "residence_history": [
+        {
+            "town": "westmeed", 
+            "age_to": 3, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "darwin", 
+            "age_to": 27, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nt"
+        }, 
+        {
+            "town": "orange", 
+            "age_to": 28, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "qld", 
+    "mother_accent": "australian", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "Australia", 
+    "dob": "1983-05-30", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "english", 
+    "pob_town": "westmeed", 
+    "father_first_language": "english", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": "tradesperson", 
+    "has_hobbies": true
+}

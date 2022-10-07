@@ -1,0 +1,248 @@
+{
+    "hobbies_details": "Diving, rock climbing and martial arts", 
+    "rating": [
+        {
+            "comment": "Noise, lighting", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3520
+        }, 
+        {
+            "comment": "Noise, lighting", 
+            "component": 2, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3521
+        }, 
+        {
+            "comment": "Noise, lighting", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3522
+        }, 
+        {
+            "comment": "Noise, lighting", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3523
+        }, 
+        {
+            "comment": "Noise, lighting", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3524
+        }, 
+        {
+            "comment": "Noise, lighting", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3525
+        }, 
+        {
+            "comment": "Noise, lighting", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "B", 
+            "id": 3526
+        }, 
+        {
+            "comment": "dropped vid frame", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 3527
+        }, 
+        {
+            "comment": "LIGHTING", 
+            "component": 7, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 3528
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 3529
+        }, 
+        {
+            "comment": "", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 3530
+        }, 
+        {
+            "comment": "", 
+            "component": 21, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 3531
+        }, 
+        {
+            "comment": "", 
+            "component": 22, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 3532
+        }
+    ], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "CN", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 184, 
+    "student_course": "Honours in Marine Ecology", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Cantonese", 
+    "has_hearing_problems": false, 
+    "religion": "-", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "St Pats Bega and St Briggits Coogee", 
+            "id": 725
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Bega Public high", 
+            "id": 726
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 18, 
+            "name": "UTS ", 
+            "id": 727
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of Sydney", 
+        "id": 13
+    }, 
+    "animal": {
+        "name": "Pheasant-tailed Jacana", 
+        "id": 627
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Asian", 
+    "RA": {
+        "username": "sarah.delauney", 
+        "first_name": "", 
+        "last_name": "sarah.delauney", 
+        "is_active": true, 
+        "email": "sarah.delauney@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-07-30 06:31:10", 
+        "id": 26, 
+        "date_joined": "2011-11-01 19:30:59"
+    }, 
+    "father_pob_town": "Hong Kong", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "nsw", 
+    "mother_professional_category": "tradesperson", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 181
+        }, 
+        {
+            "situation": "Family", 
+            "frequency": 1, 
+            "name": "Cantonese", 
+            "id": 182
+        }
+    ], 
+    "student_aspiration": "Marine research", 
+    "mother_pob_town": "Hong Kong", 
+    "residence_history": [
+        {
+            "town": "Wolumla", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "Arncliff", 
+            "age_to": 22, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }, 
+        {
+            "town": "St Peters", 
+            "age_to": 24, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "nsw"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Asian", 
+    "father_cultural_heritage": "North-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1987-10-22", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "CN", 
+    "mother_first_language": "Cantonese", 
+    "pob_town": "Pamula", 
+    "father_first_language": "Cantonese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

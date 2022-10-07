@@ -1,0 +1,173 @@
+{
+    "hobbies_details": "Lift weights\r\nGo to music festivals occasionally", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 911, 
+    "student_course": "Renewable Energy Engineering", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "A few singing lesson...maybe 5 or so", 
+    "other_languages": "Mandarin", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 16, 
+            "age_from": 12, 
+            "name": "Lyneham High School", 
+            "id": 3429
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 16, 
+            "name": "Dickson College", 
+            "id": 3430
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 20, 
+            "name": "ANU", 
+            "id": 3431
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "Lyneham Primary School", 
+            "id": 3432
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 20, 
+            "name": "UNSW", 
+            "id": 3433
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Northern Scrub-robin", 
+        "id": 586
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "None...Australian", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Gippsland", 
+    "professional_occupation": null, 
+    "father_professional_category": "unemployed", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "ACT", 
+    "mother_professional_category": "unemployed", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Home", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 1119
+        }, 
+        {
+            "situation": "Home", 
+            "frequency": 20, 
+            "name": "Mandarin", 
+            "id": 1120
+        }, 
+        {
+            "situation": "Study", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1121
+        }, 
+        {
+            "situation": "Work", 
+            "frequency": 20, 
+            "name": "Mandarin", 
+            "id": 1122
+        }, 
+        {
+            "situation": "Work", 
+            "frequency": 80, 
+            "name": "English", 
+            "id": 1123
+        }
+    ], 
+    "student_aspiration": "To work on autonomous vehicles as an engineer ", 
+    "mother_pob_town": "Sydney", 
+    "residence_history": [
+        {
+            "town": "O'Connor", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Wudaokou", 
+            "age_to": 18, 
+            "age_from": 18, 
+            "less_than_a_year": true, 
+            "country": "CN", 
+            "state": ""
+        }, 
+        {
+            "town": "Coogee", 
+            "age_to": 23, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "None...Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1990-12-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "O'Connor", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

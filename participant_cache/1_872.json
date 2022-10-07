@@ -1,0 +1,176 @@
+{
+    "hobbies_details": "Pilates and Yoga.", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "WA", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 920, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Mater Degree in Librarianship", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 6, 
+            "name": "Nakara Primary School", 
+            "id": 3470
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 11, 
+            "name": "Alawa Primary School", 
+            "id": 3471
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "Darwin High School", 
+            "id": 3472
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 17, 
+            "name": "Casuarina Secondary College", 
+            "id": 3473
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 19, 
+            "name": "Charles Darwin University", 
+            "id": 3474
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 26, 
+            "name": "ANU", 
+            "id": 3475
+        }, 
+        {
+            "age_to": 27, 
+            "age_from": 27, 
+            "name": "Canberra University", 
+            "id": 3476
+        }
+    ], 
+    "location": {
+        "city": "Darwin", 
+        "state": "NT", 
+        "name": "Charles Darwin University", 
+        "id": 3
+    }, 
+    "animal": {
+        "name": "White Tern", 
+        "id": 872
+    }, 
+    "reading_problems_details": "mild dyslexia.", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "bruce.birch", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "email": "bruce.birch@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2015-04-30 10:32:01", 
+        "id": 53, 
+        "date_joined": "2015-01-21 16:41:03"
+    }, 
+    "father_pob_town": "Perth", 
+    "professional_occupation": "Librarian", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1930, 
+            "name": "Lawyer"
+        }, 
+        {
+            "age_to": 29, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 1931, 
+            "name": "Librarian"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "NT", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1138
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Perth", 
+    "residence_history": [
+        {
+            "town": "Darwin", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Perth", 
+            "age_to": 4, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 29, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }
+    ], 
+    "father_pob_state": "WA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1986-10-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Darwin", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

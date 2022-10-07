@@ -1,0 +1,143 @@
+{
+    "hobbies_details": "netball, writing, photography, language learning (Finnish & Swedish)", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 653, 
+    "student_course": "B Arts", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Finnish, minimal Swedish", 
+    "has_hearing_problems": false, 
+    "religion": "Catholic", 
+    "education_history": [
+        {
+            "age_to": 4, 
+            "age_from": 4, 
+            "name": "Shoal Bay Public School", 
+            "id": 2524
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 4, 
+            "name": "St. Joseph's Primary School, Merriwa ", 
+            "id": 2525
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "St. Joseph's High School, Aberdeen", 
+            "id": 2526
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Yellow-throated Scrubwren", 
+        "id": 947
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian accent", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": null, 
+    "father_professional_category": "labourer", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Exchange Student (90% spoken in Finland 10% in Australia)", 
+            "frequency": 10, 
+            "name": "Finnish", 
+            "id": 767
+        }, 
+        {
+            "situation": "Exchange Student", 
+            "frequency": 1, 
+            "name": "Swedish", 
+            "id": 768
+        }
+    ], 
+    "student_aspiration": "English as a Foreign Language (L2) teacher, or translator", 
+    "mother_pob_town": "Newcastle", 
+    "residence_history": [
+        {
+            "town": "Nelson Bay", 
+            "age_to": 4, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Merriwa", 
+            "age_to": 18, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Kotka", 
+            "age_to": 19, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "FI", 
+            "state": ""
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian accent", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1992-12-30", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "New Lambton", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

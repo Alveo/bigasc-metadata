@@ -1,0 +1,256 @@
+{
+    "hobbies_details": "Transport operations & history\r\nGardening\r\nDogs\r\nMotor cycling\r\nGym workouts\r\nWalking\r\nPolitics & current affairs\r\nMusic (trad jazz, swing, popular 20s & 30s, classical, guitar)", 
+    "rating": [
+        {
+            "comment": "", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 697
+        }, 
+        {
+            "comment": "", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 698
+        }, 
+        {
+            "comment": "", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 699
+        }, 
+        {
+            "comment": "", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 700
+        }, 
+        {
+            "comment": "", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 701
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 702
+        }, 
+        {
+            "comment": "", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 703
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 704
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 705
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 706
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 707
+        }
+    ], 
+    "education_level": "Graduate Certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 323, 
+    "student_course": "", 
+    "has_piercings": false, 
+    "professional_qualification": "Bachelor of Economics", 
+    "vocal_training_details": "", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "CAtholic", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "St Anthony's Primary School", 
+            "id": 1244
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Sacred Heart College", 
+            "id": 1245
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "University of Adelaide", 
+            "id": 1246
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "Australian National University", 
+        "id": 1
+    }, 
+    "animal": {
+        "name": "Narcissus Flycatcher", 
+        "id": 566
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "katharine gosling", 
+        "first_name": "katharine", 
+        "last_name": "gosling", 
+        "is_active": true, 
+        "email": "katharine.gosling@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-10-04 15:49:48", 
+        "id": 16, 
+        "date_joined": "2011-07-20 12:57:59"
+    }, 
+    "father_pob_town": "Crystal Brook", 
+    "professional_occupation": "Bus Driver", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 882, 
+            "name": "Full time student"
+        }, 
+        {
+            "age_to": 55, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 883, 
+            "name": "Commonwealth public servant"
+        }, 
+        {
+            "age_to": 60, 
+            "less_than_a_year": false, 
+            "age_from": 56, 
+            "id": 884, 
+            "name": "Bus Driver"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "ACT", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 343
+        }
+    ], 
+    "student_aspiration": "", 
+    "mother_pob_town": "Adelaide", 
+    "residence_history": [
+        {
+            "town": "Plympton", 
+            "age_to": 5, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Edwardstown", 
+            "age_to": 22, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Narrabundah", 
+            "age_to": 25, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Curtin", 
+            "age_to": 60, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1952-01-31", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "North Adelaide", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "assoc professional", 
+    "has_hobbies": true
+}

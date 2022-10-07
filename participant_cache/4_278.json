@@ -1,0 +1,218 @@
+{
+    "hobbies_details": "Bike riding", 
+    "rating": [], 
+    "education_level": "Doctoral Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "SA", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 913, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "PhD", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "Parap Primary School", 
+            "id": 3436
+        }, 
+        {
+            "age_to": 11, 
+            "age_from": 10, 
+            "name": "Linden Park Primary", 
+            "id": 3437
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 11, 
+            "name": "Pembroke", 
+            "id": 3438
+        }, 
+        {
+            "age_to": 16, 
+            "age_from": 13, 
+            "name": "Snowtown Area School", 
+            "id": 3439
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 16, 
+            "name": "RAN", 
+            "id": 3440
+        }, 
+        {
+            "age_to": 44, 
+            "age_from": 35, 
+            "name": "Flinders University", 
+            "id": 3441
+        }
+    ], 
+    "location": {
+        "city": "Darwin", 
+        "state": "NT", 
+        "name": "Charles Darwin University", 
+        "id": 3
+    }, 
+    "animal": {
+        "name": "Collared Imperial-Pigeon", 
+        "id": 278
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "Laura.Rook", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "email": "Laura.Rook@cdu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2014-09-03 13:07:55", 
+        "id": 52, 
+        "date_joined": "2014-05-30 11:14:45"
+    }, 
+    "father_pob_town": "Adelaide", 
+    "professional_occupation": "Teaching", 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1909, 
+            "name": "RAN"
+        }, 
+        {
+            "age_to": 35, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1910, 
+            "name": "Manager"
+        }, 
+        {
+            "age_to": 49, 
+            "less_than_a_year": false, 
+            "age_from": 37, 
+            "id": 1911, 
+            "name": "Teacher"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NT", 
+    "mother_professional_category": "manager and admin", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Adelaide", 
+    "residence_history": [
+        {
+            "town": "Darrwin", 
+            "age_to": 10, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 12, 
+            "age_from": 11, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Snowtown", 
+            "age_to": 16, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Nowra", 
+            "age_to": 24, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Gympie", 
+            "age_to": 29, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 32, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Mount Tamborine", 
+            "age_to": 35, 
+            "age_from": 33, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Adelaide", 
+            "age_to": 44, 
+            "age_from": 35, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "SA"
+        }, 
+        {
+            "town": "Darwin", 
+            "age_to": 49, 
+            "age_from": 44, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1965-06-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Darwin", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

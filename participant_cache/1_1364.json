@@ -1,0 +1,204 @@
+{
+    "hobbies_details": "Dancing, TV, computer.", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Associate Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "PG", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Vocational Graduate Certificate", 
+    "first_language": "English", 
+    "id": 650, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "N/A", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Lapsed Anglican", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Oberon Primary", 
+            "id": 2509
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 11, 
+            "name": "Oberon High", 
+            "id": 2510
+        }, 
+        {
+            "age_to": 22, 
+            "age_from": 18, 
+            "name": "Monash Clayton", 
+            "id": 2511
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 22, 
+            "name": "Deakin Geelong", 
+            "id": 2512
+        }, 
+        {
+            "age_to": 35, 
+            "age_from": 31, 
+            "name": "Latrobe", 
+            "id": 2513
+        }, 
+        {
+            "age_to": 36, 
+            "age_from": 35, 
+            "name": "RMIT", 
+            "id": 2514
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Two-tailed spider", 
+        "id": 1364
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Rabaul", 
+    "professional_occupation": "Computer programmer", 
+    "father_professional_category": "labourer", 
+    "profession_history": [
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1564, 
+            "name": "Computer programmer"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Geelong", 
+    "residence_history": [
+        {
+            "town": "Geelong", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Clayton", 
+            "age_to": 24, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Geelong", 
+            "age_to": 26, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Mount Waverley", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "London", 
+            "age_to": 29, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": "X"
+        }, 
+        {
+            "town": "Geelong", 
+            "age_to": 31, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Bundoora", 
+            "age_to": 35, 
+            "age_from": 33, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Geelong", 
+            "age_to": 36, 
+            "age_from": 35, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": 50, 
+            "age_from": 35, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "EN Britain", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1961-10-13", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Geelong", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "Mild cold.", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "assoc professional", 
+    "has_hobbies": true
+}

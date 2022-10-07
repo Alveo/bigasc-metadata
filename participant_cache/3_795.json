@@ -1,0 +1,225 @@
+{
+    "hobbies_details": "Running; cooking; home renovation", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Graduate Diploma", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "Vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 665, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA, BComm, DML, MBus(Property)", 
+    "vocal_training_details": "Singing lessons as a child", 
+    "other_languages": "French, Japanese", 
+    "has_hearing_problems": false, 
+    "religion": "Agnostic", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "Warrnambool PS", 
+            "id": 2571
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 11, 
+            "name": "Warrnambool HS", 
+            "id": 2572
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 13, 
+            "name": "Hamilton College", 
+            "id": 2573
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 18, 
+            "name": "University of Melbourne", 
+            "id": 2574
+        }, 
+        {
+            "age_to": 31, 
+            "age_from": 26, 
+            "name": "RMIT (City)", 
+            "id": 2575
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Star Finch", 
+        "id": 795
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "Joshua Clothier", 
+        "first_name": "Joshua", 
+        "last_name": "Clothier", 
+        "is_active": true, 
+        "email": "joshuajc@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2018-02-01 16:17:40", 
+        "id": 20, 
+        "date_joined": "2011-09-08 08:39:29"
+    }, 
+    "father_pob_town": "Bendigo", 
+    "professional_occupation": "Stay home mum", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1604, 
+            "name": "Business Consultant (full time)"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1605, 
+            "name": "Property Consultant"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": true, 
+            "age_from": 32, 
+            "id": 1606, 
+            "name": "Stay at home mum"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Trying to teach son French", 
+            "frequency": 1, 
+            "name": "French", 
+            "id": 782
+        }, 
+        {
+            "situation": "All other", 
+            "frequency": 99, 
+            "name": "English", 
+            "id": 783
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Bendigo", 
+    "residence_history": [
+        {
+            "town": "Ascot Vale", 
+            "age_to": 0, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Ballarat", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Ascot Vale", 
+            "age_to": 3, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Cardiff", 
+            "age_to": 4, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": ""
+        }, 
+        {
+            "town": "Warrnambool", 
+            "age_to": 18, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Parkville", 
+            "age_to": 22, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "FR", 
+            "state": "Victoria"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 22, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "act"
+        }, 
+        {
+            "town": "Inner City Melbourne", 
+            "age_to": 32, 
+            "age_from": 23, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 22, 
+            "age_from": 22, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1980-08-16", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "home duties", 
+    "has_hobbies": true
+}

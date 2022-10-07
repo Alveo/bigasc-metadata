@@ -1,0 +1,135 @@
+{
+    "hobbies_details": "snow sports, watersports, motorsports, ameb grade 5 violin, ameb certificate of completion piano", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "Diploma", 
+    "is_smoker": true, 
+    "father_pob_country": "HK", 
+    "mother_pob_state": "", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "Graduate Diploma", 
+    "first_language": "cantonese chinese", 
+    "id": 163, 
+    "student_course": "engineering", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "cantonese chinese", 
+    "has_hearing_problems": false, 
+    "religion": "-", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 6, 
+            "name": "macgregor primary school", 
+            "id": 661
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "brisbane grammar school", 
+            "id": 662
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "university of queensland", 
+            "id": 663
+        }
+    ], 
+    "location": {
+        "city": "Brisbane", 
+        "state": "QLD", 
+        "name": "University of Queensland", 
+        "id": 12
+    }, 
+    "animal": {
+        "name": "White-throated Gerygone", 
+        "id": 910
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "english", 
+    "RA": {
+        "username": "nahyun", 
+        "first_name": "", 
+        "last_name": "nahyun", 
+        "is_active": true, 
+        "email": "nahyun.kwon@uqconnect.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-11-06 15:25:10", 
+        "id": 12, 
+        "date_joined": "2011-06-30 13:56:05"
+    }, 
+    "father_pob_town": "hong kong", 
+    "professional_occupation": null, 
+    "father_professional_category": "professional", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "home", 
+            "frequency": 80, 
+            "name": "cantonese chinese", 
+            "id": 153
+        }, 
+        {
+            "situation": "not at home", 
+            "frequency": 100, 
+            "name": "english", 
+            "id": 154
+        }
+    ], 
+    "student_aspiration": "engineer", 
+    "mother_pob_town": "hong kong", 
+    "residence_history": [
+        {
+            "town": "logan", 
+            "age_to": 12, 
+            "age_from": 4, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "q"
+        }, 
+        {
+            "town": "spring hill", 
+            "age_to": 22, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "q"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "chinese", 
+    "father_cultural_heritage": "North-East Asian", 
+    "pob_country": "HK", 
+    "dob": "1989-01-17", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "HK", 
+    "mother_first_language": "cantonese chinese", 
+    "pob_town": "hong kong", 
+    "father_first_language": "cantonese chinese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

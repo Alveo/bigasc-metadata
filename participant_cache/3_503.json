@@ -1,0 +1,369 @@
+{
+    "hobbies_details": "Aqua aerobics, walking, yoga, church choir", 
+    "rating": [
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1341
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 3, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1342
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 4, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1343
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1344
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1345
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 11, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1346
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 12, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1347
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 1, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1348
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 5, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1349
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 7, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1350
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 9, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1351
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 13, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1352
+        }, 
+        {
+            "comment": "backg. Noise", 
+            "component": 16, 
+            "session": 2, 
+            "video": "A", 
+            "audio": "C", 
+            "id": 1353
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1354
+        }, 
+        {
+            "comment": "", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1355
+        }, 
+        {
+            "comment": "", 
+            "component": 12, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1356
+        }, 
+        {
+            "comment": "", 
+            "component": 32, 
+            "session": 4, 
+            "video": "", 
+            "audio": "", 
+            "id": 1357
+        }
+    ], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 5, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Primary School teacher", 
+    "vocal_training_details": "", 
+    "other_languages": "none", 
+    "has_hearing_problems": false, 
+    "religion": "Roman Catholic", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 4, 
+            "name": "St Michael's Primary, Lyneham, Canberra", 
+            "id": 18
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 12, 
+            "name": "Catholic Girls High Braddon, Canberra", 
+            "id": 19
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 16, 
+            "name": "Canberra High School,Canberra", 
+            "id": 20
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 17, 
+            "name": "CAE Canberra", 
+            "id": 21
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 23, 
+            "name": "Mount Lawley College, Perth", 
+            "id": 22
+        }, 
+        {
+            "age_to": 54, 
+            "age_from": 54, 
+            "name": "CSU Bathurst, ", 
+            "id": 23
+        }
+    ], 
+    "location": {
+        "city": "Bathurst", 
+        "state": "NSW", 
+        "name": "Charles Sturt University", 
+        "id": 4
+    }, 
+    "animal": {
+        "name": "Little Egret", 
+        "id": 503
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Sydney", 
+    "professional_occupation": "teaching", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 16, 
+            "name": "part-time fruit packing / house cleaning"
+        }, 
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 17, 
+            "name": "full-time student"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 18, 
+            "name": "teaching full-time"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 19, 
+            "name": "part-time teaching"
+        }, 
+        {
+            "age_to": 54, 
+            "less_than_a_year": false, 
+            "age_from": 36, 
+            "id": 20, 
+            "name": "part-time teaching"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "A.C.T.", 
+    "mother_professional_category": "intermediate production", 
+    "piercings_details": "", 
+    "language_usage": [], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Gunnedah", 
+    "residence_history": [
+        {
+            "town": "Canberra", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Ali Curung", 
+            "age_to": 24, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Perth", 
+            "age_to": 25, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "WA"
+        }, 
+        {
+            "town": "Willowra", 
+            "age_to": 27, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NT"
+        }, 
+        {
+            "town": "Warren", 
+            "age_to": 29, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Colac", 
+            "age_to": 31, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Forbes", 
+            "age_to": 42, 
+            "age_from": 31, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Orange", 
+            "age_to": 48, 
+            "age_from": 42, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bathurst", 
+            "age_to": 54, 
+            "age_from": 48, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1957-05-02", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Canberra", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

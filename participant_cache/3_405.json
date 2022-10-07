@@ -1,0 +1,187 @@
+{
+    "hobbies_details": "Crafts, patchworking, knitting.", 
+    "rating": [], 
+    "education_level": "Graduate Diploma", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "primary to junior high", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 639, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "N/A", 
+    "vocal_training_details": "", 
+    "other_languages": "", 
+    "has_hearing_problems": true, 
+    "religion": "None", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Mentone Primary", 
+            "id": 2465
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Mentone Girls Secondary College", 
+            "id": 2466
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 17, 
+            "name": "Frankston Tech/Caulfield Tech", 
+            "id": 2467
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 20, 
+            "name": "State College of Victoria (Teaching)", 
+            "id": 2468
+        }, 
+        {
+            "age_to": 34, 
+            "age_from": 32, 
+            "name": "Vic College (Teaching)", 
+            "id": 2469
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Grey Currawong", 
+        "id": 405
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Chatswood", 
+    "professional_occupation": "Retired", 
+    "father_professional_category": "intermediate clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 20, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 1543, 
+            "name": "Public Service (admin.)"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1544, 
+            "name": "Public Service (admin.)"
+        }, 
+        {
+            "age_to": 56, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1545, 
+            "name": "Teaching (primary)"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "General", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 751
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Hawksburn", 
+    "residence_history": [
+        {
+            "town": "Mentone", 
+            "age_to": 24, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Sth Oakleigh", 
+            "age_to": 30, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Kilsyth", 
+            "age_to": 36, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Oakleigh", 
+            "age_to": 56, 
+            "age_from": 36, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Safety Beach", 
+            "age_to": 56, 
+            "age_from": 56, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "NSW", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1956-02-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Mordialloc", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "Some hearing loss in L ear.", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": true
+}

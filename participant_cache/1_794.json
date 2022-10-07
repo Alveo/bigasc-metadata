@@ -1,0 +1,193 @@
+{
+    "hobbies_details": "Drawing/painting\r\nSinging/flute/mandolin", 
+    "rating": [], 
+    "education_level": "Graduate Certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": true, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "NSW", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "English", 
+    "id": 646, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Bachelor of Art Education", 
+    "vocal_training_details": "Singing and music lessons until year 8.", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Armidale City Public School", 
+            "id": 2493
+        }, 
+        {
+            "age_to": 15, 
+            "age_from": 12, 
+            "name": "Armidale High School", 
+            "id": 2494
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 19, 
+            "name": "Armidale High School", 
+            "id": 2495
+        }, 
+        {
+            "age_to": 25, 
+            "age_from": 21, 
+            "name": "University of NSW COFA", 
+            "id": 2496
+        }, 
+        {
+            "age_to": 40, 
+            "age_from": 38, 
+            "name": "University of New England", 
+            "id": 2497
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Squatter Pigeon", 
+        "id": 794
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Melbourne", 
+    "professional_occupation": "Casual High School Teacher", 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [
+        {
+            "age_to": 43, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1555, 
+            "name": "Casual High School teacher"
+        }, 
+        {
+            "age_to": 40, 
+            "less_than_a_year": false, 
+            "age_from": 38, 
+            "id": 1556, 
+            "name": "Associate Lecturer in Academic Skills"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1557, 
+            "name": "Art Education Officer New England Regional Art Museum"
+        }, 
+        {
+            "age_to": 42, 
+            "less_than_a_year": true, 
+            "age_from": 42, 
+            "id": 1558, 
+            "name": "Census Collector"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1559, 
+            "name": "Tafe Life Drawing Lecturer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "ALL", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 760
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Epping", 
+    "residence_history": [
+        {
+            "town": "Armidale", 
+            "age_to": 21, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 24, 
+            "age_from": 21, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Armidale", 
+            "age_to": 41, 
+            "age_from": 24, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Brisbane", 
+            "age_to": 42, 
+            "age_from": 41, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "Vic", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1969-02-12", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Armidale", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

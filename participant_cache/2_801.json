@@ -1,0 +1,172 @@
+{
+    "hobbies_details": "Socialising, reading and writing poetry, walking dogs, cooking.", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 834, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Media and Communication", 
+    "vocal_training_details": "Singing in primary and high school.", 
+    "other_languages": "German", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 6, 
+            "age_from": 5, 
+            "name": "St Joseph's Primary", 
+            "id": 3224
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 7, 
+            "name": "St Brendan's", 
+            "id": 3225
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Notre Dame College", 
+            "id": 3226
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 17, 
+            "name": "Ballarat and Clarendon College", 
+            "id": 3227
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "RMIT - CBD", 
+            "id": 3228
+        }
+    ], 
+    "location": {
+        "city": "Castlemaine", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 5
+    }, 
+    "animal": {
+        "name": "Striated Heron", 
+        "id": 801
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Horsham", 
+    "professional_occupation": "Cheesemonger", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 18, 
+            "id": 1872, 
+            "name": "Waitress"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 21, 
+            "id": 1873, 
+            "name": "Cheesemonger"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "VIC", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Travel", 
+            "frequency": 10, 
+            "name": "German", 
+            "id": 985
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Yarrawonga", 
+    "residence_history": [
+        {
+            "town": "Warrnambool", 
+            "age_to": 7, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Shepparton", 
+            "age_to": 17, 
+            "age_from": 7, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Ballarat", 
+            "age_to": 18, 
+            "age_from": 17, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": 22, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "VIC", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1990-12-21", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Green", 
+        "id": 2
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English/German", 
+    "pob_town": "Warrnambool", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": true
+}

@@ -1,0 +1,141 @@
+{
+    "hobbies_details": "French language, volleyball, reading", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "North-East Asian", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "ID", 
+    "mother_pob_state": "Unknown", 
+    "student_enrollment": "fulltime", 
+    "gender": "F", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 501, 
+    "student_course": "BA/BC", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "French, Cantanese", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Tom Price Primary School", 
+            "id": 1932
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Willeton Senior High School", 
+            "id": 1933
+        }, 
+        {
+            "age_to": 20, 
+            "age_from": 18, 
+            "name": "University Of Western Australia", 
+            "id": 1934
+        }
+    ], 
+    "location": {
+        "city": "Perth", 
+        "state": "WA", 
+        "name": "University of Western Australia", 
+        "id": 15
+    }, 
+    "animal": {
+        "name": "Magnificent spider", 
+        "id": 1313
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Indonesian/Australian", 
+    "RA": {
+        "username": "pontidm", 
+        "first_name": "", 
+        "last_name": "pontidm", 
+        "is_active": true, 
+        "email": "damien.pontifex@gmail.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2012-08-16 10:31:14", 
+        "id": 13, 
+        "date_joined": "2011-06-30 13:58:24"
+    }, 
+    "father_pob_town": "SURAEAYA", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "WA", 
+    "mother_professional_category": "elementary clerical", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 70, 
+            "name": "English", 
+            "id": 577
+        }, 
+        {
+            "situation": "home", 
+            "frequency": 25, 
+            "name": "Cantanese", 
+            "id": 578
+        }, 
+        {
+            "situation": "uni", 
+            "frequency": 5, 
+            "name": "French", 
+            "id": 579
+        }
+    ], 
+    "student_aspiration": "HR Manager", 
+    "mother_pob_town": "GUANZHOU", 
+    "residence_history": [
+        {
+            "town": "TOM PRICE", 
+            "age_to": 12, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }, 
+        {
+            "town": "PERTH", 
+            "age_to": 20, 
+            "age_from": 12, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "WA"
+        }
+    ], 
+    "father_pob_state": "Unknown", 
+    "mother_accent": "Chinese", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "AU", 
+    "dob": "1991-09-29", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "CN", 
+    "mother_first_language": "Cantanese", 
+    "pob_town": "ATTADALE", 
+    "father_first_language": "Cantanese", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "South-East Asian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

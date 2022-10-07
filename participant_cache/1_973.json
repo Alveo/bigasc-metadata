@@ -1,0 +1,165 @@
+{
+    "hobbies_details": "Sewing (machine), guitar, reading blogs, TV, DVDs", 
+    "rating": [], 
+    "education_level": "Masters Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "TAFE Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 597, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "AHPRA - Chiropractor; CAA", 
+    "vocal_training_details": "Singing", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "Atheist", 
+    "education_history": [
+        {
+            "age_to": 7, 
+            "age_from": 5, 
+            "name": "Cape Byron Steiner School", 
+            "id": 2300
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 8, 
+            "name": "Templestowe Park Primary", 
+            "id": 2301
+        }, 
+        {
+            "age_to": 19, 
+            "age_from": 13, 
+            "name": "Warrandyte High", 
+            "id": 2302
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "RMIT Uni", 
+            "id": 2303
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "Cape York Rock-wallaby", 
+        "id": 973
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "X", 
+    "professional_occupation": "Chiropractor", 
+    "father_professional_category": "unemployed", 
+    "profession_history": [
+        {
+            "age_to": 26, 
+            "less_than_a_year": false, 
+            "age_from": 24, 
+            "id": 1444, 
+            "name": "Harman Family Chiropractic"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": true, 
+            "age_from": 26, 
+            "id": 1445, 
+            "name": "Being Well Healthcare"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": true, 
+            "age_from": 26, 
+            "id": 1446, 
+            "name": "Possum Hollow Natural Health"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "clerical and service", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 696
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Sydney", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Byron Bay", 
+            "age_to": 8, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Melbourne", 
+            "age_to": 26, 
+            "age_from": 8, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "VIC"
+        }
+    ], 
+    "father_pob_state": "QLD", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "AU", 
+    "dob": "1985-12-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Sydney", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

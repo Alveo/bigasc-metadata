@@ -1,0 +1,199 @@
+{
+    "hobbies_details": "I like sports in general. Used to play piano.", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Southern and Eastern European", 
+    "consent": true, 
+    "mother_education_level": "higher school certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "RU", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Bachelor Degree", 
+    "first_language": "English", 
+    "id": 955, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "Web Developer", 
+    "vocal_training_details": "", 
+    "other_languages": "Russian", 
+    "has_hearing_problems": false, 
+    "religion": "Jewish", 
+    "education_history": [
+        {
+            "age_to": 11, 
+            "age_from": 5, 
+            "name": "Mount Sinai College", 
+            "id": 3633
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 12, 
+            "name": "Moriah College", 
+            "id": 3634
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Randwick Boys High School", 
+            "id": 3635
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 18, 
+            "name": "UNSW", 
+            "id": 3636
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Lakeland Downs Mouse", 
+        "id": 1214
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Slight Russian Accent", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Moscow", 
+    "professional_occupation": "Web Developer", 
+    "father_professional_category": "intermediate clerical and service", 
+    "profession_history": [
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 2006, 
+            "name": "Research Assistant"
+        }, 
+        {
+            "age_to": 25, 
+            "less_than_a_year": true, 
+            "age_from": 25, 
+            "id": 2007, 
+            "name": "Customer Service"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": true, 
+            "age_from": 26, 
+            "id": 2008, 
+            "name": "Cashier"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": true, 
+            "age_from": 26, 
+            "id": 2009, 
+            "name": "Hostel Receptionist"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 27, 
+            "id": 2010, 
+            "name": "Function Waiter"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 29, 
+            "id": 2011, 
+            "name": "Labouring"
+        }, 
+        {
+            "age_to": 32, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 2012, 
+            "name": "Web Developer"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "home duties", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "Everyday living", 
+            "frequency": 97, 
+            "name": "English", 
+            "id": 1187
+        }, 
+        {
+            "situation": "Speaking to my grandmas", 
+            "frequency": 3, 
+            "name": "Russian", 
+            "id": 1188
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Tel Aviv", 
+    "residence_history": [
+        {
+            "town": "Sydney", 
+            "age_to": 26, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "London", 
+            "age_to": 28, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "GB", 
+            "state": "LON"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 32, 
+            "age_from": 28, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Southern and Eastern European", 
+    "pob_country": "AU", 
+    "dob": "1983-01-09", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "IL", 
+    "mother_first_language": "Hebrew", 
+    "pob_town": "Sydney", 
+    "father_first_language": "Russian", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Southern and Eastern European", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}

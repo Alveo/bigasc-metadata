@@ -1,0 +1,123 @@
+{
+    "hobbies_details": "Tennis, play piano (AMEB grade 6), flute (AMEB grade 4) and guitar", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Other: North-West European", 
+    "consent": true, 
+    "mother_education_level": "Associate Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "ZA", 
+    "mother_pob_state": "Natal", 
+    "student_enrollment": "fulltime", 
+    "gender": "M", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 716, 
+    "student_course": "Bachelor of Sport and Exercise Science", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "", 
+    "other_languages": "Japanese, Afrikaans", 
+    "has_hearing_problems": false, 
+    "religion": "Christian", 
+    "education_history": [
+        {
+            "age_to": 18, 
+            "age_from": 5, 
+            "name": "Dubbo Christian School", 
+            "id": 2768
+        }
+    ], 
+    "location": {
+        "city": "Armidale", 
+        "state": "NSW", 
+        "name": "University of New England", 
+        "id": 10
+    }, 
+    "animal": {
+        "name": "Collared Kingfisher", 
+        "id": 279
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "South African", 
+    "RA": {
+        "username": "mconroy", 
+        "first_name": "", 
+        "last_name": "mconroy", 
+        "is_active": true, 
+        "email": "mconroy@une.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2013-05-06 09:29:48", 
+        "id": 9, 
+        "date_joined": "2011-06-28 13:23:31"
+    }, 
+    "father_pob_town": "Rosetta", 
+    "professional_occupation": null, 
+    "father_professional_category": "manager and admin", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "NSW", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "School", 
+            "frequency": 0, 
+            "name": "Japanese", 
+            "id": 850
+        }, 
+        {
+            "situation": "Home", 
+            "frequency": 1, 
+            "name": "Afrikaans", 
+            "id": 851
+        }
+    ], 
+    "student_aspiration": "Rehabilitation in spinal injuries", 
+    "mother_pob_town": "Durban", 
+    "residence_history": [
+        {
+            "town": "DUBBO", 
+            "age_to": 19, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "ARMIDALE", 
+            "age_to": 20, 
+            "age_from": 19, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "Natal", 
+    "mother_accent": "South African", 
+    "father_cultural_heritage": "Other: North-West European", 
+    "pob_country": "AU", 
+    "dob": "1992-08-05", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Blue", 
+        "id": 4
+    }, 
+    "mother_pob_country": "ZA", 
+    "mother_first_language": "English", 
+    "pob_town": "Dubbo", 
+    "father_first_language": "Zulu", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "North-West European", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

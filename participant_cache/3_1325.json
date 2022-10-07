@@ -1,0 +1,121 @@
+{
+    "hobbies_details": "Eightball.", 
+    "rating": [], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "North-West European", 
+    "consent": true, 
+    "mother_education_level": "Vocational Graduate Certificate", 
+    "is_smoker": false, 
+    "father_pob_country": "AU", 
+    "mother_pob_state": "VIC", 
+    "student_enrollment": "parttime", 
+    "gender": "M", 
+    "father_education_level": "TAFE Certificate", 
+    "first_language": "English", 
+    "id": 951, 
+    "student_course": "Diploma of Business Administration", 
+    "has_piercings": false, 
+    "professional_qualification": null, 
+    "vocal_training_details": "Choir.", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Alawa Primary School (Darwin)", 
+            "id": 3617
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 12, 
+            "name": "Dripstone High School (Darwin)", 
+            "id": 3618
+        }, 
+        {
+            "age_to": 26, 
+            "age_from": 24, 
+            "name": "Charles Darwin University", 
+            "id": 3619
+        }
+    ], 
+    "location": {
+        "city": "Darwin", 
+        "state": "NT", 
+        "name": "Charles Darwin University", 
+        "id": 3
+    }, 
+    "animal": {
+        "name": "Perfect Spitting spider", 
+        "id": 1325
+    }, 
+    "reading_problems_details": "It was realized he needed glasses during primary school. Had difficulties up to that point.", 
+    "has_dentures": false, 
+    "is_student": true, 
+    "has_speech_problems": false, 
+    "is_left_handed": true, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "bruce.birch", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "email": "bruce.birch@anu.edu.au", 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2015-04-30 10:32:01", 
+        "id": 53, 
+        "date_joined": "2015-01-21 16:41:03"
+    }, 
+    "father_pob_town": "Tanunda", 
+    "professional_occupation": null, 
+    "father_professional_category": "tradesperson", 
+    "profession_history": [], 
+    "has_health_problems": false, 
+    "has_reading_problems": true, 
+    "collection": "austalk", 
+    "pob_state": "NT", 
+    "mother_professional_category": "assoc professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 1181
+        }
+    ], 
+    "student_aspiration": "Business Administration (Family Business: Electrical Contractors)", 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Darwin", 
+            "age_to": 26, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NT"
+        }
+    ], 
+    "father_pob_state": "SA", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "North-West European", 
+    "pob_country": "AU", 
+    "dob": "1988-05-24", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Red", 
+        "id": 3
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Darwin", 
+    "father_first_language": "English", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": null, 
+    "has_hobbies": true
+}

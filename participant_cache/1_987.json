@@ -1,0 +1,297 @@
+{
+    "hobbies_details": "tennis, dancing, guitar, piano, gaming, crafts, ", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "South-East Asian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "PH", 
+    "mother_pob_state": "", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "school certificate", 
+    "first_language": "tagalog", 
+    "id": 685, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "B.Arts(DipEd-Primary)", 
+    "vocal_training_details": "Casual drama class", 
+    "other_languages": "", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 4, 
+            "age_from": 3, 
+            "name": "Montesory, Quezon City", 
+            "id": 2648
+        }, 
+        {
+            "age_to": 5, 
+            "age_from": 4, 
+            "name": "St Michaels Primary, Summer Hill", 
+            "id": 2649
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Our Lady of Mount Carmel (OLMC), Mt Pritchard", 
+            "id": 2650
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Freeman Catholic High", 
+            "id": 2651
+        }, 
+        {
+            "age_to": 24, 
+            "age_from": 18, 
+            "name": "Macquarie University", 
+            "id": 2652
+        }
+    ], 
+    "location": {
+        "city": "Sydney", 
+        "state": "NSW", 
+        "name": "University of New South Wales", 
+        "id": 11
+    }, 
+    "animal": {
+        "name": "Desert Bandicoot", 
+        "id": 987
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Filipino", 
+    "RA": {
+        "username": "kurnitb", 
+        "first_name": "", 
+        "last_name": "kurnitb", 
+        "is_active": true, 
+        "email": "ronny_kurniawan@yahoo.com", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-06-05 12:44:31", 
+        "id": 25, 
+        "date_joined": "2011-10-26 16:11:09"
+    }, 
+    "father_pob_town": "Rizal", 
+    "professional_occupation": "Schools & Scholars Administration Officer", 
+    "father_professional_category": "intermediate production", 
+    "profession_history": [
+        {
+            "age_to": 16, 
+            "less_than_a_year": true, 
+            "age_from": 15, 
+            "id": 1626, 
+            "name": "McDonalds"
+        }, 
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 16, 
+            "id": 1627, 
+            "name": "Franklins "
+        }, 
+        {
+            "age_to": 19, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 1628, 
+            "name": "Co-op Bookshop"
+        }, 
+        {
+            "age_to": 21, 
+            "less_than_a_year": false, 
+            "age_from": 19, 
+            "id": 1629, 
+            "name": "Macquarie University Student Adminstration"
+        }, 
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 20, 
+            "id": 1630, 
+            "name": "HMV music retailer"
+        }, 
+        {
+            "age_to": 24, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 1631, 
+            "name": "Borders Bookstore retail assistant"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 25, 
+            "id": 1632, 
+            "name": "Primary teaching (casual)"
+        }, 
+        {
+            "age_to": 26, 
+            "less_than_a_year": true, 
+            "age_from": 26, 
+            "id": 1633, 
+            "name": "Bar manager"
+        }, 
+        {
+            "age_to": 28, 
+            "less_than_a_year": false, 
+            "age_from": 26, 
+            "id": 1634, 
+            "name": "Dynamic Property Services - receptionist"
+        }, 
+        {
+            "age_to": 30, 
+            "less_than_a_year": false, 
+            "age_from": 28, 
+            "id": 1635, 
+            "name": "Sydney University"
+        }, 
+        {
+            "age_to": 33, 
+            "less_than_a_year": false, 
+            "age_from": 30, 
+            "id": 1636, 
+            "name": "UNSW"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "family or visiting philippines", 
+            "frequency": 10, 
+            "name": "tagalog", 
+            "id": 812
+        }, 
+        {
+            "situation": "daily", 
+            "frequency": 100, 
+            "name": "english", 
+            "id": 813
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "manila", 
+    "residence_history": [
+        {
+            "town": "Schofields", 
+            "age_to": 5, 
+            "age_from": 5, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Stanmore", 
+            "age_to": 6, 
+            "age_from": 5, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Bossley Park", 
+            "age_to": 16, 
+            "age_from": 6, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Cecil Hills", 
+            "age_to": 24, 
+            "age_from": 16, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Wollongong", 
+            "age_to": 25, 
+            "age_from": 24, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Parramatta", 
+            "age_to": 26, 
+            "age_from": 25, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Holroyd Park", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Erskineville", 
+            "age_to": 29, 
+            "age_from": 27, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "St Peters", 
+            "age_to": 30, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Erskineville", 
+            "age_to": 33, 
+            "age_from": 30, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "St Peters", 
+            "age_to": 33, 
+            "age_from": 33, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "NSW"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "filipino", 
+    "father_cultural_heritage": "South-East Asian", 
+    "pob_country": "PH", 
+    "dob": "1978-10-24", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "PH", 
+    "mother_first_language": "tagalog", 
+    "pob_town": "Quezon City", 
+    "father_first_language": "Tagalog", 
+    "has_vocal_training": true, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "manager and admin", 
+    "has_hobbies": true
+}

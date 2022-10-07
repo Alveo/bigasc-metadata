@@ -1,0 +1,333 @@
+{
+    "hobbies_details": "Role playing games (local club)", 
+    "rating": [
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 1, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1946
+        }, 
+        {
+            "comment": "", 
+            "component": 2, 
+            "session": 1, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4838
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 3, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1947
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 4, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1948
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 5, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1949
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 9, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1950
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 11, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1951
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 12, 
+            "session": 1, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1952
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 1, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1953
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 5, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1954
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 7, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1955
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 9, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1956
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 13, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1957
+        }, 
+        {
+            "comment": "CAMERA ANGLE", 
+            "component": 16, 
+            "session": 2, 
+            "video": "B", 
+            "audio": "A", 
+            "id": 1958
+        }, 
+        {
+            "comment": "", 
+            "component": 9, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4840
+        }, 
+        {
+            "comment": "Missing item: video from camera1", 
+            "component": 10, 
+            "session": 4, 
+            "video": "", 
+            "audio": "A", 
+            "id": 4839
+        }, 
+        {
+            "comment": "", 
+            "component": 14, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4841
+        }, 
+        {
+            "comment": "IMPORTANT: this is a Conversation component", 
+            "component": 17, 
+            "session": 4, 
+            "video": "A", 
+            "audio": "A", 
+            "id": 4842
+        }
+    ], 
+    "education_level": "higher school certificate", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Masters Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "Australia", 
+    "mother_pob_state": "Qld", 
+    "student_enrollment": null, 
+    "gender": "M", 
+    "father_education_level": "Masters Degree", 
+    "first_language": "English", 
+    "id": 58, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "N/A", 
+    "vocal_training_details": "", 
+    "other_languages": "None", 
+    "has_hearing_problems": true, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 10, 
+            "age_from": 5, 
+            "name": "Vincent State School, Townsville Qld", 
+            "id": 225
+        }, 
+        {
+            "age_to": 12, 
+            "age_from": 10, 
+            "name": "Banksia Road Public School, Greenacre NSW", 
+            "id": 226
+        }, 
+        {
+            "age_to": 13, 
+            "age_from": 12, 
+            "name": "De La Salle College Bankstown NSW", 
+            "id": 227
+        }, 
+        {
+            "age_to": 17, 
+            "age_from": 13, 
+            "name": "Ryan Catholic Community College, Townsville Qld", 
+            "id": 228
+        }, 
+        {
+            "age_to": 21, 
+            "age_from": 17, 
+            "name": "James Cook University, Townsville Qld", 
+            "id": 229
+        }
+    ], 
+    "location": {
+        "city": "Canberra", 
+        "state": "ACT", 
+        "name": "University of Canberra", 
+        "id": 8
+    }, 
+    "animal": {
+        "name": "Hoary Wattled Bat", 
+        "id": 42
+    }, 
+    "reading_problems_details": "Unknown", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "Australian", 
+    "RA": {
+        "username": "tomas", 
+        "first_name": "", 
+        "last_name": "tomas", 
+        "is_active": true, 
+        "email": "tomas.krajca@students.mq.edu.au", 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2018-04-01 00:00:03", 
+        "id": 19, 
+        "date_joined": "2011-08-31 15:05:47"
+    }, 
+    "father_pob_town": "Charters Towers", 
+    "professional_occupation": "Public Servant", 
+    "father_professional_category": "professional", 
+    "profession_history": [
+        {
+            "age_to": 22, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 176, 
+            "name": "Part time retail shop assistant"
+        }, 
+        {
+            "age_to": 41, 
+            "less_than_a_year": false, 
+            "age_from": 22, 
+            "id": 177, 
+            "name": "Public Servant"
+        }
+    ], 
+    "has_health_problems": false, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "ACT", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "All ", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 43
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Kingaroy", 
+    "residence_history": [
+        {
+            "town": "Canberra", 
+            "age_to": 1, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 3, 
+            "age_from": 1, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Townsville", 
+            "age_to": 10, 
+            "age_from": 3, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "QLD"
+        }, 
+        {
+            "town": "Sydney", 
+            "age_to": 13, 
+            "age_from": 10, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "NSW"
+        }, 
+        {
+            "town": "Townsville", 
+            "age_to": 29, 
+            "age_from": 13, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "Qld"
+        }, 
+        {
+            "town": "Canberra", 
+            "age_to": 41, 
+            "age_from": 29, 
+            "less_than_a_year": false, 
+            "country": "Australia", 
+            "state": "ACT"
+        }
+    ], 
+    "father_pob_state": "Qld", 
+    "mother_accent": "Australian", 
+    "father_cultural_heritage": "Australian", 
+    "pob_country": "Australia", 
+    "dob": "1969-10-07", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "Australia", 
+    "mother_first_language": "English", 
+    "pob_town": "Canberra", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "Mild tinnitus", 
+    "professional_category": "clerical and service", 
+    "has_hobbies": true
+}

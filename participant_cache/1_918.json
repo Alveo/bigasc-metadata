@@ -1,0 +1,167 @@
+{
+    "hobbies_details": "Reading, cooking, singing (amateur choirs), languages", 
+    "rating": [], 
+    "education_level": "Bachelor Degree", 
+    "mother_cultural_heritage": "Australian", 
+    "consent": true, 
+    "mother_education_level": "Bachelor Degree", 
+    "is_smoker": false, 
+    "father_pob_country": "NZ", 
+    "mother_pob_state": "vic", 
+    "student_enrollment": null, 
+    "gender": "F", 
+    "father_education_level": "higher school certificate", 
+    "first_language": "English", 
+    "id": 599, 
+    "student_course": null, 
+    "has_piercings": false, 
+    "professional_qualification": "BA", 
+    "vocal_training_details": "", 
+    "other_languages": "French", 
+    "has_hearing_problems": false, 
+    "religion": "", 
+    "education_history": [
+        {
+            "age_to": 12, 
+            "age_from": 5, 
+            "name": "Newham PS", 
+            "id": 2309
+        }, 
+        {
+            "age_to": 18, 
+            "age_from": 12, 
+            "name": "Kyneton Secondary College", 
+            "id": 2310
+        }, 
+        {
+            "age_to": 23, 
+            "age_from": 19, 
+            "name": "University of Melbourne", 
+            "id": 2311
+        }
+    ], 
+    "location": {
+        "city": "Melbourne", 
+        "state": "VIC", 
+        "name": "University of Melbourne", 
+        "id": 9
+    }, 
+    "animal": {
+        "name": "White-winged Chough", 
+        "id": 918
+    }, 
+    "reading_problems_details": "", 
+    "has_dentures": false, 
+    "is_student": false, 
+    "has_speech_problems": false, 
+    "is_left_handed": false, 
+    "father_accent": "", 
+    "RA": {
+        "username": "simone", 
+        "first_name": "", 
+        "last_name": "simone", 
+        "is_active": true, 
+        "email": "simone.graetzer@unimelb.edu.au", 
+        "is_superuser": false, 
+        "is_staff": true, 
+        "last_login": "2015-02-13 04:00:36", 
+        "id": 36, 
+        "date_joined": "2012-07-13 15:47:34"
+    }, 
+    "father_pob_town": "Dunedin", 
+    "professional_occupation": "Book editor", 
+    "father_professional_category": "assoc professional", 
+    "profession_history": [
+        {
+            "age_to": 17, 
+            "less_than_a_year": false, 
+            "age_from": 15, 
+            "id": 1450, 
+            "name": "Supermarket retail cashier"
+        }, 
+        {
+            "age_to": 23, 
+            "less_than_a_year": false, 
+            "age_from": 17, 
+            "id": 1451, 
+            "name": "Babysitter"
+        }, 
+        {
+            "age_to": 27, 
+            "less_than_a_year": false, 
+            "age_from": 23, 
+            "id": 1452, 
+            "name": "Book editor"
+        }
+    ], 
+    "has_health_problems": true, 
+    "has_reading_problems": false, 
+    "collection": "austalk", 
+    "pob_state": "Vic", 
+    "mother_professional_category": "professional", 
+    "piercings_details": "", 
+    "language_usage": [
+        {
+            "situation": "all", 
+            "frequency": 100, 
+            "name": "English", 
+            "id": 698
+        }
+    ], 
+    "student_aspiration": null, 
+    "mother_pob_town": "Melbourne", 
+    "residence_history": [
+        {
+            "town": "Newham", 
+            "age_to": 18, 
+            "age_from": 0, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Coburg", 
+            "age_to": 22, 
+            "age_from": 18, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Richmond", 
+            "age_to": 26, 
+            "age_from": 22, 
+            "less_than_a_year": false, 
+            "country": "AU", 
+            "state": "Vic"
+        }, 
+        {
+            "town": "Newham", 
+            "age_to": 27, 
+            "age_from": 26, 
+            "less_than_a_year": true, 
+            "country": "AU", 
+            "state": "Vic"
+        }
+    ], 
+    "father_pob_state": "", 
+    "mother_accent": "AusE", 
+    "father_cultural_heritage": "Oceanian", 
+    "pob_country": "AU", 
+    "dob": "1985-05-07", 
+    "speech_problems_details": "", 
+    "colour": {
+        "name": "Gold", 
+        "id": 1
+    }, 
+    "mother_pob_country": "AU", 
+    "mother_first_language": "English", 
+    "pob_town": "Melbourne", 
+    "father_first_language": "English", 
+    "has_vocal_training": false, 
+    "health_problems_details": "A bit sinusy (not too bad)", 
+    "cultural_heritage": "Australian", 
+    "hearing_problems_details": "", 
+    "professional_category": "professional", 
+    "has_hobbies": true
+}
