@@ -1,0 +1,32 @@
+<item>
+  <files>
+    <file>1_1121_1_12_002-camera-0.raw16</file>
+    <file>1_1121_1_12_002-ch1-maptask.wav</file>
+    <file>1_1121_1_12_002-ch4-c2Left.wav</file>
+    <file>1_1121_1_12_002-ch5-c2Right.wav</file>
+    <file>1_1121_1_12_002-ch6-speaker.wav</file>
+  </files>
+  <prompt>slide3.jpg</prompt>
+  <timestamp>Mon Jul 18 16:48:46 2011</timestamp>
+  <basename>1_1121_1_12_002</basename>
+  <component>12</component>
+  <session>1</session>
+  <checksums>
+    <md5hash file="1_1121_1_12_002-ch4-c2Left.wav">
+    9fc201cc8528daf4fa7a4b54f972522d</md5hash>
+    <md5hash file="1_1121_1_12_002-camera-0.raw16">
+    979577651d2fa556a0ec1664281bc879</md5hash>
+    <md5hash file="1_1121_1_12_002-ch6-speaker.wav">
+    3f5fe0bb8bb31fc13c3cd34d9d3998c3</md5hash>
+    <md5hash file="1_1121_1_12_002-ch1-maptask.wav">
+    f2477e78c6dfb585f2b974eceb0a2900</md5hash>
+    <md5hash file="1_1121_1_12_002-ch5-c2Right.wav">
+    7af2ecd6c3556973d3fe60d0ea061cd2</md5hash>
+  </checksums>
+  <path>D:\recordings\Spkr1_1121_Session1\Session1_12\</path>
+  <colour>1</colour>
+  <item>2</item>
+  <animal>1121</animal>	
+  <cameraSN0>10251399</cameraSN0>
+  <cameraSN1>10251399</cameraSN1>
+</item>
